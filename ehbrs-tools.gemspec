@@ -11,4 +11,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Tools for EHB/RS.'
 
   s.files = Dir['{lib}/**/*', 'Gemfile']
+
+  s.add_development_dependency 'rubocop'
 end
