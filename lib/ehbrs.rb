@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-module Ehbrs
-end
+require 'eac_ruby_utils/core_ext'
 
-require 'ehbrs/tools'
+module Ehbrs
+  require_sub __FILE__
+end
