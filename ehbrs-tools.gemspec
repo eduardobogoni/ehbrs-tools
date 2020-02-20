@@ -13,4 +13,5 @@ Gem::Specification.new do |s|
   s.files = Dir['{lib}/**/*', 'Gemfile']
 
   s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'rubocop-rails'
 end
