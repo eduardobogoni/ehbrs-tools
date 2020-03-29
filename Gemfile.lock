@@ -4,6 +4,11 @@ PATH
     ehbrs-tools (0.1.0)
       eac_ruby_utils (~> 0.19)
 
+PATH
+  remote: vendor/eac_cli
+  specs:
+    eac_cli (0.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,6 +79,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eac_cli!
   ehbrs-tools!
   rspec (~> 3.9)
   rubocop
