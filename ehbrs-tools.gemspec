@@ -15,8 +15,5 @@ Gem::Specification.new do |s|
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   s.add_dependency 'eac_ruby_utils', '~> 0.19'
-  s.add_development_dependency 'rspec', '~> 3.9'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'rubocop-rails'
-  s.add_development_dependency 'rubocop-rspec'
+  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.1'
 end
