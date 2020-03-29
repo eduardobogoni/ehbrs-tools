@@ -7,6 +7,7 @@ require 'ehbrs/tools/version'
 module Ehbrs
   module Tools
     class Runner < ::EacRubyUtils::Console::DocoptRunner
+      require_sub __FILE__
       enable_console_speaker
 
       DOC = <<~DOCOPT
