@@ -11,6 +11,10 @@ module Ehbrs
       def env
         ::EacRubyUtils::Envs.local
       end
+
+      def floating_ips
+        @floating_ips ||= env.executable('flips-linux', '--version')
+      end
     end
   end
 end
