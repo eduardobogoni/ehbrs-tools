@@ -18,7 +18,7 @@ module Ehbrs
 
       private
 
-      %w[ffprobe].each do |command|
+      %w[ffmpeg ffprobe].each do |command|
         define_method("#{command}_uncached") do
           env.executable(command, '-version')
         end
