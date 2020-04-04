@@ -15,6 +15,14 @@ module Ehbrs
       def floating_ips
         @floating_ips ||= env.executable('flips-linux', '--version')
       end
+
+      private
+
+      %w[ffprobe].each do |command|
+        define_method("#{command}_uncached") do
+          env.executable(command, '-version')
+        end
+      end
     end
   end
 end
