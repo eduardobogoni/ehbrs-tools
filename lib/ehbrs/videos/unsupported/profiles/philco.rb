@@ -16,7 +16,7 @@ module Ehbrs
           SUBTITLE_SUPPORTED_CODECS = %w[ass dvd subrip].freeze
           SUBTITLE_UNSUPPORTED_CODECS = %w[mov].freeze
 
-          OTHER_SUPPORTED_CODECS = %w[ttf].freeze
+          OTHER_SUPPORTED_CODECS = %w[png ttf].freeze
 
           MPEG4_EXTRA_SUPPORTED = %w[xvid].freeze
           MPEG4_EXTRA_UNSUPPORTED = %w[dx50].freeze
