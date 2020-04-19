@@ -80,7 +80,7 @@ module Ehbrs
       end
 
       def converted
-        input + '.converted'
+        input.basename_sub { |b| "#{b}.converted" }
       end
 
       def target_extension
