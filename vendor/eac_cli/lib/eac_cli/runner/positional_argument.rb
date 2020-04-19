@@ -7,8 +7,16 @@ module EacCli
     class PositionalArgument
       common_constructor :name, :options, default: [{}]
 
+      def optional?
+        options[:optional]
+      end
+
       def repeat?
         options[:repeat]
+      end
+
+      def subcommand?
+        options[:subcommand]
       end
     end
   end
