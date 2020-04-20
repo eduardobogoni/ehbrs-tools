@@ -9,6 +9,7 @@ module Ehbrs
     module Unsupported
       class Search
         enable_console_speaker
+        enable_simple_cache
 
         VALID_EXTENSIONS = %w[.avi .mp4 .mkv .m4v].freeze
 
@@ -25,9 +26,6 @@ module Ehbrs
 
         def run
           start_banner
-          traverser = ::EacRubyUtils::FilesystemTraverser.new
-          traverser.recursive = true
-          traverser.check_file = method(:check_file)
           traverser.check_path(@root)
           end_banner
         end
@@ -57,6 +55,13 @@ module Ehbrs
 
         def end_banner
           infom "Unsupported/Videos/Files: #{@unsupported}/#{@videos}/#{@files}"
+        end
+
+        def traverser_uncached
+          r = ::EacRubyUtils::FilesystemTraverser.new
+          r.recursive = true
+          r.check_file = method(:check_file)
+          r
         end
 
         def video_file?(path)
