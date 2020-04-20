@@ -61,6 +61,7 @@ module Ehbrs
           r = ::EacRubyUtils::FilesystemTraverser.new
           r.recursive = true
           r.check_file = method(:check_file)
+          r.sort = true
           r
         end
 
