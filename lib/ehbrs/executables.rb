@@ -16,7 +16,7 @@ module Ehbrs
 
       {
         '-version' => %w[ffmpeg ffprobe],
-        '--version' => %w[flips-linux]
+        '--version' => %w[flips-linux wit]
       }.each do |validate_arg, commands|
         commands.each do |command|
           define_method("#{command}_uncached") do
