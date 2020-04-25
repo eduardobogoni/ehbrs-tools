@@ -12,15 +12,16 @@ module Ehbrs
         ::EacRubyUtils::Envs.local
       end
 
-      def floating_ips
-        @floating_ips ||= env.executable('flips-linux', '--version')
-      end
-
       private
 
-      %w[ffmpeg ffprobe].each do |command|
-        define_method("#{command}_uncached") do
-          env.executable(command, '-version')
+      {
+        '-version' => %w[ffmpeg ffprobe],
+        '--version' => %w[flips-linux]
+      }.each do |validate_arg, commands|
+        commands.each do |command|
+          define_method("#{command}_uncached") do
+            env.executable(command, validate_arg)
+          end
         end
       end
     end
