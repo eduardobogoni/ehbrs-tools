@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/runner'
-require 'ehbrs/tools/runner/videos/unsupported'
+require 'ehbrs/runner'
+require 'ehbrs/runner/videos/unsupported'
 
-RSpec.describe ::Ehbrs::Tools::Runner::Videos::Unsupported do
+RSpec.describe ::Ehbrs::Runner::Videos::Unsupported do
   let(:source_dir) { ::Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
   let(:source_file) { source_dir / 'fixed.mp4' }
   let(:temp_dir) { ::Pathname.new(::Dir.mktmpdir).expand_path }
@@ -23,7 +23,7 @@ RSpec.describe ::Ehbrs::Tools::Runner::Videos::Unsupported do
     let(:fixed_file) { to_fix_file.basename_sub { |b| "#{b.basename('.*')}.mkv" } }
 
     before do
-      ::Ehbrs::Tools::Runner.run(argv: run_argv)
+      ::Ehbrs::Runner.run(argv: run_argv)
     end
 
     it { expect(converted_file).to be_a_file }
