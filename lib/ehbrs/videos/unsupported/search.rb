@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/filesystem_traverser'
+require 'eac_ruby_utils/fs/traversable'
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs/videos/unsupported/file'
 
@@ -8,6 +8,7 @@ module Ehbrs
   module Videos
     module Unsupported
       class Search
+        include ::EacRubyUtils::Fs::Traversable
         enable_console_speaker
         enable_simple_cache
 
@@ -22,19 +23,23 @@ module Ehbrs
           run
         end
 
+        def traverser_recursive
+          true
+        end
+
+        def traverser_sort
+          true
+        end
+
         private
 
         def run
           start_banner
-          traverser.check_path(@root)
+          traverser_check_path(@root)
           end_banner
         end
 
-        def recursive?
-          true
-        end
-
-        def check_file(file)
+        def traverser_check_file(file)
           @files += 1
           check_video(file) if video_file?(file)
         end
@@ -55,14 +60,6 @@ module Ehbrs
 
         def end_banner
           infom "Unsupported/Videos/Files: #{@unsupported}/#{@videos}/#{@files}"
-        end
-
-        def traverser_uncached
-          r = ::EacRubyUtils::FilesystemTraverser.new
-          r.recursive = true
-          r.check_file = method(:check_file)
-          r.sort = true
-          r
         end
 
         def video_file?(path)
