@@ -3,6 +3,7 @@ PATH
   specs:
     ehbrs-tools (0.4.0)
       eac_ruby_utils (~> 0.19)
+      inifile (~> 3.0)
 
 PATH
   remote: vendor/eac_cli
@@ -42,6 +43,7 @@ GEM
       rubocop-rspec (~> 1.38.1)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    inifile (3.0.0)
     jaro_winkler (1.5.4)
     minitest (5.14.0)
     net-ssh (4.2.0)
