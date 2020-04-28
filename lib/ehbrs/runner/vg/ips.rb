@@ -27,7 +27,7 @@ module Ehbrs
         private
 
         def run_patch
-          ::Ehbrs::Executables.floating_ips.command
+          ::Ehbrs::Executables.flips.command
                               .append(['--apply', ips_file, source_file, output_file]).system!
         end
 
