@@ -22,6 +22,8 @@ module Ehbrs
 
         def run
           validate
+          start_banner
+          run_patch
         end
 
         private
@@ -32,7 +34,7 @@ module Ehbrs
         end
 
         def source_file
-          options.fetch('<source-file>')
+          options.fetch('<source-file>').to_pathname
         end
 
         def start_banner
@@ -42,17 +44,16 @@ module Ehbrs
         end
 
         def ips_file
-          options.fetch('<ips-file>')
+          options.fetch('<ips-file>').to_pathname
         end
 
         def output_file
-          options.fetch('--output-file') || default_output_file
+          options.fetch('--output-file').to_pathname || default_output_file
         end
 
         def default_output_file
-          ::File.join(
-            ::File.dirname(ips_file),
-            ::File.basename(ips_file, '.*') + ::File.extname(source_file)
+          ips_file.parent.join(
+            ips_file.basename('.*').to_path + source_file.extname
           )
         end
 
@@ -60,24 +61,22 @@ module Ehbrs
           validate_source_file
           validate_ips_file
           validate_output_file
-          start_banner
-          run_patch
         end
 
         def validate_source_file
-          return if ::File.exist?(source_file)
+          return if source_file.exist?
 
           fatal_error("Arquivo fonte \"#{source_file}\" não existe")
         end
 
         def validate_ips_file
-          return if ::File.exist?(ips_file)
+          return if ips_file.exist?
 
           fatal_error("Arquivo IPS \"#{ips_file}\" não existe")
         end
 
         def validate_output_file
-          return unless ::File.exist?(output_file)
+          return unless output_file.exist?
           return if options.fetch('--overwrite')
 
           fatal_error("Arquivo de saída \"#{output_file}\" já existe")
