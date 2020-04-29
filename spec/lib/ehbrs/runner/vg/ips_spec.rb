@@ -1,0 +1,31 @@
+# frozen_string_literal: true
+
+require 'eac_ruby_utils/fs/temp'
+require 'ehbrs/runner'
+require 'ehbrs/runner/vg/ips'
+
+RSpec.describe ::Ehbrs::Runner::Vg::Ips do
+  let(:source_dir) { ::Pathname.new('ips_spec_files').expand_path __dir__ }
+  let(:source_file) { source_dir / 'source.rom' }
+  let(:patch) { source_dir / 'patch.ips' }
+
+  describe '#run' do
+    let(:output_file) { ::EacRubyUtils::Fs::Temp.file }
+    let(:expected_file) { source_dir / 'expected.rom' }
+    let(:run_argv) do
+      ['vg', 'ips', '--output-file', output_file.to_path, source_file.to_path,
+       patch.to_path]
+    end
+
+    before do
+      ::Ehbrs::Runner.run(argv: run_argv)
+    end
+
+    after do
+      output_file.unlink if output_file.exist?
+    end
+
+    it { expect(output_file).to exist }
+    it { expect(::FileUtils.compare_file(output_file.to_path, expected_file.to_path)).to be_truthy }
+  end
+end
