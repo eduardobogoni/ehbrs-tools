@@ -21,6 +21,7 @@ module Ehbrs
           e: :extname,
           i: :id6,
           n: :disc_name,
+          N: :nintendont_basename,
           t: :database_title,
           T: :disc_type
         )
@@ -43,6 +44,11 @@ module Ehbrs
 
         def format(string)
           FORMAT.format(string).with(self)
+        end
+
+        def nintendont_basename
+          n = disc_number
+          n == 1 ? 'game' : "disc#{n}"
         end
 
         def id6
