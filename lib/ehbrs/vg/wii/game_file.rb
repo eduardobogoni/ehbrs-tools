@@ -12,9 +12,12 @@ module Ehbrs
       class GameFile < ::Pathname
         enable_simple_cache
 
+        DISC_NUMBER_PATTERN = /disc.?(\d)/i.freeze
+
         FORMAT = ::EacRubyUtils::CustomFormat.new(
           b: :basename,
           d: :dirname,
+          D: :disc_number,
           e: :extname,
           i: :id6,
           n: :disc_name,
@@ -28,6 +31,10 @@ module Ehbrs
 
         def disc_name
           properties.fetch('Disc name')
+        end
+
+        def disc_number
+          DISC_NUMBER_PATTERN.if_match(basename.to_s, false) { |m| m[1].to_i }.if_present(1)
         end
 
         def disc_type
