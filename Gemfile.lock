@@ -16,7 +16,7 @@ PATH
 PATH
   remote: vendor/eac_ruby_utils
   specs:
-    eac_ruby_utils (0.32.0)
+    eac_ruby_utils (0.32.1)
       activesupport (>= 4.0)
       addressable (~> 2.6)
       colorize (~> 0.8.1)
