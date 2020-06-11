@@ -1,0 +1,3 @@
+---
+test:
+  bundle_command: exec ehbrs self test
