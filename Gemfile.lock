@@ -21,6 +21,12 @@ PATH
       eac_ruby_utils (~> 0.23)
 
 PATH
+  remote: vendor/eac_docker
+  specs:
+    eac_docker (0.0.0)
+      eac_ruby_utils (~> 0.36)
+
+PATH
   remote: vendor/eac_ruby_utils
   specs:
     eac_ruby_utils (0.40.0)
@@ -153,6 +159,7 @@ PLATFORMS
 DEPENDENCIES
   aranha-selenium!
   eac_cli!
+  eac_docker!
   eac_ruby_gem_support (~> 0.1)
   eac_ruby_utils!
   ehbrs-tools!
