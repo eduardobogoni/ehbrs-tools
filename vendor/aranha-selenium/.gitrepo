@@ -1,12 +1,7 @@
-; DO NOT EDIT (unless you know what you are doing)
-;
-; This subdirectory is a git "subrepo", and this file is maintained by the
-; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
-;
 [subrepo]
-	remote = https://github.com/esquilo-azul/aranha-selenium.git
-	branch = master
-	commit = fcafc84010dd5b2cad1791d368d3f35805c1c41a
-	parent = 88881411da0a9d99c3524b46cd0240d081b0176c
-	method = rebase
-	cmdver = 0.4.0
+  cmdver = 0.4.0
+  commit = 3f5fe548b2313bd84e68870ccad3d49d1bdf6f3e
+  method = rebase
+  parent = 9ee65eac6d975729c115277d82517473f025adb5
+  branch = master
+  remote = https://github.com/esquilo-azul/aranha-selenium.git
