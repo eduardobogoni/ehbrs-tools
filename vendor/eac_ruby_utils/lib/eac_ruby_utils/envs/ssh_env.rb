@@ -2,12 +2,16 @@
 
 require 'addressable'
 require 'eac_ruby_utils/envs/base_env'
+require 'eac_ruby_utils/patches/object/if_present'
+require 'eac_ruby_utils/patches/module/require_sub'
 require 'net/ssh'
 require 'shellwords'
 
 module EacRubyUtils
   module Envs
     class SshEnv < ::EacRubyUtils::Envs::BaseEnv
+      require_sub __FILE__, include_modules: true
+
       USER_PATTERN = /[a-z_][a-z0-9_-]*/.freeze
       HOSTNAME_PATTERN = /[^@]+/.freeze
       USER_HOSTNAME_PATTERN = /\A(?:(#{USER_PATTERN})@)?(#{HOSTNAME_PATTERN})\z/.freeze
@@ -49,17 +53,16 @@ module EacRubyUtils
       private
 
       def ssh_command_line
-        r = %w[ssh]
-        r += ['-p', uri.port] if uri.port.present?
-        r += ssh_command_line_options
-        r << user_hostname_uri
-        r.map { |a| Shellwords.escape(a) }.join(' ')
+        (%w[ssh] +
+          %w[nodasho dasho port].flat_map { |m| send("ssh_command_line_#{m}_args") } +
+          [user_hostname_uri])
+          .map { |a| Shellwords.escape(a) }.join(' ')
       end
 
-      def ssh_command_line_options
-        r = []
-        uri.query_values&.each { |k, v| r += ['-o', "#{k}=#{v}"] }
-        r
+      def ssh_command_line_port_args
+        uri.port.if_present([]) do |v|
+          ['-p', v]
+        end
       end
 
       def user_hostname_uri
