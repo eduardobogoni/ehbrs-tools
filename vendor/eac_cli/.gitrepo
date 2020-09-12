@@ -1,12 +1,7 @@
-; DO NOT EDIT (unless you know what you are doing)
-;
-; This subdirectory is a git "subrepo", and this file is maintained by the
-; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
-;
 [subrepo]
-	remote = https://github.com/esquilo-azul/eac_cli.git
-	branch = master
-	commit = bbc96c1dda686bf5b3dd2e82737ed2611c91d772
-	parent = cf6998d82e09fa94036bb529b0246dae83701477
-	method = merge
-	cmdver = 0.4.0
+  cmdver = 0.4.0
+  commit = d7b53878064fd3bc9ac19240dbad9c901bb6cb5d
+  method = merge
+  parent = 720b60197cf1cb6534cf72eb8dc4fe734535c087
+  branch = master
+  remote = https://github.com/esquilo-azul/eac_cli.git
