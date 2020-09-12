@@ -6,7 +6,7 @@ require 'filesize'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Fs < ::EacRubyUtils::Console::DocoptRunner
-      class UsedSpace < ::EacRubyUtils::Console::DocoptRunner
+      class UsedSpace
         include ::EacCli::DefaultRunner
 
         runner_definition do
@@ -22,7 +22,7 @@ module Ehbrs
         end
 
         def check?
-          options.fetch('--check')
+          parsed.check
         end
 
         private
@@ -40,11 +40,11 @@ module Ehbrs
         end
 
         def paths_uncached
-          options.fetch('<paths>').map { |path| path_class.new(self, path) }
+          parsed.paths.map { |path| path_class.new(self, path) }
         end
 
         def verbose?
-          options.fetch('--verbose')
+          parsed.verbose
         end
 
         class PathBase
