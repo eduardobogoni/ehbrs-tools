@@ -39,7 +39,7 @@ PATH
 PATH
   remote: vendor/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.1.0)
+    ehbrs_ruby_utils (0.2.0)
       eac_ruby_utils (~> 0.36)
 
 GEM
