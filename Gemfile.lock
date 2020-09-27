@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ehbrs-tools (0.13.1)
+    ehbrs-tools (0.14.0)
       avm-tools (~> 0.44, >= 0.44.2)
       eac_ruby_utils (~> 0.19)
       filesize
@@ -88,10 +88,10 @@ GEM
     eac_git (0.3.1)
       eac_ruby_utils (~> 0.37)
       parseconfig (~> 1.0, >= 1.0.8)
-    eac_ruby_base0 (0.1.0)
-      eac_cli (~> 0.3)
-      eac_ruby_gems_utils (~> 0.6)
-      eac_ruby_utils (~> 0.39)
+    eac_ruby_base0 (0.1.1)
+      eac_cli (~> 0.7)
+      eac_ruby_gems_utils (~> 0.7, >= 0.7.2)
+      eac_ruby_utils (~> 0.46)
     eac_ruby_gem_support (0.1.2)
       rspec (~> 3.9)
       rubocop (~> 0.80.1)
