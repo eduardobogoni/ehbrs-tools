@@ -17,7 +17,7 @@ module Ehbrs
       {
         '-?' => %w[rar],
         '-h' => %w[unzip],
-        '-version' => %w[ffmpeg ffprobe],
+        '-version' => %w[ffmpeg],
         '--version' => %w[flips tar wit]
       }.each do |validate_arg, commands|
         commands.each do |command|
