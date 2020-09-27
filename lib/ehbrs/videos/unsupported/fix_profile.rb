@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'ehbrs/videos/profiles/same_quality'
+require 'ehbrs/videos/unsupported/fixes/supported_container'
 
 module Ehbrs
   module Videos
