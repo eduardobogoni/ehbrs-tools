@@ -2,6 +2,7 @@
 
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs/videos/track'
+require 'ehbrs_ruby_utils/executables'
 
 module Ehbrs
   module Videos
@@ -52,7 +53,7 @@ module Ehbrs
       end
 
       def content_uncached
-        EacRubyUtils::Envs.local.command('ffprobe', path).execute!(output: :stderr).scrub
+        ::EhbrsRubyUtils::Executables.ffprobe.command(path).execute!(output: :stderr).scrub
       end
 
       def duration_uncached
