@@ -36,6 +36,12 @@ PATH
       docopt (~> 0.6.1)
       net-ssh (~> 4.2)
 
+PATH
+  remote: vendor/ehbrs_ruby_utils
+  specs:
+    ehbrs_ruby_utils (0.1.0)
+      eac_ruby_utils (~> 0.36)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -165,6 +171,7 @@ DEPENDENCIES
   eac_ruby_gem_support (~> 0.1)
   eac_ruby_utils!
   ehbrs-tools!
+  ehbrs_ruby_utils!
 
 BUNDLED WITH
    1.17.3
