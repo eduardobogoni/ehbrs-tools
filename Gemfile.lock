@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ehbrs-tools (0.14.0)
+    ehbrs-tools (0.14.1)
       avm-tools (~> 0.44, >= 0.44.2)
       eac_ruby_utils (~> 0.19)
       filesize
@@ -85,7 +85,7 @@ GEM
     curb (0.9.10)
     diff-lcs (1.4.4)
     docopt (0.6.1)
-    eac_git (0.3.1)
+    eac_git (0.3.2)
       eac_ruby_utils (~> 0.37)
       parseconfig (~> 1.0, >= 1.0.8)
     eac_ruby_base0 (0.1.1)
