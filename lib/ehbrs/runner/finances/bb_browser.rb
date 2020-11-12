@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/extract/package'
 require 'eac_docker/images/named'
@@ -9,11 +8,8 @@ require 'eac_docker/images/named'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Finances < ::EacRubyUtils::Console::DocoptRunner
-      class BbBrowser < ::EacRubyUtils::Console::DocoptRunner
-        include ::EacCli::DefaultRunner
-        require_sub __FILE__
-
-        runner_definition do
+      class BbBrowser
+        runner_with :help do
           desc 'Bankline para Banco do Brasil com módulo de segurança.'
         end
 
