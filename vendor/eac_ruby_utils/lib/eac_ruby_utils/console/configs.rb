@@ -1,16 +1,13 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/common_constructor'
 require 'eac_ruby_utils/configs'
-require 'eac_ruby_utils/console/speaker'
-require 'eac_ruby_utils/options_consumer'
-require 'eac_ruby_utils/patches/object/asserts'
-require 'eac_ruby_utils/simple_cache'
+require 'eac_ruby_utils/core_ext'
 
 module EacRubyUtils
   module Console
     class Configs
-      include ::EacRubyUtils::Console::Speaker
+      require_sub __FILE__
+      enable_console_speaker
 
       class << self
         def entry_key_to_envvar_name(entry_key)
@@ -34,7 +31,7 @@ module EacRubyUtils
       end
 
       def read_password(entry_key, options = {})
-        options = options.merge(noecho: true)
+        options = ReadEntryOptions.new(options.merge(noecho: true))
         if store_passwords?
           read_entry(entry_key, options)
         else
@@ -66,7 +63,10 @@ module EacRubyUtils
       protected
 
       def envvar_read_entry(entry_key)
-        ENV[self.class.entry_key_to_envvar_name(entry_key)]
+        env_entry_key = self.class.entry_key_to_envvar_name(entry_key)
+        return nil unless ENV.key?(env_entry_key)
+
+        ENV.fetch(env_entry_key).if_present(::EacRubyUtils::BlankNotBlank.instance)
       end
 
       def read_entry_from_console(entry_key, options)
@@ -97,38 +97,6 @@ module EacRubyUtils
                                     options.request_input_options)
         warn('Entered value is blank') if entry_value.blank?
         entry_value
-      end
-
-      class ReadEntryOptions
-        include ::EacRubyUtils::SimpleCache
-        ::EacRubyUtils::CommonConstructor.new(:options).setup_class(self)
-
-        DEFAULT_VALUES = {
-          before_input: nil, bool: false, list: false, noecho: false, noenv: false, noinput: false,
-          required: true, validator: nil
-        }.freeze
-
-        def [](key)
-          values.fetch(key.to_sym)
-        end
-
-        def request_input_options
-          values.slice(:bool, :list, :noecho)
-        end
-
-        private
-
-        def values_uncached
-          consumer = ::EacRubyUtils::OptionsConsumer.new(options)
-          r = {}
-          DEFAULT_VALUES.each do |key, default_value|
-            value = consumer.consume(key)
-            value = default_value if value.nil?
-            r[key] = value
-          end
-          consumer.validate
-          r
-        end
       end
     end
   end

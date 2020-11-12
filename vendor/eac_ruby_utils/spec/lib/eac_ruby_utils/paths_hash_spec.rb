@@ -3,20 +3,20 @@
 require 'eac_ruby_utils/paths_hash'
 
 RSpec.describe ::EacRubyUtils::PathsHash do
-  describe '#[]' do
-    let(:source_hash) do
-      {
-        parent: {
-          child1: {
-            child1_1: 'v1_1',
-            child1_2: 'v1_2'
-          },
-          child2: 'v2'
-        }
+  let(:source_hash) do
+    {
+      parent: {
+        child1: {
+          child1_1: 'v1_1',
+          child1_2: 'v1_2'
+        },
+        child2: 'v2'
       }
-    end
-    let(:instance) { described_class.new(source_hash) }
+    }
+  end
+  let(:instance) { described_class.new(source_hash) }
 
+  describe '#[]' do
     {
       'parent.child1.child1_1' => 'v1_1',
       'parent.child1.child1_2' => 'v1_2',
@@ -38,12 +38,51 @@ RSpec.describe ::EacRubyUtils::PathsHash do
   end
 
   describe '#[]=' do
-    let(:instance) { described_class.new }
+    let(:source_hash) { {} }
 
     before do
       instance['a.b.c'] = '123'
     end
 
     it { expect(instance.to_h).to eq(a: { b: { c: '123' } }) }
+  end
+
+  describe '#fetch' do
+    {
+      'parent.child1.child1_1' => 'v1_1',
+      'parent.child1.child1_2' => 'v1_2',
+      'parent.child1.child1_2.no_exist' => ::EacRubyUtils::PathsHash::EntryKeyError,
+      'parent.child1.child1_3' => ::EacRubyUtils::PathsHash::EntryKeyError,
+      'parent.child2' => 'v2',
+      'no_exist' => ::EacRubyUtils::PathsHash::EntryKeyError,
+      'parent.child1' => {
+        child1_1: 'v1_1',
+        child1_2: 'v1_2'
+      }
+    }.each do |entry_key, expected_value|
+      if expected_value.is_a?(::Class) && expected_value < ::Exception
+        it "raise error #{expected_value}" do
+          expect { instance.fetch(entry_key) }.to raise_error(expected_value)
+        end
+      else
+        it "\#fetch return \"#{expected_value}\"" do
+          expect(instance.fetch(entry_key)).to eq(expected_value)
+        end
+      end
+    end
+  end
+
+  describe '#key?' do
+    {
+      'parent.child1.child1_1' => true,
+      'parent.child1.child1_2' => true,
+      'parent.child1.child1_2.no_exist' => false,
+      'parent.child1.child1_3' => false,
+      'parent.child2' => true,
+      'no_exist' => false,
+      'parent.child1' => true
+    }.each do |entry_key, expected_value|
+      it { expect(instance.key?(entry_key)).to eq(expected_value) }
+    end
   end
 end
