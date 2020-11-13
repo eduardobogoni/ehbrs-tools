@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/series/rename/file'
 require 'ehbrs/videos/series/rename/file/options'
@@ -11,11 +10,10 @@ module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Videos < ::EacRubyUtils::Console::DocoptRunner
       class Series < ::EacRubyUtils::Console::DocoptRunner
-        class Rename < ::EacRubyUtils::Console::DocoptRunner
-          include ::EacCli::DefaultRunner
+        class Rename
           include ::EacRubyUtils::Fs::Traversable
 
-          runner_definition do
+          runner_with :help do
             desc 'Renomeia arquivos de séries.'
             bool_opt '-r', '--recursive', 'Recursivo.'
             bool_opt '-c', '--confirm', 'Confirmação a renomeação.'
@@ -43,11 +41,11 @@ module Ehbrs
           end
 
           def paths
-            options.fetch('<paths>').if_present(['.'])
+            parsed.paths.if_present(['.'])
           end
 
           def traverser_recursive
-            options.fetch('--recursive')
+            parsed.recursive
           end
 
           def traverser_check_file(path)
@@ -55,7 +53,7 @@ module Ehbrs
           end
 
           def series_file_options_uncached
-            ::Ehbrs::Videos::Series::Rename::File::Options.new(options)
+            ::Ehbrs::Videos::Series::Rename::File::Options.new(parsed)
           end
 
           def show_results
