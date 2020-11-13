@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/unsupported/check_set'
 require 'ehbrs/videos/unsupported/search'
@@ -10,12 +9,10 @@ require 'ehbrs/videos/unsupported/profiles'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Videos < ::EacRubyUtils::Console::DocoptRunner
-      class Unsupported < ::EacRubyUtils::Console::DocoptRunner
-        include ::EacCli::DefaultRunner
-
+      class Unsupported
         PROFILES = %w[philco samsung].freeze
 
-        runner_definition do
+        runner_with :help do
           desc 'Procura e converte vídeos não suportados pelas TVs de EHB/RS.'
           bool_opt '-f', '--fix', 'Converte vídeos para o formato apropriado.'
           arg_opt '-p', '--profiles', "Seleciona os perfis (#{PROFILES.join(', ')})."
@@ -41,17 +38,17 @@ module Ehbrs
         end
 
         def paths
-          options.fetch('<paths>')
+          parsed.paths
         end
 
         def file_options
           { file_check_set: file_check_set, track_check_set: track_check_set,
-            fix: options.fetch('--fix') }
+            fix: parsed.fix? }
         end
 
         def profiles_uncached
-          options.fetch('--profiles').if_present(PROFILES) { |v| v.split(',').map(&:strip) }
-                 .map { |name| profile_class(name).instance }
+          parsed.profiles.if_present(PROFILES) { |v| v.split(',').map(&:strip) }
+                .map { |name| profile_class(name).instance }
         end
 
         def profile_class(profile_name)
