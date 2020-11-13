@@ -8,10 +8,8 @@ module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class WebUtils < ::EacRubyUtils::Console::DocoptRunner
       class Videos < ::EacRubyUtils::Console::DocoptRunner
-        class Download < ::EacRubyUtils::Console::DocoptRunner
-          runner_with
-
-          runner_definition do
+        class Download
+          runner_with :help do
             desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'
             bool_opt '-c', '--confirm', 'Confirma as mudanças'
           end
@@ -32,12 +30,12 @@ module Ehbrs
 
           def process_rename_file(file)
             infov "  * #{file.new_path}", file.original_path
-            file.rename if options.fetch('--confirm')
+            file.rename if parsed.confirm?
           end
 
           def process_delete_file(file)
             infov "  * #{file.new_path}", 'REMOVE'
-            file.remove if options.fetch('--confirm')
+            file.remove if parsed.confirm?
           end
 
           def files_uncached
@@ -57,7 +55,7 @@ module Ehbrs
           end
 
           def raw_content
-            context(:instance).http_request('/videos/files/export').body
+            runner_context.call(:instance).http_request('/videos/files/export').body
           end
         end
       end
