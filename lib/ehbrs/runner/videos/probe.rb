@@ -9,9 +9,7 @@ module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Videos < ::EacRubyUtils::Console::DocoptRunner
       class Probe
-        runner_with :output_file
-
-        runner_definition do
+        runner_with :help, :output_file do
           desc 'FFProbe em um arquivo de vídeo.'
           pos_arg :file_path
         end
