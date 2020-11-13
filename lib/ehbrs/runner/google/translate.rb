@@ -8,10 +8,8 @@ require 'ehbrs/google/translate/session'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Google < ::EacRubyUtils::Console::DocoptRunner
-      class Translate < ::EacRubyUtils::Console::DocoptRunner
-        include ::EacCli::DefaultRunner
-
-        runner_definition do
+      class Translate
+        runner_with :help do
           desc 'Traduz um documento com Google Translate.'
           arg_opt '-o', '--output-file', 'Salva saída em <output-file>.'
           bool_opt '-w', '--overwrite', 'Permite sobreescrever arquivo de saída.'
@@ -38,12 +36,10 @@ module Ehbrs
           session.translate(source_file)
         end
 
-        def source_file
-          options.fetch('<source-file>')
-        end
+        delegate :source_file, to: :parsed
 
         def output_file
-          options.fetch('--output-file') || default_output_file
+          parsed.output_file || default_output_file
         end
 
         def default_output_file
@@ -72,7 +68,7 @@ module Ehbrs
         def validate_output_file
           return if output_to_stdout?
           return unless ::File.exist?(output_file)
-          return if options.fetch('--overwrite')
+          return if parsed.overwrite?
 
           fatal_error "Output file \"#{output_file}\" already exists"
         end
