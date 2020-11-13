@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 require 'eac_ruby_utils/fs/traversable'
 require 'ehbrs/vg/wii/file_move'
@@ -10,11 +9,10 @@ require 'ehbrs/vg/wii/game_file'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Vg < ::EacRubyUtils::Console::DocoptRunner
-      class Wii < ::EacRubyUtils::Console::DocoptRunner
-        include ::EacCli::DefaultRunner
+      class Wii
         include ::EacRubyUtils::Fs::Traversable
 
-        runner_definition do
+        runner_with :help do
           desc 'Manipulação de imagens de jogo Wii.'
           bool_opt '-R', '--recursive', 'Busca arquivos recursivamente.'
           bool_opt '-d', '--dump', 'Mostra todos os atributos do jogo.'
@@ -25,7 +23,7 @@ module Ehbrs
 
         def run
           infov 'Recursive?', traverser_new.recursive?
-          options.fetch('<paths>').each do |path|
+          parsed.paths.each do |path|
             traverser_check_path(path)
           end
         end
@@ -33,11 +31,11 @@ module Ehbrs
         private
 
         def confirm?
-          options.fetch('--confirm')
+          parsed.confirm?
         end
 
         def dump(game)
-          return unless options.fetch('--dump')
+          return unless parsed.dump?
 
           game.properties.each do |name, value|
             infov "  * #{name}", value
@@ -54,11 +52,11 @@ module Ehbrs
         end
 
         def move_arg
-          options.fetch('--move')
+          parsed.move
         end
 
         def traverser_recursive
-          options.fetch('--recursive')
+          parsed.recursive
         end
 
         def traverser_check_file(path)
