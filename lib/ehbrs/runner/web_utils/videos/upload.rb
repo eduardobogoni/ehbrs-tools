@@ -10,10 +10,8 @@ module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class WebUtils < ::EacRubyUtils::Console::DocoptRunner
       class Videos < ::EacRubyUtils::Console::DocoptRunner
-        class Upload < ::EacRubyUtils::Console::DocoptRunner
-          runner_with
-
-          runner_definition do
+        class Upload
+          runner_with :help do
             desc 'Exporta informações de arquivos de vídeo para uma instância EHB/RS Utils.'
             bool_opt '-P', '--no-ffprobe', 'Não recupera dados com "ffprobe".'
           end
@@ -30,7 +28,7 @@ module Ehbrs
           end
 
           def upload_request(files_list_path)
-            context(:instance).http_request(
+            runner_context.call(:instance).http_request(
               '/videos/files/import',
               method: :put,
               body: {
@@ -65,8 +63,8 @@ module Ehbrs
           def write_files_list(file_class, read_entry)
             files_list = ::EhbrsRubyUtils::WebUtils::Videos::FilesList.new(
               file_class,
-              context(:instance).read_entry(read_entry),
-              ffprobe: !options.fetch('--no-ffprobe')
+              runner_context.call(:instance).read_entry(read_entry),
+              ffprobe: !parsed.no_ffprobe?
             )
             infov 'Files found', files_list.data.fetch(:files).count
             files_list.write_to
