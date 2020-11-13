@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'eac_cli/core_ext'
+require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/self/observers/used_space'
 require 'filesize'
 
@@ -7,9 +9,7 @@ module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Fs < ::EacRubyUtils::Console::DocoptRunner
       class UsedSpace
-        include ::EacCli::DefaultRunner
-
-        runner_definition do
+        runner_with :help do
           desc 'Verifica e anota alterações de espaço usado de um objeto de sistema de arquivos.'
           bool_opt '-c', '--check', 'Anota o espaço em disco.'
           bool_opt '-v', '--verbose', 'Verbose.'
