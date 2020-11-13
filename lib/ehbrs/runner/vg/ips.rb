@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/runner'
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/executables'
@@ -10,10 +8,8 @@ require 'ehbrs/executables'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class Vg < ::EacRubyUtils::Console::DocoptRunner
-      class Ips < ::EacRubyUtils::Console::DocoptRunner
-        include ::EacCli::DefaultRunner
-
-        runner_definition do
+      class Ips
+        runner_with :help do
           desc 'Aplica patches IPS em roms.'
           arg_opt '-o', '--output-file', ' Saída no arquivo <output-file>.'
           bool_opt '-w', '--overwrite', 'Sobrescreve o arquivo de saída se existente.'
@@ -54,7 +50,7 @@ module Ehbrs
         end
 
         def source_file
-          options.fetch('<source-file>').to_pathname
+          parsed.source_file.to_pathname
         end
 
         def start_banner
@@ -65,11 +61,11 @@ module Ehbrs
         end
 
         def ips_files
-          options.fetch('<ips-files>').map(&:to_pathname)
+          parsed.ips_files.map(&:to_pathname)
         end
 
         def output_file
-          options.fetch('--output-file').to_pathname || default_output_file
+          parsed.output_file.to_pathname || default_output_file
         end
 
         def default_output_file
@@ -98,7 +94,7 @@ module Ehbrs
 
         def validate_output_file
           return unless output_file.exist?
-          return if options.fetch('--overwrite')
+          return if parsed.overwrite?
 
           fatal_error("Arquivo de saída \"#{output_file}\" já existe")
         end
