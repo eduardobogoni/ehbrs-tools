@@ -7,7 +7,7 @@ require 'filesize'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Fs < ::EacRubyUtils::Console::DocoptRunner
+    class Fs
       class UsedSpace
         runner_with :help do
           desc 'Verifica e anota alterações de espaço usado de um objeto de sistema de arquivos.'
