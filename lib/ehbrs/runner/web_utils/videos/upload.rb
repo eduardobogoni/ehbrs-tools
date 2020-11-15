@@ -8,7 +8,7 @@ require 'yaml'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class WebUtils < ::EacRubyUtils::Console::DocoptRunner
+    class WebUtils
       class Videos
         class Upload
           runner_with :help do

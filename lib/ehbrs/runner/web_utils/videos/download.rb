@@ -6,7 +6,7 @@ require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class WebUtils < ::EacRubyUtils::Console::DocoptRunner
+    class WebUtils
       class Videos
         class Download
           runner_with :help do

@@ -6,20 +6,19 @@ require 'ehbrs_ruby_utils/web_utils/instance'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class WebUtils < ::EacRubyUtils::Console::DocoptRunner
-      runner_with
+    class WebUtils
       require_sub __FILE__
 
-      runner_definition do
+      runner_with :help, :subcommands do
         desc 'Ferramentas para EHB/RS Utils.'
-        pos_arg :'instance-id'
+        pos_arg :instance_id
         subcommands
       end
 
       private
 
       def instance_uncached
-        ::EhbrsRubyUtils::WebUtils::Instance.by_id(options.fetch('<instance-id>'))
+        ::EhbrsRubyUtils::WebUtils::Instance.by_id(parsed.instance_id)
       end
     end
   end
