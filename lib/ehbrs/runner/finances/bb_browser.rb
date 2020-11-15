@@ -7,7 +7,7 @@ require 'eac_docker/images/named'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Finances < ::EacRubyUtils::Console::DocoptRunner
+    class Finances
       class BbBrowser
         runner_with :help do
           desc 'Bankline para Banco do Brasil com módulo de segurança.'
