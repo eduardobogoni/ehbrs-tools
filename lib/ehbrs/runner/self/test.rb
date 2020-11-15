@@ -7,7 +7,7 @@ require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Self < ::EacRubyUtils::Console::DocoptRunner
+    class Self
       class Test
         runner_with :help do
           desc 'Test core and local gems.'
