@@ -7,7 +7,7 @@ require 'ehbrs/executables'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Vg < ::EacRubyUtils::Console::DocoptRunner
+    class Vg
       class Ips
         runner_with :help do
           desc 'Aplica patches IPS em roms.'

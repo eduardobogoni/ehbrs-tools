@@ -8,7 +8,7 @@ require 'ehbrs/vg/wii/game_file'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Vg < ::EacRubyUtils::Console::DocoptRunner
+    class Vg
       class Wii
         include ::EacRubyUtils::Fs::Traversable
 
