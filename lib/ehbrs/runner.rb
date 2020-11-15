@@ -1,16 +1,13 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
+require 'eac_cli/core_ext'
 require 'ehbrs/tools/version'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     require_sub __FILE__
-    include ::EacCli::DefaultRunner
 
-    runner_definition do
+    runner_with :help, :subcommands do
       desc 'Tools for EHB/RS.'
       subcommands
       alt do
@@ -19,7 +16,7 @@ module Ehbrs
     end
 
     def run
-      if options.fetch('--version')
+      if parsed[:version].present?
         out(::Ehbrs::Tools::VERSION + "\n")
       else
         run_with_subcommand

@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs_ruby_utils/web_utils/videos/files_list'
 require 'json'
 require 'yaml'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class WebUtils
       class Videos
         class Upload

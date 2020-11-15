@@ -10,7 +10,7 @@ RSpec.describe ::Ehbrs::Runner::Videos::Probe do
   let(:target_content) { target_file.read }
 
   let(:argv) { %w[videos probe] + [source_file.to_path] }
-  let(:runner) { ::Ehbrs::Runner.new(argv: argv) }
+  let(:runner) { ::Ehbrs::Runner.create(argv: argv) }
 
   describe '#run' do
     it do

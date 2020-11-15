@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/series/rename/file'
 require 'ehbrs/videos/series/rename/file/options'
 require 'ehbrs/videos/series/rename/results_builder'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Videos
       class Series
         class Rename

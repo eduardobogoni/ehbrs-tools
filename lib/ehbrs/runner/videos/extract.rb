@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/extract/package'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Videos
       class Extract
         require_sub __FILE__

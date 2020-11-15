@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/extract/package'
 require 'eac_docker/images/named'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Finances
       class BbBrowser
         runner_with :help do

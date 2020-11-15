@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/videos/unsupported/check_set'
 require 'ehbrs/videos/unsupported/search'
 require 'ehbrs/videos/unsupported/profiles'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Videos
       class Unsupported
         PROFILES = %w[philco samsung].freeze

@@ -2,10 +2,9 @@
 
 require 'eac_cli/core_ext'
 require 'ehbrs_ruby_utils/web_utils/videos/file'
-require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class WebUtils
       class Videos
         class Download

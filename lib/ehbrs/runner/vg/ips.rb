@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/executables'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Vg
       class Ips
         runner_with :help do

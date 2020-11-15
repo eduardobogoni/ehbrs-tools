@@ -3,10 +3,9 @@
 require 'eac_cli/core_ext'
 require 'ehbrs/gems'
 require 'eac_ruby_gems_utils/tests/multiple'
-require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Self
       class Test
         runner_with :help do

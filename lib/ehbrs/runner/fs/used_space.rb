@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/self/observers/used_space'
 require 'filesize'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Fs
       class UsedSpace
         runner_with :help do

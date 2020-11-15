@@ -2,11 +2,10 @@
 
 require 'eac_cli/default_runner'
 require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
 require 'ehbrs/google/translate/session'
 
 module Ehbrs
-  class Runner < ::EacRubyUtils::Console::DocoptRunner
+  class Runner
     class Google
       class Translate
         runner_with :help do
