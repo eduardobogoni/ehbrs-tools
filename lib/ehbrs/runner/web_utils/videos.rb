@@ -6,11 +6,10 @@ require 'eac_ruby_utils/console/docopt_runner'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class WebUtils < ::EacRubyUtils::Console::DocoptRunner
-      class Videos < ::EacRubyUtils::Console::DocoptRunner
-        runner_with
+      class Videos
         require_sub __FILE__
 
-        runner_definition do
+        runner_with :help, :subcommands do
           desc 'Ferramentas de vídeos para EHB/RS Utils.'
           subcommands
         end

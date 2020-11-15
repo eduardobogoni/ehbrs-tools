@@ -7,7 +7,7 @@ require 'eac_ruby_utils/console/docopt_runner'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class WebUtils < ::EacRubyUtils::Console::DocoptRunner
-      class Videos < ::EacRubyUtils::Console::DocoptRunner
+      class Videos
         class Download
           runner_with :help do
             desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'

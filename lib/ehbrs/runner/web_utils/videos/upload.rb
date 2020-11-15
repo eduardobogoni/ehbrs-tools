@@ -9,7 +9,7 @@ require 'yaml'
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
     class WebUtils < ::EacRubyUtils::Console::DocoptRunner
-      class Videos < ::EacRubyUtils::Console::DocoptRunner
+      class Videos
         class Upload
           runner_with :help do
             desc 'Exporta informações de arquivos de vídeo para uma instância EHB/RS Utils.'
