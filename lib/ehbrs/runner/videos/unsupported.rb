@@ -8,7 +8,7 @@ require 'ehbrs/videos/unsupported/profiles'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Videos < ::EacRubyUtils::Console::DocoptRunner
+    class Videos
       class Unsupported
         PROFILES = %w[philco samsung].freeze
 

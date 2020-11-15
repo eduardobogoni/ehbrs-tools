@@ -5,7 +5,7 @@ require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Videos < ::EacRubyUtils::Console::DocoptRunner
+    class Videos
       class Series
         require_sub __FILE__
 

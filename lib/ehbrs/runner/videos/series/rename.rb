@@ -8,7 +8,7 @@ require 'ehbrs/videos/series/rename/results_builder'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Videos < ::EacRubyUtils::Console::DocoptRunner
+    class Videos
       class Series
         class Rename
           include ::EacRubyUtils::Fs::Traversable

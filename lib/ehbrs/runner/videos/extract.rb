@@ -6,7 +6,7 @@ require 'ehbrs/videos/extract/package'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Videos < ::EacRubyUtils::Console::DocoptRunner
+    class Videos
       class Extract
         require_sub __FILE__
 

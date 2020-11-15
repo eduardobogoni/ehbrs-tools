@@ -7,7 +7,7 @@ require 'eac_ruby_utils/yaml'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Videos < ::EacRubyUtils::Console::DocoptRunner
+    class Videos
       class Probe
         runner_with :help, :output_file do
           desc 'FFProbe em um arquivo de vídeo.'
