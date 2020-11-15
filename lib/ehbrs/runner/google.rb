@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
+require 'eac_cli/core_ext'
 require 'eac_ruby_utils/console/docopt_runner'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Google < ::EacRubyUtils::Console::DocoptRunner
+    class Google
       require_sub __FILE__
-      include ::EacCli::DefaultRunner
 
-      runner_definition do
+      runner_with :help, :subcommands do
         desc 'Utilidades Google.'
         subcommands
       end

@@ -7,7 +7,7 @@ require 'ehbrs/google/translate/session'
 
 module Ehbrs
   class Runner < ::EacRubyUtils::Console::DocoptRunner
-    class Google < ::EacRubyUtils::Console::DocoptRunner
+    class Google
       class Translate
         runner_with :help do
           desc 'Traduz um documento com Google Translate.'
