@@ -1,0 +1,22 @@
+---
+Real path: "/mnt/storage/eduardo/roms/wii/disk/wbfs/SUPER MARIO GALAXY [RMGE01]/RMGE01.wbfs/#0"
+Virtual size: 118240000/hex = 4699979776 = 4482 MiB
+Scrubbed size: d0b28000/hex = 3501359104 = 3339 MiB, 74.5%, 106853*32K
+WBFS file size: d1200000/hex = 3508535296 = 3346 MiB, 74.7%, 100.2%
+WBFS fragments: 1+0 = a ratio of 0.00 additional_fragments/GiB
+File & disc type/type: WBFS
+File & disc type/platform_acronym: WII
+File & disc type/platform_name: Wii
+Disc & part IDs/disc: RMGE01
+Disc & part IDs/ticket: RMGE
+Disc & part IDs/tmd: RMGE
+Disc & part IDs/boot: RMGE01
+Disc & part IDs/wbfs: RMGE01
+Disc name: SUPER MARIO GALAXY
+DB title: Super Mario Galaxy
+ID Region: NTSC/USA [USA ]
+Region setting: 1 [USA] / Jap=128 USA=6 ?=128 Eur=128,128,128,128,128,128 Kor=128
+System version: 00000001-00000021 = IOS 0x21 = IOS 33
+Partitions: 1  [encrypted, scrubbed, well signed]
+Directories: '79'
+Files: '2383'
