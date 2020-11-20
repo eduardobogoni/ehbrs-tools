@@ -11,7 +11,11 @@ module Ehbrs
             enable_simple_cache
             common_constructor :output
 
-            FILE_DISC_TYPE_PATTERN = %r{\A(\S+)/(\S+)\s+&\s+(\S+)\z}.freeze
+            # WIA/WII (v1.00,LZMA2.7@100)  &  Wii
+            # ISO/WII  &  Wii
+            # WBFS/WII  &  Wii
+            # ISO/GC  &  GameCube
+            FILE_DISC_TYPE_PATTERN = %r{\A(\S+)/(\S+)\s+(?:\(([^\)]+)\)\s+)?&\s+(\S+)\z}.freeze
 
             private
 
@@ -42,10 +46,11 @@ module Ehbrs
             end
 
             def parse_file_disc_type(value)
-              FILE_DISC_TYPE_PATTERN
-                .match(value)
-                .if_present { |m| { type: m[1], platform_acronym: m[2], platform_name: m[3] } }
-                .if_blank { raise "\"#{FILE_DISC_TYPE_PATTERN}\" does not match \"#{value}\"" }
+              r = FILE_DISC_TYPE_PATTERN.match(value).if_present do |m|
+                { type: m[1], platform_acronym: m[2], type_extra: m[3],
+                  platform_name: m[4] }
+              end
+              r.if_blank { raise "\"#{FILE_DISC_TYPE_PATTERN}\" does not match \"#{value}\"" }
             end
 
             def parse_disc_part_ids(value)

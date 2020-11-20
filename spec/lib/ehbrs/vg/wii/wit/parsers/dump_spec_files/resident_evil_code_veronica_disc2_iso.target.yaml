@@ -4,6 +4,7 @@ ISO file size: 57058000/hex = 1459978240 = 1392 MiB
 Scrubbed size: 4fcf8000/hex = 1338998784 = 1277 MiB, 91.7%, 40863*32K
 File & disc type/type: ISO
 File & disc type/platform_acronym: GC
+File & disc type/type_extra:
 File & disc type/platform_name: GameCube
 Disc & part IDs/disc: GCDE08
 Disc & part IDs/ticket: "...."
