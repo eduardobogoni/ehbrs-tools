@@ -28,7 +28,7 @@ module EacCli
         sklass = klass.singleton_class
         return unless sklass.method_defined?(from)
 
-        sklass.alias_method to, from
+        sklass.send(:alias_method, to, from)
       end
 
       def build_method_name(name, suffix)
@@ -84,7 +84,7 @@ module EacCli
       end
 
       def parsed
-        @parsed ||= ::EacCli::Parser.new(self.class.runner_definition).parse(runner_context.argv)
+        @parsed ||= ::EacCli::Parser.new(self.class.runner_definition, runner_context.argv).parsed
       end
     end
   end
