@@ -3,8 +3,7 @@
 require 'ehbrs/runner'
 
 RSpec.describe ::Ehbrs::Runner::Videos::Probe do
-  let(:source_dir) { ::Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
-  let(:source_file) { source_dir / 'fixed.mp4' }
+  let(:source_file) { stub_video_source_file }
   let(:target_dir) { ::Pathname.new(__dir__).expand_path / 'probe_spec_files' }
   let(:target_file) { target_dir / 'fixed.target.yaml' }
   let(:target_content) { target_file.read.gsub('%%PATH%%', source_file.to_path) }
