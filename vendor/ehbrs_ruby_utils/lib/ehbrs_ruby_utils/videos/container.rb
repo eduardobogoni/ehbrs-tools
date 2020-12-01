@@ -20,6 +20,10 @@ module EhbrsRubyUtils
         end
       end
 
+      def probe_data
+        info.to_h.deep_symbolize_keys
+      end
+
       private
 
       def info_uncached
