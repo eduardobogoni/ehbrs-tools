@@ -1,0 +1,97 @@
+---
+:streams:
+- :index: 0
+  :codec_name: h264
+  :codec_long_name: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+  :profile: Constrained Baseline
+  :codec_type: video
+  :codec_time_base: 1/50
+  :codec_tag_string: "[0][0][0][0]"
+  :codec_tag: '0x0000'
+  :width: 352
+  :height: 288
+  :coded_width: 352
+  :coded_height: 288
+  :has_b_frames: 0
+  :sample_aspect_ratio: '1:1'
+  :display_aspect_ratio: '11:9'
+  :pix_fmt: yuv420p
+  :level: 13
+  :chroma_location: left
+  :field_order: progressive
+  :refs: 1
+  :is_avc: 'true'
+  :nal_length_size: '4'
+  :r_frame_rate: 25/1
+  :avg_frame_rate: 25/1
+  :time_base: 1/1000
+  :start_pts: 23
+  :start_time: '0.023000'
+  :bits_per_raw_sample: '8'
+  :disposition:
+    :default: 1
+    :dub: 0
+    :original: 0
+    :comment: 0
+    :lyrics: 0
+    :karaoke: 0
+    :forced: 0
+    :hearing_impaired: 0
+    :visual_impaired: 0
+    :clean_effects: 0
+    :attached_pic: 0
+    :timed_thumbnails: 0
+  :tags:
+    :HANDLER_NAME: VideoHandler
+    :DURATION: '00:00:06.743000000'
+- :index: 1
+  :codec_name: aac
+  :codec_long_name: AAC (Advanced Audio Coding)
+  :profile: LC
+  :codec_type: audio
+  :codec_time_base: 1/44100
+  :codec_tag_string: "[0][0][0][0]"
+  :codec_tag: '0x0000'
+  :sample_fmt: fltp
+  :sample_rate: '44100'
+  :channels: 2
+  :channel_layout: stereo
+  :bits_per_sample: 0
+  :r_frame_rate: 0/0
+  :avg_frame_rate: 0/0
+  :time_base: 1/1000
+  :start_pts: 0
+  :start_time: '0.000000'
+  :disposition:
+    :default: 1
+    :dub: 0
+    :original: 0
+    :comment: 0
+    :lyrics: 0
+    :karaoke: 0
+    :forced: 0
+    :hearing_impaired: 0
+    :visual_impaired: 0
+    :clean_effects: 0
+    :attached_pic: 0
+    :timed_thumbnails: 0
+  :tags:
+    :HANDLER_NAME: SoundHandler
+    :ENCODER: Lavc57.107.100 aac
+    :DURATION: '00:00:06.803000000'
+:format:
+  :filename: "/path/to/to_fix_file.mkv"
+  :nb_streams: 2
+  :nb_programs: 0
+  :format_name: matroska,webm
+  :format_long_name: Matroska / WebM
+  :start_time: '0.000000'
+  :duration: '6.803000'
+  :size: '111479'
+  :bit_rate: '131093'
+  :probe_score: 100
+  :tags:
+    :COMPATIBLE_BRANDS: isomiso2avc1mp41
+    :MAJOR_BRAND: isom
+    :MINOR_VERSION: '512'
+    :ENCODER: Lavf57.83.100
