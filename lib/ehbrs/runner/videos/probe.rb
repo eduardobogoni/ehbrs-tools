@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs_ruby_utils/videos/container/file'
+require 'ehbrs_ruby_utils/videos/container'
 require 'eac_ruby_utils/yaml'
 
 module Ehbrs
@@ -18,13 +18,13 @@ module Ehbrs
         end
 
         def output_content
-          ::EacRubyUtils::Yaml.dump(container_file.info.to_h)
+          ::EacRubyUtils::Yaml.dump(container_file.probe_data)
         end
 
         private
 
         def container_file_uncached
-          ::EhbrsRubyUtils::Videos::Container::File.new(parsed.file_path)
+          ::EhbrsRubyUtils::Videos::Container.new(parsed.file_path)
         end
       end
     end
