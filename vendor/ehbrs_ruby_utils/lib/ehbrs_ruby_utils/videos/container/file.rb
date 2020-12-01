@@ -4,6 +4,7 @@ require 'json'
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/videos/container/info'
+require 'ehbrs_ruby_utils/videos/stream'
 
 module EhbrsRubyUtils
   module Videos
@@ -12,6 +13,12 @@ module EhbrsRubyUtils
         enable_simple_cache
         common_constructor :path do
           self.path = path.to_pathname
+        end
+
+        ::EhbrsRubyUtils::Videos::Stream.lists.codec_type.each_value do |stream_type|
+          define_method stream_type.to_s.pluralize do
+            streams.select { |stream| stream.codec_type == stream_type }
+          end
         end
 
         private
@@ -24,6 +31,12 @@ module EhbrsRubyUtils
               ).execute!
             )
           )
+        end
+
+        def streams_uncached
+          info.ffprobe_data.fetch(:streams).map do |stream_ffprobe_data|
+            ::EhbrsRubyUtils::Videos::Stream.new(stream_ffprobe_data)
+          end
         end
       end
     end
