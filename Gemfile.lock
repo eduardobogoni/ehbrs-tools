@@ -92,7 +92,7 @@ GEM
     eac_git (0.3.2)
       eac_ruby_utils (~> 0.37)
       parseconfig (~> 1.0, >= 1.0.8)
-    eac_ruby_base0 (0.2.0)
+    eac_ruby_base0 (0.3.1)
       eac_cli (~> 0.7)
       eac_ruby_gems_utils (~> 0.7, >= 0.7.2)
       eac_ruby_utils (~> 0.46)
@@ -118,7 +118,7 @@ GEM
     net-ssh (4.2.0)
     ofx-parser (1.1.0)
       hpricot (>= 0.6)
-    parallel (1.20.0)
+    parallel (1.20.1)
     parseconfig (1.0.8)
     parser (2.7.2.0)
       ast (~> 2.4.1)
@@ -163,7 +163,7 @@ GEM
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.1)
-    zeitwerk (2.4.1)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
