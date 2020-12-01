@@ -3,10 +3,11 @@
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs/videos/track'
 require 'ehbrs_ruby_utils/executables'
+require 'ehbrs_ruby_utils/videos/container'
 
 module Ehbrs
   module Videos
-    class File
+    class File < ::EhbrsRubyUtils::Videos::Container
       enable_simple_cache
 
       TIME_PATTERN = /(\d+):(\d{2}):(\d{2})(?:\.(\d+))/.freeze
@@ -39,17 +40,12 @@ module Ehbrs
         end
       end
 
-      common_constructor :path
-
       private
 
       def tracks_uncached
-        r = []
-        content.each_line do |line|
-          t = ::Ehbrs::Videos::Track.create_from_string(line)
-          r << t if t && t.type != 'Data'
+        streams.map { |stream| ::Ehbrs::Videos::Track.new(stream) }.reject do |t|
+          t.codec_type == ::EhbrsRubyUtils::Videos::Stream::CODEC_TYPE_DATA
         end
-        r
       end
 
       def content_uncached

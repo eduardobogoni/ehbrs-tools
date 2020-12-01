@@ -1,22 +1,32 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
+require 'ehbrs_ruby_utils/videos/stream'
 
 module Ehbrs
   module Videos
-    class Track
-      FFPROBE_PATTERN = /\A\s*Stream\s\#(\d+:\d+)(?:\(([^\)]+)\))?:\s*([^:]+):\s*([a-z0-9]+)(.*)/
-                        .freeze
-      class << self
-        def create_from_string(string)
-          m = FFPROBE_PATTERN.match(string)
-          return nil unless m
+    class Track < ::SimpleDelegator
+      TYPE_MAPPING = {
+        audio: 'Audio',
+        video: 'Video',
+        subtitle: 'Subtitle'
+      }.freeze
 
-          new(m[1].to_i, m[3], m[2], m[4], m[5].strip)
-        end
+      def codec
+        codec_name
       end
 
-      common_constructor :number, :type, :language, :codec, :extra
+      def type
+        TYPE_MAPPING.fetch(codec_type)
+      end
+
+      def number
+        index
+      end
+
+      def extra
+        ffprobe_data.fetch(:codec_tag_string).to_s
+      end
 
       def to_s
         "[#{type}(#{number}): #{codec}/#{language || '-'}" +
