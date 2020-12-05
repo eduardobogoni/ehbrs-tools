@@ -7,7 +7,7 @@ RSpec.describe ::Ehbrs::Runner::Videos::Probe do
   let(:source_file) { source_dir / 'fixed.mp4' }
   let(:target_dir) { ::Pathname.new(__dir__).expand_path / 'probe_spec_files' }
   let(:target_file) { target_dir / 'fixed.target.yaml' }
-  let(:target_content) { target_file.read }
+  let(:target_content) { target_file.read.gsub('%%PATH%%', source_file.to_path) }
 
   let(:argv) { %w[videos probe] + [source_file.to_path] }
   let(:runner) { ::Ehbrs::Runner.create(argv: argv) }

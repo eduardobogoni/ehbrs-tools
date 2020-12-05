@@ -88,7 +88,7 @@
     :language: und
     :handler_name: IsoMedia File Produced by Google, 5-11-2011
 :format:
-  :filename: "/home/eduardo/Dropbox/development/projects/ehbrs/ehbrs-tools/spec/lib/ehbrs/runner/videos/unsupported_spec_files/fixed.mp4"
+  :filename: "%%PATH%%"
   :nb_streams: 2
   :nb_programs: 0
   :format_name: mov,mp4,m4a,3gp,3g2,mj2
