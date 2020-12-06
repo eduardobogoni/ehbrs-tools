@@ -7,6 +7,8 @@ module Ehbrs
     module Unsupported
       module Checks
         class InvalidExtension
+          TYPE = :container
+
           common_constructor :extension
 
           def check(video)

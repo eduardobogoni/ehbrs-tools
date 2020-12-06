@@ -7,6 +7,8 @@ module Ehbrs
     module Unsupported
       module Checks
         class CodecExtraUnsupported
+          TYPE = :stream
+
           common_constructor :codec, :extra
 
           def check(track)

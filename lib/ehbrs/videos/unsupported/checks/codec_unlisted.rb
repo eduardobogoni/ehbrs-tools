@@ -5,6 +5,8 @@ module Ehbrs
     module Unsupported
       module Checks
         class CodecUnlisted
+          TYPE = :stream
+
           common_constructor :listed_codecs
 
           def check(track)

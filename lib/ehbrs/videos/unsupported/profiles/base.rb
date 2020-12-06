@@ -19,13 +19,21 @@ module Ehbrs
             added_checks << check_path.camelize.constantize.new(*args)
           end
 
+          def base_checks
+            [unlisted_codec_check] + unsupported_codec_checks +
+              supported_codecs.flat_map { |codec| codec_extra_checks(codec) }
+          end
+
+          def checks
+            base_checks + added_checks
+          end
+
           def file_checks
-            added_checks
+            checks.select { |c| check_type(c) == :container }
           end
 
           def track_checks
-            [unlisted_codec_check] + unsupported_codec_checks +
-              supported_codecs.flat_map { |codec| codec_extra_checks(codec) }
+            checks.select { |c| check_type(c) == :stream }
           end
 
           def codec_extra_checks(codec)
@@ -94,6 +102,12 @@ module Ehbrs
 
           def codec_supported_extras(codec)
             codec_extras(codec, 'supported')
+          end
+
+          private
+
+          def check_type(check)
+            check.class.const_get(:TYPE)
           end
         end
       end
