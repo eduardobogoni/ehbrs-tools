@@ -15,6 +15,12 @@ module EhbrsRubyUtils
         self.class.lists.codec_type.value_validate!(codec_type)
       end
 
+      lists.codec_type.each_value do |v|
+        define_method "#{v}?" do
+          codec_type == v
+        end
+      end
+
       def to_s
         "#{index}|#{codec_type}|#{codec_name}|#{language}"
       end
