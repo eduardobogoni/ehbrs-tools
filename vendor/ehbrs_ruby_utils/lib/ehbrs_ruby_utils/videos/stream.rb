@@ -34,7 +34,7 @@ module EhbrsRubyUtils
       end
 
       def tags
-        ffprobe_data.fetch(:tags).symbolize_keys
+        ffprobe_data[:tags].if_present({}, &:symbolize_keys)
       end
 
       def language
