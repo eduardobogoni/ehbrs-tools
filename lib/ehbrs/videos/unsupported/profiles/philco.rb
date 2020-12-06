@@ -7,7 +7,7 @@ module Ehbrs
     module Unsupported
       module Profiles
         class Philco < ::Ehbrs::Videos::Unsupported::Profiles::Base
-          AUDIO_SUPPORTED_CODECS = %w[aac ac3 eac3 mp3].freeze
+          AUDIO_SUPPORTED_CODECS = %w[aac ac3 eac3 mp3 vorbis].freeze
           AUDIO_UNSUPPORTED_CODECS = %w[dts].freeze
 
           VIDEO_SUPPORTED_CODECS = %w[h264 mpeg4].freeze
