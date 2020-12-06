@@ -25,8 +25,8 @@
   :r_frame_rate: 25/1
   :avg_frame_rate: 25/1
   :time_base: 1/1000
-  :start_pts: 23
-  :start_time: '0.023000'
+  :start_pts: 3
+  :start_time: '0.003000'
   :bits_per_raw_sample: '8'
   :disposition:
     :default: 1
@@ -43,11 +43,10 @@
     :timed_thumbnails: 0
   :tags:
     :HANDLER_NAME: VideoHandler
-    :DURATION: '00:00:06.743000000'
+    :DURATION: '00:00:06.723000000'
 - :index: 1
-  :codec_name: aac
-  :codec_long_name: AAC (Advanced Audio Coding)
-  :profile: LC
+  :codec_name: vorbis
+  :codec_long_name: Vorbis
   :codec_type: audio
   :codec_time_base: 1/44100
   :codec_tag_string: "[0][0][0][0]"
@@ -77,18 +76,18 @@
     :timed_thumbnails: 0
   :tags:
     :HANDLER_NAME: SoundHandler
-    :ENCODER: Lavc57.107.100 aac
-    :DURATION: '00:00:06.803000000'
+    :ENCODER: Lavc57.107.100 libvorbis
+    :DURATION: '00:00:06.783000000'
 :format:
-  :filename: "/path/to/to_fix_file.mkv"
+  :filename: "/tmp/20201206-6518-gbu5mi/to_fix_file.mkv"
   :nb_streams: 2
   :nb_programs: 0
   :format_name: matroska,webm
   :format_long_name: Matroska / WebM
   :start_time: '0.000000'
-  :duration: '6.803000'
-  :size: '111479'
-  :bit_rate: '131093'
+  :duration: '6.783000'
+  :size: '106420'
+  :bit_rate: '125513'
   :probe_score: 100
   :tags:
     :COMPATIBLE_BRANDS: isomiso2avc1mp41
