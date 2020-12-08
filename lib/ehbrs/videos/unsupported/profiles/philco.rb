@@ -19,7 +19,7 @@ module Ehbrs
           OTHER_SUPPORTED_CODECS = %w[png ttf].freeze
 
           MPEG4_EXTRA_SUPPORTED = %w[xvid].freeze
-          MPEG4_EXTRA_UNSUPPORTED = %w[dx50].freeze
+          MPEG4_EXTRA_UNSUPPORTED = %w[divx dx50].freeze
         end
       end
     end
