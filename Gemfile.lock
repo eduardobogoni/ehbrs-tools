@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     ehbrs-tools (0.16.3)
-      avm-tools (~> 0.44, >= 0.44.2)
+      avm-tools (~> 0.82, >= 0.82.1)
       eac_ruby_utils (~> 0.19)
       filesize
       inifile (~> 3.0)
