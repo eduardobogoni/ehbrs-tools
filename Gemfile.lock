@@ -3,7 +3,7 @@ PATH
   specs:
     ehbrs-tools (0.16.3)
       avm-tools (~> 0.82, >= 0.82.1)
-      eac_ruby_utils (~> 0.19)
+      eac_ruby_utils (~> 0.55)
       filesize
       inifile (~> 3.0)
 
