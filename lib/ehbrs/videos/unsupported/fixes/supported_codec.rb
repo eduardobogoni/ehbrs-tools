@@ -12,9 +12,9 @@ module Ehbrs
           }.freeze
 
           TRACK_TYPE_FIX_CODECS = {
-            'Audio' => 'libvorbis',
-            'Video' => 'libx264',
-            'Subtitle' => 'ass'
+            audio: 'libvorbis',
+            video: 'libx264',
+            subtitle: 'ass'
           }.freeze
 
           def ffmpeg_args(track)
@@ -27,7 +27,7 @@ module Ehbrs
           end
 
           def track_codec_fix_by_type(track_type)
-            TRACK_TYPE_FIX_CODECS.fetch(track_type)
+            TRACK_TYPE_FIX_CODECS.fetch(track_type.to_s.underscore.to_sym)
           end
         end
       end
