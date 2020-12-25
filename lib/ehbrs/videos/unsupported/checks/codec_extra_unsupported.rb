@@ -12,7 +12,7 @@ module Ehbrs
           common_constructor :codec, :extra
 
           def check(track)
-            return nil unless track.codec == codec
+            return nil unless track.codec_name == codec
             return nil unless track.extra.downcase.include?(extra.downcase)
 
             "Unsupported extra \"#{extra}\" for codec \"#{codec}\" and track #{track}"

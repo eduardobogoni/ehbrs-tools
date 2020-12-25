@@ -12,7 +12,7 @@ module Ehbrs
           common_constructor :codec
 
           def check(track)
-            return nil unless track.codec == codec
+            return nil unless track.codec_name == codec
 
             "Unsupported codec \"#{codec}\" for track #{track}"
           end

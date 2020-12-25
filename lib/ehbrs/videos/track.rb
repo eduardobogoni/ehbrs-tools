@@ -6,10 +6,6 @@ require 'ehbrs_ruby_utils/videos/stream'
 module Ehbrs
   module Videos
     class Track < ::SimpleDelegator
-      def codec
-        codec_name
-      end
-
       def number
         index
       end
@@ -19,7 +15,7 @@ module Ehbrs
       end
 
       def to_s
-        "[#{codec_type}(#{number}): #{codec}/#{language || '-'}" +
+        "[#{codec_type}(#{number}): #{codec_name}/#{language || '-'}" +
           extra.if_present('') { |v| " | #{v}" } + ']'
       end
     end

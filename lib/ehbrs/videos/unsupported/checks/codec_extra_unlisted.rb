@@ -10,7 +10,7 @@ module Ehbrs
           common_constructor :codec, :listed_extras
 
           def check(track)
-            return nil unless track.codec == codec
+            return nil unless track.codec_name == codec
             return nil if listed_extras.any? do |extra|
               track.extra.downcase.include?(extra.downcase)
             end
