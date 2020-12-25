@@ -6,9 +6,9 @@ module Ehbrs
       module Fixes
         class SupportedCodec
           TRACK_TYPE_OPTIONS = {
-            'Audio' => '-acodec',
-            'Video' => '-vcodec',
-            'Subtitle' => '-scodec'
+            audio: '-acodec',
+            video: '-vcodec',
+            subtitle: '-scodec'
           }.freeze
 
           TRACK_TYPE_FIX_CODECS = {
@@ -23,7 +23,7 @@ module Ehbrs
           end
 
           def track_codec_option_by_type(track_type)
-            TRACK_TYPE_OPTIONS.fetch(track_type)
+            TRACK_TYPE_OPTIONS.fetch(track_type.to_s.underscore.to_sym)
           end
 
           def track_codec_fix_by_type(track_type)
