@@ -8,7 +8,7 @@ module EhbrsRubyUtils
       enable_simple_cache
       enable_listable
 
-      lists.add_symbol :codec_type, :audio, :video, :subtitle, :data
+      lists.add_symbol :codec_type, :audio, :video, :subtitle, :data, :attachment
 
       common_constructor :ffprobe_data do
         self.ffprobe_data = ffprobe_data.symbolize_keys.freeze
