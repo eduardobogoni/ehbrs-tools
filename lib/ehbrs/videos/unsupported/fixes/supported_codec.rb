@@ -18,7 +18,7 @@ module Ehbrs
           }.freeze
 
           def ffmpeg_args(track)
-            ["#{track_codec_option_by_type(track.codec_type)}:#{track.number}",
+            ["#{track_codec_option_by_type(track.codec_type)}:#{track.index}",
              track_codec_fix_by_type(track.codec_type)]
           end
 
