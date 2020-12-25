@@ -35,19 +35,6 @@ module Ehbrs
             video.tracks.flat_map(&:ffmpeg_fix_args)
         end
 
-        def track_fix_args(track)
-          ["#{track_codec_option_by_type(track.type)}:#{track.number}",
-           track.passed? ? 'copy' : track_codec_fix_by_type(track.type)]
-        end
-
-        def track_codec_option_by_type(track_type)
-          TRACK_TYPE_OPTIONS.fetch(track_type)
-        end
-
-        def track_codec_fix_by_type(track_type)
-          TRACK_TYPE_FIX_CODECS.fetch(track_type)
-        end
-
         def container_fix_args
           ['-f', ::Ehbrs::Videos::Unsupported::Fixes::SupportedContainer::FIX_FORMAT]
         end
