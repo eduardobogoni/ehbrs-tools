@@ -1,0 +1,27 @@
+<h2><%= title %></h2>
+<h3>Ingredientes</h3>
+<% if notes.present? %>
+  <%= notes %>
+<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Ingrediente</th>
+      <th scope="col">Medida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ingredients.each do |ingredient| %>
+      <tr>
+        <th scope="row"><%= ingredient.name %></th>
+        <td><%= ingredient.measure %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<h3>Preparo</h3>
+<ol>
+  <% steps.each do |step| %>
+    <li><%= step %></li>
+  <% end %>
+</ol>

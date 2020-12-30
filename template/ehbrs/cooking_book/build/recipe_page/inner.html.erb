@@ -1,0 +1,6 @@
+<% if notes.present? %>
+  <p><%= notes %></p>
+<% end %>
+<% parts.each do |part| %>
+  <%= part.content  %>
+<% end %>
