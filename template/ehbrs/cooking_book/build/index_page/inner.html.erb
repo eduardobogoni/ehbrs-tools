@@ -1,0 +1,6 @@
+<h2>Receitas</h2>
+<ul>
+  <% parent.recipes_pages.each do |rp| %>
+    <li><a href="<%= rp.href %>" ><%= rp.title %></a></li>
+  <% end %>
+</ul>
