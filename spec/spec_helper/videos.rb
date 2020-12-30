@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'eac_ruby_utils/fs/temp'
+
 ::RSpec.configure do |config|
   config.before do
     videos_temp_dir
