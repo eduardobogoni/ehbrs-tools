@@ -1,26 +1,19 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs/tools/version'
+require 'eac_ruby_base0/runner'
+require 'ehbrs/tools/application'
 
 module Ehbrs
   class Runner
     require_sub __FILE__
+    include ::EacRubyBase0::Runner
 
-    runner_with :help, :subcommands do
+    runner_definition do
       desc 'Tools for EHB/RS.'
-      subcommands
-      alt do
-        bool_opt '-V', '--version', 'Show version.'
-      end
     end
 
-    def run
-      if parsed[:version].present?
-        out(::Ehbrs::Tools::VERSION + "\n")
-      else
-        run_with_subcommand
-      end
+    def application
+      ::Ehbrs::Tools.application
     end
   end
 end
