@@ -39,6 +39,14 @@ PATH
       eac_ruby_utils (~> 0.36)
 
 PATH
+  remote: vendor/eac_ruby_base0
+  specs:
+    eac_ruby_base0 (0.3.1)
+      eac_cli (~> 0.7)
+      eac_ruby_gems_utils (~> 0.7, >= 0.7.2)
+      eac_ruby_utils (~> 0.46)
+
+PATH
   remote: vendor/eac_ruby_utils
   specs:
     eac_ruby_utils (0.57.0)
@@ -94,10 +102,6 @@ GEM
     eac_git (0.3.2)
       eac_ruby_utils (~> 0.37)
       parseconfig (~> 1.0, >= 1.0.8)
-    eac_ruby_base0 (0.3.1)
-      eac_cli (~> 0.7)
-      eac_ruby_gems_utils (~> 0.7, >= 0.7.2)
-      eac_ruby_utils (~> 0.46)
     eac_ruby_gem_support (0.1.2)
       rspec (~> 3.9)
       rubocop (~> 0.80.1)
@@ -174,6 +178,7 @@ DEPENDENCIES
   aranha-selenium!
   eac_cli!
   eac_docker!
+  eac_ruby_base0!
   eac_ruby_gem_support (~> 0.1)
   eac_ruby_utils!
   ehbrs-tools!
