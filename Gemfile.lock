@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ehbrs-tools (0.16.5)
+    ehbrs-tools (0.17.0)
       avm-tools (~> 0.82, >= 0.82.1)
       eac_cli (~> 0.12.4, ~> 0.12)
       eac_ruby_utils (~> 0.55)
@@ -110,7 +110,7 @@ GEM
     eac_ruby_gems_utils (0.8.0)
       eac_ruby_utils (~> 0.29)
     filesize (0.2.0)
-    git (1.7.0)
+    git (1.8.1)
       rchardet (~> 1.8)
     hpricot (0.8.6)
     htmlbeautifier (1.3.1)
