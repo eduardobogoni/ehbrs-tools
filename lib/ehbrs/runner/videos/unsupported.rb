@@ -9,7 +9,7 @@ module Ehbrs
   class Runner
     class Videos
       class Unsupported
-        PROFILES = %w[philco samsung].freeze
+        PROFILES = %w[aoc philco samsung].freeze
 
         runner_with :help do
           desc 'Procura e converte vídeos não suportados pelas TVs de EHB/RS.'
