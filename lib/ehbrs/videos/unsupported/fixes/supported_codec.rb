@@ -12,7 +12,7 @@ module Ehbrs
           }.freeze
 
           TRACK_TYPE_FIX_CODECS = {
-            audio: 'libvorbis',
+            audio: 'aac',
             video: 'libx264',
             subtitle: 'ass'
           }.freeze
