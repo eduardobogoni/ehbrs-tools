@@ -26,7 +26,7 @@ module Ehbrs
 
         def ffmpeg_fix_args
           unpassed_checks.flat_map do |check|
-            check.check.fix.ffmpeg_args(self)
+            check.check.fix.if_present([]) { |v| v.ffmpeg_args(self) }
           end
         end
 
