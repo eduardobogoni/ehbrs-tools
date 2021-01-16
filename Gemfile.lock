@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ehbrs-tools (0.17.0)
+    ehbrs-tools (0.18.0)
       avm-tools (~> 0.82, >= 0.82.1)
       eac_cli (~> 0.12.4, ~> 0.12)
       eac_ruby_utils (~> 0.55)
