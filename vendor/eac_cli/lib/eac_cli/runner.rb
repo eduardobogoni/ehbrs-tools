@@ -47,53 +47,5 @@ module EacCli
       include ActiveSupport::Callbacks
       define_callbacks :run
     end
-
-    module AfterClassMethods
-      def create(*runner_context_args)
-        r = new
-        r.runner_context = ::EacCli::Runner::Context.new(r, *runner_context_args)
-        r
-      end
-
-      def run(*runner_context_args)
-        r = create(*runner_context_args)
-        r.run_run
-        r
-      end
-
-      def runner_definition(&block)
-        @runner_definition ||= super_runner_definition
-        @runner_definition.instance_eval(&block) if block
-        @runner_definition
-      end
-
-      def super_runner_definition
-        superclass.try(:runner_definition).if_present(&:dup) || ::EacCli::Definition.new
-      end
-    end
-
-    module InstanceMethods
-      def run_run
-        parsed
-        run_callbacks(:run) { run }
-      rescue ::EacCli::Runner::Exit # rubocop:disable Lint/SuppressedException
-        # Do nothing
-      end
-
-      def runner_context
-        return @runner_context if @runner_context
-
-        raise 'Context was required, but was not set yet'
-      end
-
-      def runner_context=(new_runner_context)
-        @runner_context = new_runner_context
-        @parsed = nil
-      end
-
-      def parsed
-        @parsed ||= ::EacCli::Parser.new(self.class.runner_definition, runner_context.argv).parsed
-      end
-    end
   end
 end

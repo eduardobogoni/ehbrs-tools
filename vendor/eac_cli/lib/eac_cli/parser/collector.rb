@@ -24,11 +24,7 @@ module EacCli
       end
 
       def collect(option, value)
-        if data[option].is_a?(::Array)
-          data[option] << value
-        else
-          data[option] = value
-        end
+        data[option] = option.build_value(value, data[option])
       end
 
       def supplied?(option)
@@ -42,18 +38,8 @@ module EacCli
       end
 
       def default_values
-        definition.options.each { |option| data[option] = option_default_value(option) }
-        definition.positional.each do |positional|
-          data[positional] = positional_default_value(positional)
-        end
-      end
-
-      def option_default_value(option)
-        option.argument? ? nil : false
-      end
-
-      def positional_default_value(positional)
-        positional.repeat? ? [] : nil
+        definition.options.each { |option| data[option] = option.default_value }
+        definition.positional.each { |positional| data[positional] = positional.default_value }
       end
     end
   end

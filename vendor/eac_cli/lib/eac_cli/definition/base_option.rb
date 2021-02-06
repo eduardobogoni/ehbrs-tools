@@ -5,22 +5,34 @@ require 'eac_ruby_utils/core_ext'
 module EacCli
   class Definition
     class BaseOption
+      require_sub __FILE__
+
+      class << self
+        def from_args(args)
+          p = ::EacCli::Definition::BaseOption::InitializeArgsParser.new(args)
+          new(p.short, p.long, p.description, p.options)
+        end
+      end
+
       DEFAULT_REQUIRED = false
 
       enable_listable
-      lists.add_symbol :option, :optional, :usage, :required
-      attr_reader :short, :long, :description, :options
+      enable_abstract_methods :build_value, :default_value
+      lists.add_symbol :option, :optional, :usage, :repeat, :required
+      common_constructor :short, :long, :description, :options, default: [{}] do
+        raise 'Nor short neither long selector was set' if short.blank? && long.blank?
 
-      def initialize(short, long, description, options = {})
-        @short = short
-        @long = long
-        @description = description
-        @options = options.symbolize_keys
-        @options.assert_valid_keys(::EacCli::Definition::BaseOption.lists.option.values)
+        self.options = ::EacCli::Definition::BaseOption.lists.option.hash_keys_validate!(
+          options.symbolize_keys
+        )
       end
 
       def identifier
         long.to_s.variableize.to_sym
+      end
+
+      def repeat?
+        options[OPTION_REPEAT]
       end
 
       def required?
