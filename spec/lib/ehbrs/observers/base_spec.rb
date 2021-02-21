@@ -7,8 +7,8 @@ RSpec.describe ::Ehbrs::Observers::Base do
   let(:first_value) { 'a value' }
   let(:same_value) { first_value.dup }
   let(:different_value) { 'another value' }
-  let(:first_time) { ::Time.zone.local(2020, 5, 1, 12, 45, 0) }
-  let(:second_time) { ::Time.zone.local(2020, 5, 1, 12, 45, 0) }
+  let(:first_time) { ::Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
+  let(:second_time) { ::Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
 
   it { expect(instance.records.count).to be_zero }
   it { expect(instance.last_change_time).to be_blank }

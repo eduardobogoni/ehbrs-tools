@@ -21,7 +21,7 @@ module Ehbrs
         end
       end
 
-      def check(value, date = ::Time.zone.now)
+      def check(value, date = ::Time.required_zone.now)
         @last_check_time = date
         send("check_with_blank_value_#{blank_value}", value, date)
       end
