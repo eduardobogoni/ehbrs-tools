@@ -13,6 +13,9 @@ Metrics/BlockLength:
   Exclude:
     - spec/**/*_spec.rb
 
+Rails/Output:
+  Enabled: false
+
 RSpec/NestedGroups:
   Exclude:
     - spec/**/*_spec.rb

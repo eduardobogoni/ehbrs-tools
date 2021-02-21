@@ -42,7 +42,7 @@ module Ehbrs
           def process_response(response)
             infov 'Response status', response.status
             if response.status == 200
-              pp ::JSON.parse(response.body) # rubocop:disable Rails/Output
+              pp ::JSON.parse(response.body)
             else
               error_file = '/tmp/ehbrsutils.html'
               ::File.write(error_file, response.body)
