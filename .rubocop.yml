@@ -16,6 +16,9 @@ Metrics/BlockLength:
 Rails/Output:
   Enabled: false
 
+Rails/TimeZone:
+  Enabled: false
+
 RSpec/NestedGroups:
   Exclude:
     - spec/**/*_spec.rb
