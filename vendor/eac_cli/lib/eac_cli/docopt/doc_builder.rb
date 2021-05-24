@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/console/docopt_runner'
+require 'eac_cli/docopt_runner'
 
 module EacCli
   module Docopt
@@ -36,7 +36,9 @@ module EacCli
       end
 
       def option_definition(option)
-        self.class.option_usage_full(option) + OPTION_DESC_SEP + option.description
+        self.class.option_usage_full(option) + option.description.if_present('') do |v|
+          OPTION_DESC_SEP + v
+        end
       end
 
       def section(header, include_header = true)

@@ -6,16 +6,20 @@ require 'eac_ruby_utils/core_ext'
 module EacCli
   module RunnerWith
     module Subcommands
+      require_sub __FILE__
+
       class << self
         def runner?(object)
           ::EacCli::Runner.runner?(object) || (
-            object.is_a?(::Class) && object < ::EacRubyUtils::Console::DocoptRunner
+            object.is_a?(::Class) && object < ::EacCli::DocoptRunner
           )
         end
       end
 
       common_concern do
         include ::EacCli::Runner
+        runner_definition.singleton_class
+                         .include(::EacCli::RunnerWith::Subcommands::DefinitionConcern)
       end
 
       EXTRA_AVAILABLE_SUBCOMMANDS_METHOD_NAME = :extra_available_subcommands

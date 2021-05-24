@@ -12,8 +12,27 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 
+Rails/Exit:
+  Enabled: false
+
 Rails/Output:
   Enabled: false
+
+RSpec/ContextWording:
+  Exclude:
+    - spec/lib/eac_cli/docopt_runner_spec.rb
+
+RSpec/LeakyConstantDeclaration:
+  Exclude:
+    - spec/lib/eac_cli/docopt_runner_spec.rb
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/lib/eac_cli/docopt_runner_spec.rb
+
+RSpec/NestedGroups:
+  Exclude:
+    - spec/lib/eac_cli/docopt_runner_spec.rb
 
 Style/AsciiComments:
   Enabled: false
