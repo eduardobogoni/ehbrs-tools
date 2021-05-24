@@ -48,7 +48,7 @@ module Ehbrs
 
         class PathBase
           enable_simple_cache
-          enable_console_speaker
+          enable_speaker
           common_constructor :runner, :path do
             self.path = path.to_pathname
           end

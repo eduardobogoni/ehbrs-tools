@@ -9,7 +9,7 @@ module Ehbrs
     module Unsupported
       class Search
         include ::EacRubyUtils::Fs::Traversable
-        enable_console_speaker
+        enable_speaker
         enable_simple_cache
 
         VALID_EXTENSIONS = %w[.avi .mp4 .mkv .m4v].freeze

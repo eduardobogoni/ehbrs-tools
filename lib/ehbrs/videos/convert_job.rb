@@ -7,7 +7,7 @@ require 'fileutils'
 module Ehbrs
   module Videos
     class ConvertJob
-      enable_console_speaker
+      enable_speaker
       enable_simple_cache
 
       FORMATS_TO_EXTENSIONS = {

@@ -11,7 +11,7 @@ module EhbrsRubyUtils
         'matroska' => '.mkv'
       }.freeze
 
-      enable_console_speaker
+      enable_speaker
       enable_simple_cache
       common_constructor :input, :ffmpeg_convert_args do
         self.input = input.to_pathname.expand_path

@@ -8,7 +8,7 @@ module EhbrsRubyUtils
   module WebUtils
     module Videos
       class FilesList
-        enable_console_speaker
+        enable_speaker
         enable_simple_cache
 
         common_constructor :type_class, :root_path, :options do

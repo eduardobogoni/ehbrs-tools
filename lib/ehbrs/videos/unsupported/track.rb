@@ -8,7 +8,7 @@ module Ehbrs
       class Track < ::SimpleDelegator
         include ::Ehbrs::Videos::Unsupported::CheckSupport
 
-        enable_console_speaker
+        enable_speaker
         enable_simple_cache
         attr_reader :video
 

@@ -8,7 +8,7 @@ module Ehbrs
       module Rename
         class LineResult
           enable_simple_cache
-          enable_console_speaker
+          enable_speaker
 
           def show(level)
             out(padding_level(level) + line_out + "\n")
