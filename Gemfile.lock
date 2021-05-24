@@ -23,7 +23,7 @@ PATH
 PATH
   remote: vendor/aranha-selenium
   specs:
-    aranha-selenium (0.1.3)
+    aranha-selenium (0.2.0)
       activesupport
       selenium-webdriver (~> 3.142, >= 3.142.3)
 

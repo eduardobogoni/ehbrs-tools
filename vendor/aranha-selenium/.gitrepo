@@ -1,7 +1,7 @@
 [subrepo]
-  cmdver = 0.4.0
-  commit = 3f5fe548b2313bd84e68870ccad3d49d1bdf6f3e
+  cmdver = 0.4.1
+  commit = f71126c109f85fcebc16db9a775fd8bdf926eb20
   method = rebase
-  parent = 9ee65eac6d975729c115277d82517473f025adb5
+  parent = c3afd54dd4a320478ee85dfa06ae0f0c3efb1ae2
   branch = master
   remote = https://github.com/esquilo-azul/aranha-selenium.git

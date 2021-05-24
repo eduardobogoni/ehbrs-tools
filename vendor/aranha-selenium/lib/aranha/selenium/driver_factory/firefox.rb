@@ -9,10 +9,7 @@ module Aranha
         def build
           ::Selenium::WebDriver.for(
             :firefox,
-            options: ::Selenium::WebDriver::Firefox::Options.new(
-              profile: build_profile,
-              args: build_args
-            ),
+            options: build_options,
             desired_capabilities: build_capabilities
           )
         end
@@ -21,7 +18,7 @@ module Aranha
 
         def build_args
           r = []
-          r << '-headless' if headless?
+          r << '--headless' if headless?
           r
         end
 
@@ -33,14 +30,31 @@ module Aranha
           end
         end
 
-        def build_profile
-          r = ::Selenium::WebDriver::Firefox::Profile.new
-          r['browser.download.dir'] = downloads_dir
-          r['browser.download.folderList'] = 2
-          r['browser.helperApps.neverAsk.saveToDisk'] = auto_download_mime_types.join(';')
-          r['pdfjs.disabled'] = true
+        def build_options
+          r = ::Selenium::WebDriver::Firefox::Options.new(args: build_args,
+                                                          prefs: build_preferences)
+          build_profile.if_present { |v| r.profile = v }
+          r
+        end
+
+        def build_preferences
+          r = {
+            'browser.download.dir' => downloads_dir,
+            'browser.download.folderList' => 2,
+            'browser.helperApps.neverAsk.saveToDisk' => auto_download_mime_types.join(';'),
+            'pdfjs.disabled' => true
+          }
           r['general.useragent.override'] = user_agent if user_agent.present?
           r
+        end
+
+        def build_profile
+          if profile_name.present?
+            ::Selenium::WebDriver::Firefox::Profile.from_name(v)
+          elsif profile_dir.present?
+            ::FileUtils.mkdir_p(profile_dir)
+            ::Selenium::WebDriver::Firefox::Profile.new(profile_dir)
+          end
         end
 
         def auto_download_mime_types
