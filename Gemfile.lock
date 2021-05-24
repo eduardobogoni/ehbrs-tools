@@ -39,8 +39,9 @@ PATH
 PATH
   remote: vendor/eac_docker
   specs:
-    eac_docker (0.2.0)
-      eac_ruby_utils (~> 0.36)
+    eac_docker (0.2.2)
+      eac_ruby_utils (~> 0.64)
+      eac_templates (~> 0.1)
 
 PATH
   remote: vendor/eac_ruby_base0
@@ -135,6 +136,9 @@ GEM
     eac_ruby_gems_utils (0.9.3)
       bundler (~> 2.2, >= 2.2.17)
       eac_ruby_utils (~> 0.29)
+    eac_templates (0.1.0)
+      eac_config (~> 0.3)
+      eac_ruby_utils (~> 0.64)
     equalizer (0.0.11)
     faraday (1.4.2)
       faraday-em_http (~> 1.0)
