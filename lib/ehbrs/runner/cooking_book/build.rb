@@ -2,6 +2,7 @@
 
 require 'eac_cli/core_ext'
 require 'ehbrs/cooking_book/build'
+require 'os'
 
 module Ehbrs
   class Runner
@@ -10,11 +11,13 @@ module Ehbrs
         runner_with :help, :subcommands do
           desc 'Operações para livros de receitas.'
           arg_opt '-d', '--target-dir', 'Caminho para o diretório destino da construção.'
+          bool_opt '--open', 'Show the result.'
         end
 
         def run
           start_banner
           build.run
+          open
           success 'Done'
         end
 
@@ -24,6 +27,17 @@ module Ehbrs
           ::Ehbrs::CookingBook::Build.new(
             runner_context.call(:project), target_dir: parsed.target_dir
           )
+        end
+
+        def open
+          return unless parsed.open?
+
+          infom "Opening \"#{open_path}\"..."
+          ::EacRubyUtils::Envs.local.command(OS.open_file_command, open_path).system!
+        end
+
+        def open_path
+          build.index_page.target_path
         end
 
         def start_banner
