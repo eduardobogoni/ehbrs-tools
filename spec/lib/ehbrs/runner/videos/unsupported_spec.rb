@@ -32,14 +32,12 @@ RSpec.describe ::Ehbrs::Runner::Videos::Unsupported do
         let(:converted_file) { to_fix_file.basename_sub { |b| "#{b}.converted" } }
         let(:fixed_file) { to_fix_file.basename_sub { |b| "#{b.basename('.*')}.mkv" } }
         let(:fixed_file_actual_probe_data) do
-          ::EhbrsRubyUtils::Videos::Container.new(fixed_file).probe_data
+          sanitize_probe_data(::EhbrsRubyUtils::Videos::Container.new(fixed_file).probe_data)
         end
 
         let(:fixed_file_expect_probe_file) { source_dir.join("#{video_var}.probe.yaml") }
         let(:fixed_file_expect_probe_data) do
-          ::EacRubyUtils::Yaml.load(fixed_file_expect_probe_file.read).deep_merge(
-            format: { filename: fixed_file.to_path }
-          )
+          ::EacRubyUtils::Yaml.load_file(fixed_file_expect_probe_file)
         end
 
         before do
@@ -51,6 +49,25 @@ RSpec.describe ::Ehbrs::Runner::Videos::Unsupported do
 
         it 'has expected probe data' do
           expect(fixed_file_actual_probe_data).to eq(fixed_file_expect_probe_data)
+        end
+      end
+
+      def sanitize_probe_data(data)
+        sanitize_format_data(data.fetch(:format))
+        data.fetch(:streams).each { |stream_data| sanitize_stream_data(stream_data) }
+        data
+      end
+
+      def sanitize_stream_data(data)
+        data[:tags].if_present do |v|
+          %i[HANDLER_NAME ENCODER].each { |field| v.delete(field) }
+        end
+      end
+
+      def sanitize_format_data(data)
+        data.if_present do |v|
+          %i[filename size bit_rate].each { |field| v.delete(field) }
+          v[:tags].if_present { |vv| vv.delete(:ENCODER) }
         end
       end
     end

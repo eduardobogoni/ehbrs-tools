@@ -42,7 +42,6 @@
     :attached_pic: 0
     :timed_thumbnails: 0
   :tags:
-    :HANDLER_NAME: VideoHandler
     :DURATION: '00:00:06.743000000'
 - :index: 1
   :codec_name: aac
@@ -76,22 +75,16 @@
     :attached_pic: 0
     :timed_thumbnails: 0
   :tags:
-    :HANDLER_NAME: SoundHandler
-    :ENCODER: Lavc57.107.100 aac
     :DURATION: '00:00:06.803000000'
 :format:
-  :filename: "/tmp/20210117-18343-1eb3cdm/to_fix_file.mkv"
   :nb_streams: 2
   :nb_programs: 0
   :format_name: matroska,webm
   :format_long_name: Matroska / WebM
   :start_time: '0.000000'
   :duration: '6.803000'
-  :size: '111479'
-  :bit_rate: '131093'
   :probe_score: 100
   :tags:
     :COMPATIBLE_BRANDS: isomiso2avc1mp41
     :MAJOR_BRAND: isom
     :MINOR_VERSION: '512'
-    :ENCODER: Lavf57.83.100
