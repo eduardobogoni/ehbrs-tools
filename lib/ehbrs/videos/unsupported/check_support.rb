@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'eac_cli/speaker'
 require 'ehbrs/videos/unsupported/check_result'
 
 module Ehbrs
@@ -9,7 +10,7 @@ module Ehbrs
         extend ::ActiveSupport::Concern
 
         included do
-          include ::EacRubyUtils::Console::Speaker
+          include ::EacCli::Speaker
           include ::EacRubyUtils::SimpleCache
         end
 
