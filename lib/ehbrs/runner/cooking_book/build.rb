@@ -13,8 +13,7 @@ module Ehbrs
         end
 
         def run
-          infov 'Project', build.project
-          infov 'Target directory', build.target_dir
+          start_banner
           build.run
           success 'Done'
         end
@@ -25,6 +24,11 @@ module Ehbrs
           ::Ehbrs::CookingBook::Build.new(
             runner_context.call(:project), target_dir: parsed.target_dir
           )
+        end
+
+        def start_banner
+          infov 'Project', build.project
+          infov 'Target directory', build.target_dir
         end
       end
     end
