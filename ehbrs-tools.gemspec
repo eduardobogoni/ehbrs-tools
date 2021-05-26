@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_ruby_utils', '~> 0.55'
   s.add_dependency 'filesize'
   s.add_dependency 'inifile', '~> 3.0'
+  s.add_dependency 'os'
   s.add_dependency 'telegram-bot-ruby'
   s.add_development_dependency 'eac_ruby_gem_support', '~> 0.2'
 end
