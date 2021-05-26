@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
 require 'ehbrs_ruby_utils/videos/container'
+require 'eac_ruby_base0/core_ext'
 require 'eac_ruby_utils/yaml'
 
 module Ehbrs
   class Runner
     class Videos
       class Probe
-        runner_with :help, :output_file do
+        runner_with :help, :output do
           desc 'FFProbe em um arquivo de vídeo.'
           pos_arg :file_path
         end
