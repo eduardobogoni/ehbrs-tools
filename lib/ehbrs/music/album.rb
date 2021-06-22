@@ -22,6 +22,8 @@ module Ehbrs
         (to_a + [id]).map(&:light_white).join(' | '.blue)
       end
 
+      delegate :to_path, to: :path
+
       def id
         [artist, name].join('_').variableize
       end
