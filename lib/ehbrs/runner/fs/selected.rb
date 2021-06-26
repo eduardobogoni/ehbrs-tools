@@ -38,7 +38,7 @@ module Ehbrs
         private
 
         def build
-          infom 'Building...'
+          infom "Building directory \"#{build_dir}\" with selected..."
           build_dir.clear
           selected_directories.each do |directory|
             ::EacRubyUtils::Envs.local.command(
