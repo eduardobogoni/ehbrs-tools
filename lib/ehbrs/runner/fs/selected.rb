@@ -11,7 +11,7 @@ module Ehbrs
         DEFAULT_TRAVERSER_RECURSIVE = true
 
         enable_jobs_runner
-        runner_with :help, :filesystem_traverser do
+        runner_with :confirmation, :help, :filesystem_traverser do
           desc 'Seleciona diretórios.'
           arg_opt '-b', '--build-dir', 'Constrói diretório alvo.'
         end
@@ -53,7 +53,7 @@ module Ehbrs
         end
 
         def run_build?
-          build_dir.present?
+          build_dir.present? && confirm?('Build?')
         end
 
         def selected_directories_uncached
