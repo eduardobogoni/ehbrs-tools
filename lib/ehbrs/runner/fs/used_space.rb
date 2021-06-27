@@ -93,8 +93,7 @@ module Ehbrs
         class PathVerbose < PathBase
           def run
             infom path.to_s
-            on_speaker_node do |node|
-              node.stderr_line_prefix = '  '
+            ::EacRubyUtils::Speaker.context.on(::EacCli::Speaker.new(err_line_prefix: '  ')) do
               banner
               check
             end

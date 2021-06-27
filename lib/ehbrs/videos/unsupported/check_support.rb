@@ -1,17 +1,15 @@
 # frozen_string_literal: true
 
-require 'eac_cli/speaker'
+require 'eac_ruby_utils/core_ext'
 require 'ehbrs/videos/unsupported/check_result'
 
 module Ehbrs
   module Videos
     module Unsupported
       module CheckSupport
-        extend ::ActiveSupport::Concern
-
-        included do
-          include ::EacCli::Speaker
-          include ::EacRubyUtils::SimpleCache
+        common_concern do
+          enable_simple_cache
+          enable_speaker
         end
 
         def aggressions_banner(title)
@@ -58,10 +56,16 @@ module Ehbrs
         end
 
         def pad_speaker
-          on_speaker_node do |node|
-            node.stderr_line_prefix = node.stderr_line_prefix.to_s + '  '
+          ::EacRubyUtils::Speaker.context.on(::EacCli::Speaker.new(err_line_prefix: '  ')) do
             yield
           end
+        end
+
+        def new_padded_cli_speaker
+          ::EacCli::Speaker.new(
+            err_line_prefix(::EacRubyUtils::Speaker.context.optional_current
+            .if_present('') { |v| v.is_a?(::EacCli::Speaker) ? v.err_line_prefix : '' } + '  ')
+          )
         end
       end
     end
