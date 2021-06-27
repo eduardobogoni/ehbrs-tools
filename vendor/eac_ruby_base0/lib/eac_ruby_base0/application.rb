@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-require 'eac_cli/old_configs_bridge'
+require 'eac_cli/config'
+require 'eac_config/envvars_node'
+require 'eac_config/yaml_file_node'
 require 'eac_ruby_base0/application_xdg'
 require 'eac_ruby_gems_utils/gem'
 require 'eac_ruby_utils/core_ext'
@@ -23,9 +25,18 @@ module EacRubyBase0
       vendor_gems + [self_gem]
     end
 
-    # @return [EacCli::OldConfigsBridge]
+    # @return [EacCli::Config]
     def build_config(path = nil)
-      ::EacCli::OldConfigsBridge.new(name, path.if_present({}) { |v| { storage_path: v } })
+      envvar_node = ::EacConfig::EnvvarsNode.new
+      file_node = ::EacConfig::YamlFileNode.new(path || config_default_path)
+      envvar_node.load_path.push(file_node.url)
+      envvar_node.write_node = file_node
+      ::EacCli::Config.new(envvar_node)
+    end
+
+    # @return [EacCli::Config]
+    def config_default_path
+      config_dir.join('eac_config.yaml')
     end
 
     ::EacRubyBase0::ApplicationXdg::DIRECTORIES.each_key do |item|
