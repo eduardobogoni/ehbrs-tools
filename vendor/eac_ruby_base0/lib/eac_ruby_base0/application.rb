@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'eac_cli/old_configs_bridge'
+require 'eac_ruby_base0/application_xdg'
 require 'eac_ruby_gems_utils/gem'
 require 'eac_ruby_utils/core_ext'
 require 'eac_ruby_utils/filesystem_cache'
@@ -21,16 +23,13 @@ module EacRubyBase0
       vendor_gems + [self_gem]
     end
 
-    { cache: '.cache', config: '.config', data: '.local/share' }.each do |item, subpath|
-      xdg_env_method_name = "#{item}_xdg_env"
+    # @return [EacCli::OldConfigsBridge]
+    def build_config(path = nil)
+      ::EacCli::OldConfigsBridge.new(name, path.if_present({}) { |v| { storage_path: v } })
+    end
 
-      define_method xdg_env_method_name do
-        ENV["XDG_#{item.upcase}_HOME"].if_present(&:to_pathname)
-      end
-
-      define_method "#{item}_dir" do
-        (send(xdg_env_method_name) || home_dir.join(subpath)).join(name)
-      end
+    ::EacRubyBase0::ApplicationXdg::DIRECTORIES.each_key do |item|
+      delegate "#{item}_xdg_env", "#{item}_dir", to: :app_xdg
     end
 
     def fs_cache
@@ -40,7 +39,7 @@ module EacRubyBase0
     end
 
     def home_dir
-      @home_dir ||= (options[OPTION_HOME_DIR] || ENV.fetch('HOME')).to_pathname
+      app_xdg.user_home_dir
     end
 
     def name
@@ -52,6 +51,10 @@ module EacRubyBase0
     end
 
     private
+
+    def app_xdg_uncached
+      ::EacRubyBase0::ApplicationXdg.new(name, options[OPTION_HOME_DIR])
+    end
 
     def self_gem_uncached
       ::EacRubyGemsUtils::Gem.new(gemspec_dir)
