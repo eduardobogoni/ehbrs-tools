@@ -22,6 +22,7 @@ module Ehbrs
           i: :id6,
           n: :disc_name,
           N: :nintendont_basename,
+          s: :sanitized_disc_name,
           t: :database_title,
           T: :disc_type
         )
@@ -53,6 +54,10 @@ module Ehbrs
 
         def id6
           properties.fetch('Disc & part IDs/disc')
+        end
+
+        def sanitized_disc_name
+          ::ActiveSupport::Inflector.transliterate(disc_name).gsub(/[^0-9a-z ]/i, '')
         end
 
         def valid?
