@@ -20,6 +20,7 @@ module Ehbrs
           D: :disc_number,
           e: :extname,
           i: :id6,
+          m: :normalized_disc_name,
           n: :disc_name,
           N: :nintendont_basename,
           s: :sanitized_disc_name,
@@ -45,6 +46,10 @@ module Ehbrs
 
         def format(string)
           FORMAT.format(string).with(self)
+        end
+
+        def normalized_disc_name
+          sanitized_disc_name.downcase
         end
 
         def nintendont_basename
