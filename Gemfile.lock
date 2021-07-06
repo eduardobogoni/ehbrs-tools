@@ -29,12 +29,6 @@ PATH
       selenium-webdriver (~> 3.142, >= 3.142.3)
 
 PATH
-  remote: vendor/avm-apps
-  specs:
-    avm-apps (0.4.0)
-      eac_ruby_utils (~> 0.67)
-
-PATH
   remote: vendor/eac_cli
   specs:
     eac_cli (0.22.0)
@@ -95,6 +89,8 @@ GEM
     avm (0.1.0)
       eac_docker (~> 0.2, >= 0.2.2)
       eac_ruby_utils (~> 0.68)
+    avm-apps (0.4.0)
+      eac_ruby_utils (~> 0.67)
     avm-eac_asciidoctor_base0 (0.2.1)
       asciidoctor (~> 2.0, >= 2.0.12)
       eac_ruby_utils (~> 0.63)
@@ -249,7 +245,6 @@ PLATFORMS
 DEPENDENCIES
   aranha-parsers!
   aranha-selenium!
-  avm-apps!
   eac_cli!
   eac_config!
   eac_docker!
