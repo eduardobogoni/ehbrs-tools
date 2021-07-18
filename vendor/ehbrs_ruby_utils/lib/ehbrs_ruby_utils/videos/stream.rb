@@ -29,9 +29,15 @@ module EhbrsRubyUtils
         ffprobe_data
       end
 
-      %i[index codec_name codec_long_name].each do |method_name|
+      %i[index].each do |method_name|
         define_method method_name do
           ffprobe_data.fetch(method_name)
+        end
+      end
+
+      %i[codec_name codec_long_name].each do |method_name|
+        define_method method_name do
+          ffprobe_data[method_name]
         end
       end
 
