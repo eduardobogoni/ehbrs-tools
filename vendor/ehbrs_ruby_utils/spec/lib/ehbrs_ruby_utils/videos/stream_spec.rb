@@ -8,7 +8,7 @@ RSpec.describe ::EhbrsRubyUtils::Videos::Stream do
 
   def source_data(source_file)
     instance = described_class.new(::YAML.load_file(source_file))
-    %w[codec_name codec_long_name codec_type index language]
+    %w[codec_name codec_long_name codec_type index language title]
       .map { |k| [k.to_sym, instance.send(k)] }.sort.to_h
   end
 end

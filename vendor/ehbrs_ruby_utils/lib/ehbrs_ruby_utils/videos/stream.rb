@@ -52,6 +52,10 @@ module EhbrsRubyUtils
       def language
         tags[:language]
       end
+
+      def title
+        tags[:title]
+      end
     end
   end
 end
