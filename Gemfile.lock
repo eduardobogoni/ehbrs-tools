@@ -46,8 +46,8 @@ PATH
 PATH
   remote: vendor/eac_docker
   specs:
-    eac_docker (0.2.2)
-      eac_ruby_utils (~> 0.64)
+    eac_docker (0.3.0)
+      eac_ruby_utils (~> 0.69, >= 0.69.1)
       eac_templates (~> 0.1)
 
 PATH
@@ -86,8 +86,8 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     asciidoctor (2.0.15)
     ast (2.4.2)
-    avm (0.1.0)
-      eac_docker (~> 0.2, >= 0.2.2)
+    avm (0.2.0)
+      eac_docker (~> 0.3)
       eac_ruby_utils (~> 0.68)
     avm-apps (0.4.0)
       eac_ruby_utils (~> 0.67)
