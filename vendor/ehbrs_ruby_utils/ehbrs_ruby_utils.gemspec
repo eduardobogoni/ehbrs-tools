@@ -16,5 +16,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'eac_ruby_utils', '~> 0.69', '>= 0.69.1'
 
+  s.add_development_dependency 'aranha-parsers', '~> 0.7', '>= 0.7.2'
   s.add_development_dependency 'eac_ruby_gem_support', '~> 0.2'
 end
