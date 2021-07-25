@@ -70,8 +70,8 @@ PATH
 PATH
   remote: vendor/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.6.0)
-      eac_ruby_utils (~> 0.69, >= 0.69.1)
+    ehbrs_ruby_utils (0.6.1)
+      eac_ruby_utils (~> 0.70)
 
 GEM
   remote: https://rubygems.org/

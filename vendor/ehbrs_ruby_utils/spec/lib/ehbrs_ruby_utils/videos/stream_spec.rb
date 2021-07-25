@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/parsers/spec/source_target_fixtures_example'
 require 'ehbrs_ruby_utils/videos/stream'
 
 RSpec.describe ::EhbrsRubyUtils::Videos::Stream do
