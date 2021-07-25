@@ -255,7 +255,7 @@ DEPENDENCIES
   eac_config!
   eac_docker!
   eac_ruby_base0!
-  eac_ruby_gem_support (~> 0.2)
+  eac_ruby_gem_support (~> 0.3)
   eac_ruby_utils!
   ehbrs-tools!
   ehbrs_ruby_utils!
