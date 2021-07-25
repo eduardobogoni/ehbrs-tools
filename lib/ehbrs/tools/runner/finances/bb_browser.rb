@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'eac_docker/images/named'
 require 'ehbrs/core_ext'
+require 'ehbrs_ruby_utils/finances/bb_browser/docker_image'
 
 module Ehbrs
   module Tools
@@ -20,14 +20,44 @@ module Ehbrs
           private
 
           def docker_image_uncached
-            ::EacDocker::Images::Named.new('lichti/warsaw-browser')
+            ::EhbrsRubyUtils::Finances::BbBrowser::DockerImage.create
           end
 
           def docker_container_uncached
-            docker_image.container.env('DISPLAY', "unix#{ENV.fetch('DISPLAY')}")
-                        .volume(::File.join(ENV['HOME'], 'Downloads'), '/home/bank/Downloads')
-                        .volume('/tmp/.X11-unix', '/tmp/.X11-unix').command_arg('bb')
-                        .temporary(true).interactive(true).tty(true)
+            r = docker_image.container
+                            .temporary(true).interactive(true).tty(true)
+                            .command_arg('seg.bb.com.br')
+            %w[capabilities environment_variables volumes].inject(r) do |a, e|
+              send("docker_container_#{e}", a)
+            end
+          end
+
+          def docker_container_capabilities(container)
+            %w[CAP_AUDIT_WRITE CAP_SYS_PTRACE].inject(container) { |a, e| a.capability(e) }
+          end
+
+          def docker_container_environment_variables(container)
+            {
+              'USER_UID' => user_id,
+              'USER_GID' => group_id
+            }.inject(container) { |a, e| a.env(e[0], e[1]) }
+          end
+
+          def docker_container_volumes(container)
+            {
+              ::File.join(ENV.fetch('HOME'), 'Downloads') => '/home/user/Downloads',
+              ::File.join(ENV.fetch('HOME'), '.Xauthority') => '/home/user/.Xauthority:ro',
+              '/tmp/.X11-unix' => '/tmp/.X11-unix:ro',
+              '/etc/machine-id' => '/etc/machine-id:ro'
+            }.inject(container) { |a, e| a.volume(e[0], e[1]) }
+          end
+
+          def user_id
+            ::EacRubyUtils::Envs.local.command('id', '-u').execute!.strip
+          end
+
+          def group_id
+            ::EacRubyUtils::Envs.local.command('id', '-g').execute!.strip
           end
         end
       end
