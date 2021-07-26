@@ -13,7 +13,7 @@ module Ehbrs
           end
 
           def run
-            infov 'Docker run arguments', docker_container.run_command_args
+            infov 'Docker run arguments', ::Shellwords.join(docker_container.run_command_args)
             infov 'System result', docker_container.run_command.system
           end
 
