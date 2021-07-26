@@ -44,7 +44,7 @@ module EacDocker
 
     def run_command_args
       run_command_boolean_args + run_command_capabilities_args + run_command_envs_args +
-        run_command_volumes_args + [image.id] + command_args
+        run_command_volumes_args + [image.provide.id] + command_args
     end
 
     def stop
