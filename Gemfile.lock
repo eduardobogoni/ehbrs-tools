@@ -72,6 +72,7 @@ PATH
   specs:
     ehbrs_ruby_utils (0.6.1)
       eac_ruby_utils (~> 0.70)
+      eac_templates (~> 0.1, >= 0.1.1)
 
 GEM
   remote: https://rubygems.org/
