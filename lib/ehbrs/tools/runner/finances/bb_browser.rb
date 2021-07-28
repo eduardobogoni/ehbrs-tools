@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs/videos/extract/package'
 require 'eac_docker/images/named'
+require 'ehbrs/core_ext'
 
 module Ehbrs
   module Tools
