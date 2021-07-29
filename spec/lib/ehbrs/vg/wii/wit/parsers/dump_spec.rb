@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/parsers/spec/source_target_fixtures_example'
 require 'ehbrs/vg/wii/wit/parsers/dump'
 
 RSpec.describe ::Ehbrs::Vg::Wii::Wit::Parsers::Dump do
