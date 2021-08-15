@@ -13,11 +13,11 @@ PATH
 PATH
   remote: vendor/aranha-parsers
   specs:
-    aranha-parsers (0.8.0)
+    aranha-parsers (0.8.3)
       activesupport (>= 4.0.0)
       addressable (~> 2.7)
       curb (~> 0.9.10)
-      eac_ruby_utils (~> 0.70)
+      eac_ruby_utils (~> 0.74)
       httpclient (~> 2.8, >= 2.8.3)
       ofx-parser (~> 1.1.0)
 
