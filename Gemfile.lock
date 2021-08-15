@@ -85,11 +85,13 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    asciidoctor (2.0.15)
+    asciidoctor (2.0.16)
     ast (2.4.2)
     avm (0.3.0)
       eac_docker (~> 0.3)
+      eac_git (~> 0.6)
       eac_ruby_utils (~> 0.68)
+      eac_templates (~> 0.1, >= 0.1.1)
     avm-apps (0.4.0)
       eac_ruby_utils (~> 0.67)
     avm-eac_asciidoctor_base0 (0.3.0)
@@ -153,7 +155,7 @@ GEM
     eac_templates (0.1.1)
       eac_config (~> 0.5)
       eac_ruby_utils (~> 0.64)
-    faraday (1.5.1)
+    faraday (1.7.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -161,6 +163,7 @@ GEM
       faraday-net_http (~> 1.0)
       faraday-net_http_persistent (~> 1.1)
       faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords (>= 0.0.4)
     faraday-em_http (1.0.0)
@@ -170,6 +173,7 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
     filesize (0.2.0)
     git (1.9.1)
       rchardet (~> 1.8)
@@ -261,4 +265,4 @@ DEPENDENCIES
   ehbrs_ruby_utils!
 
 BUNDLED WITH
-   2.2.24
+   2.2.25
