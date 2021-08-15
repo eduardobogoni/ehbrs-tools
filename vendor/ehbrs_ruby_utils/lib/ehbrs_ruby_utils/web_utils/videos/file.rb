@@ -1,11 +1,14 @@
 # frozen_string_literal: true
 
 require 'ostruct'
+require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module WebUtils
     module Videos
       class File < ::SimpleDelegator
+        require_sub __FILE__
+
         def initialize(data)
           super(::OpenStruct.new(data))
         end
@@ -18,10 +21,6 @@ module EhbrsRubyUtils
           original_path != new_path
         end
 
-        def can_rename?
-          ::File.exist?(original_path) && !::File.exist?(new_path)
-        end
-
         def remove
           return unless exist?
 
@@ -29,10 +28,7 @@ module EhbrsRubyUtils
         end
 
         def rename
-          return unless can_rename?
-
-          ::FileUtils.mkdir_p(::File.dirname(new_path))
-          ::FileUtils.mv(original_path, new_path)
+          ::EhbrsRubyUtils::WebUtils::Videos::File::Rename.new(self, new_path).perform
         end
       end
     end
