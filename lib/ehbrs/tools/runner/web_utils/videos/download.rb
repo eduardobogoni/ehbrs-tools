@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
+require 'eac_ruby_base0/core_ext'
 require 'ehbrs_ruby_utils/web_utils/videos/file'
 
 module Ehbrs
@@ -9,9 +9,8 @@ module Ehbrs
       class WebUtils
         class Videos
           class Download
-            runner_with :help do
+            runner_with :confirmation, :help do
               desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'
-              bool_opt '-c', '--confirm', 'Confirma as mudanças'
             end
 
             def run
@@ -30,12 +29,12 @@ module Ehbrs
 
             def process_rename_file(file)
               infov "  * #{file.new_path}", file.original_path
-              file.rename if parsed.confirm?
+              file.rename if confirm?
             end
 
             def process_unwanted_file(file)
               infov "  * #{file.new_path}", 'UNWANTED'
-              file.remove if parsed.confirm?
+              file.remove if confirm?
             end
 
             def files_uncached
