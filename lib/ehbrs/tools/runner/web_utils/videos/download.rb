@@ -12,6 +12,7 @@ module Ehbrs
             runner_with :confirmation, :help do
               desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'
               bool_opt '-d', '--delete', 'Remove vídeos indesejados.'
+              arg_opt '-m', '--move', 'Move vídeos indesejados para o diretório indicado.'
             end
 
             def run
@@ -23,7 +24,11 @@ module Ehbrs
             private
 
             def delete?
-              parsed.delete?
+              parsed.delete? && !move?
+            end
+
+            def move?
+              parsed.move.present?
             end
 
             def start_banner
@@ -40,6 +45,7 @@ module Ehbrs
             def process_unwanted_file(file)
               infov "  * #{file.new_path}", 'UNWANTED'
               file.remove if delete? && confirm?
+              file.move(parsed.move) if move? && confirm?
             end
 
             def files_uncached
