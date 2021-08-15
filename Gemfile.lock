@@ -61,7 +61,7 @@ PATH
 PATH
   remote: vendor/eac_ruby_utils
   specs:
-    eac_ruby_utils (0.71.0)
+    eac_ruby_utils (0.74.0)
       activesupport (>= 4.0)
       addressable (~> 2.6)
       filesize
@@ -140,11 +140,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.4.4)
     dry-inflector (0.2.1)
-    eac_git (0.7.0)
-      eac_ruby_utils (~> 0.70)
+    eac_git (0.7.2)
+      eac_ruby_utils (~> 0.73)
       parseconfig (~> 1.0, >= 1.0.8)
-    eac_ruby_gem_support (0.3.0)
-      eac_ruby_utils (~> 0.70)
+    eac_ruby_gem_support (0.3.3)
+      eac_ruby_utils (~> 0.74)
       rspec (~> 3.9)
       rubocop (~> 0.80.1)
       rubocop-rails (~> 2.4.2)
