@@ -11,6 +11,7 @@ module Ehbrs
           class Download
             runner_with :confirmation, :help do
               desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'
+              bool_opt '-d', '--delete', 'Remove vídeos indesejados.'
             end
 
             def run
@@ -20,6 +21,10 @@ module Ehbrs
             end
 
             private
+
+            def delete?
+              parsed.delete?
+            end
 
             def start_banner
               infov 'Files downloaded', files.count
@@ -34,7 +39,7 @@ module Ehbrs
 
             def process_unwanted_file(file)
               infov "  * #{file.new_path}", 'UNWANTED'
-              file.remove if confirm?
+              file.remove if delete? && confirm?
             end
 
             def files_uncached
