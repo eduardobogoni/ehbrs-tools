@@ -17,7 +17,7 @@ module Ehbrs
             def run
               start_banner
               to_rename.each { |file| process_rename_file(file) }
-              to_delete.each { |file| process_delete_file(file) }
+              unwanted.each { |file| process_unwanted_file(file) }
             end
 
             private
@@ -25,7 +25,7 @@ module Ehbrs
             def start_banner
               infov 'Files downloaded', files.count
               infov 'To rename', to_rename.count
-              infov 'To delete', to_delete.count
+              infov 'Unwanted', unwanted.count
             end
 
             def process_rename_file(file)
@@ -33,8 +33,8 @@ module Ehbrs
               file.rename if parsed.confirm?
             end
 
-            def process_delete_file(file)
-              infov "  * #{file.new_path}", 'REMOVE'
+            def process_unwanted_file(file)
+              infov "  * #{file.new_path}", 'UNWANTED'
               file.remove if parsed.confirm?
             end
 
@@ -46,7 +46,7 @@ module Ehbrs
               files.select(&:path_changed?)
             end
 
-            def to_delete_uncached
+            def unwanted_uncached
               files.reject { |f| f.type == 'Videos::SeriesDirectory' }.select(&:unwanted)
             end
 
