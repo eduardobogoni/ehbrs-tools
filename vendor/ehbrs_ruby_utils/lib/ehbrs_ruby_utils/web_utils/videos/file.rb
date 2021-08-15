@@ -17,6 +17,13 @@ module EhbrsRubyUtils
           ::File.exist?(original_path)
         end
 
+        def move(target_dir)
+          ::EhbrsRubyUtils::WebUtils::Videos::File::Rename.new(
+            self,
+            target_dir.to_pathname.join(original_path.to_pathname.relative_path_from(root_path))
+          ).perform
+        end
+
         def path_changed?
           original_path != new_path
         end
