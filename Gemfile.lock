@@ -77,7 +77,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.4)
+    activesupport (6.1.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -140,10 +140,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.4.4)
     dry-inflector (0.2.1)
-    eac_git (0.7.2)
-      eac_ruby_utils (~> 0.73)
+    eac_git (0.7.3)
+      eac_ruby_utils (~> 0.74)
       parseconfig (~> 1.0, >= 1.0.8)
-    eac_ruby_gem_support (0.3.3)
+    eac_ruby_gem_support (0.4.0)
       eac_ruby_utils (~> 0.74)
       rspec (~> 3.9)
       rubocop (~> 0.80.1)
