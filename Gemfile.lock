@@ -70,7 +70,7 @@ PATH
 PATH
   remote: vendor/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.8.0)
+    ehbrs_ruby_utils (0.8.1)
       eac_ruby_utils (~> 0.70)
       eac_templates (~> 0.1, >= 0.1.1)
 
