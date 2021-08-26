@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Eduardo H. Bogoni']
   s.summary     = 'Utilities for EHB/RS\'s Ruby projects.'
 
-  s.files = Dir['{lib}/**/*']
+  s.files = Dir['{lib,template}/**/*']
 
   s.add_dependency 'eac_ruby_utils', '~> 0.70'
   s.add_dependency 'eac_templates', '~> 0.1', '>= 0.1.1'
