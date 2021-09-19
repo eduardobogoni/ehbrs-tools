@@ -5,6 +5,8 @@ require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/videos/stream'
 require 'json'
 require 'taglib'
+require 'ultimate_lyrics/provider_search'
+require 'ultimate_lyrics/song_metadata'
 
 module EhbrsRubyUtils
   module Videos
@@ -28,7 +30,21 @@ module EhbrsRubyUtils
         end
       end
 
+      # @param provider [UltimateLyrics::Provider]
+      # @return [UltimateLyrics::Lyrics]
+      def lyrics_by_provider(provider)
+        ::UltimateLyrics::ProviderSearch.new(provider, song_metadata).lyrics
+      end
+
       private
+
+      # @return [UltimateLyrics::SongMetadata]
+      def song_metadata_uncached
+        ::UltimateLyrics::SongMetadata.new(
+          ::UltimateLyrics::SongMetadata::Field.lists.sources.values
+          .map { |source| [source, tag.send(source)] }.to_h
+        )
+      end
 
       def probe_data_uncached
         ::JSON.parse(
