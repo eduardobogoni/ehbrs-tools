@@ -76,6 +76,7 @@ PATH
       aranha-parsers (~> 0.8, >= 0.8.5)
       eac_ruby_utils (~> 0.70)
       eac_templates (~> 0.1, >= 0.1.1)
+      taglib-ruby (~> 1.1)
 
 PATH
   remote: vendor/ultimate_lyrics
@@ -248,6 +249,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    taglib-ruby (1.1.0)
     telegram-bot-ruby (0.16.0)
       dry-inflector
       faraday
