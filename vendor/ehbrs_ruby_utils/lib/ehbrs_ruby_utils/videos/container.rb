@@ -23,6 +23,7 @@ module EhbrsRubyUtils
       end
 
       delegate :tag, to: :tag_file
+      delegate :to_s, to: :path
 
       ::EhbrsRubyUtils::Videos::Stream.lists.codec_type.each_value do |stream_type|
         define_method stream_type.to_s.pluralize do
