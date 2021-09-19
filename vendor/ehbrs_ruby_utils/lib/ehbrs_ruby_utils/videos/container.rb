@@ -8,6 +8,12 @@ require 'json'
 module EhbrsRubyUtils
   module Videos
     class Container
+      class << self
+        def from_file(path)
+          new(path)
+        end
+      end
+
       enable_simple_cache
       common_constructor :path do
         self.path = path.to_pathname
