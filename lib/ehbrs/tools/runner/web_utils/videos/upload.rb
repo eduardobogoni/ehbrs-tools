@@ -32,7 +32,7 @@ module Ehbrs
                 '/videos/files/import',
                 method: :put,
                 body: {
-                  'videos_tableless_local_import_list[list_file]' => ::File.new(files_list_path)
+                  'videos_local_files_import_list[list_file]' => ::File.new(files_list_path)
                 },
                 header: {
                   'Accept' => 'application/json'
