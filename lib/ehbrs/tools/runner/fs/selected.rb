@@ -2,7 +2,7 @@
 
 require 'eac_ruby_utils/envs'
 require 'eac_ruby_utils/fs/clearable_directory'
-require 'ehbrs/core_ext'
+require 'ehbrs/tools/core_ext'
 
 module Ehbrs
   module Tools
