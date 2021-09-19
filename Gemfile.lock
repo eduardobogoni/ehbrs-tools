@@ -20,6 +20,7 @@ PATH
       curb (~> 0.9.10)
       eac_ruby_utils (~> 0.74)
       httpclient (~> 2.8, >= 2.8.3)
+      nokogiri (~> 1.12, >= 1.12.4)
       ofx-parser (~> 1.1.0)
 
 PATH
@@ -190,6 +191,8 @@ GEM
     minitest (5.14.4)
     multipart-post (2.1.1)
     net-ssh (4.2.0)
+    nokogiri (1.12.4-x86_64-linux)
+      racc (~> 1.4)
     ofx-parser (1.1.0)
       hpricot (>= 0.6)
     os (1.1.1)
@@ -199,6 +202,7 @@ GEM
       ast (~> 2.4.1)
     parslet (1.8.2)
     public_suffix (4.0.6)
+    racc (1.5.2)
     rack (2.2.3)
     rainbow (3.0.0)
     rchardet (1.8.0)
