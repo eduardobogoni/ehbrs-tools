@@ -4,6 +4,7 @@ require 'eac_ruby_utils/core_ext'
 require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/videos/stream'
 require 'json'
+require 'taglib'
 
 module EhbrsRubyUtils
   module Videos
@@ -39,6 +40,11 @@ module EhbrsRubyUtils
         probe_data.fetch(:streams).map do |stream_ffprobe_data|
           ::EhbrsRubyUtils::Videos::Stream.new(stream_ffprobe_data)
         end
+      end
+
+      # @return [TagLib::FileRef]
+      def tag_file_uncached
+        ::TagLib::FileRef.new(path.to_path)
       end
     end
   end
