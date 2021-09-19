@@ -20,6 +20,8 @@ module EhbrsRubyUtils
         self.path = path.to_pathname
       end
 
+      delegate :tag, to: :tag_file
+
       ::EhbrsRubyUtils::Videos::Stream.lists.codec_type.each_value do |stream_type|
         define_method stream_type.to_s.pluralize do
           streams.select { |stream| stream.codec_type == stream_type }
