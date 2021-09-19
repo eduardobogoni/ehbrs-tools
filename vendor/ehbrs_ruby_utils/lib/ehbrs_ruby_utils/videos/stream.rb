@@ -35,7 +35,7 @@ module EhbrsRubyUtils
         end
       end
 
-      %i[codec_name codec_long_name].each do |method_name|
+      %i[codec_name codec_long_name height width].each do |method_name|
         define_method method_name do
           ffprobe_data[method_name]
         end
