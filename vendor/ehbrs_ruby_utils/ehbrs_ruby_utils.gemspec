@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir['{spec}/**/*', '.rubocop.yml', '.rspec']
 
   s.add_dependency 'aranha-parsers', '~> 0.8', '>= 0.8.5'
+  s.add_dependency 'avm', '~> 0.3', '>= 0.3.2'
   s.add_dependency 'eac_ruby_utils', '~> 0.70'
   s.add_dependency 'eac_templates', '~> 0.1', '>= 0.1.1'
   s.add_dependency 'taglib-ruby', '~> 1.1'
