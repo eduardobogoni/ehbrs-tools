@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/fs/compressed_package'
+require 'ehbrs_ruby_utils/fs/compressed_package'
 require 'ehbrs/videos/extract/package_file'
 
 module Ehbrs
@@ -37,7 +37,7 @@ module Ehbrs
           raise "Extract directory \"#{r}\" is a file" if r.file?
 
           r.rmtree if r.directory?
-          ::Ehbrs::Fs::CompressedPackage.new(path).extract_to(r)
+          ::EhbrsRubyUtils::Fs::CompressedPackage.new(path).extract_to(r)
           r
         end
 
