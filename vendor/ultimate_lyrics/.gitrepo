@@ -1,0 +1,7 @@
+[subrepo]
+  cmdver = 0.4.1
+  commit = 9b5f2251b98113257ba771d5205b4efac33922a5
+  method = merge
+  parent = 101c08833afeb8131774f8e472b5df0e7710a24d
+  branch = master
+  remote = https://github.com/esquilo-azul/ultimate_lyrics.git
