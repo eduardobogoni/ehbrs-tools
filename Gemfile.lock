@@ -77,6 +77,7 @@ PATH
       eac_ruby_utils (~> 0.70)
       eac_templates (~> 0.1, >= 0.1.1)
       taglib-ruby (~> 1.1)
+      ultimate_lyrics (~> 0.1)
 
 PATH
   remote: vendor/ultimate_lyrics
