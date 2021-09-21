@@ -7,8 +7,10 @@ require 'ultimate_lyrics/version'
 Gem::Specification.new do |s|
   s.name        = 'ultimate_lyrics'
   s.version     = UltimateLyrics::VERSION
-  s.authors     = ['Put here the authors']
-  s.summary     = 'Put here de description.'
+  s.authors     = ['Eduardo H. Bogoni']
+  s.summary     = 'Fetch song lyrics from popular websites.'
+  s.homepage    = 'https://rubygems.org/gems/ultimate_lyrics'
+  s.metadata    = { 'source_code_uri' => 'https://github.com/esquilo-azul/ultimate_lyrics' }
 
   s.files = Dir['{lib}/**/*']
 
