@@ -14,11 +14,15 @@ module Ehbrs
           runner_with :confirmation, :help do
             desc 'Seleciona diretórios.'
             arg_opt '-b', '--build-dir', 'Constrói diretório alvo.'
+            arg_opt '-f', '--filename', 'Nome do arquivo que anota o diretório como selecionado.',
+                    default: ::EhbrsRubyUtils::Fs::Selected::DEFAULT_FILENAME
+
             pos_arg :root_path
           end
 
           def run
             infov 'Root path', selected.root_path
+            infov 'Filename', selected.filename
             infov 'Build directory', build_dir.if_present('-')
             run_jobs :show, :build
           end
@@ -58,7 +62,7 @@ module Ehbrs
           end
 
           def selected_uncached
-            ::EhbrsRubyUtils::Fs::Selected.new(parsed.root_path)
+            ::EhbrsRubyUtils::Fs::Selected.new(parsed.root_path, filename: parsed.filename)
           end
 
           def show
