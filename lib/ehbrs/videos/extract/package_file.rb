@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/fs/compressed_package'
 
 module Ehbrs
   module Videos
