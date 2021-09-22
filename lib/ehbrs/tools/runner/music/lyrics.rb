@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/fs_cache'
 require 'ehbrs/tools/core_ext'
 require 'ehbrs_ruby_utils/videos/container'
 require 'ultimate_lyrics/provider'
@@ -13,7 +12,7 @@ module Ehbrs
           DEFAULT_PROVIDER = 'lyrics.com'
 
           runner_with :help, :output do
-            arg_opt '-p', '--provider', "Nome do provedor [Nome do #{DEFAULT_PROVIDER}]"
+            arg_opt '-p', '--provider', 'Nome do provedor.', default: DEFAULT_PROVIDER
             pos_arg :file
           end
 
@@ -60,7 +59,7 @@ module Ehbrs
           end
 
           def provider_name
-            parsed.provider.if_present(DEFAULT_PROVIDER)
+            parsed.provider
           end
         end
       end
