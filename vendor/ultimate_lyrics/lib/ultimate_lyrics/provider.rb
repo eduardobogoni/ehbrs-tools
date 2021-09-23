@@ -36,6 +36,10 @@ module UltimateLyrics
 
     common_constructor :node
 
+    def encoding
+      node.attribute('charset').text
+    end
+
     def extract_rules
       node.xpath('./extract').map do |v|
         ::UltimateLyrics::Provider::Rule.new(v)
