@@ -26,7 +26,7 @@ module UltimateLyrics
 
     # @return [UltimateLyrics::Parser]
     def lyrics_original_text
-      ::Aranha::Parsers::SourceAddress.detect_sub(url).content
+      ::Aranha::Parsers::SourceAddress.detect_sub(url).content.force_encoding(provider.encoding)
     rescue ::Aranha::Parsers::SourceAddress::FetchContentError
       nil
     end
