@@ -16,8 +16,8 @@ module EhbrsRubyUtils
         self.options = self.class.lists.option.hash_keys_validate!(options)
       end
 
-      def build(target_dir)
-        ::EhbrsRubyUtils::Fs::Selected::Build.new(self, target_dir)
+      def build(target_dir, &directory_target_basename)
+        ::EhbrsRubyUtils::Fs::Selected::Build.new(self, target_dir, &directory_target_basename)
       end
 
       def filename
