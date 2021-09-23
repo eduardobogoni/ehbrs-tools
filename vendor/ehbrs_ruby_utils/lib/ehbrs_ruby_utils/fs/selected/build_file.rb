@@ -19,7 +19,7 @@ module EhbrsRubyUtils
         end
 
         def target_basename
-          build.target_basename_proc.call(path.basename.to_path)
+          build.target_basename_proc.call(path)
         end
       end
     end

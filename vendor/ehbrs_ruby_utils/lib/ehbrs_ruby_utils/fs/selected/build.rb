@@ -7,7 +7,7 @@ module EhbrsRubyUtils
   module Fs
     class Selected
       class Build
-        DEFAULT_TARGET_BASENAME_PROC = ::Proc.new { |basename| basename }
+        DEFAULT_TARGET_BASENAME_PROC = ::Proc.new { |path| path.basename.to_path }
 
         attr_reader :selected, :target_dir, :target_basename_proc
 
