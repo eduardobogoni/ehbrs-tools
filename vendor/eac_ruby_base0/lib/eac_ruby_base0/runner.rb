@@ -23,19 +23,25 @@ module EacRubyBase0
     end
 
     def run
-      ::EacRubyUtils::Speaker.context.on(build_speaker) do
-        ::EacConfig::Node.context.on(runner_context.call(:application).build_config) do
-          if parsed.version?
-            show_version
-          else
-            run_with_subcommand
-          end
+      on_context do
+        if parsed.version?
+          show_version
+        else
+          run_with_subcommand
         end
       end
     end
 
     def application_version
       runner_context.call(:application).version.to_s
+    end
+
+    def on_context
+      ::EacRubyUtils::Speaker.context.on(build_speaker) do
+        ::EacConfig::Node.context.on(runner_context.call(:application).build_config) do
+          yield
+        end
+      end
     end
 
     def show_version
