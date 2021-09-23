@@ -32,7 +32,7 @@ module Ehbrs
 
           def start_banner
             infov 'File', file
-            %w[artist album track title].each do |attr|
+            %w[artist album track title year].each do |attr|
               infov attr.humanize, container.tag_file.tag.send(attr)
             end
             infov 'Selected provider', provider
