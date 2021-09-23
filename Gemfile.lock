@@ -106,7 +106,7 @@ PATH
 PATH
   remote: vendor/ultimate_lyrics
   specs:
-    ultimate_lyrics (0.1.1)
+    ultimate_lyrics (0.1.2)
       aranha-parsers (~> 0.8, >= 0.8.5)
       eac_ruby_utils (~> 0.74)
 
