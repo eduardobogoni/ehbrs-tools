@@ -29,10 +29,6 @@ module Ehbrs
 
           protected
 
-          def build_selected_directory(path)
-            path
-          end
-
           def directory_label(directory)
             directory.to_s
           end
@@ -58,7 +54,7 @@ module Ehbrs
 
           def selected_directories_uncached
             infom 'Searching selected directories...'
-            selected.found.map { |path| build_selected_directory(path) }
+            selected.found
           end
 
           def selected_uncached

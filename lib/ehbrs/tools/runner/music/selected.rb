@@ -10,16 +10,16 @@ module Ehbrs
         class Selected < ::Ehbrs::Tools::Runner::Fs::Selected
           protected
 
-          def build_selected_directory(path)
-            ::Ehbrs::Music::Album.new(path)
-          end
-
           def directory_label(directory)
-            directory.to_label
+            path_to_album(directory).to_label
           end
 
           def directory_target_basename(directory)
-            directory.id
+            path_to_album(directory).id
+          end
+
+          def path_to_album(path)
+            ::Ehbrs::Music::Album.new(path)
           end
         end
       end
