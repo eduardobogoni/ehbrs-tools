@@ -3,6 +3,7 @@
 require 'eac_cli/core_ext'
 require 'eac_cli/speaker'
 require 'eac_config/node'
+require 'eac_fs/cache'
 require 'eac_ruby_utils/speaker'
 
 module EacRubyBase0
@@ -39,7 +40,9 @@ module EacRubyBase0
     def on_context
       ::EacRubyUtils::Speaker.context.on(build_speaker) do
         ::EacConfig::Node.context.on(runner_context.call(:application).build_config) do
-          yield
+          ::EacFs::Cache.context.on(application.fs_cache) do
+            yield
+          end
         end
       end
     end
