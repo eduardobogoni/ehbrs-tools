@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.song {
+  margin-top: 4.0em;
+}
+
 .filename {
   display: block;
   font-size: small;
