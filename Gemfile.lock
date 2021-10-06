@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/livelink/httpclient.git
+  revision: 40f7e88078c95f9a6909fb56f9e313632637cd72
+  specs:
+    httpclient (2.8.4)
+
 PATH
   remote: .
   specs:
@@ -201,7 +207,6 @@ GEM
       rchardet (~> 1.8)
     hpricot (0.8.6)
     htmlbeautifier (1.3.1)
-    httpclient (2.8.3)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
@@ -293,6 +298,7 @@ DEPENDENCIES
   eac_templates!
   ehbrs-tools!
   ehbrs_ruby_utils!
+  httpclient!
   ultimate_lyrics!
 
 BUNDLED WITH

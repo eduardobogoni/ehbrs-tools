@@ -11,3 +11,5 @@ Dir["#{gems_subdir}/*"].each do |dir|
   basename = ::File.basename(dir)
   gem basename, path: "#{gems_subdir}/#{basename}"
 end
+
+gem 'httpclient', git: 'https://github.com/livelink/httpclient.git'
