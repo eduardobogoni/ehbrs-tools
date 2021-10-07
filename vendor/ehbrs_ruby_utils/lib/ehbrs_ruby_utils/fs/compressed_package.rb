@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'avm/files/info'
+require 'eac_fs/file_info'
 require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module Fs
-    class CompressedPackage < ::Avm::Files::Info
+    class CompressedPackage < ::EacFs::FileInfo
       MIME_TYPES = {
         'application/zip' => :zip,
         'application/x-7z-compressed' => :sevenzip,
