@@ -45,7 +45,7 @@ module Ehbrs
           end
 
           def build_dir_uncached
-            parsed.build_dir.if_present(&:to_pathname)
+            parsed.build_dir.if_nil(&:to_pathname)
           end
 
           def run_build?
