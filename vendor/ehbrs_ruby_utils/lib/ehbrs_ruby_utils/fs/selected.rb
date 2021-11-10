@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'eac_fs/traverser'
 require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
@@ -28,7 +29,16 @@ module EhbrsRubyUtils
 
       # @return [Pathname]
       def found_uncached
-        root_path.glob("**/#{filename}").map(&:parent).sort
+        r = []
+        ft = ::EacFs::Traverser.new(
+          recursive: true,
+          hidden_directories: true,
+          check_file: lambda do |file|
+            r << file.parent if file.basename.to_path == filename.to_s
+          end
+        )
+        ft.check_path(root_path)
+        r.sort
       end
     end
   end
