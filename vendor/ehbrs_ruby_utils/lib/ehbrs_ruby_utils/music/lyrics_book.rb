@@ -42,7 +42,7 @@ module EhbrsRubyUtils
 
       def albums_directories_uncached
         r = []
-        t = ::EacRubyUtils::Fs::Traverser.new
+        t = ::EacFs::Traverser.new
         t.recursive = true
         t.check_directory = ->(directory) { r << directory }
         t.check_path(source_dir)
