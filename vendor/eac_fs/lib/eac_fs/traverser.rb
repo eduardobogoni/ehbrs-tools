@@ -4,6 +4,12 @@ module EacFs
   class Traverser
     attr_accessor :check_directory, :check_file, :recursive, :hidden_directories, :sort
 
+    def initialize(options = {})
+      options.each do |accessor, value|
+        send("#{accessor}=", value)
+      end
+    end
+
     def check_path(path)
       path = ::Pathname.new(path.to_s) unless path.is_a?(::Pathname)
       internal_check_path(path, 0)
