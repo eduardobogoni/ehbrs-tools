@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'eac_ruby_utils/fs/traversable'
+require 'eac_fs/traversable'
 require 'ehbrs/vg/wii/file_move'
 require 'ehbrs/vg/wii/game_file'
 
@@ -10,7 +10,7 @@ module Ehbrs
     class Runner
       class Vg
         class Wii
-          include ::EacRubyUtils::Fs::Traversable
+          include ::EacFs::Traversable
 
           runner_with :help do
             desc 'Manipulação de imagens de jogo Wii.'

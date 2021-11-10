@@ -11,7 +11,7 @@ module Ehbrs
       class Videos
         class Series
           class Rename
-            include ::EacRubyUtils::Fs::Traversable
+            include ::EacFs::Traversable
 
             runner_with :help do
               desc 'Renomeia arquivos de séries.'

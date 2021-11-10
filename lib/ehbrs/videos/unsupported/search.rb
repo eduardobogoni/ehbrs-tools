@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/fs/traversable'
+require 'eac_fs/traversable'
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs/videos/unsupported/file'
 
@@ -8,7 +8,7 @@ module Ehbrs
   module Videos
     module Unsupported
       class Search
-        include ::EacRubyUtils::Fs::Traversable
+        include ::EacFs::Traversable
         enable_speaker
         enable_simple_cache
 
