@@ -18,7 +18,7 @@ PATH
       telegram-bot-ruby
 
 PATH
-  remote: vendor/aranha-parsers
+  remote: sub/aranha-parsers
   specs:
     aranha-parsers (0.10.0)
       activesupport (>= 4.0.0)
@@ -31,14 +31,14 @@ PATH
       ofx-parser (~> 1.1.0)
 
 PATH
-  remote: vendor/aranha-selenium
+  remote: sub/aranha-selenium
   specs:
     aranha-selenium (0.2.2)
       eac_ruby_utils (~> 0.70)
       selenium-webdriver (~> 3.142, >= 3.142.3)
 
 PATH
-  remote: vendor/eac_cli
+  remote: sub/eac_cli
   specs:
     eac_cli (0.24.0)
       colorize (~> 0.8.1)
@@ -46,21 +46,21 @@ PATH
       eac_ruby_utils (~> 0.80)
 
 PATH
-  remote: vendor/eac_config
+  remote: sub/eac_config
   specs:
     eac_config (0.5.2)
       addressable
       eac_ruby_utils (~> 0.70)
 
 PATH
-  remote: vendor/eac_docker
+  remote: sub/eac_docker
   specs:
     eac_docker (0.4.1)
       eac_ruby_utils (~> 0.74)
       eac_templates (~> 0.1)
 
 PATH
-  remote: vendor/eac_fs
+  remote: sub/eac_fs
   specs:
     eac_fs (0.7.0)
       content-type
@@ -68,7 +68,7 @@ PATH
       ruby-filemagic
 
 PATH
-  remote: vendor/eac_ruby_base0
+  remote: sub/eac_ruby_base0
   specs:
     eac_ruby_base0 (0.13.1)
       eac_cli (~> 0.22, >= 0.22.2)
@@ -77,14 +77,14 @@ PATH
       eac_ruby_utils (~> 0.70)
 
 PATH
-  remote: vendor/eac_ruby_gems_utils
+  remote: sub/eac_ruby_gems_utils
   specs:
     eac_ruby_gems_utils (0.9.8)
       bundler
       eac_ruby_utils (~> 0.70)
 
 PATH
-  remote: vendor/eac_ruby_utils
+  remote: sub/eac_ruby_utils
   specs:
     eac_ruby_utils (0.80.1)
       activesupport (>= 4.0)
@@ -93,14 +93,14 @@ PATH
       net-ssh (~> 4.2)
 
 PATH
-  remote: vendor/eac_templates
+  remote: sub/eac_templates
   specs:
     eac_templates (0.2.0)
       eac_config (~> 0.5)
       eac_ruby_utils (~> 0.64)
 
 PATH
-  remote: vendor/ehbrs_ruby_utils
+  remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.13.0)
       aranha-parsers (~> 0.8, >= 0.8.5)
@@ -112,7 +112,7 @@ PATH
       ultimate_lyrics (~> 0.1)
 
 PATH
-  remote: vendor/ultimate_lyrics
+  remote: sub/ultimate_lyrics
   specs:
     ultimate_lyrics (0.1.2)
       aranha-parsers (~> 0.8, >= 0.8.5)
