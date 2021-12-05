@@ -8,7 +8,8 @@ module EhbrsRubyUtils
   module Videos
     class ConvertJob
       FORMATS_TO_EXTENSIONS = {
-        'matroska' => '.mkv'
+        'matroska' => '.mkv',
+        'mp4' => '.mp4'
       }.freeze
 
       enable_speaker
