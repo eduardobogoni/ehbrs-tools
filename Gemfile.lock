@@ -48,7 +48,7 @@ PATH
 PATH
   remote: vendor/eac_config
   specs:
-    eac_config (0.5.1)
+    eac_config (0.5.2)
       addressable
       eac_ruby_utils (~> 0.70)
 
