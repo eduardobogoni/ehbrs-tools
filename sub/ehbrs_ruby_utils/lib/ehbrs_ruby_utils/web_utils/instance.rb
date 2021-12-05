@@ -7,6 +7,12 @@ require 'httpclient'
 module EhbrsRubyUtils
   module WebUtils
     class Instance < ::Avm::Instances::Base
+      require_sub __FILE__
+
+      def finances
+        @finances ||= ::EhbrsRubyUtils::WebUtils::Instance::Finances.new(self)
+      end
+
       def root_url
         read_entry(:url)
       end
