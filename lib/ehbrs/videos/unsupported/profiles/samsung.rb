@@ -8,8 +8,8 @@ module Ehbrs
     module Unsupported
       module Profiles
         class Samsung < ::Ehbrs::Videos::Unsupported::Profiles::Base
-          AUDIO_SUPPORTED_CODECS = %w[aac ac3 dts eac3 mp3 vorbis].freeze
-          AUDIO_UNSUPPORTED_CODECS = %w[].freeze
+          AUDIO_SUPPORTED_CODECS = %w[aac ac3 eac3 mp3 vorbis].freeze
+          AUDIO_UNSUPPORTED_CODECS = %w[dts].freeze
 
           VIDEO_SUPPORTED_CODECS = %w[h264 mpeg4 hevc].freeze
           VIDEO_UNSUPPORTED_CODECS = %w[].freeze
