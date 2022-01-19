@@ -14,7 +14,7 @@ module EhbrsRubyUtils
       end
 
       def root_url
-        read_entry(:url)
+        read_entry(::Avm::Instances::EntryKeys::WEB_URL)
       end
 
       def resource_url(resource_url_suffix)
