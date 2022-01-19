@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ehbrs/music/album'
+require 'ehbrs_ruby_utils/music/ous/album'
 require 'ehbrs/tools/runner/fs/selected'
 
 module Ehbrs
@@ -19,7 +19,7 @@ module Ehbrs
           end
 
           def path_to_album(path)
-            ::Ehbrs::Music::Album.new(path)
+            ::EhbrsRubyUtils::Music::Ous::Album.new(path)
           end
         end
       end
