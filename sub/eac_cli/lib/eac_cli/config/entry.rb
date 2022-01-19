@@ -5,7 +5,7 @@ require 'eac_config/entry_path'
 require 'eac_ruby_utils/core_ext'
 
 module EacCli
-  class Config
+  class Config < ::SimpleDelegator
     class Entry
       require_sub __FILE__, include_modules: true
       enable_listable
@@ -22,6 +22,10 @@ module EacCli
         return nil unless options.required?
 
         input_value
+      end
+
+      def secret_value
+        self.class.new(config, path, options.to_h.merge(noecho: true).to_h).value
       end
 
       delegate :found?, :value=, to: :sub_entry
