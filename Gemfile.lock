@@ -95,7 +95,7 @@ PATH
 PATH
   remote: sub/eac_templates
   specs:
-    eac_templates (0.2.0)
+    eac_templates (0.3.0)
       eac_config (~> 0.5)
       eac_ruby_utils (~> 0.64)
 
@@ -149,6 +149,9 @@ GEM
     avm-eac_generic_base0 (0.1.1)
       avm (~> 0.10)
       eac_ruby_utils (~> 0.80)
+    avm-eac_postgresql_base0 (0.1.0)
+      avm (~> 0.12, >= 0.12.1)
+      eac_ruby_utils (~> 0.82)
     avm-eac_rails_base1 (0.1.2)
       avm-eac_webapp_base0 (~> 0.1)
       eac_ruby_utils (~> 0.68)
@@ -163,13 +166,15 @@ GEM
       avm-eac_generic_base0 (~> 0.1)
       eac_ruby_gems_utils (~> 0.9, >= 0.9.8)
       eac_ruby_utils (~> 0.80)
-    avm-eac_ubuntu_base0 (0.2.0)
+    avm-eac_ubuntu_base0 (0.2.1)
       avm (~> 0.7)
       eac_ruby_utils (~> 0.77, >= 0.77.1)
-      eac_templates (~> 0.2)
-    avm-eac_webapp_base0 (0.2.0)
+      eac_templates (~> 0.3)
+    avm-eac_webapp_base0 (0.2.1)
       avm (~> 0.1)
       avm-eac_generic_base0 (~> 0.1)
+      avm-eac_postgresql_base0 (~> 0.1)
+      avm-eac_ubuntu_base0 (~> 0.2.1)
       eac_ruby_utils (~> 0.68)
     avm-files (0.2.1)
       avm (~> 0.6)
