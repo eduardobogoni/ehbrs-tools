@@ -9,6 +9,7 @@ module EacConfig
   class YamlFileNode
     require_sub __FILE__
     include ::EacConfig::Node
+    enable_simple_cache
 
     class << self
       def from_uri(uri)
@@ -20,14 +21,10 @@ module EacConfig
       self.path = path.to_pathname
     end
 
-    def data
-      @data ||= ::EacRubyUtils::Yaml.load_file(assert_path) || {}
-    end
-
     def persist_data(new_data)
       path.parent.mkpath
       ::EacRubyUtils::Yaml.dump_file(path, new_data)
-      @data = nil
+      reset_cache(:data)
     end
 
     def url
@@ -36,13 +33,15 @@ module EacConfig
 
     private
 
-    def assert_path
-      unless path.file?
-        raise("\"#{path}\" is a not a file") if path.exist?
-
-        persist_data({})
+    def data_uncached
+      r = nil
+      if path.file?
+        r = ::EacRubyUtils::Yaml.load_file(path)
+      elsif path.exist?
+        raise("\"#{path}\" is a not a file")
       end
-      path
+
+      r.is_a?(::Hash) ? r : {}
     end
   end
 end
