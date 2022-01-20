@@ -18,6 +18,10 @@ module EhbrsRubyUtils
           [language, category.name, artist.name, name]
         end
 
+        def to_spreader_t1_path
+          to_a
+        end
+
         def to_label
           (to_a + [id]).map(&:light_white).join(' | '.blue)
         end
