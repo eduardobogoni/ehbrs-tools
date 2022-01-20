@@ -15,7 +15,7 @@ module EhbrsRubyUtils
         end
 
         def to_a
-          [category.name, artist.name, name]
+          [language, category.name, artist.name, name]
         end
 
         def to_label
