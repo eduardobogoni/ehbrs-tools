@@ -3,17 +3,17 @@
 require 'eac_fs/patches'
 require 'eac_ruby_utils/fs/temp'
 
-module Avm
+module EacFs
   class CachedDownload
     attr_reader :url, :fs_cache
 
     def initialize(url, parent_fs_cache = nil)
       @url = url
-      @fs_cache = (parent_fs_cache || fs_cache).child(url.parameterize)
+      @fs_cache = (parent_fs_cache || fs_cache).child(url.to_s.parameterize)
     end
 
     def assert
-      download unless fs_cache.cached?
+      download unless fs_cache.stored?
     end
 
     def download
