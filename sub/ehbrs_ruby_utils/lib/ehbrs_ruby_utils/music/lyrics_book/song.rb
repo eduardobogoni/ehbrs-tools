@@ -26,7 +26,7 @@ module EhbrsRubyUtils
         end
 
         def lyrics_cached?
-          lyrics_cache.cached?
+          lyrics_cache.stored?
         end
 
         def cached_lyrics
