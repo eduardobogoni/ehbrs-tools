@@ -14,7 +14,7 @@ module EhbrsRubyUtils
         s = total_i <=> other.total_i
         return s unless s.zero?
 
-        other.label <=> label
+        label <=> other.label
       end
 
       def remaining?
