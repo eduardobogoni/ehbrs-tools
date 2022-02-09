@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs/videos/series/rename/file'
-require 'ehbrs/videos/series/rename/file/options'
-require 'ehbrs/videos/series/rename/results_builder'
+require 'ehbrs_ruby_utils/videos/series/rename/file'
+require 'ehbrs_ruby_utils/videos/series/rename/file/options'
+require 'ehbrs_ruby_utils/videos/series/rename/results_builder'
 
 module Ehbrs
   module Tools
@@ -49,15 +49,16 @@ module Ehbrs
             end
 
             def traverser_check_file(path)
-              @files << ::Ehbrs::Videos::Series::Rename::File.new(path, series_file_options)
+              @files << ::EhbrsRubyUtils::Videos::Series::Rename::File
+                        .new(path, series_file_options)
             end
 
             def series_file_options_uncached
-              ::Ehbrs::Videos::Series::Rename::File::Options.new(parsed)
+              ::EhbrsRubyUtils::Videos::Series::Rename::File::Options.new(parsed)
             end
 
             def show_results
-              ::Ehbrs::Videos::Series::Rename::ResultsBuilder.new(files).show(0)
+              ::EhbrsRubyUtils::Videos::Series::Rename::ResultsBuilder.new(files).show(0)
             end
 
             def rename_files
