@@ -12,20 +12,16 @@ module EhbrsRubyUtils
         class File < ::EhbrsRubyUtils::Videos::Series::Rename::LineResult
           include ::EhbrsRubyUtils::Videos::Series::Rename::File::BasenameParser
 
-          attr_reader :file, :options
-
-          def initialize(file, options)
-            @file = file
-            @options = options
-            @options = ::OpenStruct.new(options) if options.is_a?(::Hash)
+          common_constructor :file, :options do
+            self.options = ::OpenStruct.new(options) if options.is_a?(::Hash)
           end
 
           def rename
             target = ::File.expand_path(new_name, dirname)
             return if ::File.exist?(target)
 
-            infov 'Renaming', @file
-            FileUtils.mv(@file, target)
+            infov 'Renaming', file
+            FileUtils.mv(file, target)
           end
 
           def season
@@ -41,12 +37,12 @@ module EhbrsRubyUtils
           end
 
           def dirname
-            d = @file
+            d = file
             while d != '/'
               d = ::File.dirname(d)
               return ::File.expand_path(d) + '/' unless ::File.basename(d).starts_with?('_')
             end
-            raise "series_dirname not found for #{@file}"
+            raise "series_dirname not found for #{file}"
           end
 
           def line_out
@@ -66,7 +62,7 @@ module EhbrsRubyUtils
           private
 
           def current_name
-            ::File.expand_path(@file).gsub(/\A#{::Regexp.quote(dirname)}/, '')
+            ::File.expand_path(file).gsub(/\A#{::Regexp.quote(dirname)}/, '')
           end
 
           def rename?
@@ -77,7 +73,7 @@ module EhbrsRubyUtils
 
           def kernel
             options.kernel || kernel_from_directory_name ||
-              raise("Kernel undefined (File: #{@file})")
+              raise("Kernel undefined (File: #{file})")
           end
 
           def kernel_from_directory_name
