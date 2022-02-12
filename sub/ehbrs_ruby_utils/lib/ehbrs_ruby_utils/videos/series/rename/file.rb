@@ -22,11 +22,7 @@ module EhbrsRubyUtils
           end
 
           def rename
-            target = dirname.join(new_game)
-            return if target.exist?
-
-            infov 'Renaming', file.to_path
-            ::FileUtils.mv(file.to_path, target.to_path)
+            EhbrsRubyUtils::Videos::Series::Rename::File::Renamer.new(self).perform
           end
 
           def season
