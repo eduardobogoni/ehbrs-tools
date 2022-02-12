@@ -18,11 +18,11 @@ module EhbrsRubyUtils
           end
 
           def rename
-            target = ::File.expand_path(new_name, dirname)
-            return if ::File.exist?(target)
+            target = dirname.join(new_game)
+            return if target.exist?
 
             infov 'Renaming', file.to_path
-            ::FileUtils.mv(file.to_path, target)
+            ::FileUtils.mv(file.to_path, target.to_path)
           end
 
           def season
@@ -37,11 +37,12 @@ module EhbrsRubyUtils
             parse.fetch(:e)
           end
 
+          # @return [Pathname]
           def dirname
-            d = file.to_path
-            while d != '/'
-              d = ::File.dirname(d)
-              return ::File.expand_path(d) + '/' unless ::File.basename(d).starts_with?('_')
+            d = file
+            until d.root?
+              d = d.dirname
+              return d unless d.basename.to_path.starts_with?('_')
             end
             raise "series_dirname not found for #{file.to_path}"
           end
@@ -79,7 +80,7 @@ module EhbrsRubyUtils
           end
 
           def kernel_from_directory_name
-            dir = ::File.basename(dirname).sub(/\([0-9]+\)/, '')
+            dir = dirname.basename.to_path.sub(/\([0-9]+\)/, '')
             dir.split(/\W+/).select { |w| /\A[a-z0-9]/.match(w) }.map { |p| p[0].downcase }.join('')
           end
 

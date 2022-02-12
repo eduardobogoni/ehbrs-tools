@@ -9,7 +9,7 @@ module EhbrsRubyUtils
       module Rename
         class DirectoryGroup < LineResultGroup
           def line_out
-            name.light_yellow
+            name.to_s.colorize(:light_yellow)
           end
 
           protected
