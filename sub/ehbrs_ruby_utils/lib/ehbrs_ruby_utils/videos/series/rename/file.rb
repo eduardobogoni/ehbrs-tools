@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/fs/extname'
+require 'ehbrs_ruby_utils/videos/series/rename/line_result'
 require 'ostruct'
-require_relative 'line_result'
-require_relative 'file/basename_parser'
 
 module EhbrsRubyUtils
   module Videos
     module Series
       module Rename
         class File < ::EhbrsRubyUtils::Videos::Series::Rename::LineResult
-          include ::EhbrsRubyUtils::Videos::Series::Rename::File::BasenameParser
+          require_sub __FILE__, include_modules: true
 
           common_constructor :file, :options do
             self.file = file.to_pathname.expand_path
