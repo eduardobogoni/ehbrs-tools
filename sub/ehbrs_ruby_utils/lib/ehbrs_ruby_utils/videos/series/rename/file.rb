@@ -16,6 +16,11 @@ module EhbrsRubyUtils
             self.options = ::OpenStruct.new(options) if options.is_a?(::Hash)
           end
 
+          # @return [String]
+          def current_name
+            file.basename.to_path
+          end
+
           def rename
             target = dirname.join(new_game)
             return if target.exist?
@@ -61,11 +66,6 @@ module EhbrsRubyUtils
           end
 
           private
-
-          # @return [String]
-          def current_name
-            file.basename.to_path
-          end
 
           def rename?
             return false unless new_name
