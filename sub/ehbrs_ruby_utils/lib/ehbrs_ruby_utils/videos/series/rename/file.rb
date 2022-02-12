@@ -67,12 +67,6 @@ module EhbrsRubyUtils
 
           private
 
-          def rename?
-            return false unless new_name
-
-            current_name != new_name
-          end
-
           def kernel
             options.kernel || kernel_from_directory_name ||
               raise("Kernel undefined (File: #{file.to_path})")
