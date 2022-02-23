@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_fs/cache'
+require 'eac_fs/storage_tree'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/runner'
 require 'ehbrs/tools/runner/fs/used_space'
@@ -9,7 +9,7 @@ require 'ehbrs/observers/with_persistence'
 RSpec.describe ::Ehbrs::Tools::Runner::Fs::UsedSpace do
   let(:target) { ::EacRubyUtils::Fs::Temp.directory }
   let(:user_dir) { ::EacRubyUtils::Fs::Temp.directory }
-  let(:cached_user_dir) { ::EacFs::Cache.new(user_dir) }
+  let(:cached_user_dir) { ::EacFs::StorageTree.new(user_dir) }
   let(:observers_user_dir) { cached_user_dir.child('observers') }
   let(:observer_path) do
     observers_user_dir.child(target.to_s.parameterize).content_path.to_pathname

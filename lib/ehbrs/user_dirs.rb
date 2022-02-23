@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_fs/cache'
+require 'eac_fs/storage_tree'
 require 'eac_ruby_utils/simple_cache'
 
 module Ehbrs
@@ -15,7 +15,7 @@ module Ehbrs
       private
 
       def user_home_dir_uncached
-        ::EacFs::Cache.new(ENV['HOME'])
+        ::EacFs::StorageTree.new(ENV['HOME'])
       end
 
       def cache_uncached
