@@ -14,7 +14,7 @@ module Ehbrs
           VIDEO_SUPPORTED_CODECS = %w[h264 mpeg4 hevc mjpeg].freeze
           VIDEO_UNSUPPORTED_CODECS = %w[].freeze
 
-          SUBTITLE_SUPPORTED_CODECS = %w[ass dvd hdmv_pgs_subtitle subrip].freeze
+          SUBTITLE_SUPPORTED_CODECS = %w[ass dvd dvd_subtitle hdmv_pgs_subtitle subrip].freeze
           SUBTITLE_UNSUPPORTED_CODECS = %w[mov].freeze
 
           OTHER_SUPPORTED_CODECS = %w[png ttf].freeze
