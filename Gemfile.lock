@@ -258,7 +258,7 @@ GEM
     faraday_middleware (1.2.0)
       faraday (~> 1.0)
     filesize (0.2.0)
-    git (1.10.2)
+    git (1.11.0)
       rchardet (~> 1.8)
     hpricot (0.8.6)
     htmlbeautifier (1.4.1)
