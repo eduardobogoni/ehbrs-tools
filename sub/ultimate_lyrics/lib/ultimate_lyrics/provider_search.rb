@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'addressable/uri'
 require 'aranha/parsers/source_address'
 require 'eac_ruby_utils/core_ext'
 require 'ultimate_lyrics/lyrics'
@@ -8,6 +9,11 @@ require 'ultimate_lyrics/parser'
 module UltimateLyrics
   class ProviderSearch
     common_constructor :provider, :song_metadata
+
+    # @return [String]
+    def escaped_url
+      ::Addressable::URI.escape(url)
+    end
 
     # @return [String]
     def url
@@ -26,7 +32,8 @@ module UltimateLyrics
 
     # @return [UltimateLyrics::Parser]
     def lyrics_original_text
-      ::Aranha::Parsers::SourceAddress.detect_sub(url).content.force_encoding(provider.encoding)
+      ::Aranha::Parsers::SourceAddress.detect_sub(escaped_url).content
+                                      .force_encoding(provider.encoding)
     rescue ::Aranha::Parsers::SourceAddress::FetchContentError
       nil
     end
