@@ -101,7 +101,7 @@ PATH
       avm (~> 0.18, >= 0.18.1)
       eac_fs (~> 0.12, >= 0.12.3)
       eac_ruby_utils (~> 0.102, >= 0.102.1)
-      eac_templates (~> 0.1, >= 0.1.1)
+      eac_templates (~> 0.3, >= 0.3.2)
       taglib-ruby (~> 1.1)
       ultimate_lyrics (~> 0.1)
 
