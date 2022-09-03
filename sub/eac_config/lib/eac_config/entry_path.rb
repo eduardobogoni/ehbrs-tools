@@ -28,14 +28,35 @@ module EacConfig
       end
     end
 
-    attr_reader :parts
+    common_constructor :parts, default: [[]] do
+      self.parts = ::Array.new(parts).freeze
+    end
 
-    def initialize(parts)
-      @parts = parts.to_a.freeze
+    compare_by :parts
+    delegate :any?, :count, :each, :each_value, :each_with_index, :empty?, :fetch, :first, :index,
+             :inject, :last, :map, :size, to: :parts
+
+    # @return [EacConfig::EntryPath]
+    def +(other)
+      self.class.new(parts + self.class.assert(other).parts)
+    end
+
+    def [](*args)
+      slice(*args)
+    end
+
+    def slice(*args)
+      r = parts.slice(*args)
+      r.is_a?(::Enumerable) ? self.class.new(r) : r
     end
 
     def to_s
-      "#{self.class}[#{parts.join(PART_SEPARATOR)}]"
+      "#{self.class}[#{to_string}]"
+    end
+
+    # @return [String]
+    def to_string
+      parts.join(PART_SEPARATOR)
     end
   end
 end

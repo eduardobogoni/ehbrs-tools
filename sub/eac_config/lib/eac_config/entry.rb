@@ -22,6 +22,10 @@ module EacConfig
       node_entry.if_present(&:secret_value)
     end
 
+    def to_s
+      "#{self.class}[RootNode: #{root_node}, Path: #{path}]"
+    end
+
     def value
       node_entry.if_present(&:value)
     end
@@ -42,7 +46,7 @@ module EacConfig
 
     def node_entry_from_load_path_uncached
       root_node.recursive_loaded_nodes.lazy.map { |loaded_node| loaded_node.self_entry(path) }
-               .find(&:found?)
+        .find(&:found?)
     end
 
     def node_entry_from_root_uncached
