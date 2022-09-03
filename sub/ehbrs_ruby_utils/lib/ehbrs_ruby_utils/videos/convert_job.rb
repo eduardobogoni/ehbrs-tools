@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/executables'
+require 'ehbrs_ruby_utils/executables'
 require 'fileutils'
 
 module EhbrsRubyUtils
@@ -44,7 +44,7 @@ module EhbrsRubyUtils
         infov 'Input', input
         infov 'Target', target
         infov 'Convert args', command_args.shelljoin
-        ::Ehbrs::Executables.ffmpeg.command.append(command_args).system!
+        ::EhbrsRubyUtils::Executables.ffmpeg.command.append(command_args).system!
       end
 
       def format_by_args_uncached
