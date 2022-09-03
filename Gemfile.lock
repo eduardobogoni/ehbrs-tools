@@ -89,7 +89,7 @@ PATH
 PATH
   remote: sub/eac_templates
   specs:
-    eac_templates (0.3.0)
+    eac_templates (0.3.1)
       eac_config (~> 0.5)
       eac_ruby_utils (~> 0.64)
 
@@ -154,16 +154,18 @@ GEM
       avm-files (~> 0.1)
       eac_git (~> 0.11)
       eac_ruby_utils (~> 0.76)
-    avm-tools (0.129.0)
+    avm-tools (0.132.0)
       aranha-parsers (~> 0.4)
-      avm (~> 0.30)
+      avm (~> 0.34)
       avm-eac_ruby_base1 (~> 0.8)
       avm-eac_ubuntu_base0 (~> 0.3)
       avm-files (~> 0.1)
       avm-git (~> 0.3, >= 0.3.1)
       clipboard (~> 1.3, >= 1.3.3)
       curb (~> 0.9.10)
+      eac_git (~> 0.12, >= 0.12.1)
       eac_ruby_base0 (~> 0.16, >= 0.16.4)
+      eac_templates (~> 0.3, >= 0.3.1)
       git (~> 1.7)
       ruby-progressbar (~> 1.10, >= 1.10.1)
     axiom-types (0.1.1)
