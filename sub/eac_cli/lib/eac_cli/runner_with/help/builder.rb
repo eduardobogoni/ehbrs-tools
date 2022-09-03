@@ -6,8 +6,8 @@ module EacCli
   module RunnerWith
     module Help
       class Builder
-        require_sub __FILE__
-        common_constructor :definition
+        require_sub __FILE__, require_dependency: true
+        common_constructor :runner
 
         SEP = ' '
         IDENT = SEP * 2
@@ -28,11 +28,21 @@ module EacCli
 
           def option_usage_full(option)
             if option.long.present?
-              [option.short, option_long(option)].reject(&:blank?).join(SEP)
+              [option.short, option_long(option)].reject(&:blank?).join(word_separator)
             else
               option_short(option)
             end
           end
+
+          def word_separator
+            SEP
+          end
+        end
+
+        delegate :word_separator, to: :class
+
+        def definition
+          runner.class.runner_definition
         end
 
         def option_definition(option)
@@ -45,8 +55,7 @@ module EacCli
           b = include_header ? "#{header.humanize}:\n" : ''
           b += send("self_#{header}") + "\n"
           definition.alternatives.each do |alternative|
-            b += IDENT + ::EacCli::RunnerWith::Help::Builder::Alternative.new(alternative).to_s +
-                 "\n"
+            b += IDENT + self.alternative(alternative) + "\n"
           end
           b
         end
@@ -54,13 +63,13 @@ module EacCli
         def options_section
           "Options:\n" +
             definition.alternatives.flat_map(&:options)
-                      .map { |option| IDENT + option_definition(option) + "\n" }.join
+              .map { |option| IDENT + option_definition(option) + "\n" }.join
         end
 
         def usage_section
           "Usage:\n" +
             definition.alternatives.map do |alternative|
-              IDENT + ::EacCli::RunnerWith::Help::Builder::Alternative.new(alternative).to_s + "\n"
+              IDENT + self.alternative(alternative) + "\n"
             end.join
         end
 

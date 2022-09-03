@@ -12,12 +12,20 @@ module EacCli
         def runner?(object)
           ::EacCli::Runner.runner?(object)
         end
+
+        # @return [Hash<String, EacCli::Runner>]
+        def subcommands_from_module(a_module)
+          a_module.constants
+            .map { |name| [name.to_s.underscore.gsub('_', '-'), a_module.const_get(name)] }
+            .select { |c| runner?(c[1]) }
+            .to_h.with_indifferent_access
+        end
       end
 
       common_concern do
         include ::EacCli::Runner
         runner_definition.singleton_class
-                         .include(::EacCli::RunnerWith::Subcommands::DefinitionConcern)
+          .include(::EacCli::RunnerWith::Subcommands::DefinitionConcern)
       end
 
       EXTRA_AVAILABLE_SUBCOMMANDS_METHOD_NAME = :extra_available_subcommands
@@ -26,11 +34,9 @@ module EacCli
         @available_subcommands ||= available_subcommands_auto.merge(available_subcommands_extra)
       end
 
+      # @return [Hash<String, EacCli::Runner>]
       def available_subcommands_auto
-        self.class.constants
-            .map { |name| [name.to_s.underscore.gsub('_', '-'), self.class.const_get(name)] }
-            .select { |c| ::EacCli::RunnerWith::Subcommands.runner?(c[1]) }
-            .to_h.with_indifferent_access
+        ::EacCli::RunnerWith::Subcommands.subcommands_from_module(self.class)
       end
 
       def available_subcommands_extra
@@ -39,6 +45,10 @@ module EacCli
         else
           {}
         end
+      end
+
+      def available_subcommands_to_s
+        available_subcommands.keys.sort.join(', ')
       end
 
       def help_extra_text
@@ -95,7 +105,7 @@ module EacCli
         raise(::EacCli::Parser::Error.new(
                 self.class.runner_definition, runner_context.argv,
                 "Subcommand \"#{subcommand_name}\" not found " \
-                  "(Available: #{available_subcommands.keys}"
+                  "(Available: #{available_subcommands_to_s})"
               ))
       end
 
@@ -104,7 +114,7 @@ module EacCli
       end
 
       def subcommand_program
-        subcommand_name
+        [program_name, subcommand_name]
       end
 
       def subcommand_runner
