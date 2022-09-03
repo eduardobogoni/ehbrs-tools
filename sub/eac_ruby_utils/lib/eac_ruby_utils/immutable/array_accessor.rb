@@ -8,13 +8,26 @@ module EacRubyUtils
   module Immutable
     class ArrayAccessor < ::EacRubyUtils::Immutable::BaseAccessor
       def apply(klass)
+        apply_singular(klass)
+        apply_plural(klass)
+      end
+
+      def apply_plural(klass)
+        accessor = self
+        klass.send(:define_method, ::ActiveSupport::Inflector.pluralize(name)) do |*args|
+          case args.count
+          when 0 then next accessor.immutable_value_get(self)
+          when 1 then next accessor.immutable_value_set(self, args.first)
+          else
+            raise ::ArgumentError, "wrong number of arguments (given #{args.count}, expected 0..1)"
+          end
+        end
+      end
+
+      def apply_singular(klass)
         accessor = self
         klass.send(:define_method, name) do |value|
-          accessor.immutable_value_set(self, value)
-        end
-
-        klass.send(:define_method, ::ActiveSupport::Inflector.pluralize(name)) do
-          accessor.immutable_value_get(self)
+          accessor.immutable_value_push(self, value)
         end
       end
 
@@ -22,10 +35,14 @@ module EacRubyUtils
         super || []
       end
 
-      def immutable_value_set(object, value)
+      def immutable_value_push(object, value)
         duplicate_object(object) do |old_value|
           (old_value || []) + [value]
         end
+      end
+
+      def immutable_value_set(object, value)
+        duplicate_object(object) { |_old_value| value }
       end
     end
   end

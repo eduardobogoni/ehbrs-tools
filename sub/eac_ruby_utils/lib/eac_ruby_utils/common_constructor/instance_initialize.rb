@@ -3,18 +3,20 @@
 module EacRubyUtils
   class CommonConstructor
     class InstanceInitialize
-      attr_reader :common_constructor, :args, :object
+      attr_reader :common_constructor, :args, :object, :block
 
-      def initialize(common_constructor, args, object)
+      def initialize(common_constructor, args, object, block)
         @common_constructor = common_constructor
         @args = args
         @object = object
+        @block = block
       end
 
-      def run
+      def perform
         validate_args_count
         object.run_callbacks :initialize do
           object_attributes_set
+          object_block_set
           object_after_callback
         end
       end
@@ -36,10 +38,19 @@ module EacRubyUtils
         object.instance_eval(&common_constructor.after_set_block)
       end
 
+      def object_attribute_set(attr_name, attr_value)
+        object.send("#{attr_name}=", attr_value)
+      end
+
       def object_attributes_set
         common_constructor.args.each do |arg_name|
-          object.send("#{arg_name}=", arg_value(arg_name))
+          object_attribute_set(arg_name, arg_value(arg_name))
         end
+      end
+
+      def object_block_set
+        block_arg = common_constructor.block_arg
+        object_attribute_set(block_arg, block) if block_arg
       end
 
       def validate_args_count

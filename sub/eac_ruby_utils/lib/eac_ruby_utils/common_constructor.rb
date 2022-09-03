@@ -2,12 +2,13 @@
 
 require 'active_support/callbacks'
 require 'eac_ruby_utils/arguments_consumer'
+require 'eac_ruby_utils/common_constructor/class_accessors'
 require 'eac_ruby_utils/common_constructor/class_initialize'
 require 'ostruct'
 
 module EacRubyUtils
   class CommonConstructor
-    attr_reader :args, :options, :after_set_block
+    attr_reader :all_args, :options, :after_set_block
 
     class << self
       def parse_args_options(args)
@@ -37,9 +38,13 @@ module EacRubyUtils
 
     def initialize(*args, &after_set_block)
       args_processed = self.class.parse_args_options(args)
-      @args = args_processed.args
+      @all_args = args_processed.args
       @options = args_processed.options
       @after_set_block = after_set_block
+    end
+
+    def args
+      block_arg? ? all_args[0..-2] : all_args
     end
 
     def args_count
@@ -54,32 +59,32 @@ module EacRubyUtils
       args.count
     end
 
+    def block_arg
+      block_arg? ? all_args.last : nil
+    end
+
+    def block_arg?
+      options[:block_arg] || false
+    end
+
     def default_values
       options[:default] || []
     end
 
     def setup_class(klass)
-      setup_class_attr_readers(klass)
-      setup_class_attr_writers(klass)
+      setup_class_accessors(klass)
+
       setup_class_initialize(klass)
 
       klass
     end
 
-    def setup_class_attr_readers(klass)
-      klass.send(:attr_reader, *args)
-      klass.send(:public, *args)
-    end
-
-    def setup_class_attr_writers(klass)
-      klass.send(:attr_writer, *args)
-      klass.send(:private, *args.map { |a| "#{a}=" })
+    def setup_class_accessors(klass)
+      ::EacRubyUtils::CommonConstructor::ClassAccessors.new(self, klass).perform
     end
 
     def setup_class_initialize(klass)
-      klass.include(::ActiveSupport::Callbacks)
-      klass.define_callbacks :initialize
-      ::EacRubyUtils::CommonConstructor::ClassInitialize.new(self, klass).run
+      ::EacRubyUtils::CommonConstructor::ClassInitialize.new(self, klass).perform
     end
 
     def super_args

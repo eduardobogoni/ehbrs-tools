@@ -13,16 +13,26 @@ module EacRubyUtils
         @klass = klass
       end
 
-      def run
+      def define_initialize_callbacks
+        klass.include(::ActiveSupport::Callbacks)
+        klass.define_callbacks :initialize
+      end
+
+      def define_initialize_method
         class_initialize = self
-        klass.send(:define_method, :initialize) do |*args|
+        klass.send(:define_method, :initialize) do |*args, &block|
           ::EacRubyUtils::CommonConstructor::InstanceInitialize.new(
-            class_initialize.common_constructor, args, self
-          ).run
+            class_initialize.common_constructor, args, self, block
+          ).perform
           super(*::EacRubyUtils::CommonConstructor::SuperArgs.new(
             class_initialize, args, self
           ).result)
         end
+      end
+
+      def perform
+        define_initialize_callbacks
+        define_initialize_method
       end
     end
   end
