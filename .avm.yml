@@ -1,4 +1,2 @@
 ---
 locale: pt-BR
-test:
-  bundle_command: exec ehbrs self test
