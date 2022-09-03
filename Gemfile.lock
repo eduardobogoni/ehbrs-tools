@@ -24,7 +24,7 @@ PATH
       activesupport (~> 6.1.6, >= 6.1.6.1)
       addressable (~> 2.8, >= 2.8.1)
       curb (~> 0.9, >= 0.9.11)
-      eac_ruby_utils (~> 0.92, >= 0.92.1)
+      eac_ruby_utils (~> 0.102, >= 0.102.1)
       faraday-gzip (~> 0.1)
       faraday_middleware
       nokogiri (~> 1.12, >= 1.12.4)
