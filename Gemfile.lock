@@ -12,7 +12,7 @@ PATH
       eac_cli (~> 0.27, >= 0.27.8)
       eac_ruby_utils (~> 0.102, >= 0.102.1)
       ehbrs_ruby_utils (~> 0.17, >= 0.17.3)
-      filesize
+      filesize (~> 0.2)
       inifile (~> 3.0)
       os
       telegram-bot-ruby
