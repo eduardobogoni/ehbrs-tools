@@ -26,15 +26,21 @@ module EhbrsRubyUtils
         end
 
         def artist
-          songs.lazy.map { |v| v.tag.artist }.find(&:present?)
+          from_songs_tag(:artist)
         end
 
         def title
-          songs.lazy.map { |v| v.tag.album }.find(&:present?)
+          from_songs_tag(:album)
         end
+
+        private
 
         def songs_uncached
           ::EhbrsRubyUtils::Music::LyricsBook::Song.create_list(self, path.children)
+        end
+
+        def from_songs_tag(field)
+          songs.lazy.map { |v| v.tag.send(field) }.find(&:present?)
         end
       end
     end
