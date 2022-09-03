@@ -18,6 +18,11 @@ module EhbrsRubyUtils
           parent
         end
 
+        # @return [Array<String>
+        def fs_object_id
+          %w[artist album title].map { |k| tag.send(k) }
+        end
+
         def lyrics
           fetch_lyrics unless lyrics_cached?
           cached_lyrics
@@ -59,8 +64,7 @@ module EhbrsRubyUtils
         end
 
         def lyrics_cache
-          (%w[artist album title].map { |k| tag.send(k) } + [provider.identifier])
-            .inject(fs_cache) { |a, e| a.child(e) }
+          fs_cache.child(provider.identifier)
         end
 
         def number_uncached
