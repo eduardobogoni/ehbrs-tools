@@ -34,7 +34,7 @@ module EacDocker
       end
     end
 
-    def volume(left_part, right_part = null)
+    def volume(left_part, right_part = nil)
       immutable_volume(right_part.if_present(left_part) { |v| "#{left_part}:#{v}" })
     end
 
@@ -43,8 +43,9 @@ module EacDocker
     end
 
     def run_command_args
-      run_command_boolean_args + run_command_capabilities_args + run_command_envs_args +
-        run_command_volumes_args + [image.provide.id] + command_args
+      %w[boolean capabilities envs volumes]
+        .inject([]) { |a, e| a + send("run_command_#{e}_args") } +
+        [image.provide.id] + command_args
     end
 
     def stop
