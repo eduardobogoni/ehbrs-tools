@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'aranha-parsers', '~> 0.10'
   s.add_dependency 'avm', '~> 0.18', '>= 0.18.1'
-  s.add_dependency 'eac_fs', '~> 0.10'
+  s.add_dependency 'eac_fs', '~> 0.12', '>= 0.12.3'
   s.add_dependency 'eac_ruby_utils', '~> 0.70'
   s.add_dependency 'eac_templates', '~> 0.1', '>= 0.1.1'
   s.add_dependency 'taglib-ruby', '~> 1.1'
