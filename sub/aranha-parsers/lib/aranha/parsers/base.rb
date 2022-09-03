@@ -12,7 +12,7 @@ module Aranha
         def from_content(content)
           ::EacRubyUtils::Fs::Temp.on_file do |path|
             ::File.open(path.to_s, 'w:UTF-8') do |f|
-              f.write content.force_encoding('UTF-8')
+              f.write content.dup.force_encoding('UTF-8')
             end
             r = new(path.to_path)
             r.content
@@ -37,21 +37,21 @@ module Aranha
       delegate :url, to: :source_address
 
       def content
-        @content ||= begin
-          s = source_address.content
-          log_content(s)
-          s
-        end
+        @content ||= log_content(source_address_content)
       end
+
+      # @return [String]
+      delegate :content, to: :source_address, prefix: true
 
       private
 
+      # @return [String]
       def log_content(content, suffix = '')
         path = log_file(suffix)
 
-        return unless path
+        File.open(path, 'wb') { |file| file.write(content) } if path
 
-        File.open(path, 'wb') { |file| file.write(content) }
+        content
       end
 
       def log_file(suffix)

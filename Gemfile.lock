@@ -20,13 +20,13 @@ PATH
 PATH
   remote: sub/aranha-parsers
   specs:
-    aranha-parsers (0.10.0)
+    aranha-parsers (0.14.1)
       activesupport (>= 4.0.0)
       addressable (~> 2.7)
       curb (~> 0.9.10)
-      eac_ruby_utils (~> 0.74)
+      eac_ruby_utils (~> 0.92, >= 0.92.1)
+      faraday-gzip (~> 0.1)
       faraday_middleware
-      httpclient (~> 2.8, >= 2.8.3)
       nokogiri (~> 1.12, >= 1.12.4)
       ofx-parser (~> 1.1.0)
 
@@ -242,6 +242,9 @@ GEM
     faraday-em_http (1.0.0)
     faraday-em_synchrony (1.0.0)
     faraday-excon (1.1.0)
+    faraday-gzip (0.1.0)
+      faraday (>= 1.0)
+      zlib (~> 2.1)
     faraday-httpclient (1.0.1)
     faraday-multipart (1.0.4)
       multipart-post (~> 2)
@@ -331,6 +334,7 @@ GEM
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
     zeitwerk (2.6.0)
+    zlib (2.1.1)
 
 PLATFORMS
   x86_64-linux
