@@ -2,6 +2,7 @@
 
 require 'eac_fs/patches'
 require 'eac_ruby_utils/fs/temp'
+require 'open-uri'
 
 module EacFs
   class CachedDownload
