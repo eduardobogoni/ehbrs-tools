@@ -17,9 +17,30 @@ module Aranha
         )
       end
 
+      # @return [Selenium::WebDriver::Element, nil]
+      def find_element(*args, &block)
+        return args.first if args.count >= 1 && args.first.is_a?(::Selenium::WebDriver::Element)
+
+        __getobj__.find_element(*args, &block)
+      end
+
       def find_or_not_element(find_element_args)
         r = find_elements(find_element_args)
         r.any? ? r.first : nil
+      end
+
+      def select_option(field, value, *find_element_args)
+        select = find_element(*find_element_args)
+        option = ::Selenium::WebDriver::Support::Select.new(select)
+        option.select_by(field, value)
+      end
+
+      def select_option_by_text(text, *find_element_args)
+        select_option(:text, text, *find_element_args)
+      end
+
+      def select_option_by_value(value, *find_element_args)
+        select_option(:value, value, *find_element_args)
       end
 
       def wait_for_click(find_element_args)
@@ -42,6 +63,13 @@ module Aranha
           new_downloads.any?
         end
         new_downloads.first
+      end
+
+      def wait_for_url_change(&block)
+        previous_url = current_url
+        block&.call
+
+        wait.until { current_url != previous_url }
       end
 
       def current_source
