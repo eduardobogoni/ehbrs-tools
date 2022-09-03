@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
+require 'avm/eac_ruby_base1/sources/base'
 require 'eac_cli/config'
 require 'eac_config/envvars_node'
 require 'eac_config/yaml_file_node'
 require 'eac_fs/contexts'
 require 'eac_fs/storage_tree'
 require 'eac_ruby_base0/application_xdg'
-require 'eac_ruby_gems_utils/gem'
 require 'eac_ruby_utils/core_ext'
 
 module EacRubyBase0
@@ -23,7 +23,7 @@ module EacRubyBase0
     delegate :version, to: :self_gem
 
     def all_gems
-      vendor_gems + [self_gem]
+      sub_gems + [self_gem]
     end
 
     # @return [EacCli::Config]
@@ -58,7 +58,7 @@ CODE
     end
 
     def name
-      options[OPTION_NAME] || self_gem.name
+      options[OPTION_NAME] || self_gem.gem_name
     end
 
     def vendor_dir
@@ -71,14 +71,15 @@ CODE
       ::EacRubyBase0::ApplicationXdg.new(name, options[OPTION_HOME_DIR])
     end
 
+    # @return [Avm::EacRubyBase1::Sources::Base]
     def self_gem_uncached
-      ::EacRubyGemsUtils::Gem.new(gemspec_dir)
+      ::Avm::EacRubyBase1::Sources::Base.new(gemspec_dir)
     end
 
-    def vendor_gems_uncached
+    def sub_gems_uncached
       r = []
       vendor_dir.children.each do |c|
-        vgem = ::EacRubyGemsUtils::Gem.new(c)
+        vgem = ::Avm::EacRubyBase1::Sources::Base.new(c)
         r << vgem if vgem.gemfile_path.exist?
       end
       r
