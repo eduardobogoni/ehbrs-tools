@@ -14,7 +14,7 @@ PATH
       ehbrs_ruby_utils (~> 0.17, >= 0.17.3)
       filesize (~> 0.2)
       inifile (~> 3.0)
-      os
+      os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby
 
 PATH
