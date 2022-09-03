@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_gems_utils/gem'
+require 'avm/eac_ruby_base1/sources/base'
 
 module Ehbrs
   module Gems
@@ -18,7 +18,7 @@ module Ehbrs
       private
 
       def app_uncached
-        ::EacRubyGemsUtils::Gem.new(app_path)
+        ::Avm::EacRubyBase1::Sources::Base.new(app_path)
       end
 
       def all_uncached
