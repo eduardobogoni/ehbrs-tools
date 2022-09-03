@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   s.add_dependency 'avm-tools', '~> 0.135'
-  s.add_dependency 'eac_cli', '~> 0.12', '>= 0.12.5'
+  s.add_dependency 'eac_cli', '~> 0.27', '>= 0.27.8'
   s.add_dependency 'eac_ruby_utils', '~> 0.71'
   s.add_dependency 'ehbrs_ruby_utils', '~> 0.17'
   s.add_dependency 'filesize'
