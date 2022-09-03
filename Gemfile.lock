@@ -35,7 +35,7 @@ PATH
   specs:
     aranha-selenium (0.4.1)
       eac_ruby_utils (~> 0.102, >= 0.102.1)
-      selenium-webdriver (~> 3.142, >= 3.142.3)
+      selenium-webdriver (~> 3.142, >= 3.142.7)
 
 PATH
   remote: sub/eac_cli
