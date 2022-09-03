@@ -28,7 +28,7 @@ PATH
       faraday-gzip (~> 0.1)
       faraday_middleware (~> 1.2)
       nokogiri (~> 1.13, >= 1.13.8)
-      ofx-parser (~> 1.1.0)
+      ofx-parser (~> 1.1)
 
 PATH
   remote: sub/aranha-selenium
