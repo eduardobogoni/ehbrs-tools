@@ -77,14 +77,6 @@ PATH
       eac_ruby_utils (~> 0.70)
 
 PATH
-  remote: sub/eac_ruby_gems_utils
-  specs:
-    eac_ruby_gems_utils (0.9.9)
-      bundler
-      eac_fs (~> 0.8)
-      eac_ruby_utils (~> 0.81)
-
-PATH
   remote: sub/eac_ruby_utils
   specs:
     eac_ruby_utils (0.87.0)
@@ -352,7 +344,6 @@ DEPENDENCIES
   eac_fs!
   eac_ruby_base0!
   eac_ruby_gem_support (~> 0.3)
-  eac_ruby_gems_utils!
   eac_ruby_utils!
   eac_templates!
   ehbrs-tools!
