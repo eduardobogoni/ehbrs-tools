@@ -12,6 +12,8 @@ module EhbrsRubyUtils
         delegate :provider, to: :book
         delegate :tag, :to_s, to: :container
 
+        DEFAULT_TITLE = 'Unknown title'
+
         def album
           parent
         end
@@ -37,7 +39,9 @@ module EhbrsRubyUtils
           "#{number} - #{title}"
         end
 
-        delegate :title, to: :tag
+        def title
+          tag.if_present(DEFAULT_TITLE, &:title)
+        end
 
         private
 
