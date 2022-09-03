@@ -11,7 +11,6 @@ module EhbrsRubyUtils
             r = files.sort.map { |path| new(parent, path) }.select(&:valid?)
             previous = parent.first_previous
             r.map do |e|
-              e.reset_cache
               e.previous = previous
               previous = e
             end
