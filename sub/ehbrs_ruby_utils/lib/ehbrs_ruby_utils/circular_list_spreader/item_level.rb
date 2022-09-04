@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/spreader_t1/base_level'
+require 'ehbrs_ruby_utils/circular_list_spreader/base_level'
 
 module EhbrsRubyUtils
-  class SpreaderT1
+  class CircularListSpreader
     class ItemLevel
-      include ::EhbrsRubyUtils::SpreaderT1::BaseLevel
+      include ::EhbrsRubyUtils::CircularListSpreader::BaseLevel
 
       common_constructor :item do
         self.removed = false

@@ -3,7 +3,7 @@
 require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
-  class SpreaderT1
+  class CircularListSpreader
     module BaseLevel
       extend ::Comparable
 

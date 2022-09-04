@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/spreader_t1/base_level'
-require 'ehbrs_ruby_utils/spreader_t1/item_level'
+require 'ehbrs_ruby_utils/circular_list_spreader/base_level'
+require 'ehbrs_ruby_utils/circular_list_spreader/item_level'
 
 module EhbrsRubyUtils
-  class SpreaderT1
+  class CircularListSpreader
     class GroupLevel
-      include ::EhbrsRubyUtils::SpreaderT1::BaseLevel
+      include ::EhbrsRubyUtils::CircularListSpreader::BaseLevel
       enable_simple_cache
 
       common_constructor :label
@@ -56,7 +56,7 @@ module EhbrsRubyUtils
       def push_item_level(current, item)
         raise "Key \"#{current}\" already used" if children[current].present?
 
-        children[current] = ::EhbrsRubyUtils::SpreaderT1::ItemLevel.new(item)
+        children[current] = ::EhbrsRubyUtils::CircularListSpreader::ItemLevel.new(item)
       end
     end
   end
