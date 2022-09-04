@@ -1,7 +1,0 @@
-[subrepo]
-  cmdver = 0.4.1
-  commit = bd69ae468537489c5aa84aea87f0a2dd3ba6346b
-  method = rebase
-  parent = a20e1044598696668f3d7fca3b7e6d9e0996c416
-  branch = master
-  remote = https://github.com/esquilo-azul/aranha-parsers.git
