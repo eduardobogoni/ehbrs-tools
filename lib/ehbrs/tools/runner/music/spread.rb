@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'ehbrs_ruby_utils/music/ous/album'
-require 'ehbrs_ruby_utils/spreader_t1'
+require 'ehbrs_ruby_utils/circular_list_spreader'
 require 'ehbrs/tools/runner/fs/selected'
 
 module Ehbrs
@@ -25,7 +25,7 @@ module Ehbrs
           end
 
           def spreader_uncached
-            ::EhbrsRubyUtils::SpreaderT1.new(albums)
+            ::EhbrsRubyUtils::CircularListSpreader.new(albums)
           end
 
           def albums
