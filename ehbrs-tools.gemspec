@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'avm-tools', '~> 0.135'
   s.add_dependency 'eac_cli', '~> 0.27', '>= 0.27.8'
   s.add_dependency 'eac_ruby_utils', '~> 0.102', '>= 0.102.1'
-  s.add_dependency 'ehbrs_ruby_utils', '~> 0.17', '>= 0.17.3'
+  s.add_dependency 'ehbrs_ruby_utils', '~> 0.18'
   s.add_dependency 'filesize', '~> 0.2'
   s.add_dependency 'inifile', '~> 3.0'
   s.add_dependency 'os', '~> 1.1', '>= 1.1.4'
