@@ -16,7 +16,7 @@ module EhbrsRubyUtils
 
     # @return [Array]
     def result
-      build_root.pop_all
+      build_root.pop_all.map(&:item)
     end
   end
 end

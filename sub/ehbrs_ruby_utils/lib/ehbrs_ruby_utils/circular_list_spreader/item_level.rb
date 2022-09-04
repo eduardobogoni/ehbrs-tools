@@ -20,7 +20,7 @@ module EhbrsRubyUtils
         raise 'Item already removed' if removed?
 
         self.removed = true
-        item
+        self
       end
 
       def remaining_i
