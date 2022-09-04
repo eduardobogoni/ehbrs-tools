@@ -38,14 +38,6 @@ PATH
       selenium-webdriver (~> 3.142, >= 3.142.7)
 
 PATH
-  remote: sub/eac_cli
-  specs:
-    eac_cli (0.27.8)
-      colorize (~> 0.8.1)
-      eac_config (~> 0.8)
-      eac_ruby_utils (~> 0.95)
-
-PATH
   remote: sub/eac_config
   specs:
     eac_config (0.11.1)
@@ -185,6 +177,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.5.0)
     dry-inflector (0.3.0)
+    eac_cli (0.27.8)
+      colorize (~> 0.8.1)
+      eac_config (~> 0.8)
+      eac_ruby_utils (~> 0.95)
     eac_git (0.12.2)
       eac_ruby_utils (~> 0.83)
       parseconfig (~> 1.0, >= 1.0.8)
@@ -308,7 +304,6 @@ PLATFORMS
 DEPENDENCIES
   aranha-parsers!
   aranha-selenium!
-  eac_cli!
   eac_config!
   eac_docker!
   eac_fs!
