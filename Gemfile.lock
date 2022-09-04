@@ -25,13 +25,6 @@ PATH
       selenium-webdriver (~> 3.142, >= 3.142.7)
 
 PATH
-  remote: sub/eac_config
-  specs:
-    eac_config (0.11.1)
-      addressable (~> 2.8)
-      eac_ruby_utils (~> 0.102)
-
-PATH
   remote: sub/eac_docker
   specs:
     eac_docker (0.4.2)
@@ -177,6 +170,9 @@ GEM
       colorize (~> 0.8.1)
       eac_config (~> 0.8)
       eac_ruby_utils (~> 0.95)
+    eac_config (0.11.1)
+      addressable (~> 2.8)
+      eac_ruby_utils (~> 0.102)
     eac_git (0.12.2)
       eac_ruby_utils (~> 0.83)
       parseconfig (~> 1.0, >= 1.0.8)
@@ -299,7 +295,6 @@ PLATFORMS
 
 DEPENDENCIES
   aranha-selenium!
-  eac_config!
   eac_docker!
   eac_fs!
   eac_ruby_base0!
