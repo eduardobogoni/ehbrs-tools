@@ -7,11 +7,16 @@ module EhbrsRubyUtils
     require_sub __FILE__
     common_constructor :items
 
+    # @return [EhbrsRubyUtils::SpreaderT1::GroupLevel]
+    def build_root
+      r = ::EhbrsRubyUtils::CircularListSpreader::GroupLevel.new('ROOT')
+      items.each { |item| r.push(item.to_circular_list_spreader_path, item) }
+      r
+    end
+
     # @return [Array]
     def result
-      root_level = ::EhbrsRubyUtils::CircularListSpreader::GroupLevel.new('ROOT')
-      items.each { |item| root_level.push(item.to_circular_list_spreader_path, item) }
-      root_level.pop_all
+      build_root.pop_all
     end
   end
 end
