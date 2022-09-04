@@ -16,7 +16,17 @@ module EhbrsRubyUtils
 
     # @return [Array]
     def result
-      build_root.pop_all.map(&:item)
+      base_list = ::EhbrsRubyUtils::CircularListSpreader::List.empty
+      build_root.pop_all.each do |item|
+        base_list = lists_with_item(base_list, item).max
+      end
+      base_list.items.map(&:item)
+    end
+
+    def lists_with_item(base_list, item)
+      (base_list.count + 1).times.map do |position|
+        base_list.insert(position, item)
+      end
     end
   end
 end
