@@ -10,7 +10,7 @@ module EhbrsRubyUtils
     # @return [Array]
     def result
       root_level = ::EhbrsRubyUtils::CircularListSpreader::GroupLevel.new('ROOT')
-      items.each { |item| root_level.push(item.to_spreader_t1_path, item) }
+      items.each { |item| root_level.push(item.to_circular_list_spreader_path, item) }
       root_level.pop_all
     end
   end

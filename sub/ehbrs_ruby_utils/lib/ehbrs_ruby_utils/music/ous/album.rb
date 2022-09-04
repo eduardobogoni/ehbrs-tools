@@ -18,7 +18,7 @@ module EhbrsRubyUtils
           [language, category.name, artist.name, name]
         end
 
-        def to_spreader_t1_path
+        def to_circular_list_spreader_path
           to_a
         end
 

@@ -31,7 +31,7 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
       end
 
       def id
-        to_spreader_t1_path.join(' | ')
+        to_circular_list_spreader_path.join(' | ')
       end
 
       def leaf?
@@ -46,10 +46,10 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
         end
       end
 
-      def to_spreader_t1_path
+      def to_circular_list_spreader_path
         return [] if parent.blank?
 
-        parent.if_present([], &:to_spreader_t1_path) + [label]
+        parent.if_present([], &:to_circular_list_spreader_path) + [label]
       end
 
       def to_s
