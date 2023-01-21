@@ -79,7 +79,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.6.1)
+    activesupport (6.1.7.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -218,7 +218,7 @@ GEM
     inifile (3.0.0)
     jaro_winkler (1.5.4)
     minitar (0.9)
-    minitest (5.16.3)
+    minitest (5.17.0)
     multipart-post (2.2.3)
     net-ssh (4.2.0)
     nokogiri (1.13.8-x86_64-linux)
@@ -283,7 +283,7 @@ GEM
       axiom-types (~> 0.1)
       coercible (~> 1.0)
       descendants_tracker (~> 0.0, >= 0.0.3)
-    zeitwerk (2.6.0)
+    zeitwerk (2.6.6)
     zlib (2.1.1)
 
 PLATFORMS
