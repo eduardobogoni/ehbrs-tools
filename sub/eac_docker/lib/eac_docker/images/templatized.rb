@@ -21,7 +21,7 @@ module EacDocker
         ::EacRubyUtils::Fs::Temp.on_directory do |provide_dir|
           begin
             self.provide_dir = provide_dir
-            template.apply(self, provide_dir)
+            write_in_provide_dir
             coded_image(provide_dir).tag(tag).provide
           ensure
             self.provide_dir = nil
@@ -31,6 +31,12 @@ module EacDocker
 
       def coded_image(provide_dir)
         ::EacDocker::Images::Coded.new(provide_dir)
+      end
+
+      protected
+
+      def write_in_provide_dir
+        template.apply(self, provide_dir)
       end
 
       private
