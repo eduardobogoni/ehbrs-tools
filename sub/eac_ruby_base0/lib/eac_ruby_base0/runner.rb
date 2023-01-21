@@ -2,32 +2,25 @@
 
 require 'eac_cli/core_ext'
 require 'eac_cli/speaker'
+require 'eac_cli/speaker/input_blocked'
 require 'eac_config/node'
 require 'eac_fs/contexts'
 require 'eac_ruby_utils/speaker'
 
 module EacRubyBase0
   module Runner
+    require_sub __FILE__
     enable_speaker
     common_concern do
       include ::EacCli::RunnerWith::Help
       include ::EacCli::RunnerWith::Subcommands
+      prepend ::EacRubyBase0::Runner::Prepend
       runner_definition do
         bool_opt '-q', '--quiet', 'Quiet mode.'
         bool_opt '-I', '--no-input', 'Fail if a input is requested.'
         subcommands
         alt do
           bool_opt '-V', '--version', 'Show version.', usage: true, required: true
-        end
-      end
-    end
-
-    def run
-      on_context do
-        if parsed.version?
-          show_version
-        else
-          run_with_subcommand
         end
       end
     end
@@ -51,16 +44,6 @@ module EacRubyBase0
       out("#{application_version}\n")
     end
 
-    class FailIfRequestInput
-      enable_speaker
-
-      %w[gets noecho].each do |method|
-        define_method(method) do
-          raise "Input method requested (\"#{method}\") and option --no-input is set"
-        end
-      end
-    end
-
     private
 
     # @return [Array<EacRubyUtils::Struct>]
@@ -78,7 +61,7 @@ module EacRubyBase0
     def build_speaker
       options = {}
       options[:err_out] = ::StringIO.new if parsed.quiet?
-      options[:in_in] = FailIfRequestInput.new if parsed.no_input?
+      options[:in_in] = ::EacCli::Speaker::InputBlocked.new if parsed.no_input?
       ::EacCli::Speaker.new(options)
     end
 
