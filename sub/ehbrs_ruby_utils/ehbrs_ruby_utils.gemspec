@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_fs', '~> 0.16'
   s.add_dependency 'eac_ruby_utils', '~> 0.111'
   s.add_dependency 'eac_templates', '~> 0.3', '>= 0.3.2'
-  s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.2'
+  s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'
   s.add_dependency 'ultimate_lyrics', '~> 0.1', '>= 0.1.3'
 
   s.add_development_dependency 'aranha-parsers', '~> 0.8'
