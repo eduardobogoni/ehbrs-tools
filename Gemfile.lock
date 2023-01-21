@@ -20,8 +20,8 @@ PATH
 PATH
   remote: sub/aranha-selenium
   specs:
-    aranha-selenium (0.4.2)
-      eac_ruby_utils (~> 0.102, >= 0.102.1)
+    aranha-selenium (0.5.0)
+      eac_ruby_utils (~> 0.106, >= 0.106.1)
       selenium-webdriver (~> 3.142, >= 3.142.7)
 
 PATH
