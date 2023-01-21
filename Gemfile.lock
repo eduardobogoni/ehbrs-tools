@@ -43,7 +43,7 @@ PATH
 PATH
   remote: sub/eac_ruby_utils
   specs:
-    eac_ruby_utils (0.111.0)
+    eac_ruby_utils (0.112.0)
       activesupport (>= 4, < 7)
       addressable (~> 2.8, >= 2.8.1)
       bundler
