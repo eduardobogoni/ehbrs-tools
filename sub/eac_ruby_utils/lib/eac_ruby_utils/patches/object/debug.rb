@@ -2,7 +2,7 @@
 
 class Object
   def pretty_debug(options = {})
-    print_debug_title(options)
+    print_debug_options(options)
 
     STDERR.write(pretty_inspect)
 
@@ -10,18 +10,22 @@ class Object
   end
 
   def print_debug(options = {})
-    print_debug_title(options)
+    print_debug_options(options)
     STDERR.write(to_debug + "\n")
 
     self
   end
 
-  def print_debug_title(title)
-    if title.is_a?(::Hash)
-      return unless title[:title]
+  def print_debug_label(label)
+    STDERR.write("#{label}: ")
+  end
 
-      title = title[:title]
-    end
+  def print_debug_options(options)
+    options[:title].if_present { |v| print_debug_title(v) }
+    options[:label].if_present { |v| print_debug_label(v) }
+  end
+
+  def print_debug_title(title)
     char = '='
     STDERR.write(char * (4 + title.length) + "\n")
     STDERR.write("#{char} #{title} #{char}\n")

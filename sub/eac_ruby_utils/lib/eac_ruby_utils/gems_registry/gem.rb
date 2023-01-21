@@ -49,7 +49,7 @@ module EacRubyUtils
         return nil unless lib_file_found?
 
         require path_to_require
-        path_to_require.classify.constantize
+        path_to_require.camelize.constantize
       end
 
       # @return [String]
@@ -69,8 +69,9 @@ module EacRubyUtils
           .result
       end
 
+      # @return [Array<Gem::Dependency>]
       def gem_item_dependencies(item)
-        ::Gem::Specification.find_by_name(item.name).dependencies
+        ::Gem::Specification.find_by_name(item.name).dependencies.select(&:runtime?)
       rescue ::Gem::MissingSpecError
         []
       end

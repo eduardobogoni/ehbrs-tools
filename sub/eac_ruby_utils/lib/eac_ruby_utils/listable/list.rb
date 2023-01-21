@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/listable/value'
+require 'eac_ruby_utils/listable/item'
 
 module EacRubyUtils
   module Listable
@@ -18,11 +18,21 @@ module EacRubyUtils
       end
 
       def blank_value
-        @blank_value ||= ::EacRubyUtils::Listable::Value.new(self, BLANK_VALUE, BLANK_KEY, false)
+        @blank_value ||= ::EacRubyUtils::Listable::Item.new(self, BLANK_VALUE, BLANK_KEY, false)
       end
 
       def each_value(&block)
         values.each(&block)
+      end
+
+      # @return [EacRubyUtils::Listable::Item, nil]
+      def item_by_value(value)
+        @values.values.find { |item| item.value == value }
+      end
+
+      # @return [EacRubyUtils::Listable::Item]
+      def item_by_value!(value)
+        item_by_value(value) || raise(::KeyError, "Value not found: #{value}")
       end
 
       def values
@@ -59,7 +69,7 @@ module EacRubyUtils
         "eac_ruby_utils.listable.#{class_i18n_key}.#{item}"
       end
 
-      # @return [EacRubyUtils::Listable::Value, nil]
+      # @return [EacRubyUtils::Listable::Item, nil]
       def instance_value(instance)
         v = instance.send(item)
         return blank_value if v.blank?
@@ -109,7 +119,7 @@ module EacRubyUtils
       def build_values(labels)
         vs = {}
         parse_labels(labels).each do |value, key|
-          v = Value.new(self, value, key)
+          v = ::EacRubyUtils::Listable::Item.new(self, value, key)
           vs[v.value] = v
         end
         vs
