@@ -63,6 +63,7 @@ PATH
   remote: sub/eac_rest
   specs:
     eac_rest (0.6.1)
+      curb (>= 0.9, <= 2)
       eac_ruby_utils (~> 0.112)
 
 PATH
