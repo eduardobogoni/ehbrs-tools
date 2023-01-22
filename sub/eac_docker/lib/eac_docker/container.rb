@@ -24,6 +24,11 @@ module EacDocker
       ).execute!.strip
     end
 
+    # @return [String]
+    def logs
+      ::EacDocker::Executables.docker.command('logs', id).execute!
+    end
+
     def on_detached
       command = ::EacDocker::Executables.docker.command(*(%w[run --detach] + run_command_args))
       self.id = command.execute!.strip
