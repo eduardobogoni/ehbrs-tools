@@ -27,7 +27,7 @@ PATH
       eac_ruby_utils (~> 0.112)
       faraday-gzip (~> 0.1)
       faraday_middleware (~> 1.2)
-      nokogiri (~> 1.13, >= 1.13.9)
+      nokogiri (~> 1.14)
       ofx-parser (~> 1.1)
 
 PATH
