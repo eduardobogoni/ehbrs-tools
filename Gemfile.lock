@@ -23,7 +23,6 @@ PATH
     aranha-parsers (0.14.4)
       activesupport (>= 4.0.0)
       addressable (~> 2.8, >= 2.8.1)
-      curb (~> 0.9, >= 0.9.11)
       eac_ruby_utils (~> 0.112)
       faraday-gzip (~> 0.1)
       faraday_middleware (~> 1.2)
