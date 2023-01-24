@@ -18,6 +18,19 @@ PATH
       telegram-bot-ruby (~> 0.19, >= 0.19.2)
 
 PATH
+  remote: sub/aranha-parsers
+  specs:
+    aranha-parsers (0.14.4)
+      activesupport (>= 4.0.0)
+      addressable (~> 2.8, >= 2.8.1)
+      curb (~> 0.9, >= 0.9.11)
+      eac_ruby_utils (~> 0.106)
+      faraday-gzip (~> 0.1)
+      faraday_middleware (~> 1.2)
+      nokogiri (~> 1.13, >= 1.13.9)
+      ofx-parser (~> 1.1)
+
+PATH
   remote: sub/aranha-selenium
   specs:
     aranha-selenium (0.5.0)
@@ -94,15 +107,6 @@ GEM
       aranha-selenium (~> 0.5)
       eac_ruby_utils (~> 0.106, >= 0.106.1)
       httpclient (~> 2.8, >= 2.8.3)
-    aranha-parsers (0.14.4)
-      activesupport (>= 4.0.0)
-      addressable (~> 2.8, >= 2.8.1)
-      curb (~> 0.9, >= 0.9.11)
-      eac_ruby_utils (~> 0.106)
-      faraday-gzip (~> 0.1)
-      faraday_middleware (~> 1.2)
-      nokogiri (~> 1.13, >= 1.13.9)
-      ofx-parser (~> 1.1)
     ast (2.4.2)
     avm (0.62.0)
       aranha-parsers (~> 0.14, >= 0.14.4)
@@ -301,6 +305,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aranha-parsers!
   aranha-selenium!
   eac_cli!
   eac_docker!
