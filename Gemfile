@@ -11,3 +11,6 @@ gemspec
 end
 
 gem 'httpclient', git: 'https://github.com/livelink/httpclient.git'
+
+local_gemfile = ::File.join(::File.dirname(__FILE__), 'Gemfile.local')
+eval_gemfile local_gemfile if ::File.exist?(local_gemfile)
