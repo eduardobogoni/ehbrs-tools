@@ -69,6 +69,7 @@ PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.18.0)
+      aranha (~> 0.18)
       aranha-parsers (~> 0.14, >= 0.14.4)
       avm (~> 0.62)
       eac_fs (~> 0.16)
@@ -88,6 +89,11 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    aranha (0.18.0)
+      aranha-parsers (~> 0.14, >= 0.14.3)
+      aranha-selenium (~> 0.5)
+      eac_ruby_utils (~> 0.106, >= 0.106.1)
+      httpclient (~> 2.8, >= 2.8.3)
     aranha-parsers (0.14.4)
       activesupport (>= 4.0.0)
       addressable (~> 2.8, >= 2.8.1)

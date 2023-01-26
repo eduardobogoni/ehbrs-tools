@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{lib,template}/**/*']
   s.test_files = Dir['{spec}/**/*', '.rubocop.yml', '.rspec']
 
+  s.add_dependency 'aranha', '~> 0.18'
   s.add_dependency 'aranha-parsers', '~> 0.14', '>= 0.14.4'
   s.add_dependency 'avm', '~> 0.62'
   s.add_dependency 'eac_fs', '~> 0.16'
