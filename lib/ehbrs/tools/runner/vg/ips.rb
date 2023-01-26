@@ -35,8 +35,15 @@ module Ehbrs
           end
 
           def run_patch(source_path, ips_path, output_path)
-            ::Ehbrs::Executables.flips.command
-                                .append(['--apply', ips_path, source_path, output_path]).system!
+            command = ::Ehbrs::Executables.flips.command
+                                          .append(['--apply', ips_path, source_path, output_path])
+
+            command.system!
+
+            return if output_path.exist?
+
+            fatal_error("\"#{command}\" exited without error, but output file \"#{output_path}\"" \
+                'does not exist')
           end
 
           def run_patches
