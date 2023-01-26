@@ -5,13 +5,13 @@
   :codec_long_name: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
   :profile: Constrained Baseline
   :codec_type: video
-  :codec_time_base: 1/50
   :codec_tag_string: avc1
   :codec_tag: '0x31637661'
   :width: 352
   :height: 288
   :coded_width: 352
   :coded_height: 288
+  :closed_captions: 0
   :has_b_frames: 0
   :sample_aspect_ratio: '1:1'
   :display_aspect_ratio: '11:9'
@@ -47,12 +47,12 @@
   :tags:
     :language: und
     :handler_name: VideoHandler
+    :vendor_id: "[0][0][0][0]"
 - :index: 1
   :codec_name: aac
   :codec_long_name: AAC (Advanced Audio Coding)
   :profile: LC
   :codec_type: audio
-  :codec_time_base: 1/44100
   :codec_tag_string: mp4a
   :codec_tag: '0x6134706d'
   :sample_fmt: fltp
@@ -68,7 +68,6 @@
   :duration_ts: 299008
   :duration: '6.780227'
   :bit_rate: '95999'
-  :max_bit_rate: '100304'
   :nb_frames: '292'
   :disposition:
     :default: 1
@@ -87,6 +86,7 @@
     :creation_time: '2015-05-17T06:08:17.000000Z'
     :language: und
     :handler_name: IsoMedia File Produced by Google, 5-11-2011
+    :vendor_id: "[0][0][0][0]"
 :format:
   :filename: "%%PATH%%"
   :nb_streams: 2
