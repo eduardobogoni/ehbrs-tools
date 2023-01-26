@@ -4,12 +4,10 @@ source 'https://rubygems.org'
 
 gemspec
 
-gems_subdir = ::File.join(__dir__, 'sub')
-Dir["#{gems_subdir}/*"].each do |dir|
-  next unless ::File.directory?(dir)
+::Dir["#{::File.join(__dir__, 'sub')}/*"].each do |dir|
+  next unless ::File.exist?(::File.join(dir, "#{::File.basename(dir)}.gemspec"))
 
-  basename = ::File.basename(dir)
-  gem basename, path: "#{gems_subdir}/#{basename}"
+  gem ::File.basename(dir), path: dir, require: false
 end
 
 gem 'httpclient', git: 'https://github.com/livelink/httpclient.git'
