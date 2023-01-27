@@ -67,6 +67,7 @@ PATH
       eac_fs (~> 0.16)
       eac_ruby_utils (~> 0.112)
       faraday (~> 2.7, >= 2.7.4)
+      faraday-multipart (~> 1.0, >= 1.0.4)
 
 PATH
   remote: sub/eac_ruby_base0
