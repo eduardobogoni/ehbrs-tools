@@ -42,7 +42,7 @@ PATH
     aranha (0.18.0)
       aranha-parsers (~> 0.15)
       aranha-selenium (~> 0.5)
-      eac_ruby_utils (~> 0.106, >= 0.106.1)
+      eac_ruby_utils (~> 0.112)
       httpclient (~> 2.8, >= 2.8.3)
 
 PATH
