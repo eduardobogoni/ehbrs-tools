@@ -39,7 +39,7 @@ PATH
 PATH
   remote: sub/aranha
   specs:
-    aranha (0.18.0)
+    aranha (0.19.0)
       aranha-parsers (~> 0.15)
       aranha-selenium (~> 0.5)
       eac_ruby_utils (~> 0.112)
