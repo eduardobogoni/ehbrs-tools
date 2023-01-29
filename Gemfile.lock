@@ -37,6 +37,15 @@ PATH
       selenium-webdriver (~> 3.142, >= 3.142.7)
 
 PATH
+  remote: sub/aranha
+  specs:
+    aranha (0.18.0)
+      aranha-parsers (~> 0.14, >= 0.14.3)
+      aranha-selenium (~> 0.5)
+      eac_ruby_utils (~> 0.106, >= 0.106.1)
+      httpclient (~> 2.8, >= 2.8.3)
+
+PATH
   remote: sub/eac_cli
   specs:
     eac_cli (0.30.1)
@@ -101,11 +110,6 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
-    aranha (0.18.0)
-      aranha-parsers (~> 0.14, >= 0.14.3)
-      aranha-selenium (~> 0.5)
-      eac_ruby_utils (~> 0.106, >= 0.106.1)
-      httpclient (~> 2.8, >= 2.8.3)
     ast (2.4.2)
     avm (0.62.0)
       aranha-parsers (~> 0.14, >= 0.14.4)
@@ -286,6 +290,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aranha!
   aranha-parsers!
   aranha-selenium!
   eac_cli!
