@@ -15,7 +15,7 @@ module EhbrsRubyUtils
       private
 
       {
-        '-version' => %w[ffprobe]
+        '-version' => %w[ffmpeg ffprobe]
       }.each do |validate_arg, commands|
         commands.each do |command|
           define_method("#{command}_uncached") do
