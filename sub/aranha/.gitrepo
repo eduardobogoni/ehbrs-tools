@@ -1,7 +1,0 @@
-[subrepo]
-  cmdver = 0.4.1
-  commit = 7d032dc8044c89ab874004d6d0fa0977dcca0b68
-  method = merge
-  parent = 57b45420b67892767fcc8eb368d1f10e3f41d241
-  branch = master
-  remote = https://github.com/esquilo-azul/aranha.git

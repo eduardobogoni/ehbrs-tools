@@ -1,3 +1,0 @@
-= Aranha
-
-Ruby utilities for web crawling.
