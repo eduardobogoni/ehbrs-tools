@@ -14,7 +14,7 @@ PATH
 PATH
   remote: sub/eac_rest
   specs:
-    eac_rest (0.7.0)
+    eac_rest (0.7.1)
       eac_fs (~> 0.16)
       eac_ruby_utils (~> 0.112)
       faraday (~> 2.7, >= 2.7.4)
