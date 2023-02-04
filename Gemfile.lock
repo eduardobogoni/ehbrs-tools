@@ -12,14 +12,6 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
-  remote: sub/eac_cli
-  specs:
-    eac_cli (0.30.1)
-      colorize (~> 0.8, >= 0.8.1)
-      eac_config (~> 0.12)
-      eac_ruby_utils (~> 0.112)
-
-PATH
   remote: sub/eac_docker
   specs:
     eac_docker (0.6.0)
@@ -158,6 +150,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.5.0)
     dry-inflector (1.0.0)
+    eac_cli (0.30.1)
+      colorize (~> 0.8, >= 0.8.1)
+      eac_config (~> 0.12)
+      eac_ruby_utils (~> 0.112)
     eac_config (0.12.0)
       addressable (~> 2.8, >= 2.8.1)
       eac_ruby_utils (~> 0.107)
@@ -276,7 +272,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  eac_cli!
   eac_docker!
   eac_rest!
   eac_ruby_gem_support (~> 0.3)
