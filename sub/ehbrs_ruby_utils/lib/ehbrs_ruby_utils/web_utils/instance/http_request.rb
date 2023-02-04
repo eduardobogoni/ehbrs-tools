@@ -17,7 +17,7 @@ module EhbrsRubyUtils
         def result
           r = request.response
           ::EhbrsRubyUtils::WebUtils::RequestError.raise_if_error(r)
-          ::Struct.new(:status, :body).new(r.status, r.body_str)
+          ::Struct.new(:status, :body).new(r.status, ::JSON.parse(r.body_str))
         end
 
         private
