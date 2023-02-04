@@ -24,7 +24,7 @@ module Ehbrs
               infom "Uploading \"#{type}\" files list..."
               files_list_path = send("#{type}_files_list")
               infov 'Path', files_list_path
-              process_response(upload_request(files_list_path))
+              process_response(files_list_path)
             end
 
             def upload_request(files_list_path)
@@ -40,16 +40,11 @@ module Ehbrs
               )
             end
 
-            def process_response(response)
-              infov 'Response status', response.status
-              if response.status == 200
-                pp ::JSON.parse(response.body)
-              else
-                error_file = '/tmp/ehbrsutils.html'
-                ::File.write(error_file, response.body)
-                system('firefox', error_file)
-                fatal_error('Retornou com status de erro: ' + error_file)
-              end
+            def process_response(files_list_path)
+              upload_request(files_list_path).body
+            rescue ::EhbrsRubyUtils::WebUtils::RequestError => e
+              system('firefox', e.body_file_path.to_path)
+              fatal_error('Retornou com erro: ' + e.message)
             end
 
             def series_files_list_uncached
