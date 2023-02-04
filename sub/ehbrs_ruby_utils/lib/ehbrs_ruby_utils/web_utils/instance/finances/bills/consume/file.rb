@@ -28,17 +28,16 @@ module EhbrsRubyUtils
               end
 
               def process_response
-                if response_status_result.success?
-                  move_to_registered
-                else
-                  warn("  * Retornou com status de erro:\n\n#{response.body}")
-                end
-                infov '  * Response status', response_status_result.label
+                response
+                move_to_registered
+              rescue ::EhbrsRubyUtils::WebUtils::RequestError
+                warn("  * Retornou com status de erro:\n\n#{response.body}")
               end
 
               def move_to_registered
                 ::FileUtils.mkdir_p(::File.dirname(target_path))
                 ::File.rename(path, target_path)
+                infom 'Moved to registered'
               end
 
               def target_path
@@ -55,13 +54,6 @@ module EhbrsRubyUtils
                   header: {
                     'Accept' => 'application/json'
                   }
-                )
-              end
-
-              def response_status_result
-                ::Avm::Result.success_or_error(
-                  response.status.to_s.match?(/\A2\d{2}\z/),
-                  response.status
                 )
               end
             end
