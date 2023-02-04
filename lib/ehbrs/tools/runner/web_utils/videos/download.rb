@@ -61,10 +61,6 @@ module Ehbrs
             end
 
             def data_uncached
-              ::JSON.parse(raw_content)
-            end
-
-            def raw_content
               runner_context.call(:instance).http_request('/videos/files/export').body
             end
           end
