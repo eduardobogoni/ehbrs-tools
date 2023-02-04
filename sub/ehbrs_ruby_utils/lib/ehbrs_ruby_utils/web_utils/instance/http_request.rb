@@ -2,6 +2,7 @@
 
 require 'eac_rest/api'
 require 'eac_ruby_utils/core_ext'
+require 'ehbrs_ruby_utils/web_utils/request_error'
 require 'avm/instances/base'
 
 module EhbrsRubyUtils
@@ -15,6 +16,7 @@ module EhbrsRubyUtils
         # @return [EacRest::Response]
         def result
           r = request.response
+          ::EhbrsRubyUtils::WebUtils::RequestError.raise_if_error(r)
           ::Struct.new(:status, :body).new(r.status, r.body_str)
         end
 
