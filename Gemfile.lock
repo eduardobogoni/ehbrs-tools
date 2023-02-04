@@ -12,13 +12,6 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
-  remote: sub/eac_docker
-  specs:
-    eac_docker (0.6.0)
-      eac_ruby_utils (~> 0.112)
-      eac_templates (~> 0.3, >= 0.3.2)
-
-PATH
   remote: sub/eac_rest
   specs:
     eac_rest (0.7.0)
@@ -157,6 +150,9 @@ GEM
     eac_config (0.12.0)
       addressable (~> 2.8, >= 2.8.1)
       eac_ruby_utils (~> 0.107)
+    eac_docker (0.6.0)
+      eac_ruby_utils (~> 0.112)
+      eac_templates (~> 0.3, >= 0.3.2)
     eac_fs (0.16.0)
       content-type (~> 0.0, >= 0.0.2)
       eac_ruby_utils (~> 0.107, >= 0.107.1)
@@ -272,7 +268,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  eac_docker!
   eac_rest!
   eac_ruby_gem_support (~> 0.3)
   eac_ruby_utils!
