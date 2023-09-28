@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/immutable'
 require 'telegram/bot'
 
 module Ehbrs
   module Telegram
     class MessageSending
-      include ::EacRubyUtils::Immutable
+      acts_as_immutable
       immutable_accessor :bot_token, :message
       immutable_accessor :recipient_id, type: :array
 
