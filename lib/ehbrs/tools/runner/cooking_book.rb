@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs/cooking_book/project'
+require 'ehbrs_ruby_utils/cooking_book/project'
 
 module Ehbrs
   module Tools
@@ -24,7 +24,7 @@ module Ehbrs
         end
 
         def project_uncached
-          ::Ehbrs::CookingBook::Project.new(source_dir)
+          ::EhbrsRubyUtils::CookingBook::Project.new(source_dir)
         end
       end
     end

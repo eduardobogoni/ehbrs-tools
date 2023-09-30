@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs/cooking_book/build'
+require 'ehbrs_ruby_utils/cooking_book/build'
 require 'os'
 
 module Ehbrs
@@ -25,7 +25,7 @@ module Ehbrs
           private
 
           def build_uncached
-            ::Ehbrs::CookingBook::Build.new(
+            ::EhbrsRubyUtils::CookingBook::Build.new(
               runner_context.call(:project), target_dir: parsed.target_dir
             )
           end
