@@ -38,11 +38,9 @@ module Ehbrs
           end
 
           def subtitles_uncached
-            if parsed.episode?
-              subtitles_from_episode
-            else
-              subtitles_from_title
-            end
+            r = parsed.episode? ? subtitles_from_episode : subtitles_from_title
+            infov 'Subtitles found', r.count
+            r
           end
 
           def subtitles_from_episode
