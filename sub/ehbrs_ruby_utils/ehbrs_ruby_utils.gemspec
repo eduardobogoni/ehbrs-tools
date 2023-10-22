@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'avm', '~> 0.79'
   s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.1'
   s.add_dependency 'eac_fs', '~> 0.16'
-  s.add_dependency 'eac_rest', '~> 0.9', '>= 0.9.1'
+  s.add_dependency 'eac_rest', '~> 0.10'
   s.add_dependency 'eac_ruby_utils', '~> 0.118'
   s.add_dependency 'eac_templates', '~> 0.5'
   s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'

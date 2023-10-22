@@ -21,7 +21,7 @@ PATH
       avm (~> 0.79)
       dentaku (~> 3.5, >= 3.5.1)
       eac_fs (~> 0.16)
-      eac_rest (~> 0.9, >= 0.9.1)
+      eac_rest (~> 0.10)
       eac_ruby_utils (~> 0.118)
       eac_templates (~> 0.5)
       taglib-ruby (~> 1.1, >= 1.1.3)
