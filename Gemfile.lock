@@ -22,7 +22,7 @@ PATH
       dentaku (~> 3.5, >= 3.5.1)
       eac_fs (~> 0.16)
       eac_rest (~> 0.10)
-      eac_ruby_utils (~> 0.118)
+      eac_ruby_utils (~> 0.119, >= 0.119.2)
       eac_templates (~> 0.5)
       taglib-ruby (~> 1.1, >= 1.1.3)
       ultimate_lyrics (~> 0.1, >= 0.1.3)
