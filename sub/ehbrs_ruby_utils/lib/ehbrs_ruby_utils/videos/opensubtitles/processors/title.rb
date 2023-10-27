@@ -18,6 +18,11 @@ module EhbrsRubyUtils
             episodes.each(&:perform)
           end
 
+          # @return [Array<EhbrsRubyUtils::Videos::Opensubtitles::Processors::Subtitle>]
+          def subtitles
+            episodes.flat_map(&:subtitles)
+          end
+
           private
 
           def episode_uri(episode_data)
