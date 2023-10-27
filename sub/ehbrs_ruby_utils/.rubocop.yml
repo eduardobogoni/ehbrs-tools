@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/Proc:
-  Exclude:
-  - lib/ehbrs_ruby_utils/fs/selected/build.rb
 Style/RedundantArgument:
   Exclude:
   - lib/ehbrs_ruby_utils/bga/parsers/game_in_progress.rb
