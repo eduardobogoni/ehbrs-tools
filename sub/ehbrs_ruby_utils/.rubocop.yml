@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/RedundantStringEscape:
-  Exclude:
-  - lib/ehbrs_ruby_utils/music/lyrics_book/resource.rb
 Style/SoleNestedConditional:
   Exclude:
   - lib/ehbrs_ruby_utils/bga/session/user.rb

@@ -31,7 +31,7 @@ module EhbrsRubyUtils
         end
 
         def link_to_header
-          "<a href=\"\##{header_id}\" id=\"#{index_id}\">#{header_title}</a>"
+          "<a href=\"##{header_id}\" id=\"#{index_id}\">#{header_title}</a>"
         end
 
         def index_id
