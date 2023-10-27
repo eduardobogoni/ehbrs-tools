@@ -1,45 +1,87 @@
-require:
-  - rubocop-rails
-  - rubocop-rspec
-
-AllCops:
-  TargetRailsVersion: 5.2
-  TargetRubyVersion: 2.7
-
-Metrics/BlockLength:
+inherit_gem:
+  eac_ruby_gem_support: .rubocop.yml
+Gemspec/RequiredRubyVersion:
   Exclude:
-    - '**/*.gemspec'
-    - 'spec/**/*_spec.rb'
-
-Layout/LineLength:
-  Max: 100
-
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
-
-Rails/DynamicFindBy:
-  Enabled: false
-
-Rails/Output:
-  Enabled: false
-
-Rails/SkipsModelValidations:
-  Enabled: false
-
-Rails/TimeZone:
-  Enabled: false
-
-Style/AsciiComments:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
+  - ehbrs_ruby_utils.gemspec
+Layout/LineContinuationLeadingSpace:
+  Exclude:
+  - lib/ehbrs_ruby_utils/bga/parsers/table/options.rb
+  - lib/ehbrs_ruby_utils/vg/wii/wit/image_format.rb
+Layout/LineEndStringConcatenationIndentation:
+  Exclude:
+  - lib/ehbrs_ruby_utils/bga/parsers/game_in_progress.rb
+  - lib/ehbrs_ruby_utils/bga/parsers/table/options.rb
+  - lib/ehbrs_ruby_utils/bga/session/skip_trophies.rb
+  - lib/ehbrs_ruby_utils/vg/wii/wit/image_format.rb
+Lint/MissingSuper:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/series/rename/line_result_group.rb
+  - lib/ehbrs_ruby_utils/videos/series/rename/season_group.rb
+RSpec/BeEq:
+  Exclude:
+  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/path_spec.rb
+Rails/CompactBlank:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/stream.rb
+Rails/Delegate:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/quality.rb
+Rails/IndexWith:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/container.rb
+Style/MapToHash:
+  Exclude:
+  - lib/ehbrs_ruby_utils/vg/wii/wit/parsers/dump.rb
+  - lib/ehbrs_ruby_utils/videos/container.rb
+Style/MinMaxComparison:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/resolution.rb
+Style/OpenStructUse:
+  Exclude:
+  - lib/ehbrs_ruby_utils/videos/series/rename/file.rb
+  - lib/ehbrs_ruby_utils/web_utils/videos/file.rb
+Style/Proc:
+  Exclude:
+  - lib/ehbrs_ruby_utils/fs/selected/build.rb
+Style/RedundantArgument:
+  Exclude:
+  - lib/ehbrs_ruby_utils/bga/parsers/game_in_progress.rb
+  - lib/ehbrs_ruby_utils/videos/series/rename/file.rb
+Style/RedundantConstantBase:
+  Exclude:
+  - Gemfile
+  - lib/ehbrs_ruby_utils/patches/object/template.rb
+  - lib/ehbrs_ruby_utils/patches/object.rb
+  - lib/ehbrs_ruby_utils/patches.rb
+  - spec/lib/ehbrs_ruby_utils/bga/parsers/game_in_progress_spec.rb
+  - spec/lib/ehbrs_ruby_utils/bga/parsers/game_stats_spec.rb
+  - spec/lib/ehbrs_ruby_utils/bga/parsers/table_spec.rb
+  - spec/lib/ehbrs_ruby_utils/circular_list_spreader_spec.rb
+  - spec/lib/ehbrs_ruby_utils/cooking_book/recipe/measure_spec.rb
+  - spec/lib/ehbrs_ruby_utils/vg/wii/game_file_spec.rb
+  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/parsers/dump_spec.rb
+  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/path_spec.rb
+  - spec/lib/ehbrs_ruby_utils/videos/opensubtitles/parsers/episode_spec.rb
+  - spec/lib/ehbrs_ruby_utils/videos/opensubtitles/parsers/title_spec.rb
+  - spec/lib/ehbrs_ruby_utils/videos/resolution_spec.rb
+  - spec/lib/ehbrs_ruby_utils/videos/stream_spec.rb
+  - spec/rubocop_check_spec.rb
+  - spec/spec_helper.rb
+Style/RedundantRegexpEscape:
+  Exclude:
+  - lib/ehbrs_ruby_utils/cooking_book/recipe/measure.rb
+Style/RedundantStringEscape:
+  Exclude:
+  - lib/ehbrs_ruby_utils/music/lyrics_book/resource.rb
+Style/SoleNestedConditional:
+  Exclude:
+  - lib/ehbrs_ruby_utils/bga/session/user.rb
+Style/StringConcatenation:
+  Exclude:
+  - lib/ehbrs_ruby_utils/bga/table/whatsapp_formatters/base.rb
+  - lib/ehbrs_ruby_utils/circular_list_spreader/base_level.rb
+  - lib/ehbrs_ruby_utils/videos/series/rename/file/basename_parser.rb
+  - lib/ehbrs_ruby_utils/videos/series/rename/line_result.rb
+Style/WhileUntilModifier:
+  Exclude:
+  - lib/ehbrs_ruby_utils/circular_list_spreader/group_level.rb

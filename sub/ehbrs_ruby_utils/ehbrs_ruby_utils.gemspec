@@ -8,12 +8,11 @@ require 'ehbrs_ruby_utils/version'
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = 'ehbrs_ruby_utils'
-  s.version     = ::EhbrsRubyUtils::VERSION
+  s.version     = EhbrsRubyUtils::VERSION
   s.authors     = ['Eduardo H. Bogoni']
   s.summary     = 'Utilities for EHB/RS\'s Ruby projects.'
 
   s.files = Dir['{lib,template}/**/*']
-  s.test_files = Dir['{spec}/**/*', '.rubocop.yml', '.rspec']
 
   s.add_dependency 'aranha', '~> 0.19', '>= 0.19.2'
   s.add_dependency 'aranha-parsers', '~> 0.21'
@@ -28,5 +27,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'ultimate_lyrics', '~> 0.1', '>= 0.1.3'
 
   s.add_development_dependency 'aranha-parsers', '~> 0.8'
-  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.5.1'
+  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.8', '>= 0.8.2'
 end
