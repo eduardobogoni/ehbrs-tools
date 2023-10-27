@@ -23,6 +23,11 @@ module EhbrsRubyUtils
           end
         end
       end
+
+      # @return [EacRubyUtils::Envs::Executable]
+      def mudslide_uncached
+        env.executable('mudslide', exec_args: %w[npx mudslide@latest], check_args: %w[--version])
+      end
     end
   end
 end

@@ -15,13 +15,15 @@ Gem::Specification.new do |s|
   s.files = Dir['{lib,template}/**/*']
   s.test_files = Dir['{spec}/**/*', '.rubocop.yml', '.rspec']
 
-  s.add_dependency 'aranha', '~> 0.19'
-  s.add_dependency 'aranha-parsers', '~> 0.15'
-  s.add_dependency 'avm', '~> 0.62'
+  s.add_dependency 'aranha', '~> 0.19', '>= 0.19.2'
+  s.add_dependency 'aranha-parsers', '~> 0.21'
+  s.add_dependency 'aranha-selenium', '~> 0.7'
+  s.add_dependency 'avm', '~> 0.78'
+  s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.1'
   s.add_dependency 'eac_fs', '~> 0.16'
-  s.add_dependency 'eac_rest', '~> 0.7', '>= 0.7.1'
-  s.add_dependency 'eac_ruby_utils', '~> 0.112'
-  s.add_dependency 'eac_templates', '~> 0.3', '>= 0.3.2'
+  s.add_dependency 'eac_rest', '~> 0.9', '>= 0.9.1'
+  s.add_dependency 'eac_ruby_utils', '~> 0.118'
+  s.add_dependency 'eac_templates', '~> 0.5'
   s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'
   s.add_dependency 'ultimate_lyrics', '~> 0.1', '>= 0.1.3'
 

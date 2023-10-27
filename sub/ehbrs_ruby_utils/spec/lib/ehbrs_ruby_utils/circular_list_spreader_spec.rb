@@ -5,8 +5,6 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
 ::RSpec.describe ::EhbrsRubyUtils::CircularListSpreader do
   let(:node_class) do
     ::Class.new do
-      ::Kernel.const_set('NodeClass', self)
-
       class << self
         def from_file(file)
           from_hash(nil, 'ROOT', ::EacRubyUtils::Yaml.load_file(file))
@@ -14,6 +12,10 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
 
         def from_hash(parent, label, hash)
           new(parent, label).children_from_hash(hash)
+        end
+
+        def name
+          'NodeClass'
         end
       end
 

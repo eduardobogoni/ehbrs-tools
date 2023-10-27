@@ -1,0 +1,1127 @@
+---
+- :game_name: Puerto Rico
+  :time_string: ontem às 02:05
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 280
+  :id: 375603728
+  :players:
+  - :rank: 1
+    :id: 93167144
+    :name: iuriadmvr1
+    :score: 67
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 61
+- :game_name: Hive
+  :time_string: 20/05/2023 às 14:44
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 378439488
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: El Grande
+  :time_string: 19/05/2023 às 22:41
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 31
+  :id: 377762477
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 156
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 81
+- :game_name: Puerto Rico
+  :time_string: 19/05/2023 às 20:31
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 291
+  :id: 377551227
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 77
+  - :rank: 2
+    :id: 84038606
+    :name: giraffe88
+    :score: 53
+- :game_name: Gamão
+  :time_string: 19/05/2023 às 14:54
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 34
+  :id: 375543925
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 12
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Xadrez
+  :time_string: 19/05/2023 às 14:47
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 165
+  :id: 375857290
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Quoridor
+  :time_string: 19/05/2023 às 14:08
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 112
+  :id: 374570241
+  :players:
+  - :rank: 1
+    :id: 93205235
+    :name: generalcfmo
+    :score: 1
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+  - :rank: 2
+    :id: 93223573
+    :name: Duduzim
+    :score: 0
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Koi-koi
+  :time_string: 19/05/2023 às 00:14
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 110
+  :id: 376238126
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 72
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 28
+- :game_name: Puerto Rico
+  :time_string: 18/05/2023 às 22:52
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 286
+  :id: 377518310
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 11
+  - :rank: 2
+    :id: 87749764
+    :name: All Powerful Wizard
+    :score: 8
+- :game_name: Puerto Rico
+  :time_string: 18/05/2023 às 22:51
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 280
+  :id: 377207624
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 37
+  - :rank: 2
+    :id: 91625693
+    :name: danap2021
+    :score: 33
+- :game_name: Xadrez
+  :time_string: 18/05/2023 às 21:18
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 146
+  :id: 374494462
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 0
+- :game_name: Xiangqi
+  :time_string: 18/05/2023 às 20:18
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 85
+  :id: 368852315
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93864921
+    :name: Ralke013
+    :score: 0
+- :game_name: Race for the Galaxy
+  :time_string: 18/05/2023 às 19:46
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 33
+  :id: 377685054
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 33
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 21
+- :game_name: Hive
+  :time_string: 18/05/2023 às 15:20
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 377434898
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Race for the Galaxy
+  :time_string: 18/05/2023 às 14:16
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 3
+  :id: 373863168
+  :players:
+  - :rank: 1
+    :id: 83850191
+    :name: guidedad
+    :score: 29
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 23
+  - :rank: 3
+    :id: 94113552
+    :name: ReitHere
+    :score: 15
+- :game_name: Puerto Rico
+  :time_string: 18/05/2023 às 11:21
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 275
+  :id: 376264105
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 63
+  - :rank: 2
+    :id: 92442373
+    :name: Hexes_RKY
+    :score: 38
+- :game_name: Hive
+  :time_string: 18/05/2023 às 09:57
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 377553893
+  :players:
+  - :rank: 1
+    :id: 94186748
+    :name: Zambezii
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 18/05/2023 às 01:30
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 267
+  :id: 375456486
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 53
+  - :rank: 2
+    :id: 83971908
+    :name: Pya
+    :score: 49
+- :game_name: Quoridor
+  :time_string: 17/05/2023 às 23:02
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 126
+  :id: 374499424
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 0
+- :game_name: Go
+  :time_string: 17/05/2023 às 21:33
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 87
+  :id: 377523124
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 84806275
+    :name: happiness1106
+    :score: 7
+- :game_name: Xiangqi
+  :time_string: 17/05/2023 às 17:08
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 65
+  :id: 373298718
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 1
+    :id: 85396829
+    :name: kidyom
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 17/05/2023 às 11:47
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 257
+  :id: 375592349
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 67
+  - :rank: 2
+    :id: 87749764
+    :name: All Powerful Wizard
+    :score: 55
+- :game_name: Xadrez
+  :time_string: 16/05/2023 às 14:09
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 127
+  :id: 375607969
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: El Grande
+  :time_string: 16/05/2023 às 11:13
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 31
+  :id: 375536097
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 172
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 41
+- :game_name: Race for the Galaxy
+  :time_string: 16/05/2023 às 09:13
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 31
+  :id: 375284943
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 41
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 12
+- :game_name: Puerto Rico
+  :time_string: 15/05/2023 às 22:32
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 250
+  :id: 373432486
+  :players:
+  - :rank: 1
+    :id: 85021668
+    :name: warder57
+    :score: 47
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 44
+- :game_name: Hive
+  :time_string: 15/05/2023 às 14:45
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 375605340
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 15/05/2023 às 14:35
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 262
+  :id: 375421938
+  :players:
+  - :rank: 1
+    :id: 13362529
+    :name: cavis
+    :score: 68
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 67
+- :game_name: Puerto Rico
+  :time_string: 15/05/2023 às 14:23
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 267
+  :id: 373845086
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 79
+  - :rank: 2
+    :id: 41579804
+    :name: lapinou
+    :score: 56
+- :game_name: Puerto Rico
+  :time_string: 15/05/2023 às 14:09
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 261
+  :id: 373810860
+  :players:
+  - :rank: 1
+    :id: 83971908
+    :name: Pya
+    :score: 60
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 55
+- :game_name: Koi-koi
+  :time_string: 14/05/2023 às 19:48
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 152
+  :id: 376235359
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 139
+  - :rank: 2
+    :id: 84874621
+    :name: sd77
+    :score: 61
+- :game_name: Go
+  :time_string: 14/05/2023 às 12:15
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 52
+  :id: 373886802
+  :players:
+  - :rank: 1
+    :id: 94141040
+    :name: GacekBatman
+    :score: 45
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 22
+- :game_name: Damas
+  :time_string: 13/05/2023 às 14:29
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 373882738
+  :players:
+  - :rank: 1
+    :id: 93661826
+    :name: Zé1961
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 13/05/2023 às 01:28
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 271
+  :id: 372807122
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 67
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 55
+- :game_name: Puerto Rico
+  :time_string: 13/05/2023 às 01:06
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 266
+  :id: 373882751
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 39
+  - :rank: 2
+    :id: 88171717
+    :name: MDCS
+    :score: 38
+- :game_name: Puerto Rico
+  :time_string: 12/05/2023 às 18:51
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 254
+  :id: 368448439
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 1
+    :id: 92267577
+    :name: daniellewallace
+    :score: 1
+  - :rank: 1
+    :id: 918656
+    :name: bonedigger
+    :score: 1
+  - :rank: 4
+    :id: 94109403
+    :name: DidejantiEntropija
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 12/05/2023 às 00:20
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 254
+  :id: 374270557
+  :players:
+  - :rank: 1
+    :id: 92442373
+    :name: Hexes_RKY
+    :score: 56
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 53
+- :game_name: Koi-koi
+  :time_string: 11/05/2023 às 21:19
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 122
+  :id: 375280703
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 46
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 4
+- :game_name: Xadrez
+  :time_string: 10/05/2023 às 18:57
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 106
+  :id: 373870907
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93337549
+    :name: Petat1986
+    :score: 0
+- :game_name: Quoridor
+  :time_string: 10/05/2023 às 00:24
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 105
+  :id: 373602409
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Xadrez
+  :time_string: 10/05/2023 às 00:07
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 83
+  :id: 372806271
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Race for the Galaxy
+  :time_string: '09/05/2023 às 17:26'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 373870075
+  :players:
+  - :rank: 1
+    :id: 90379834
+    :name: biliskner
+    :score: 29
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 20
+- :game_name: Puerto Rico
+  :time_string: '09/05/2023 às 16:28'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 268
+  :id: 370752197
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 73
+  - :rank: 2
+    :id: 86444768
+    :name: jerrymarch
+    :score: 61
+- :game_name: Puerto Rico
+  :time_string: '09/05/2023 às 12:39'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 262
+  :id: 372466754
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 75
+  - :rank: 2
+    :id: 90866549
+    :name: y0k3L
+    :score: 52
+- :game_name: Koi-koi
+  :time_string: '09/05/2023 às 11:19'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 100
+  :id: 373747455
+  :players:
+  - :rank: 1
+    :id: 84559362
+    :name: Lality
+    :score: 52
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 48
+- :game_name: Puerto Rico
+  :time_string: '09/05/2023 às 01:04'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 256
+  :id: 373436042
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 35
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 34
+- :game_name: Go
+  :time_string: '09/05/2023 às 00:38'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 52
+  :id: 365576310
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 57
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 28
+- :game_name: Koi-koi
+  :time_string: '08/05/2023 às 20:41'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 122
+  :id: 373793996
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 53
+  - :rank: 2
+    :id: 84162931
+    :name: Lunarl
+    :score: 3
+- :game_name: Xiangqi
+  :time_string: '08/05/2023 às 16:01'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 58
+  :id: 373272385
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Quoridor
+  :time_string: '08/05/2023 às 14:08'
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 75
+  :id: 373756463
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 84020997
+    :name: cianure
+    :score: 0
+- :game_name: Koi-koi
+  :time_string: 06/05/2023 às 23:12
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 83
+  :id: 362747822
+  :players:
+  - :rank: 1
+    :id: 91717833
+    :name: Marchael
+    :score: 97
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 3
+- :game_name: Xadrez
+  :time_string: 06/05/2023 às 16:05
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 57
+  :id: 370236370
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 04/05/2023 às 18:32
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 251
+  :id: 370763691
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 60
+  - :rank: 2
+    :id: 93083631
+    :name: solhell
+    :score: 46
+- :game_name: Koi-koi
+  :time_string: 04/05/2023 às 14:10
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 83
+  :id: 372576372
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 28
+  - :rank: 2
+    :id: 84162931
+    :name: Lunarl
+    :score: 22
+- :game_name: Koi-koi
+  :time_string: 04/05/2023 às 11:13
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 38
+  :id: 373429298
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 57
+  - :rank: 2
+    :id: 84559362
+    :name: Lality
+    :score: 7
+- :game_name: Xiangqi
+  :time_string: 03/05/2023 às 02:00
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 31
+  :id: 370239628
+  :players:
+  - :rank: 1
+    :id: 85396829
+    :name: kidyom
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Xiangqi
+  :time_string: 02/05/2023 às 23:24
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 31
+  :id: 369408133
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 01/05/2023 às 13:33
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 244
+  :id: 366100749
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 70
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 55
+- :game_name: Xadrez
+  :time_string: 30/04/2023 às 22:13
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 30
+  :id: 366683893
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+  - :rank: 2
+    :id: 93212034
+    :name: danieltc
+    :score: 0
+- :game_name: Go
+  :time_string: 27/04/2023 às 17:50
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 52
+  :id: 368855825
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 13
+  - :rank: 2
+    :id: 88845534
+    :name: jalfred27
+    :score: 1
+- :game_name: Race for the Galaxy
+  :time_string: 25/04/2023 às 12:07
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 368457278
+  :players:
+  - :rank: 1
+    :id: 85298897
+    :name: Atrayu
+    :score: 34
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 19
+- :game_name: Puerto Rico
+  :time_string: 24/04/2023 às 21:01
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 238
+  :id: 357409019
+  :players:
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 1
+    :id: 93223573
+    :name: Duduzim
+    :score: 1
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 1
+    :id: 93205235
+    :name: generalcfmo
+    :score: 1
+  - :rank: 5
+    :id: 93167144
+    :name: iuriadmvr1
+    :score: 0
+- :game_name: Go
+  :time_string: 24/04/2023 às 12:47
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 17
+  :id: 368446234
+  :players:
+  - :rank: 1
+    :id: 93813769
+    :name: pepvis
+    :score: 34
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 2
+- :game_name: Puerto Rico
+  :time_string: 24/04/2023 às 11:45
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 238
+  :id: 368457823
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 49
+  - :rank: 2
+    :id: 93125089
+    :name: cha_v
+    :score: 39
+- :game_name: Puerto Rico
+  :time_string: 24/04/2023 às 08:50
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 230
+  :id: 357408039
+  :players:
+  - :rank: 1
+    :id: 93205235
+    :name: generalcfmo
+    :score: 1
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 1
+    :id: 93223573
+    :name: Duduzim
+    :score: 1
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 5
+    :id: 93167144
+    :name: iuriadmvr1
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 24/04/2023 às 08:49
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 230
+  :id: 357408649
+  :players:
+  - :rank: 1
+    :id: 93223573
+    :name: Duduzim
+    :score: 1
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 1
+    :id: 93205235
+    :name: generalcfmo
+    :score: 1
+  - :rank: 1
+    :id: 93212034
+    :name: danieltc
+    :score: 1
+  - :rank: 5
+    :id: 93167144
+    :name: iuriadmvr1
+    :score: 0
+- :game_name: Xiangqi
+  :time_string: 23/04/2023 às 23:13
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 1
+  :id: 362277556
+  :players:
+  - :rank: 1
+    :id: 85396829
+    :name: kidyom
+    :score: 1
+  - :rank: 2
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 0
+- :game_name: Xadrez
+  :time_string: 23/04/2023 às 22:10
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 30
+  :id: 362111744
+  :players:
+  - :rank: 1
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 1
+  - :rank: 2
+    :id: 93205235
+    :name: generalcfmo
+    :score: 0
+- :game_name: Puerto Rico
+  :time_string: 18/04/2023 às 21:39
+  :leave_penalty:
+  :rank_increment:
+  :rank_after:
+  :id: 356513708
+  :players:
+  - :rank:
+    :id: 93167144
+    :name: iuriadmvr1
+    :score:
+  - :rank:
+    :id: 93205235
+    :name: generalcfmo
+    :score:
+  - :rank:
+    :id: 93212034
+    :name: danieltc
+    :score:
+  - :rank:
+    :id: 84920871
+    :name: eduardobogoni
+    :score:
+- :game_name: Puerto Rico
+  :time_string: 18/04/2023 às 08:20
+  :leave_penalty:
+  :rank_increment:
+  :rank_after: 230
+  :id: 354604993
+  :players:
+  - :rank: 1
+    :id: 93740966
+    :name: iceBBB
+    :score: 58
+  - :rank: 2
+    :id: 90379834
+    :name: biliskner
+    :score: 44
+  - :rank: 3
+    :id: 84920871
+    :name: eduardobogoni
+    :score: 41
+  - :rank: 4
+    :id: 88368824
+    :name: cheryl57
+    :score: 32
+  - :rank: 5
+    :id: 88186984
+    :name: Sandinho
+    :score: 31

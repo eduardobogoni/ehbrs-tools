@@ -1,0 +1,66 @@
+---
+:game_code: puertorico
+:game_name: Puerto Rico
+:creation_time: 16/03/2023 às 22:13
+:estimated_duration: 35 dias
+:options:
+- :label: Modo de Jogo
+  :value: Modo Normal
+  :description: ''
+- :label: Velocidade do jogo
+  :value: Modo em turnos • 1 movimento por dia
+  :description: "+24h00 por turno (maximum 3 dias)"
+- :label: Variante de equilíbrio
+  :value: Jogo clássico
+  :description: ''
+- :label: Variante de dois jogadores
+  :value: Jogo clássico
+  :description: ''
+- :label: Primeira expansão - Novas construções
+  :value: Desligado
+  :description: ''
+- :label: Segunda expansão - Os nobres
+  :value: Desligado
+  :description: ''
+:players:
+- :rank: 1
+  :id: 84920871
+  :name: eduardobogoni
+  :score: 1
+  :elo_increment: 0
+  :elo_reached: 230
+  :penalty_clock: false
+  :penalty_leave: false
+- :rank: 1
+  :id: 93205235
+  :name: generalcfmo
+  :score: 1
+  :elo_increment: 3
+  :elo_reached: 99
+  :penalty_clock: false
+  :penalty_leave: false
+- :rank: 1
+  :id: 93212034
+  :name: danieltc
+  :score: 1
+  :elo_increment: 16
+  :elo_reached: 32
+  :penalty_clock: false
+  :penalty_leave: false
+- :rank: 1
+  :id: 93223573
+  :name: Duduzim
+  :score: 1
+  :elo_increment: 16
+  :elo_reached: 33
+  :penalty_clock: false
+  :penalty_leave: false
+- :rank: 5
+  :id: 93167144
+  :name: iuriadmvr1
+  :score: 0
+  :elo_increment: -35
+  :elo_reached: 159
+  :penalty_clock: true
+  :penalty_leave: true
+:game_conceded: false
