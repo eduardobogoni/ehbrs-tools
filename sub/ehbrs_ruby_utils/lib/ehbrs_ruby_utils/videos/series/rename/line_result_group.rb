@@ -10,6 +10,7 @@ module EhbrsRubyUtils
           attr_reader :name, :children
 
           def initialize(name, files)
+            super
             @name = name
             @children = build_children(files)
           end

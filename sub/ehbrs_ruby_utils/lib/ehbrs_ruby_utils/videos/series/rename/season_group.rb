@@ -10,6 +10,7 @@ module EhbrsRubyUtils
           attr_reader :season, :files
 
           def initialize(season, files)
+            super
             @season = season
             @files = files.sort_by { |f| [f.episode] }
           end
