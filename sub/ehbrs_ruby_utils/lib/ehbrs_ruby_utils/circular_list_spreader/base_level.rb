@@ -26,7 +26,7 @@ module EhbrsRubyUtils
       end
 
       def remaining_fs
-        ((remaining_f * 1000).round / 10.0).to_s + '%'
+        "#{(remaining_f * 1000).round / 10.0}%"
       end
 
       def debugs

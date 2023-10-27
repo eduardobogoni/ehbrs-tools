@@ -1,12 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/StringConcatenation:
-  Exclude:
-  - lib/ehbrs_ruby_utils/bga/table/whatsapp_formatters/base.rb
-  - lib/ehbrs_ruby_utils/circular_list_spreader/base_level.rb
-  - lib/ehbrs_ruby_utils/videos/series/rename/file/basename_parser.rb
-  - lib/ehbrs_ruby_utils/videos/series/rename/line_result.rb
 Style/WhileUntilModifier:
   Exclude:
   - lib/ehbrs_ruby_utils/circular_list_spreader/group_level.rb

@@ -49,7 +49,7 @@ module EhbrsRubyUtils
           end
 
           def title_to_s(title)
-            '*' + [title_icon, title, title_icon].join(' ') + "*\n\n"
+            "*#{[title_icon, title, title_icon].join(' ')}*\n\n"
           end
 
           def players

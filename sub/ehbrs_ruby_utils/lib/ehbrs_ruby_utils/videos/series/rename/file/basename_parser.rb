@@ -10,10 +10,10 @@ module EhbrsRubyUtils
           module BasenameParser
             FORMATS = [{
               format: /(\d+)(\d{2})(\d{2})/i,
-              build: ->(m) { { s: padding(m[1]), e: padding(m[2]) + '-' + padding(m[3]) } }
+              build: ->(m) { { s: padding(m[1]), e: "#{padding(m[2])}-#{padding(m[3])}" } }
             }, {
               format: /s(\d+)e(\d+)-(\d+)/i,
-              build: ->(m) { { s: padding(m[1]), e: padding(m[2]) + '-' + padding(m[3]) } }
+              build: ->(m) { { s: padding(m[1]), e: "#{padding(m[2])}-#{padding(m[3])}" } }
             }, {
               format: /(\d{1,2})\s*[^\d]\s*(\d{2})/i,
               build: ->(m) { { s: padding(m[1]), e: padding(m[2]) } }

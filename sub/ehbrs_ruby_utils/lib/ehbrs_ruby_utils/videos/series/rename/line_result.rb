@@ -11,13 +11,13 @@ module EhbrsRubyUtils
           enable_speaker
 
           def show(level)
-            out(padding_level(level) + line_out + "\n")
+            out("#{padding_level(level)}#{line_out}\n")
           end
 
           private
 
           def padding_level(level)
-            ('  ' * level.to_i) + '* '
+            "#{'  ' * level.to_i}* "
           end
         end
       end
