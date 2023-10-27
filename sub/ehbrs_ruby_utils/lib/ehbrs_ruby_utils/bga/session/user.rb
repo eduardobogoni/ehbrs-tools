@@ -18,9 +18,7 @@ module EhbrsRubyUtils
         end
 
         def on_logged(&block)
-          unless logged?
-            raise "Login failed for BoardGameUser user \"#{username}\"" unless login
-          end
+          raise "Login failed for BoardGameUser user \"#{username}\"" if !logged? && !login
 
           block.call
         end
