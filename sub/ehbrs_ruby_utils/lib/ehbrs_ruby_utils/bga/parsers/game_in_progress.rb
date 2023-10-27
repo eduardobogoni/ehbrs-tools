@@ -29,7 +29,7 @@ module EhbrsRubyUtils
         private
 
         def process_status(status)
-          status.split(' ').lazy.map { |s| STATUS_CLASS_PARSER.parse(s.strip) }.find(&:present?) ||
+          status.split.lazy.map { |s| STATUS_CLASS_PARSER.parse(s.strip) }.find(&:present?) ||
             raise("No status class found in \"#{status}\"")
         end
       end

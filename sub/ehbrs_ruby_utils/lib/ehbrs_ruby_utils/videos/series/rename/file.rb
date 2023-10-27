@@ -70,7 +70,7 @@ module EhbrsRubyUtils
 
           def kernel_from_directory_name
             dir = dirname.basename.to_path.sub(/\([0-9]+\)/, '')
-            dir.split(/\W+/).select { |w| /\A[a-z0-9]/.match(w) }.map { |p| p[0].downcase }.join('')
+            dir.split(/\W+/).select { |w| /\A[a-z0-9]/.match(w) }.map { |p| p[0].downcase }.join
           end
 
           def extension
