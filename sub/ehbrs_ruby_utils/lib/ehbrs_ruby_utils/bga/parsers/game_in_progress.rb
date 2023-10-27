@@ -8,7 +8,7 @@ module EhbrsRubyUtils
     module Parsers
       class GameInProgress < ::Aranha::Parsers::Html::ItemList
         ITEMS_XPATH = '//*[@id = "gametables_inprogress_all"]' \
-          '//*[starts-with(@id, "gametableblock_")]'
+                      '//*[starts-with(@id, "gametableblock_")]'
         STATUS_CLASS_PATTERN = /\Agametable_status_(.+)\z/.freeze
         STATUS_CLASS_PARSER = STATUS_CLASS_PATTERN.to_parser { |m| m[1] }
 

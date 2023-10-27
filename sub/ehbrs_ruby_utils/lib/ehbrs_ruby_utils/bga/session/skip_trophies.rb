@@ -7,7 +7,7 @@ module EhbrsRubyUtils
     class Session < ::SimpleDelegator
       module SkipTrophies
         TROPHY_SKIP_BUTTON_XPATH = '//*[@id = "splashedNotifications_overlay"]' \
-          '//*[starts-with(@id, "continue_btn_")]'
+                                   '//*[starts-with(@id, "continue_btn_")]'
         TROPHY_SKIP_TIMEOUT = 5
 
         # @param &block [Proc]
