@@ -10,7 +10,7 @@ module EhbrsRubyUtils
         require_sub __FILE__
 
         def initialize(data)
-          super(::OpenStruct.new(data))
+          super(data.to_struct)
         end
 
         def exist?

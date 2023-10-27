@@ -1,10 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/OpenStructUse:
-  Exclude:
-  - lib/ehbrs_ruby_utils/videos/series/rename/file.rb
-  - lib/ehbrs_ruby_utils/web_utils/videos/file.rb
 Style/Proc:
   Exclude:
   - lib/ehbrs_ruby_utils/fs/selected/build.rb

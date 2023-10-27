@@ -13,7 +13,7 @@ module EhbrsRubyUtils
 
           common_constructor :file, :options do
             self.file = file.to_pathname.expand_path
-            self.options = ::OpenStruct.new(options) if options.is_a?(::Hash)
+            self.options = options.to_struct if options.is_a?(::Hash)
           end
 
           # @return [String]
