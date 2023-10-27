@@ -2,12 +2,12 @@
 
 require 'ehbrs_ruby_utils/circular_list_spreader'
 
-::RSpec.describe ::EhbrsRubyUtils::CircularListSpreader do
+RSpec.describe EhbrsRubyUtils::CircularListSpreader do
   let(:node_class) do
-    ::Class.new do
+    Class.new do
       class << self
         def from_file(file)
-          from_hash(nil, 'ROOT', ::EacRubyUtils::Yaml.load_file(file))
+          from_hash(nil, 'ROOT', EacRubyUtils::Yaml.load_file(file))
         end
 
         def from_hash(parent, label, hash)
@@ -23,7 +23,7 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
       attr_reader :children
 
       def children_from_hash(hash)
-        @children = if hash.is_a?(::Hash)
+        @children = if hash.is_a?(Hash)
                       hash.map { |k, v| self.class.from_hash(self, k, v) }
                     else
                       false
@@ -37,7 +37,7 @@ require 'ehbrs_ruby_utils/circular_list_spreader'
       end
 
       def leaf?
-        !children.is_a?(::Enumerable)
+        !children.is_a?(Enumerable)
       end
 
       def recursive_leafs

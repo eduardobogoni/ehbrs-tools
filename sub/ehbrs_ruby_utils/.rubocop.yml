@@ -1,26 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/RedundantConstantBase:
-  Exclude:
-  - Gemfile
-  - lib/ehbrs_ruby_utils/patches/object/template.rb
-  - lib/ehbrs_ruby_utils/patches/object.rb
-  - lib/ehbrs_ruby_utils/patches.rb
-  - spec/lib/ehbrs_ruby_utils/bga/parsers/game_in_progress_spec.rb
-  - spec/lib/ehbrs_ruby_utils/bga/parsers/game_stats_spec.rb
-  - spec/lib/ehbrs_ruby_utils/bga/parsers/table_spec.rb
-  - spec/lib/ehbrs_ruby_utils/circular_list_spreader_spec.rb
-  - spec/lib/ehbrs_ruby_utils/cooking_book/recipe/measure_spec.rb
-  - spec/lib/ehbrs_ruby_utils/vg/wii/game_file_spec.rb
-  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/parsers/dump_spec.rb
-  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/path_spec.rb
-  - spec/lib/ehbrs_ruby_utils/videos/opensubtitles/parsers/episode_spec.rb
-  - spec/lib/ehbrs_ruby_utils/videos/opensubtitles/parsers/title_spec.rb
-  - spec/lib/ehbrs_ruby_utils/videos/resolution_spec.rb
-  - spec/lib/ehbrs_ruby_utils/videos/stream_spec.rb
-  - spec/rubocop_check_spec.rb
-  - spec/spec_helper.rb
 Style/RedundantRegexpEscape:
   Exclude:
   - lib/ehbrs_ruby_utils/cooking_book/recipe/measure.rb

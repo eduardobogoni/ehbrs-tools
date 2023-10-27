@@ -2,7 +2,7 @@
 
 require 'ehbrs_ruby_utils/cooking_book/recipe/measure'
 
-RSpec.describe ::EhbrsRubyUtils::CookingBook::Recipe::Measure do
+RSpec.describe EhbrsRubyUtils::CookingBook::Recipe::Measure do
   describe '#build'
   {
     '1.5 cup' => [1.5, nil, 'cup'],
