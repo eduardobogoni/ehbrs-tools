@@ -43,7 +43,7 @@ module EhbrsRubyUtils
       def song_metadata_uncached
         ::UltimateLyrics::SongMetadata.new(
           ::UltimateLyrics::SongMetadata::Field.lists.sources.values
-          .map { |source| [source, tag.send(source)] }.to_h
+          .index_with { |source| tag.send(source) }
         )
       end
 
