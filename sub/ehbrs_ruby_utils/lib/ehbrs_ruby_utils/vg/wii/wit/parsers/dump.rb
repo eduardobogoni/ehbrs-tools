@@ -54,10 +54,10 @@ module EhbrsRubyUtils
             end
 
             def parse_disc_part_ids(value)
-              value.split(',').map(&:strip).map do |v|
-                r = v.split('=')
+              value.split(',').to_h do |v|
+                r = v.strip.split('=')
                 [r[0].strip, r[1].strip]
-              end.to_h
+              end
             end
           end
         end
