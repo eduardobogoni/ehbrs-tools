@@ -54,7 +54,7 @@ module EhbrsRubyUtils
       end
 
       def language_with_title
-        [language, title].reject(&:blank?).if_present { |v| v.join('_').variableize }
+        [language, title].compact_blank.if_present { |v| v.join('_').variableize }
       end
 
       def title
