@@ -25,8 +25,8 @@ RSpec.describe ::EhbrsRubyUtils::Vg::Wii::Wit::Path do
     let(:with_type) { described_class.new('ISO', 'path/to/file.wbfs') }
     let(:without_type) { described_class.new(nil, 'path/to/file.wbfs') }
 
-    it { expect(with_type.change?(without_type)).to eq(false) }
-    it { expect(without_type.change?(with_type)).to eq(true) }
+    it { expect(with_type.change?(without_type)).to be(false) }
+    it { expect(without_type.change?(with_type)).to be(true) }
 
     context 'when'
   end

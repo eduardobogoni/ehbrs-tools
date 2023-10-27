@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-RSpec/BeEq:
-  Exclude:
-  - spec/lib/ehbrs_ruby_utils/vg/wii/wit/path_spec.rb
 Rails/CompactBlank:
   Exclude:
   - lib/ehbrs_ruby_utils/videos/stream.rb
