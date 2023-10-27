@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/RedundantRegexpEscape:
-  Exclude:
-  - lib/ehbrs_ruby_utils/cooking_book/recipe/measure.rb
 Style/RedundantStringEscape:
   Exclude:
   - lib/ehbrs_ruby_utils/music/lyrics_book/resource.rb
