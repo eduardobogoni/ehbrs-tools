@@ -29,11 +29,11 @@ module EhbrsRubyUtils
       end
 
       def higher
-        width > height ? width : height
+        [width, height].max
       end
 
       def lower
-        width < height ? width : height
+        [width, height].min
       end
 
       def pixels

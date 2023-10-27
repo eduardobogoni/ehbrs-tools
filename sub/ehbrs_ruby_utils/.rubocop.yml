@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Style/MinMaxComparison:
-  Exclude:
-  - lib/ehbrs_ruby_utils/videos/resolution.rb
 Style/OpenStructUse:
   Exclude:
   - lib/ehbrs_ruby_utils/videos/series/rename/file.rb
