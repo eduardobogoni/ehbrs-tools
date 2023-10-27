@@ -1,10 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Layout/LineContinuationLeadingSpace:
-  Exclude:
-  - lib/ehbrs_ruby_utils/bga/parsers/table/options.rb
-  - lib/ehbrs_ruby_utils/vg/wii/wit/image_format.rb
 Layout/LineEndStringConcatenationIndentation:
   Exclude:
   - lib/ehbrs_ruby_utils/bga/parsers/game_in_progress.rb

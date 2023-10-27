@@ -9,8 +9,8 @@ module EhbrsRubyUtils
     module Parsers
       class Table < ::Aranha::Parsers::Html::Item
         class Options < ::Aranha::Parsers::Html::ItemList
-          ITEMS_XPATH = '//div[starts-with(@id, "gameoption_")' \
-            ' and not(contains(@style, "none"))]'
+          ITEMS_XPATH = '//div[starts-with(@id, "gameoption_") ' \
+            'and not(contains(@style, "none"))]'
 
           field :label, :string, './div[@class = "row-label"]/text()'
           field :value, :string, './div[@class = "row-value"]' \

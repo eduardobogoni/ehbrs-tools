@@ -16,8 +16,8 @@ module EhbrsRubyUtils
 
             def by_name(name)
               all.find { |i| i.name.downcase == name.to_s.downcase } ||
-                raise(::ArgumentError, "Image not found with name \"#{name.to_s.downcase}\"" \
-                  " (Available: #{all.map(&:name).join(', ')})")
+                raise(::ArgumentError, "Image not found with name \"#{name.to_s.downcase}\" " \
+                  "(Available: #{all.map(&:name).join(', ')})")
             end
 
             private
