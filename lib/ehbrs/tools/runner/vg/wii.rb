@@ -2,8 +2,8 @@
 
 require 'eac_cli/core_ext'
 require 'eac_fs/traversable'
-require 'ehbrs/vg/wii/file_move'
-require 'ehbrs/vg/wii/game_file'
+require 'ehbrs_ruby_utils/vg/wii/file_move'
+require 'ehbrs_ruby_utils/vg/wii/game_file'
 
 module Ehbrs
   module Tools
@@ -45,7 +45,7 @@ module Ehbrs
           def move(game)
             return if move_arg.blank?
 
-            file_move = ::Ehbrs::Vg::Wii::FileMove.new(game, game.format(move_arg))
+            file_move = ::EhbrsRubyUtils::Vg::Wii::FileMove.new(game, game.format(move_arg))
             infov '  * Target path',
                   file_move.target.to_s.colorize(file_move.change? ? :light_white : :light_black)
             file_move.run if confirm?
@@ -60,7 +60,7 @@ module Ehbrs
           end
 
           def traverser_check_file(path)
-            game = ::Ehbrs::Vg::Wii::GameFile.new(path)
+            game = ::EhbrsRubyUtils::Vg::Wii::GameFile.new(path)
             return unless game.valid?
 
             infom game.wit_path
