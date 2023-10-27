@@ -1,5 +1,0 @@
----
-url_suffix: '/path/to/service'
-verb: :put
-body_data:
-  '@field1': value1
