@@ -36,9 +36,7 @@ module EhbrsRubyUtils
         height <=> other.height
       end
 
-      def to_s
-        height.to_s
-      end
+      delegate :to_s, to: :height
 
       def to_xs
         "#{height} (Min: #{min_height}, Max: #{max_height})"

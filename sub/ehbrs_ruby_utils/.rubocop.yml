@@ -1,9 +1,6 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
-Rails/Delegate:
-  Exclude:
-  - lib/ehbrs_ruby_utils/videos/quality.rb
 Rails/IndexWith:
   Exclude:
   - lib/ehbrs_ruby_utils/videos/container.rb
