@@ -28,7 +28,7 @@ module EhbrsRubyUtils
 
       def pop_all
         r = []
-        while remaining?; r << pop; end
+        r << pop while remaining?
         r
       end
 
