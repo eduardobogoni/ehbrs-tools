@@ -14,7 +14,7 @@ PATH
 PATH
   remote: sub/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.36.0)
+    ehbrs_ruby_utils (0.36.1)
       aranha (~> 0.19, >= 0.19.2)
       aranha-parsers (~> 0.21)
       aranha-selenium (~> 0.7)
