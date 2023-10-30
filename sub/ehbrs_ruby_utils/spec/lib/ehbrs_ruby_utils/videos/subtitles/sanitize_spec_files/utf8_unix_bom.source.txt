@@ -1,0 +1,202 @@
+﻿1
+00:00:06,280 --> 00:00:11,200
+UM DOCUMENTÁRIO ORIGINAL NETFLIX
+
+2
+00:00:13,000 --> 00:00:19,074
+-== [ www.OpenSubtitles.org ] ==-
+
+3
+00:00:36,040 --> 00:00:39,080
+<i>Muita gente diz</i>
+<i>que um polvo é como um alienígena.</i>
+
+4
+00:00:41,760 --> 00:00:45,560
+<i>mas o estranho é que,</i>
+<i>ao se aproximar deles,</i>
+
+5
+00:00:45,640 --> 00:00:49,760
+<i>você percebe que somos parecidos</i>
+<i>em muitos aspectos.</i>
+
+6
+00:00:54,160 --> 00:00:58,200
+<i>Você entra neste mundo</i>
+<i>completamente diferente.</i>
+
+7
+00:01:06,160 --> 00:01:08,560
+<i>Uma sensação incrível.</i>
+
+8
+00:01:10,360 --> 00:01:13,680
+<i>E você sente que está à beira</i>
+<i>de algo extraordinário.</i>
+
+9
+00:01:21,440 --> 00:01:24,760
+<i>Mas você percebe que há um limite</i>
+<i>que não pode ser ultrapassado.</i>
+
+10
+00:01:47,120 --> 00:01:50,720
+<i>Faz muito tempo</i>
+<i>desde aquele dia em que tudo começou.</i>
+
+11
+00:02:07,240 --> 00:02:10,600
+CABO OCIDENTAL, ÁFRICA DO SUL
+
+12
+00:02:25,040 --> 00:02:29,360
+<i>Este local na ponta da África</i>
+<i>é conhecido como Cabo das Tormentas.</i>
+
+13
+00:02:35,280 --> 00:02:37,800
+<i>Minhas memórias de infância</i>
+<i>são completamente dominadas</i>
+
+14
+00:02:37,880 --> 00:02:41,240
+<i>pela costa rochosa,</i>
+<i>a zona costeira e a floresta de algas.</i>
+
+15
+00:02:47,240 --> 00:02:52,000
+<i>Tínhamos um bangalô de madeira,</i>
+<i>literalmente abaixo do nível do mar.</i>
+
+16
+00:02:52,560 --> 00:02:54,960
+<i>Quando as tempestades enormes chegavam,</i>
+
+17
+00:02:55,560 --> 00:02:59,600
+<i>o oceano passava pelas portas</i>
+<i>e enchia o fundo da casa.</i>
+
+18
+00:03:05,120 --> 00:03:07,240
+<i>Foi muito emocionante quando criança</i>
+
+19
+00:03:07,320 --> 00:03:11,400
+<i>viver literalmente na força</i>
+<i>daquele gigante Oceano Atlântico.</i>
+
+20
+00:03:20,200 --> 00:03:23,520
+<i>Passei a maior parte da minha infância</i>
+<i>nas poças de maré,</i>
+
+21
+00:03:23,600 --> 00:03:25,840
+<i>mergulhando na floresta de algas rasa.</i>
+
+22
+00:03:30,560 --> 00:03:32,640
+<i>Era o que eu mais gostava de fazer.</i>
+
+23
+00:03:35,600 --> 00:03:37,960
+<i>Como adulto, eu havia me separado disso.</i>
+
+24
+00:03:40,680 --> 00:03:42,720
+<i>No início, não havia problema.</i>
+
+25
+00:03:44,640 --> 00:03:48,880
+<i>Até que fui à Reserva Central Kalahari</i>
+<i>há 20 anos.</i>
+
+26
+00:03:59,800 --> 00:04:03,600
+<i>Eu estava fazendo um filme</i>
+<i>chamado</i> The Great Dance <i>com meu irmão.</i>
+
+27
+00:04:04,600 --> 00:04:05,960
+<i>Conheci alguns homens</i>
+
+28
+00:04:06,040 --> 00:04:09,400
+<i>que eram provavelmente</i>
+<i>os melhores rastreadores do mundo.</i>
+
+29
+00:04:12,920 --> 00:04:14,520
+<i>Ver esses homens…</i>
+
+30
+00:04:16,040 --> 00:04:19,960
+<i>identificarem os sinais incríveis</i>
+<i>e sutis da natureza,</i>
+
+31
+00:04:20,040 --> 00:04:22,560
+<i>coisas que meu olho nem via,</i>
+
+32
+00:04:22,640 --> 00:04:25,520
+<i>e segui-los, às vezes por horas,</i>
+
+33
+00:04:25,600 --> 00:04:30,400
+<i>encontrando animais escondidos na paisagem</i>
+<i>foi extraordinário de testemunhar.</i>
+
+34
+00:04:33,240 --> 00:04:36,880
+<i>Eles estavam por dentro do mundo natural.</i>
+
+35
+00:04:39,920 --> 00:04:42,040
+<i>Eu podia sentir que estava por fora.</i>
+
+36
+00:04:45,160 --> 00:04:48,640
+<i>E eu tinha um grande desejo</i>
+<i>de ficar por dentro desse mundo.</i>
+
+37
+00:04:58,000 --> 00:04:58,840
+18 ANOS DEPOIS
+
+38
+00:04:58,920 --> 00:05:01,720
+<i>Passei dois anos por muita dificuldade.</i>
+
+39
+00:05:05,760 --> 00:05:08,520
+<i>Eu vinha trabalhando bastante</i>
+<i>há muito tempo,</i>
+
+40
+00:05:09,440 --> 00:05:10,720
+<i>e estava acabado.</i>
+
+41
+00:05:12,600 --> 00:05:14,680
+<i>Eu não dormia direito há meses.</i>
+
+42
+00:05:16,520 --> 00:05:18,320
+<i>Minha família estava sofrendo.</i>
+
+43
+00:05:21,640 --> 00:05:24,200
+<i>Eu estava ficando cheio de toda a pressão.</i>
+
+44
+00:05:28,320 --> 00:05:31,000
+<i>Minha mente não conseguia lidar</i>
+<i>com tudo isso.</i>
+
+45
+00:05:33,320 --> 00:05:37,040
+<i>Não queria mais ver uma câmera</i>
+<i>ou uma sala de edição nunca mais.</i>
