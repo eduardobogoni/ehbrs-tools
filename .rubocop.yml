@@ -4,9 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-Gemspec/RequiredRubyVersion:
-  Exclude:
-  - ehbrs-tools.gemspec
 Layout/LineEndStringConcatenationIndentation:
   Exclude:
   - lib/ehbrs/google/translate/session.rb

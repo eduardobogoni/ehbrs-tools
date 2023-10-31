@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.files = Dir['{exe,lib,template,vendor}/**/*', 'Gemfile', 'Gemfile.lock', '.avm.yml']
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.required_ruby_version = '>= 2.7.0'
 
   s.add_dependency 'avm-tools', '~> 0.156'
   s.add_dependency 'eac_cli', '~> 0.38'
