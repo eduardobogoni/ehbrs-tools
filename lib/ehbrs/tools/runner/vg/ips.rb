@@ -36,7 +36,7 @@ module Ehbrs
 
           def run_patch(source_path, ips_path, output_path)
             command = ::Ehbrs::Executables.flips.command
-                                          .append(['--apply', ips_path, source_path, output_path])
+                        .append(['--apply', ips_path, source_path, output_path])
 
             command.system!
 

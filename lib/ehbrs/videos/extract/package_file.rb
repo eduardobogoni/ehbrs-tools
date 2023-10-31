@@ -19,7 +19,7 @@ module Ehbrs
 
         def match_quality?(quality)
           path.basename_sub { |b| b.to_s.downcase }.basename
-              .fnmatch?("*#{quality.downcase}*".gsub(/\A\*+/, '*').gsub(/\*+\z/, '*'))
+            .fnmatch?("*#{quality.downcase}*".gsub(/\A\*+/, '*').gsub(/\*+\z/, '*'))
         end
 
         def move_to_quality_dir

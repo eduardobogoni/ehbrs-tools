@@ -50,7 +50,7 @@ module Ehbrs
 
             def traverser_check_file(path)
               @files << ::EhbrsRubyUtils::Videos::Series::Rename::File
-                        .new(path, series_file_options)
+                          .new(path, series_file_options)
             end
 
             def series_file_options_uncached

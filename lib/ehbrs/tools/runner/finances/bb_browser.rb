@@ -25,8 +25,8 @@ module Ehbrs
 
           def docker_container_uncached
             r = docker_image.container
-                            .temporary(true).interactive(true).tty(true)
-                            .command_arg('seg.bb.com.br')
+                  .temporary(true).interactive(true).tty(true)
+                  .command_arg('seg.bb.com.br')
             %w[capabilities environment_variables volumes].inject(r) do |a, e|
               send("docker_container_#{e}", a)
             end

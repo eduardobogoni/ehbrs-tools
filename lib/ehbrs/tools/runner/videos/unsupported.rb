@@ -48,7 +48,7 @@ module Ehbrs
 
           def profiles_uncached
             parsed.profiles.if_present(PROFILES) { |v| v.split(',').map(&:strip) }
-                  .map { |name| profile_class(name).instance }
+              .map { |name| profile_class(name).instance }
           end
 
           def profile_class(profile_name)

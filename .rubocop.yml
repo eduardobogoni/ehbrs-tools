@@ -4,15 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-Layout/MultilineMethodCallIndentation:
-  Exclude:
-  - lib/ehbrs/self/observers/with_persistence.rb
-  - lib/ehbrs/tools/runner/finances/bb_browser.rb
-  - lib/ehbrs/tools/runner/telegram/send_message.rb
-  - lib/ehbrs/tools/runner/vg/ips.rb
-  - lib/ehbrs/tools/runner/videos/series/rename.rb
-  - lib/ehbrs/tools/runner/videos/unsupported.rb
-  - lib/ehbrs/videos/extract/package_file.rb
 Lint/AmbiguousOperatorPrecedence:
   Exclude:
   - lib/ehbrs/videos/file.rb
