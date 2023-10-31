@@ -10,7 +10,7 @@ module Ehbrs
         CLOSE_POPUP_CSS = '.dismiss-button'
         FILE_INPUT_XPATH = '//*[@id = "tlid-file-input"]'
         SUBMIT_XPATH = '//form[@action="//translate.googleusercontent.com/translate_f"]' \
-          '//input[@type="submit"]'
+                       '//input[@type="submit"]'
         RESULT_XPATHS = [
           '//script[contains(@src, "https://translate.google.com/translate_a")]',
           '/html/body/pre'

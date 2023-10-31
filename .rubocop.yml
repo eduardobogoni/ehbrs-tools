@@ -4,10 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-Layout/LineEndStringConcatenationIndentation:
-  Exclude:
-  - lib/ehbrs/google/translate/session.rb
-  - lib/ehbrs/tools/runner/vg/ips.rb
 Layout/MultilineMethodCallIndentation:
   Exclude:
   - lib/ehbrs/self/observers/with_persistence.rb

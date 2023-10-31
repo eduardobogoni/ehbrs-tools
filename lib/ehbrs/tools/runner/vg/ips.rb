@@ -43,7 +43,7 @@ module Ehbrs
             return if output_path.exist?
 
             fatal_error("\"#{command}\" exited without error, but output file \"#{output_path}\"" \
-                'does not exist')
+                        'does not exist')
           end
 
           def run_patches
