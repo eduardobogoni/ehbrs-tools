@@ -1,39 +1,90 @@
-require:
-  - rubocop-rails
-  - rubocop-rspec
-
-AllCops:
+---
+inherit_gem:
+  eac_ruby_gem_support: ".rubocop.yml"
+Bundler/GemFilename:
   Exclude:
-    - sub/**/*
-
-Layout/LineLength:
-  Max: 100
-
-Metrics/BlockLength:
+  - lib/ehbrs/gems.rb
+Gemspec/DeprecatedAttributeAssignment:
   Exclude:
-    - spec/**/*_spec.rb
-
-Rails/Output:
-  Enabled: false
-
-Rails/TimeZone:
-  Enabled: false
-
+  - ehbrs-tools.gemspec
+Gemspec/RequiredRubyVersion:
+  Exclude:
+  - ehbrs-tools.gemspec
+Layout/LineEndStringConcatenationIndentation:
+  Exclude:
+  - lib/ehbrs/google/translate/session.rb
+  - lib/ehbrs/tools/runner/vg/ips.rb
+Layout/MultilineMethodCallIndentation:
+  Exclude:
+  - lib/ehbrs/self/observers/with_persistence.rb
+  - lib/ehbrs/tools/runner/finances/bb_browser.rb
+  - lib/ehbrs/tools/runner/telegram/send_message.rb
+  - lib/ehbrs/tools/runner/vg/ips.rb
+  - lib/ehbrs/tools/runner/videos/series/rename.rb
+  - lib/ehbrs/tools/runner/videos/unsupported.rb
+  - lib/ehbrs/videos/extract/package_file.rb
+Lint/AmbiguousOperatorPrecedence:
+  Exclude:
+  - lib/ehbrs/videos/file.rb
+Lint/MissingSuper:
+  Exclude:
+  - lib/ehbrs/videos/unsupported/profiles/samsung.rb
+RSpec/BeEq:
+  Exclude:
+  - spec/lib/ehbrs/observers/base_spec.rb
+  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
+RSpec/MultipleMemoizedHelpers:
+  Exclude:
+  - spec/lib/ehbrs/observers/base_spec.rb
+  - spec/lib/ehbrs/tools/runner/vg/ips_spec.rb
+  - spec/lib/ehbrs/tools/runner/videos/probe_spec.rb
+  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
 RSpec/NestedGroups:
   Exclude:
-    - spec/**/*_spec.rb
-
-Style/AsciiComments:
-  Enabled: false
-
-Style/Documentation:
-  Enabled: false
-
-Style/HashEachMethods:
-  Enabled: true
-
-Style/HashTransformKeys:
-  Enabled: true
-
-Style/HashTransformValues:
-  Enabled: true
+  - spec/lib/ehbrs/observers/base_spec.rb
+Rails/CompactBlank:
+  Exclude:
+  - lib/ehbrs/tools/runner/fs/used_space.rb
+  - lib/ehbrs/tools/runner/videos/languages.rb
+  - lib/ehbrs/videos/unsupported/check_support.rb
+Style/EnvHome:
+  Exclude:
+  - lib/ehbrs/tools/runner/finances/bb_browser.rb
+  - lib/ehbrs/user_dirs.rb
+Style/ExplicitBlockArgument:
+  Exclude:
+  - lib/ehbrs/videos/unsupported/check_support.rb
+Style/FetchEnvVar:
+  Exclude:
+  - lib/ehbrs/user_dirs.rb
+Style/OpenStructUse:
+  Exclude:
+  - lib/ehbrs/observers/base.rb
+  - lib/ehbrs/observers/with_persistence.rb
+Style/RedundantConstantBase:
+  Exclude:
+  - Gemfile
+  - ehbrs-tools.gemspec
+  - exe/ehbrs
+  - spec/code/rubocop_spec.rb
+  - spec/lib/ehbrs/observers/base_spec.rb
+  - spec/lib/ehbrs/tools/runner/fs/used_space_spec.rb
+  - spec/lib/ehbrs/tools/runner/vg/ips_spec.rb
+  - spec/lib/ehbrs/tools/runner/videos/probe_spec.rb
+  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
+  - spec/lib/ehbrs/tools/runner_spec.rb
+  - spec/spec_helper/videos.rb
+  - spec/spec_helper.rb
+Style/RedundantRegexpEscape:
+  Exclude:
+  - lib/ehbrs/videos/file.rb
+Style/RedundantReturn:
+  Exclude:
+  - lib/ehbrs/observers/base.rb
+Style/StringConcatenation:
+  Exclude:
+  - lib/ehbrs/tools/runner/google/translate.rb
+  - lib/ehbrs/tools/runner/web_utils/videos/upload.rb
+  - lib/ehbrs/videos/convert_job.rb
+  - lib/ehbrs/videos/track.rb
+  - lib/ehbrs/videos/unsupported/check_support.rb
