@@ -4,9 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-Gemspec/DeprecatedAttributeAssignment:
-  Exclude:
-  - ehbrs-tools.gemspec
 Gemspec/RequiredRubyVersion:
   Exclude:
   - ehbrs-tools.gemspec
