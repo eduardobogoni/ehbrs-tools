@@ -4,9 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-Lint/AmbiguousOperatorPrecedence:
-  Exclude:
-  - lib/ehbrs/videos/file.rb
 Lint/MissingSuper:
   Exclude:
   - lib/ehbrs/videos/unsupported/profiles/samsung.rb

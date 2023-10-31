@@ -34,7 +34,7 @@ module Ehbrs
         end
 
         def hmsf_to_seconds(hour, minute, second, float_part)
-          r = hour.to_f * 3600 + minute.to_f * 60 + second.to_f
+          r = (hour.to_f * 3600) + (minute.to_f * 60) + second.to_f
           r += float_part.to_f / (10**float_part.length) if float_part
           r
         end
