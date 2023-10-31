@@ -23,6 +23,7 @@ module Ehbrs
           MPEG4_EXTRA_UNSUPPORTED = %w[dx50 xvid].freeze
 
           def initialize
+            super()
             add_check('invalid_extension', '.m4v')
           end
         end
