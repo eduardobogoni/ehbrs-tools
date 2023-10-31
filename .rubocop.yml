@@ -4,10 +4,6 @@ inherit_gem:
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-RSpec/BeEq:
-  Exclude:
-  - spec/lib/ehbrs/observers/base_spec.rb
-  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
 RSpec/MultipleMemoizedHelpers:
   Exclude:
   - spec/lib/ehbrs/observers/base_spec.rb

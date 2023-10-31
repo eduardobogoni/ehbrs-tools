@@ -24,7 +24,7 @@ RSpec.describe ::Ehbrs::Tools::Runner::Videos::Unsupported do
         temp_dir.remove
       end
 
-      it { expect(to_fix_file.file?).to eq(true) }
+      it { expect(to_fix_file.file?).to be(true) }
       it { expect(to_fix_file.dirname).to eq(temp_dir) }
 
       describe '#run' do

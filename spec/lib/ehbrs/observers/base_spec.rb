@@ -54,7 +54,7 @@ RSpec.describe ::Ehbrs::Observers::Base do
         before { instance.check(nil, second_time) }
 
         it { expect(instance.records.count).to eq(2) }
-        it { expect(instance.last_value).to eq(nil) }
+        it { expect(instance.last_value).to be_nil }
         it { expect(instance.last_change_time).to eq(second_time) }
         it { expect(instance.last_check_time).to eq(second_time) }
       end
