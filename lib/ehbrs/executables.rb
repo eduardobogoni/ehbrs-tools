@@ -15,7 +15,6 @@ module Ehbrs
       private
 
       {
-        '-?' => %w[rar],
         '-h' => %w[unzip],
         '-version' => %w[ffmpeg],
         '--version' => %w[flips tar wit]
