@@ -17,7 +17,7 @@ module Ehbrs
       {
         '-h' => %w[unzip],
         '-version' => %w[ffmpeg],
-        '--version' => %w[flips tar wit]
+        '--version' => %w[flips wit]
       }.each do |validate_arg, commands|
         commands.each do |command|
           define_method("#{command}_uncached") do
