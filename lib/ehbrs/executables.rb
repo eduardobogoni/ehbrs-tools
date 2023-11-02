@@ -25,10 +25,6 @@ module Ehbrs
           end
         end
       end
-
-      def sevenzip_uncached
-        env.executable('7z', '--help')
-      end
     end
   end
 end
