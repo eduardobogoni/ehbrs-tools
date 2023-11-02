@@ -7,7 +7,6 @@ PATH
       eac_ruby_utils (~> 0.120)
       ehbrs_ruby_utils (~> 0.38)
       filesize (~> 0.2)
-      inifile (~> 3.0)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
 
