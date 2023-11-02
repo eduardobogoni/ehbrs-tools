@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/fs/temp'
+require 'ehbrs_ruby_utils/executables'
 
 RSpec.configure do |config|
   config.before do
@@ -21,7 +22,7 @@ RSpec.configure do |config|
 
   def stub_video(ffmpeg_args, output_path = nil)
     output_path ||= videos_temp_dir.file
-    Ehbrs::Executables.ffmpeg.command.append(
+    EhbrsRubyUtils::Executables.ffmpeg.command.append(
       ['-i', stub_video_source_file.to_s, *ffmpeg_args, output_path.to_s]
     ).execute!
 

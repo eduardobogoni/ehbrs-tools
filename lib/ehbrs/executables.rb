@@ -15,7 +15,6 @@ module Ehbrs
       private
 
       {
-        '-version' => %w[ffmpeg],
         '--version' => %w[flips]
       }.each do |validate_arg, commands|
         commands.each do |command|

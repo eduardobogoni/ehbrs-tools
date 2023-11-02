@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
+require 'ehbrs_ruby_utils/executables'
 
 module Ehbrs
   module Tools
@@ -100,7 +101,7 @@ module Ehbrs
             end
 
             def extract_tracks_command_uncached
-              ::Ehbrs::Executables.ffmpeg.command(*extract_tracks_job_args)
+              ::EhbrsRubyUtils::Executables.ffmpeg.command(*extract_tracks_job_args)
             end
           end
         end
