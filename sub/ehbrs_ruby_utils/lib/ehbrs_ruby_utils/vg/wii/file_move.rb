@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/executables'
+require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/vg/wii/wit/image_format'
 require 'ehbrs_ruby_utils/vg/wii/wit/path'
 require 'fileutils'
@@ -47,7 +47,7 @@ module EhbrsRubyUtils
         end
 
         def change_path_and_type
-          ::Ehbrs::Executables.wit.command
+          ::EhbrsRubyUtils::Executables.wit.command
             .append(change_path_and_type_args)
             .system!
           check_target
@@ -61,7 +61,7 @@ module EhbrsRubyUtils
         end
 
         def change_type
-          ::Ehbrs::Executables.wit.command
+          ::EhbrsRubyUtils::Executables.wit.command
             .append(change_type_args)
             .system!
         end

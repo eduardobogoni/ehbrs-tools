@@ -15,7 +15,9 @@ module EhbrsRubyUtils
       private
 
       {
-        '-version' => %w[ffmpeg ffprobe]
+        '-?' => %w[rar],
+        '-h' => %w[unzip],
+        '-version' => %w[ffmpeg ffprobe tar wit]
       }.each do |validate_arg, commands|
         commands.each do |command|
           define_method("#{command}_uncached") do
@@ -27,6 +29,12 @@ module EhbrsRubyUtils
       # @return [EacRubyUtils::Envs::Executable]
       def mudslide_uncached
         env.executable('mudslide', exec_args: %w[npx mudslide@latest], check_args: %w[--version])
+      end
+
+      # !method sevenzip
+      # @return [EacRubyUtils::Envs::Executable]
+      def sevenzip_uncached
+        env.executable('7z', '--help')
       end
     end
   end

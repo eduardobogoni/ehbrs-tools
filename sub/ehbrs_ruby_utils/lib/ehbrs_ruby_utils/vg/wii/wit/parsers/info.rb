@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/executables'
-require 'fileutils'
 require 'inifile'
 
 module EhbrsRubyUtils

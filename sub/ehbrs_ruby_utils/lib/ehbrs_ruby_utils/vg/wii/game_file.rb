@@ -2,6 +2,7 @@
 
 require 'eac_ruby_utils/core_ext'
 require 'eac_ruby_utils/custom_format'
+require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/vg/wii/wit/parsers/dump'
 require 'ehbrs_ruby_utils/vg/wii/wit/path'
 require 'pathname'
@@ -76,7 +77,7 @@ module EhbrsRubyUtils
         private
 
         def properties_uncached
-          r = ::Ehbrs::Executables.wit.command.append(['dump', to_s]).execute
+          r = ::EhbrsRubyUtils::Executables.wit.command.append(['dump', to_s]).execute
           return nil unless r.fetch(:exit_code).zero?
 
           ::EhbrsRubyUtils::Vg::Wii::Wit::Parsers::Dump.new(r.fetch(:stdout)).properties

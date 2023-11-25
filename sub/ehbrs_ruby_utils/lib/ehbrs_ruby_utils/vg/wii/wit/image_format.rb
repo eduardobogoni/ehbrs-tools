@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs/executables'
+require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/vg/wii/wit/parsers/info'
 
 module EhbrsRubyUtils
@@ -33,7 +33,7 @@ module EhbrsRubyUtils
             end
 
             def info_output
-              ::Ehbrs::Executables.wit.command
+              ::EhbrsRubyUtils::Executables.wit.command
                 .append(%w[info image-format --sections])
                 .execute!
             end
