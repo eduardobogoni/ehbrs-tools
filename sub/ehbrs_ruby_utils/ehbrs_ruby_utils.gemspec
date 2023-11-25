@@ -29,6 +29,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'
   s.add_dependency 'ultimate_lyrics', '~> 0.1', '>= 0.1.3'
 
-  s.add_development_dependency 'aranha-parsers', '~> 0.8'
   s.add_development_dependency 'eac_ruby_gem_support', '~> 0.8', '>= 0.8.2'
 end
