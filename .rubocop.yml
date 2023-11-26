@@ -3,10 +3,7 @@ inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
 AllCops:
   Exclude:
-    - sub/**/*
-Bundler/GemFilename:
-  Exclude:
-  - lib/ehbrs/gems.rb
+  - sub/**/*
 Rails/CompactBlank:
   Exclude:
   - lib/ehbrs/tools/runner/fs/used_space.rb
