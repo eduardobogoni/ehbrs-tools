@@ -4,10 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/EnvHome:
-  Exclude:
-  - lib/ehbrs/tools/runner/finances/bb_browser.rb
-  - lib/ehbrs/user_dirs.rb
 Style/ExplicitBlockArgument:
   Exclude:
   - lib/ehbrs/videos/unsupported/check_support.rb

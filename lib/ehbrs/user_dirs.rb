@@ -15,7 +15,7 @@ module Ehbrs
       private
 
       def user_home_dir_uncached
-        ::EacFs::StorageTree.new(ENV['HOME'])
+        ::EacFs::StorageTree.new(Dir.home)
       end
 
       def cache_uncached

@@ -45,8 +45,8 @@ module Ehbrs
 
           def docker_container_volumes(container)
             {
-              ::File.join(ENV.fetch('HOME'), 'Downloads') => '/home/user/Downloads',
-              ::File.join(ENV.fetch('HOME'), '.Xauthority') => '/home/user/.Xauthority:ro',
+              ::File.join(Dir.home, 'Downloads') => '/home/user/Downloads',
+              ::File.join(Dir.home, '.Xauthority') => '/home/user/.Xauthority:ro',
               '/tmp/.X11-unix' => '/tmp/.X11-unix:ro',
               '/etc/machine-id' => '/etc/machine-id:ro'
             }.inject(container) { |a, e| a.volume(e[0], e[1]) }
