@@ -4,9 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/ExplicitBlockArgument:
-  Exclude:
-  - lib/ehbrs/videos/unsupported/check_support.rb
 Style/FetchEnvVar:
   Exclude:
   - lib/ehbrs/user_dirs.rb
