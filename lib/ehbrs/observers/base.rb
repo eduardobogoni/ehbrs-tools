@@ -49,7 +49,7 @@ module Ehbrs
       end
 
       def check_with_blank_value_ignore(value, date)
-        return false if value.blank? ? false : check_with_blank_value_add(value, date)
+        false if value.blank? ? false : check_with_blank_value_add(value, date)
       end
 
       def check_with_blank_value_raise(value, date)

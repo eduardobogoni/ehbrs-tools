@@ -4,9 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/RedundantReturn:
-  Exclude:
-  - lib/ehbrs/observers/base.rb
 Style/StringConcatenation:
   Exclude:
   - lib/ehbrs/tools/runner/google/translate.rb
