@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ostruct'
 
 module Ehbrs
   module Observers
@@ -45,7 +44,7 @@ module Ehbrs
       def check_with_blank_value_add(value, time)
         return false unless changing_value?(value)
 
-        records << ::OpenStruct.new(value: value, time: time)
+        records << { value: value, time: time }.to_struct
         true
       end
 

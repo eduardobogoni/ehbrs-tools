@@ -4,10 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/OpenStructUse:
-  Exclude:
-  - lib/ehbrs/observers/base.rb
-  - lib/ehbrs/observers/with_persistence.rb
 Style/RedundantConstantBase:
   Exclude:
   - Gemfile

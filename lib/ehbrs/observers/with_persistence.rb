@@ -21,7 +21,7 @@ module Ehbrs
       def load
         save unless path.exist?
         data = ::YAML.load_file(path.to_path)
-        @records = data.fetch(:records).map { |h| ::OpenStruct.new(h) }
+        @records = data.fetch(:records).map(&:to_struct)
         @last_check_time = data.fetch(:last_check_time)
       end
 
