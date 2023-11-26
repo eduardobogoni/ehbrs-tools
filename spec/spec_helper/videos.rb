@@ -2,7 +2,7 @@
 
 require 'eac_ruby_utils/fs/temp'
 
-::RSpec.configure do |config|
+RSpec.configure do |config|
   config.before do
     videos_temp_dir
   end
@@ -12,16 +12,16 @@ require 'eac_ruby_utils/fs/temp'
   end
 
   def videos_temp_dir
-    @videos_temp_dir ||= ::EacRubyUtils::Fs::Temp.directory
+    @videos_temp_dir ||= EacRubyUtils::Fs::Temp.directory
   end
 
   def stub_video_source_file
-    @stub_video_source_file ||= ::Pathname.new(__dir__).join('videos_files', 'stub_source.mp4')
+    @stub_video_source_file ||= Pathname.new(__dir__).join('videos_files', 'stub_source.mp4')
   end
 
   def stub_video(ffmpeg_args, output_path = nil)
     output_path ||= videos_temp_dir.file
-    ::Ehbrs::Executables.ffmpeg.command.append(
+    Ehbrs::Executables.ffmpeg.command.append(
       ['-i', stub_video_source_file.to_s, *ffmpeg_args, output_path.to_s]
     ).execute!
 

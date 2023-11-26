@@ -6,7 +6,7 @@ require 'ehbrs/tools/version'
 
 Gem::Specification.new do |s|
   s.name        = 'ehbrs-tools'
-  s.version     = ::Ehbrs::Tools::VERSION
+  s.version     = Ehbrs::Tools::VERSION
   s.authors     = ['Esquilo Azul Company']
   s.summary     = 'Tools for EHB/RS.'
 

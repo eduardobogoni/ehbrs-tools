@@ -2,13 +2,13 @@
 
 require 'ehbrs/observers/base'
 
-RSpec.describe ::Ehbrs::Observers::Base do
+RSpec.describe Ehbrs::Observers::Base do
   let(:instance) { described_class.new }
   let(:first_value) { 'a value' }
   let(:same_value) { first_value.dup }
   let(:different_value) { 'another value' }
-  let(:first_time) { ::Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
-  let(:second_time) { ::Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
+  let(:first_time) { Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
+  let(:second_time) { Time.required_zone.local(2020, 5, 1, 12, 45, 0) }
 
   it { expect(instance.records.count).to be_zero }
   it { expect(instance.last_change_time).to be_blank }
@@ -82,7 +82,7 @@ RSpec.describe ::Ehbrs::Observers::Base do
           end
         end
 
-        it { expect(@exception).to be_a(::ArgumentError) } # rubocop:disable RSpec/InstanceVariable
+        it { expect(@exception).to be_a(ArgumentError) } # rubocop:disable RSpec/InstanceVariable
         it { expect(instance.records.count).to eq(1) }
         it { expect(instance.last_value).to eq(first_value) }
         it { expect(instance.last_change_time).to eq(first_time) }

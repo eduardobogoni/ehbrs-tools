@@ -4,20 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/RedundantConstantBase:
-  Exclude:
-  - Gemfile
-  - ehbrs-tools.gemspec
-  - exe/ehbrs
-  - spec/code/rubocop_spec.rb
-  - spec/lib/ehbrs/observers/base_spec.rb
-  - spec/lib/ehbrs/tools/runner/fs/used_space_spec.rb
-  - spec/lib/ehbrs/tools/runner/vg/ips_spec.rb
-  - spec/lib/ehbrs/tools/runner/videos/probe_spec.rb
-  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
-  - spec/lib/ehbrs/tools/runner_spec.rb
-  - spec/spec_helper/videos.rb
-  - spec/spec_helper.rb
 Style/RedundantRegexpEscape:
   Exclude:
   - lib/ehbrs/videos/file.rb

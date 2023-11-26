@@ -5,9 +5,9 @@ require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/runner/videos/unsupported'
 require 'ehbrs_ruby_utils/videos/container'
 
-RSpec.describe ::Ehbrs::Tools::Runner::Videos::Unsupported do
-  let(:source_dir) { ::Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
-  let(:temp_dir) { ::EacRubyUtils::Fs::Temp.directory }
+RSpec.describe Ehbrs::Tools::Runner::Videos::Unsupported do
+  let(:source_dir) { Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
+  let(:temp_dir) { EacRubyUtils::Fs::Temp.directory }
   let(:dts_audio) do
     stub_video(['-c:v', 'copy', '-c:a', 'dts', '-strict', '-2'], temp_dir / 'to_fix_file.mp4')
   end
@@ -32,16 +32,16 @@ RSpec.describe ::Ehbrs::Tools::Runner::Videos::Unsupported do
         let(:converted_file) { to_fix_file.basename_sub { |b| "#{b}.converted" } }
         let(:fixed_file) { to_fix_file.basename_sub { |b| "#{b.basename('.*')}.mkv" } }
         let(:fixed_file_actual_probe_data) do
-          sanitize_probe_data(::EhbrsRubyUtils::Videos::Container.new(fixed_file).probe_data)
+          sanitize_probe_data(EhbrsRubyUtils::Videos::Container.new(fixed_file).probe_data)
         end
 
         let(:fixed_file_expect_probe_file) { source_dir.join("#{video_var}.probe.yaml") }
         let(:fixed_file_expect_probe_data) do
-          ::EacRubyUtils::Yaml.load_file(fixed_file_expect_probe_file)
+          EacRubyUtils::Yaml.load_file(fixed_file_expect_probe_file)
         end
 
         before do
-          ::Ehbrs::Tools::Runner.run(argv: run_argv)
+          Ehbrs::Tools::Runner.run(argv: run_argv)
         end
 
         it { expect(converted_file).to be_a_file }

@@ -6,17 +6,17 @@ require 'ehbrs/tools/runner'
 require 'ehbrs/tools/runner/fs/used_space'
 require 'ehbrs/observers/with_persistence'
 
-RSpec.describe ::Ehbrs::Tools::Runner::Fs::UsedSpace do
-  let(:target) { ::EacRubyUtils::Fs::Temp.directory }
-  let(:user_dir) { ::EacRubyUtils::Fs::Temp.directory }
-  let(:cached_user_dir) { ::EacFs::StorageTree.new(user_dir) }
+RSpec.describe Ehbrs::Tools::Runner::Fs::UsedSpace do
+  let(:target) { EacRubyUtils::Fs::Temp.directory }
+  let(:user_dir) { EacRubyUtils::Fs::Temp.directory }
+  let(:cached_user_dir) { EacFs::StorageTree.new(user_dir) }
   let(:observers_user_dir) { cached_user_dir.child('observers') }
   let(:observer_path) do
     observers_user_dir.child(target.to_s.parameterize).content_path.to_pathname
   end
 
   before do
-    allow(::Ehbrs::UserDirs).to receive(:data).and_return(cached_user_dir)
+    allow(Ehbrs::UserDirs).to receive(:data).and_return(cached_user_dir)
   end
 
   after { [target, user_dir].each(&:remove!) }
@@ -53,10 +53,10 @@ RSpec.describe ::Ehbrs::Tools::Runner::Fs::UsedSpace do
   end
 
   def observer
-    ::Ehbrs::Observers::WithPersistence.new(observer_path)
+    Ehbrs::Observers::WithPersistence.new(observer_path)
   end
 
   def runner_run(*args)
-    ::Ehbrs::Tools::Runner.run(argv: %w[fs used-space] + args)
+    Ehbrs::Tools::Runner.run(argv: %w[fs used-space] + args)
   end
 end

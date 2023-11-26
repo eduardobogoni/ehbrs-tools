@@ -3,4 +3,4 @@
 
 $LOAD_PATH.unshift("#{__dir__}/../lib")
 require 'ehbrs/tools/runner'
-::Ehbrs::Tools::Runner.run
+Ehbrs::Tools::Runner.run
