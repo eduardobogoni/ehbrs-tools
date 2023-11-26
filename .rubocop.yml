@@ -4,9 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/RedundantRegexpEscape:
-  Exclude:
-  - lib/ehbrs/videos/file.rb
 Style/RedundantReturn:
   Exclude:
   - lib/ehbrs/observers/base.rb

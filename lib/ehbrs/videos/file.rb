@@ -53,7 +53,7 @@ module Ehbrs
       end
 
       def duration_uncached
-        m = /Duration\:\s*(#{TIME_PATTERN})/.match(content)
+        m = /Duration:\s*(#{TIME_PATTERN})/.match(content)
         raise 'Duration pattern not find in content' unless m
 
         self.class.time_to_seconds(m[1])
