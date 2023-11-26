@@ -44,7 +44,7 @@ module Ehbrs
               upload_request(files_list_path).body
             rescue ::EhbrsRubyUtils::WebUtils::RequestError => e
               system('firefox', e.body_file_path.to_path)
-              fatal_error('Retornou com erro: ' + e.message)
+              fatal_error("Retornou com erro: #{e.message}")
             end
 
             def series_files_list_uncached

@@ -45,7 +45,7 @@ module Ehbrs
           def default_output_file
             ::File.join(
               ::File.dirname(source_file),
-              ::File.basename(source_file, '.*') + '_translated.html'
+              "#{::File.basename(source_file, '.*')}_translated.html"
             )
           end
 

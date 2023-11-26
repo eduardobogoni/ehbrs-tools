@@ -76,7 +76,7 @@ module Ehbrs
       end
 
       def converting
-        target + '.converting'
+        "#{target}.converting"
       end
 
       def converted

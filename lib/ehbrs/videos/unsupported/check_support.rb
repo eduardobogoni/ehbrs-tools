@@ -61,8 +61,8 @@ module Ehbrs
 
         def new_padded_cli_speaker
           ::EacCli::Speaker.new(
-            err_line_prefix(::EacRubyUtils::Speaker.context.optional_current
-            .if_present('') { |v| v.is_a?(::EacCli::Speaker) ? v.err_line_prefix : '' } + '  ')
+            err_line_prefix("#{::EacRubyUtils::Speaker.context.optional_current
+            .if_present('') { |v| v.is_a?(::EacCli::Speaker) ? v.err_line_prefix : '' }}  ")
           )
         end
       end

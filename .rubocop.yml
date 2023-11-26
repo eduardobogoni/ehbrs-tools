@@ -4,10 +4,3 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/StringConcatenation:
-  Exclude:
-  - lib/ehbrs/tools/runner/google/translate.rb
-  - lib/ehbrs/tools/runner/web_utils/videos/upload.rb
-  - lib/ehbrs/videos/convert_job.rb
-  - lib/ehbrs/videos/track.rb
-  - lib/ehbrs/videos/unsupported/check_support.rb

@@ -11,8 +11,9 @@ module Ehbrs
       end
 
       def to_s
-        "[#{codec_type}(#{index}): #{codec_name}/#{language || '-'}" +
-          extra.if_present('') { |v| " | #{v}" } + ']'
+        "[#{codec_type}(#{index}): #{codec_name}/#{language || '-'}#{extra.if_present('') do |v|
+                                                                       " | #{v}"
+                                                                     end}]"
       end
     end
   end
