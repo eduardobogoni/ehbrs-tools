@@ -137,7 +137,7 @@ module Ehbrs
 
             def output_line
               [path.to_s.cyan, last_change_time, last_value, current_value, check_result]
-                .reject(&:blank?).join('|')
+                .compact_blank.join('|')
             end
 
             def check_result

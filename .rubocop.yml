@@ -4,11 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Rails/CompactBlank:
-  Exclude:
-  - lib/ehbrs/tools/runner/fs/used_space.rb
-  - lib/ehbrs/tools/runner/videos/languages.rb
-  - lib/ehbrs/videos/unsupported/check_support.rb
 Style/EnvHome:
   Exclude:
   - lib/ehbrs/tools/runner/finances/bb_browser.rb

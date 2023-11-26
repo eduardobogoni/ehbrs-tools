@@ -52,7 +52,7 @@ module Ehbrs
         end
 
         def fixes_uncached
-          checks.reject(&:passed?).map { |c| c.check.fix }.reject(&:blank?)
+          checks.reject(&:passed?).map { |c| c.check.fix }.compact_blank
         end
 
         def pad_speaker

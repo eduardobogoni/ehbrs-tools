@@ -31,7 +31,7 @@ module Ehbrs
           end
 
           def keep_languages
-            parsed.keep.map(&:strip).reject(&:blank?)
+            parsed.keep.map(&:strip).compact_blank
           end
 
           def include_audios?
