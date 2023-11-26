@@ -12,6 +12,15 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
+  remote: sub/eac_cli
+  specs:
+    eac_cli (0.39.0)
+      colorize (~> 0.8, >= 0.8.1)
+      eac_config (~> 0.14, >= 0.14.1)
+      eac_ruby_utils (~> 0.119, >= 0.119.2)
+      tty-table (~> 0.12)
+
+PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.37.0)
@@ -126,11 +135,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.5.0)
     dry-inflector (1.0.0)
-    eac_cli (0.39.0)
-      colorize (~> 0.8, >= 0.8.1)
-      eac_config (~> 0.14, >= 0.14.1)
-      eac_ruby_utils (~> 0.119, >= 0.119.2)
-      tty-table (~> 0.12)
     eac_config (0.14.1)
       addressable (~> 2.8, >= 2.8.5)
       eac_ruby_utils (~> 0.119, >= 0.119.2)
@@ -309,6 +313,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  eac_cli!
   eac_ruby_gem_support (~> 0.8, >= 0.8.2)
   ehbrs-tools!
   ehbrs_ruby_utils!
