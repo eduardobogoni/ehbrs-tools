@@ -4,9 +4,6 @@ inherit_gem:
 AllCops:
   Exclude:
   - sub/**/*
-Style/FetchEnvVar:
-  Exclude:
-  - lib/ehbrs/user_dirs.rb
 Style/OpenStructUse:
   Exclude:
   - lib/ehbrs/observers/base.rb
