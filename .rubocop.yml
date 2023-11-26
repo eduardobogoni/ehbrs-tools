@@ -1,18 +1,12 @@
 ---
 inherit_gem:
   eac_ruby_gem_support: ".rubocop.yml"
+AllCops:
+  Exclude:
+    - sub/**/*
 Bundler/GemFilename:
   Exclude:
   - lib/ehbrs/gems.rb
-RSpec/MultipleMemoizedHelpers:
-  Exclude:
-  - spec/lib/ehbrs/observers/base_spec.rb
-  - spec/lib/ehbrs/tools/runner/vg/ips_spec.rb
-  - spec/lib/ehbrs/tools/runner/videos/probe_spec.rb
-  - spec/lib/ehbrs/tools/runner/videos/unsupported_spec.rb
-RSpec/NestedGroups:
-  Exclude:
-  - spec/lib/ehbrs/observers/base_spec.rb
 Rails/CompactBlank:
   Exclude:
   - lib/ehbrs/tools/runner/fs/used_space.rb
