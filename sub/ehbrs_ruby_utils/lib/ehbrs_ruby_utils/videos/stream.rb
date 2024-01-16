@@ -21,8 +21,9 @@ module EhbrsRubyUtils
         end
       end
 
+      # @return [String]
       def to_s
-        "#{index}|#{codec_type}|#{codec_name}|#{language}"
+        [index, codec_type, codec_name, language].join('|')
       end
 
       def to_h
