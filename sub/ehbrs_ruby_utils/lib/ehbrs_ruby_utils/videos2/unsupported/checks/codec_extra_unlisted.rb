@@ -12,7 +12,7 @@ module EhbrsRubyUtils
           def check(track)
             return nil unless track.codec_name == codec
             return nil if listed_extras.any? do |extra|
-              track.extra.downcase.include?(extra.downcase)
+              track.codec_tag_string.downcase.include?(extra.downcase)
             end
 
             "Not listed extra for codec \"#{codec}\" (Track: #{track}" \

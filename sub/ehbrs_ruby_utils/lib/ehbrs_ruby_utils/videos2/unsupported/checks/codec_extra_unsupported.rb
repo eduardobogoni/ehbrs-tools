@@ -13,7 +13,7 @@ module EhbrsRubyUtils
 
           def check(track)
             return nil unless track.codec_name == codec
-            return nil unless track.extra.downcase.include?(extra.downcase)
+            return nil unless track.codec_tag_string.downcase.include?(extra.downcase)
 
             "Unsupported extra \"#{extra}\" for codec \"#{codec}\" and track #{track}"
           end
