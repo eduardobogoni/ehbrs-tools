@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'ehbrs_ruby_utils/bga/session'
+require 'ehbrs_ruby_utils/bga/game_statistics/whatsapp_formatter'
 require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/mudslide/message'
 require 'eac_ruby_utils/core_ext'
@@ -15,10 +16,19 @@ module EhbrsRubyUtils
         # @param table [EhbrsRubyUtils::Bga::Table]
         # @return [void]
         define_method "bga_table_#{type}_notify" do |table|
-          formatter = ::EhbrsRubyUtils::Bga::Table::WhatsappFormatters.const_get(type.camelize)
-                        .new(table)
-          whatsapp_send(formatter.to_s, formatter.image_local_path)
+          whatsapp_formatter_send(
+            ::EhbrsRubyUtils::Bga::Table::WhatsappFormatters.const_get(type.camelize),
+            table
+          )
         end
+      end
+
+      # @param game_statistics [EhbrsRubyUtils::Bga::GameStatistics]
+      # @return [void]
+      def bga_game_statistics_notify(game_statistics)
+        whatsapp_formatter_send(
+          ::EhbrsRubyUtils::Bga::GameStatistics::WhatsappFormatter, game_statistics
+        )
       end
 
       def on_bga_logged_session(&block)
@@ -48,6 +58,12 @@ module EhbrsRubyUtils
 
       def mudslide_run(*args)
         ::EhbrsRubyUtils::Executables.mudslide.command(*args).system!
+      end
+
+      # @return [void]
+      def whatsapp_formatter_send(formatter_class, formatter_owner)
+        formatter = formatter_class.new(formatter_owner)
+        whatsapp_send(formatter.to_s, formatter.image_local_path)
       end
     end
   end

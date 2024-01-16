@@ -9,7 +9,7 @@ module EhbrsRubyUtils
       module Rename
         class ResultsBuilder < LineResultGroup
           def initialize(files)
-            super '', files
+            super('', files)
           end
 
           def line_out

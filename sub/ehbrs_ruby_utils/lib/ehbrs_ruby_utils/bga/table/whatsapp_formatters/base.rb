@@ -1,13 +1,15 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
+require 'ehbrs_ruby_utils/bga/whatsapp_formatter'
 
 module EhbrsRubyUtils
   module Bga
     class Table
       module WhatsappFormatters
         class Base
-          acts_as_abstract :players_title, :root_items_title, :title_icon
+          include ::EhbrsRubyUtils::Bga::WhatsappFormatter
+          acts_as_abstract :players_title, :root_items_title
           enable_simple_cache
           common_constructor :table
 
@@ -18,24 +20,21 @@ module EhbrsRubyUtils
             'Duração' => :estimated_duration,
             'Endereço' => :url
           }.freeze
-          SECTION_SEPARATOR = "\n\n"
 
-          # @return [Pathname]
-          def image_local_path
-            table.game.box_large_image.local_path
+          delegate :game, to: :table
+
+          # @return [Hash<String, String>] "title" => "content"
+          def sections
+            {
+              root_items_title => root_items,
+              players_title => players_to_s,
+              'Opções' => options
+            }
           end
 
-          def to_s
-            [root_items_to_s, players_to_s, options_to_s].map(&:strip).join(SECTION_SEPARATOR)
-          end
-
-          def root_items_to_s
-            title_to_s(root_items_title) + ROOT_ITENS.map { |k, v| "*#{k}*: #{table.send(v)}" }
-                                             .join("\n")
-          end
-
-          def options_to_s
-            title_to_s('Opções') + options.join("\n")
+          # @return [Hash]
+          def root_items
+            ROOT_ITENS.transform_values { |v| table.send(v) }
           end
 
           # @return [String]
@@ -45,11 +44,7 @@ module EhbrsRubyUtils
 
           # @return [String]
           def players_to_s
-            title_to_s(players_title) + players_extra + players.join("\n")
-          end
-
-          def title_to_s(title)
-            "*#{[title_icon, title, title_icon].join(' ')}*\n\n"
+            players_extra + players.join("\n")
           end
 
           def players

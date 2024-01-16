@@ -5,7 +5,7 @@ require 'eac_ruby_utils/core_ext'
 module EhbrsRubyUtils
   module Bga
     class Game
-      common_constructor :code
+      common_constructor :code, :name
 
       # @param suffix [String]
       # @return [EhbrsRubyUtils::Bga::Game::Image]
