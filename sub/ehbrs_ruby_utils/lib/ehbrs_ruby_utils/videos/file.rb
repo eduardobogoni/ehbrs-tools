@@ -10,7 +10,7 @@ require 'ultimate_lyrics/song_metadata'
 
 module EhbrsRubyUtils
   module Videos
-    class Container
+    class File
       class << self
         def from_file(path)
           new(path)

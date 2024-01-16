@@ -51,7 +51,7 @@ module EhbrsRubyUtils
         private
 
         def container_uncached
-          ::EhbrsRubyUtils::Videos::Container.new(path)
+          ::EhbrsRubyUtils::Videos::File.new(path)
         end
 
         def fetch_lyrics

@@ -19,8 +19,8 @@ module EhbrsRubyUtils
           e
         end
 
-        def on_skip_trophies(&block)
-          error = on_rescue_timeout(&block)
+        def on_skip_trophies(...)
+          error = on_rescue_timeout(...)
           return unless error
           raise error unless skip_trophy_overlay?
 
