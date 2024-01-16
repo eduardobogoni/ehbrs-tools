@@ -15,7 +15,7 @@ module EhbrsRubyUtils
             SOURCE_COMMON_ARGS = ['-%tcodec:%i', '%f'].freeze
             SOURCE_AUDIO_ARGS = SOURCE_COMMON_ARGS
             SOURCE_SUBTITLE_ARGS = SOURCE_COMMON_ARGS
-            SOURCE_VIDEO_ARGS = SOURCE_COMMON_ARGS
+            SOURCE_VIDEO_ARGS = SOURCE_COMMON_ARGS + ['-filter:%t', 'format=yuv420p']
 
             TARGET_CODECS = {
               audio: 'aac',

@@ -1,3 +1,5 @@
 ---
 - "-vcodec:0"
 - libx264
+- "-filter:v"
+- format=yuv420p
