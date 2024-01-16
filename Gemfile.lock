@@ -125,7 +125,7 @@ GEM
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     colorize (0.8.1)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.2.3)
     content-type (0.0.2)
       parslet (~> 2.0)
     curb (0.9.11)
