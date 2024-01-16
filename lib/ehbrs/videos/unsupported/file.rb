@@ -15,7 +15,7 @@ module Ehbrs
         attr_reader :options
 
         def initialize(file, options)
-          super file
+          super(file)
           @options = options
         end
 
