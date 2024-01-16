@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/videos2/track'
 require 'ehbrs_ruby_utils/executables'
 require 'ehbrs_ruby_utils/videos/container'
+require 'ehbrs_ruby_utils/videos/stream'
 
 module EhbrsRubyUtils
   module Videos2
@@ -43,7 +43,7 @@ module EhbrsRubyUtils
       private
 
       def tracks_uncached
-        streams.map { |stream| ::EhbrsRubyUtils::Videos2::Track.new(stream) }.reject do |t|
+        streams.reject do |t|
           t.codec_type == ::EhbrsRubyUtils::Videos::Stream::CODEC_TYPE_DATA
         end
       end
