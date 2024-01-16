@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'ehbrs/tools/core_ext'
-require 'ehbrs_ruby_utils/videos/container'
+require 'ehbrs_ruby_utils/videos/file'
 require 'ultimate_lyrics/provider'
 
 module Ehbrs
@@ -39,7 +39,7 @@ module Ehbrs
           end
 
           def container_uncached
-            ::EhbrsRubyUtils::Videos::Container.from_file(file)
+            ::EhbrsRubyUtils::Videos::File.from_file(file)
           end
 
           def file

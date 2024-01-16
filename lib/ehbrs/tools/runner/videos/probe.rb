@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/container'
+require 'ehbrs_ruby_utils/videos/file'
 require 'eac_ruby_base0/core_ext'
 require 'eac_ruby_utils/yaml'
 
@@ -25,7 +25,7 @@ module Ehbrs
           private
 
           def container_file_uncached
-            ::EhbrsRubyUtils::Videos::Container.new(parsed.file_path)
+            ::EhbrsRubyUtils::Videos::File.new(parsed.file_path)
           end
         end
       end

@@ -3,7 +3,7 @@
 require 'ehbrs/tools/runner'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/runner/videos/unsupported'
-require 'ehbrs_ruby_utils/videos/container'
+require 'ehbrs_ruby_utils/videos/file'
 
 RSpec.describe Ehbrs::Tools::Runner::Videos::Unsupported do
   let(:source_dir) { Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
@@ -32,7 +32,7 @@ RSpec.describe Ehbrs::Tools::Runner::Videos::Unsupported do
         let(:converted_file) { to_fix_file.basename_sub { |b| "#{b}.converted" } }
         let(:fixed_file) { to_fix_file.basename_sub { |b| "#{b.basename('.*')}.mkv" } }
         let(:fixed_file_actual_probe_data) do
-          sanitize_probe_data(EhbrsRubyUtils::Videos::Container.new(fixed_file).probe_data)
+          sanitize_probe_data(EhbrsRubyUtils::Videos::File.new(fixed_file).probe_data)
         end
 
         let(:fixed_file_expect_probe_file) { source_dir.join("#{video_var}.probe.yaml") }

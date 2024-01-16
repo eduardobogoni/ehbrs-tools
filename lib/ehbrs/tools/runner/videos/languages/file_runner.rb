@@ -53,7 +53,7 @@ module Ehbrs
             end
 
             def container_uncached
-              ::EhbrsRubyUtils::Videos::Container.new(file)
+              ::EhbrsRubyUtils::Videos::File.new(file)
             end
 
             def track_label(track)
