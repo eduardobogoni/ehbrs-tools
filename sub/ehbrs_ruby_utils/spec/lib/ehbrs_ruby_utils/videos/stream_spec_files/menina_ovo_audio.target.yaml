@@ -1,6 +1,7 @@
 ---
 :codec_long_name: AAC (Advanced Audio Coding)
 :codec_name: aac
+:codec_tag: 0
 :codec_type: :audio
 :index: 18
 :language: jpn

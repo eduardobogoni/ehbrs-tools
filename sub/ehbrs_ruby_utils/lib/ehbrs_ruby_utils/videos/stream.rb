@@ -21,6 +21,11 @@ module EhbrsRubyUtils
         end
       end
 
+      # @return [Integer]
+      def codec_tag
+        ffprobe_data.fetch(:codec_tag).to_i(16)
+      end
+
       # @return [String]
       def to_s
         [index, codec_type, codec_name, language].join('|')
