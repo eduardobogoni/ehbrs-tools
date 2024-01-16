@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs/videos/unsupported/check_set'
-require 'ehbrs/videos/unsupported/search'
-require 'ehbrs/videos/unsupported/profiles'
+require 'ehbrs_ruby_utils/videos2/unsupported/check_set'
+require 'ehbrs_ruby_utils/videos2/unsupported/search'
+require 'ehbrs_ruby_utils/videos2/unsupported/profiles'
 
 module Ehbrs
   module Tools
@@ -23,18 +23,18 @@ module Ehbrs
             infov 'Profiles', profiles.join(', ')
             infov 'Paths', paths
             paths.each do |d|
-              ::Ehbrs::Videos::Unsupported::Search.new(d, file_options)
+              ::EhbrsRubyUtils::Videos2::Unsupported::Search.new(d, file_options)
             end
           end
 
           private
 
           def file_check_set_uncached
-            ::Ehbrs::Videos::Unsupported::CheckSet.build(profiles, :file)
+            ::EhbrsRubyUtils::Videos2::Unsupported::CheckSet.build(profiles, :file)
           end
 
           def track_check_set_uncached
-            ::Ehbrs::Videos::Unsupported::CheckSet.build(profiles, :track)
+            ::EhbrsRubyUtils::Videos2::Unsupported::CheckSet.build(profiles, :track)
           end
 
           def paths
@@ -52,7 +52,7 @@ module Ehbrs
           end
 
           def profile_class(profile_name)
-            ::Ehbrs::Videos::Unsupported::Profiles.const_get(profile_name.camelize)
+            ::EhbrsRubyUtils::Videos2::Unsupported::Profiles.const_get(profile_name.camelize)
           end
         end
       end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_cli/core_ext'
-require 'ehbrs/videos/extract/package'
+require 'ehbrs_ruby_utils/videos2/extract/package'
 
 module Ehbrs
   module Tools
@@ -32,7 +32,7 @@ module Ehbrs
 
           def packages_uncached
             parsed.packages?.map do |p|
-              ::Ehbrs::Videos::Extract::Package.new(p, target_dir, qualities)
+              ::EhbrsRubyUtils::Videos2::Extract::Package.new(p, target_dir, qualities)
             end
           end
 
