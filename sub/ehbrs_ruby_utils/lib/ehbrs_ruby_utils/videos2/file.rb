@@ -47,21 +47,6 @@ module EhbrsRubyUtils
           t.codec_type == ::EhbrsRubyUtils::Videos::Stream::CODEC_TYPE_DATA
         end
       end
-
-      def content_uncached
-        ::EhbrsRubyUtils::Executables.ffprobe.command(path).execute!(output: :stderr).scrub
-      end
-
-      def duration_uncached
-        m = /Duration:\s*(#{TIME_PATTERN})/.match(content)
-        raise 'Duration pattern not find in content' unless m
-
-        self.class.time_to_seconds(m[1])
-      end
-
-      def duration_s_uncached
-        self.class.seconds_to_time(duration)
-      end
     end
   end
 end
