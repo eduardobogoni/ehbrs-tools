@@ -2,6 +2,7 @@
 :codec_long_name: ASS (Advanced SSA) subtitle
 :codec_name: ass
 :codec_tag: 0
+:codec_tag_string: "[0][0][0][0]"
 :codec_type: :subtitle
 :index: 0
 :language: fre

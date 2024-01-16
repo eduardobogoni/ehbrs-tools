@@ -2,6 +2,7 @@
 :codec_long_name: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
 :codec_name: h264
 :codec_tag: 0
+:codec_tag_string: "[0][0][0][0]"
 :codec_type: :video
 :index: 17
 :language: eng

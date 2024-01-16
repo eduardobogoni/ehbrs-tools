@@ -28,7 +28,7 @@ module EhbrsRubyUtils
 
       # @return [String]
       def to_s
-        [index, codec_type, codec_name, language].join('|')
+        [index, codec_type, codec_name, language, codec_tag_string].join('|')
       end
 
       def to_h
@@ -41,7 +41,7 @@ module EhbrsRubyUtils
         end
       end
 
-      %i[codec_name codec_long_name height width].each do |method_name|
+      %i[codec_name codec_long_name codec_tag_string height width].each do |method_name|
         define_method method_name do
           ffprobe_data[method_name]
         end

@@ -2,6 +2,7 @@
 :codec_long_name: MPEG-4 part 2
 :codec_name: mpeg4
 :codec_tag: 808802372
+:codec_tag_string: DX50
 :codec_type: :video
 :index: 0
 :language:
