@@ -4,6 +4,12 @@
 :codec_tag: 808802372
 :codec_tag_string: DX50
 :codec_type: :video
+:duration: !ruby/object:ActiveSupport::Duration
+  value: 5139.92235
+  parts:
+    :hours: 1
+    :minutes: 25
+    :seconds: 39.922349999999824
 :index: 0
 :language:
 :language_with_title:

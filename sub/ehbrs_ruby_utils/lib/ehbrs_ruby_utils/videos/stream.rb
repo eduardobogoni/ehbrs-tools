@@ -10,6 +10,10 @@ module EhbrsRubyUtils
 
       lists.add_symbol :codec_type, :audio, :video, :subtitle, :data, :attachment
 
+      DURATION_TAG_TO_SECONDS_PARSER = /\A(\d{2}):(\d{2}):(\d{2}.\d+)\z/.to_parser do |m|
+        (m[1].to_i * 3600) + (m[2].to_i * 60) + m[3].to_f
+      end
+
       common_constructor :ffprobe_data do
         self.ffprobe_data = ffprobe_data.symbolize_keys.freeze
         self.class.lists.codec_type.value_validate!(codec_type)
@@ -24,6 +28,11 @@ module EhbrsRubyUtils
       # @return [Integer]
       def codec_tag
         ffprobe_data.fetch(:codec_tag).to_i(16)
+      end
+
+      # @return [ActiveSupport::Duration, nil]
+      def duration
+        duration_from_root || duration_from_tags
       end
 
       # @return [String]
@@ -65,6 +74,22 @@ module EhbrsRubyUtils
 
       def title
         tags[:title]
+      end
+
+      private
+
+      # @return [ActiveSupport::Duration, nil]
+      def duration_from_root
+        ffprobe_data[:duration].if_present do |v|
+          ::ActiveSupport::Duration.build(v.to_f)
+        end
+      end
+
+      # @return [ActiveSupport::Duration, nil]
+      def duration_from_tags
+        tags[:DURATION].if_present do |v|
+          ::ActiveSupport::Duration.build(DURATION_TAG_TO_SECONDS_PARSER.parse!(v))
+        end
       end
     end
   end

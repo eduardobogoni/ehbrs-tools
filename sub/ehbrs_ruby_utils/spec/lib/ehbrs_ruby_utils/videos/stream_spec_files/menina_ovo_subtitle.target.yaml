@@ -4,6 +4,12 @@
 :codec_tag: 0
 :codec_tag_string: "[0][0][0][0]"
 :codec_type: :subtitle
+:duration: !ruby/object:ActiveSupport::Duration
+  value: 4261.02
+  parts:
+    :hours: 1
+    :minutes: 11
+    :seconds: 1.0200000000004366
 :index: 0
 :language: fre
 :language_with_title: fre_french_subs
