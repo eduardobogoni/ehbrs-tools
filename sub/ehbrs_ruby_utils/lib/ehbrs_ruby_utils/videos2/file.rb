@@ -12,11 +12,6 @@ module EhbrsRubyUtils
       TIME_PATTERN = /(\d+):(\d{2}):(\d{2})(?:\.(\d+))/.freeze
 
       class << self
-        def seconds_to_time(seconds)
-          t = seconds.floor
-          hmsf_to_time((t / 3600), ((t / 60) % 60), (t % 60), (seconds - t).round(3))
-        end
-
         def time_to_seconds(time)
           m = TIME_PATTERN.match(time)
           raise "Time pattern not find in \"#{time}\"" unless m
@@ -25,12 +20,6 @@ module EhbrsRubyUtils
         end
 
         private
-
-        def hmsf_to_time(hour, minute, second, float_part)
-          r = [hour, minute, second].map { |y| y.to_s.rjust(2, '0') }
-          r += float_part > 0.0 ? ".#{float_part.to_s.gsub(/\A(0|[^\d])+/, '')}" : '.0'
-          r
-        end
 
         def hmsf_to_seconds(hour, minute, second, float_part)
           r = (hour.to_f * 3600) + (minute.to_f * 60) + second.to_f
