@@ -41,8 +41,9 @@ module EhbrsRubyUtils
 
         private
 
+        # @return [Enumerable<EhbrsRubyUtils::Videos2::Unsupported::Track>]
         def tracks_uncached
-          super.map { |t| ::EhbrsRubyUtils::Videos2::Unsupported::Track.new(self, t) }
+          streams.reject.map { |t| ::EhbrsRubyUtils::Videos2::Unsupported::Track.new(self, t) }
         end
       end
     end
