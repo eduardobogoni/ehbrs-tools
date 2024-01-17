@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos2/file'
+require 'ehbrs_ruby_utils/videos/file'
 require 'ehbrs_ruby_utils/videos2/unsupported/file/fix'
 require 'ehbrs_ruby_utils/videos2/unsupported/check_support'
 require 'ehbrs_ruby_utils/videos2/unsupported/track'
@@ -8,7 +8,7 @@ require 'ehbrs_ruby_utils/videos2/unsupported/track'
 module EhbrsRubyUtils
   module Videos2
     module Unsupported
-      class File < ::EhbrsRubyUtils::Videos2::File
+      class File < ::EhbrsRubyUtils::Videos::File
         include ::EhbrsRubyUtils::Videos2::Unsupported::CheckSupport
         include ::EhbrsRubyUtils::Videos2::Unsupported::File::Fix
 
