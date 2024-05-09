@@ -11,10 +11,12 @@ module Ehbrs
         class Spread
           runner_with :help do
             bool_opt '-i', '--ids', 'Escreve IDs em STDOUT no lugar de labels em STDERR.'
+            bool_opt '-v', '--verbose'
             pos_arg :albums, repeat: true
           end
 
           def run
+            start_info
             show_results
           end
 
@@ -32,6 +34,14 @@ module Ehbrs
           end
 
           # @return [void]
+          def albums_info
+            infov 'Albums', albums.count
+            albums.each do |album|
+              infov '  * ', album
+            end
+          end
+
+          # @return [void]
           def show_results
             spreader.result.each do |album|
               if parsed.ids?
@@ -40,6 +50,13 @@ module Ehbrs
                 puts album.to_label
               end
             end
+          end
+
+          # @return [void]
+          def start_info
+            return unless parsed.verbose?
+
+            albums_info
           end
         end
       end
