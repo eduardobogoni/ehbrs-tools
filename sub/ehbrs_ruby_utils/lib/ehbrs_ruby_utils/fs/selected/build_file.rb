@@ -11,7 +11,7 @@ module EhbrsRubyUtils
         end
 
         def perform
-          target_path.make_symlink(path)
+          target_path.assert_parent.make_symlink(path)
         end
 
         def target_path

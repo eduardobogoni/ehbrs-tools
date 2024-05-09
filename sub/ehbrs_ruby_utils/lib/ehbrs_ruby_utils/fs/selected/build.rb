@@ -25,6 +25,8 @@ module EhbrsRubyUtils
         private
 
         def clear_target_dir
+          return unless target_dir.exist?
+
           target_dir.children.each do |c|
             c.unlink if c.symlink? && c.directory?
           end
