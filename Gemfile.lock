@@ -4,7 +4,7 @@ PATH
     ehbrs-tools (0.39.1)
       avm-tools (~> 0.159)
       eac_cli (~> 0.40, >= 0.40.1)
-      eac_ruby_utils (~> 0.120)
+      eac_ruby_utils (~> 0.121)
       ehbrs_ruby_utils (~> 0.41)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
