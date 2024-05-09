@@ -15,13 +15,7 @@ module Ehbrs
           end
 
           def run
-            spreader.result.each do |album|
-              if parsed.ids?
-                out("#{album.id}\n")
-              else
-                puts album.to_label
-              end
-            end
+            show_results
           end
 
           def spreader_uncached
@@ -34,6 +28,17 @@ module Ehbrs
           def albums_uncached
             parsed.albums.map do |path|
               ::EhbrsRubyUtils::Music::Ous::Album.new(path)
+            end
+          end
+
+          # @return [void]
+          def show_results
+            spreader.result.each do |album|
+              if parsed.ids?
+                out("#{album.id}\n")
+              else
+                puts album.to_label
+              end
             end
           end
         end
