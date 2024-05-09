@@ -5,6 +5,7 @@ PATH
       avm-files (~> 0.7)
       avm-tools (~> 0.159)
       eac_cli (~> 0.40, >= 0.40.1)
+      eac_ruby_base0 (~> 0.19)
       eac_ruby_utils (~> 0.121)
       ehbrs_ruby_utils (~> 0.41, >= 0.41.2)
       filesize (~> 0.2)
