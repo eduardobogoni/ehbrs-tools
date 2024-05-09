@@ -7,30 +7,40 @@ module EhbrsRubyUtils
   module Bga
     module Parsers
       class GameInProgress < ::Aranha::Parsers::Html::ItemList
-        ITEMS_XPATH = '//*[@id = "gametables_inprogress_all"]' \
-                      '//*[starts-with(@id, "gametableblock_")]'
+        DEFAULT_STATUS = 'asyncplay'
+        ID_PARSER = /table=(\d+)/.to_parser { |m| m[1].to_i }
+        ITEMS_XPATH = '//*[@id = "section-play"]//a[contains(@href, "table=")]'
         STATUS_CLASS_PATTERN = /\Agametable_status_(.+)\z/.freeze
         STATUS_CLASS_PARSER = STATUS_CLASS_PATTERN.to_parser { |m| m[1] }
+        TABLE_COUNT_XPATH =
+          '//*[@id = "section-play"]/h1/span[contains(@class, "font-normal")]/span/text()'
 
-        field :id, :integer, './@id'
-        field :status, :string, './@class'
+        field :href, :string, './@href'
+
+        def data
+          {
+            table_count: table_count,
+            tables: items_data
+          }
+        end
 
         def item_data(idd)
-          %i[status].each do |key|
-            idd[key] = send("process_#{key}", idd.fetch(key))
-          end
-          idd
+          { id: parse_id(idd.fetch(:href)), status: 'asyncplay' }
         end
 
         def items_xpath
           ITEMS_XPATH
         end
 
-        private
+        # @param href [String]
+        # @return [Integer]
+        def parse_id(href)
+          ID_PARSER.parse!(href)
+        end
 
-        def process_status(status)
-          status.split.lazy.map { |s| STATUS_CLASS_PARSER.parse(s.strip) }.find(&:present?) ||
-            raise("No status class found in \"#{status}\"")
+        # @return [Integer]
+        def table_count
+          nokogiri.at_xpath(TABLE_COUNT_XPATH).if_present(-1) { |v| v.text.to_i }
         end
       end
     end
