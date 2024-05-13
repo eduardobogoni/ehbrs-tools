@@ -28,7 +28,10 @@ module Ehbrs
             ::EhbrsRubyUtils::CircularListSpreader.new(albums)
           end
 
-          def albums
+          protected
+
+          # @return [Array<EhbrsRubyUtils::Music::Ous::Album>]
+          def albums_uncached
             parsed.albums.map do |path|
               ::EhbrsRubyUtils::Music::Ous::Album.new(path)
             end
