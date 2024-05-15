@@ -2,7 +2,7 @@
 
 require 'eac_cli/core_ext'
 require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/executables'
+require 'ehbrs/tools/executables'
 
 module Ehbrs
   module Tools
@@ -35,7 +35,7 @@ module Ehbrs
           end
 
           def run_patch(source_path, ips_path, output_path)
-            command = ::Ehbrs::Executables.flips.command
+            command = ::Ehbrs::Tools::Executables.flips.command
                         .append(['--apply', ips_path, source_path, output_path])
 
             command.system!
