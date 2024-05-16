@@ -47,7 +47,7 @@ module Ehbrs
             def rename_on_found(source_file, sorted_file)
               o = sorted_file.reorder(source_file.section, source_file.order, order_padding)
               info("\"#{o.source_basename}\" => \"#{o.target_basename}\"")
-              confirm_rename(o.source_basename, o.target_basename) if confirm?
+              confirm_rename(o.source_basename, o.target_basename)
             end
 
             def confirm_rename(old_basename, new_basename)
@@ -56,7 +56,7 @@ module Ehbrs
               return if np == op
               raise "\"#{np}\" (From \"#{op}\") already exists" if File.exist?(np)
 
-              File.rename(op, np)
+              File.rename(op, np) if confirm?
             end
 
             def order_padding_uncached
