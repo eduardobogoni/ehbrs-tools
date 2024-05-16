@@ -1,57 +1,38 @@
 # frozen_string_literal: true
 
 require 'eac_ruby_base0/core_ext'
-require 'ehbrs_ruby_utils/music/sort/commands/dump'
-require 'ehbrs_ruby_utils/music/sort/commands/load'
-require 'ehbrs_ruby_utils/music/sort/commands/shuffle'
+require 'ehbrs_ruby_utils/music/sort/files/scanner'
 
 module Ehbrs
   module Tools
     class Runner
       class Music
         class Sort
-          runner_with :help do
+          DEFAULT_PATH = '.'
+
+          runner_with :help, :subcommands do
             desc 'Ordena arquivos/diretórios prefixando-os.'
-            bool_opt '-c', '--confirm', 'Confirm changes.'
-            arg_opt '-p', '--path', 'Path to the directory.'
-            pos_arg :command
+            arg_opt '-C', '--path', 'Path to the directory.', default: DEFAULT_PATH
+            subcommands
           end
+          for_context :path, :scanner, :config_file
 
-          delegate :command, :confirm?, to: :parsed
+          # @return [Pathname]
+          delegate :config_file, to: :scanner
 
-          COMMANDS = { 'load' => ::EhbrsRubyUtils::Music::Sort::Commands::Load,
-                       'shuffle' => ::EhbrsRubyUtils::Music::Sort::Commands::Shuffle,
-                       'dump' => ::EhbrsRubyUtils::Music::Sort::Commands::Dump }.freeze
-
-          def run
-            banner
-            if command_class
-              command_class.new(path, confirm?)
-            else
-              fatal_error "Unknown command: \"#{command}\" (Valid: #{COMMANDS.keys.join(', ')})"
-            end
-          end
-
-          # @return [String]
-          def help_extra_text
-            help_list_section('Commands', COMMANDS.keys)
+          # @return [Pathname]
+          def path
+            parsed.path.to_pathname
           end
 
           private
 
-          def command_class_uncached
-            COMMANDS[parsed.command]
+          # @return [EhbrsRubyUtils::Music::Sort::Files::Scanner]
+          def scanner_uncached
+            ::EhbrsRubyUtils::Music::Sort::Files::Scanner.new(path)
           end
 
-          def banner
-            infov('Path', path)
-            infov('Command', command)
-            infov('Confirm', confirm?)
-          end
-
-          def path_uncached
-            (parsed.path || '.').to_pathname.expand_path
-          end
+          require_sub __FILE__
         end
       end
     end
