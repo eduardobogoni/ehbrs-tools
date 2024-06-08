@@ -1,0 +1,787 @@
+---
+:accommodations:
+- :name: Black Stream Hotel
+  :href: https://www.booking.com/hotel/br/black-stream.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=25956201_94711206_2_1_0&highlighted_blocks=25956201_94711206_2_1_0&matching_block_id=25956201_94711206_2_1_0&sr_pri_blocks=25956201_94711206_2_1_0__23599&from_sustainable_property_sr=1&from=searchresults
+  :price: 236.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.1
+  :review_score: 8.6
+  :review_count: 3
+  :unit_title: Quarto Duplo Standard
+- :name: JR Hotel Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/jr-ribeiraopreto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=41211401_372681771_2_1_0&highlighted_blocks=41211401_372681771_2_1_0&matching_block_id=41211401_372681771_2_1_0&sr_pri_blocks=41211401_372681771_2_1_0__25400&from_sustainable_property_sr=1&from=searchresults
+  :price: 254.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.8
+  :review_score: 8.7
+  :review_count: 3
+  :unit_title: Quarto Duplo Executivo
+- :name: MOTEL LA FOLIA
+  :href: https://www.booking.com/hotel/br/motel-la-folia-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1102999503_383070119_0_1_0&highlighted_blocks=1102999503_383070119_0_1_0&matching_block_id=1102999503_383070119_0_1_0&sr_pri_blocks=1102999503_383070119_0_1_0__9900&from=searchresults
+  :price: 99.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.7
+  :review_score: 8.5
+  :review_count: 73
+  :unit_title: Suíte Deluxe com Cama Queen-size
+- :name: Araucaria Plaza
+  :href: https://www.booking.com/hotel/br/araucaria-plaza.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=39756609_249178500_2_1_0&highlighted_blocks=39756609_249178500_2_1_0&matching_block_id=39756609_249178500_2_1_0&sr_pri_blocks=39756609_249178500_2_1_0__35849&from_sustainable_property_sr=1&from=searchresults
+  :price: 358.0
+  :tax: 35.0
+  :address: Ribeirão Preto
+  :distance: 1.8
+  :review_score: 8.8
+  :review_count: 2
+  :unit_title: Suíte Família
+- :name: Hotel Canada
+  :href: https://www.booking.com/hotel/br/canada-ribeirao-preto1.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=141227801_147401047_2_1_0&highlighted_blocks=141227801_147401047_2_1_0&matching_block_id=141227801_147401047_2_1_0&sr_pri_blocks=141227801_147401047_2_1_0__18810&from_sustainable_property_sr=1&from=searchresults
+  :price: 188.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.2
+  :review_score: 8.0
+  :review_count: 2
+  :unit_title: Suíte
+- :name: Nobile Inn Executive Ribeirao Preto
+  :href: https://www.booking.com/hotel/br/hplus-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=26615315_91300585_2_1_0&highlighted_blocks=26615315_91300585_2_1_0&matching_block_id=26615315_91300585_2_1_0&sr_pri_blocks=26615315_91300585_2_1_0__23200&from_sustainable_property_sr=1&from=searchresults
+  :price: 232.0
+  :tax: 33.0
+  :address: Ribeirão Preto
+  :distance: 0.9
+  :review_score: 8.4
+  :review_count: 3
+  :unit_title: Quarto Família Deluxe
+- :name: Intercity Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/intercity-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=291688001_277905743_2_1_0&highlighted_blocks=291688001_277905743_2_1_0&matching_block_id=291688001_277905743_2_1_0&sr_pri_blocks=291688001_277905743_2_1_0__31720&from_sustainable_property_sr=1&from=searchresults
+  :price: 317.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.7
+  :review_score: 8.4
+  :review_count: 2
+  :unit_title: Quarto Duplo Standard
+- :name: ibis Styles Ribeirao Preto Braz Olaia
+  :href: https://www.booking.com/hotel/br/arco-ribeirao-preto-ii.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=8&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=113147506_377053647_2_2_0&highlighted_blocks=113147506_377053647_2_2_0&matching_block_id=113147506_377053647_2_2_0&sr_pri_blocks=113147506_377053647_2_2_0__23600&from_sustainable_property_sr=1&from=searchresults
+  :price: 236.0
+  :tax: 9.0
+  :address: Ribeirão Preto
+  :distance: 4.7
+  :review_score: 8.3
+  :review_count: 1
+  :unit_title: Quarto Duplo Standard
+- :name: Garden Hotel
+  :href: https://www.booking.com/hotel/br/garden-rp.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=9&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=37481201_249178774_2_1_0&highlighted_blocks=37481201_249178774_2_1_0&matching_block_id=37481201_249178774_2_1_0&sr_pri_blocks=37481201_249178774_2_1_0__29536&from_sustainable_property_sr=1&from=searchresults
+  :price: 295.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.4
+  :review_score: 8.7
+  :review_count: 2
+  :unit_title: Quarto Duplo Luxo
+- :name: Taiwan Hotel
+  :href: https://www.booking.com/hotel/br/taiwan-ltda.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=10&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=32572001_89791956_2_1_0&highlighted_blocks=32572001_89791956_2_1_0&matching_block_id=32572001_89791956_2_1_0&sr_pri_blocks=32572001_89791956_2_1_0__26100&from_sustainable_property_sr=1&from=searchresults
+  :price: 261.0
+  :tax: 10.0
+  :address: Ribeirão Preto
+  :distance: 0.6
+  :review_score: 8.6
+  :review_count: 1
+  :unit_title: Quarto Deluxe com Cama King-size
+- :name: Wyndham Garden Ribeirão Preto Convention
+  :href: https://www.booking.com/hotel/br/wyndham-garden-convention-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=256293612_372916207_0_1_0&highlighted_blocks=256293612_372916207_0_1_0&matching_block_id=256293612_372916207_0_1_0&sr_pri_blocks=256293612_372916207_0_1_0__43992&from_sustainable_property_sr=1&from=searchresults
+  :price: 440.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 3.9
+  :review_score: 8.3
+  :review_count: 1
+  :unit_title: Quarto Superior com Cama Queen-size
+- :name: ibis Ribeirao Preto Shopping
+  :href: https://www.booking.com/hotel/br/ibis-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=12&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=71812901_94502472_2_42_0&highlighted_blocks=71812901_94502472_2_42_0&matching_block_id=71812901_94502472_2_42_0&sr_pri_blocks=71812901_94502472_2_42_0__32310&from_sustainable_property_sr=1&from=searchresults
+  :price: 323.0
+  :tax: 13.0
+  :address: Ribeirão Preto
+  :distance: 3.8
+  :review_score: 8.1
+  :review_count: 3
+  :unit_title: Quarto Duplo
+- :name: Prince Hotel
+  :href: https://www.booking.com/hotel/br/prince.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=48812203_389093967_2_1_0&highlighted_blocks=48812203_389093967_2_1_0&matching_block_id=48812203_389093967_2_1_0&sr_pri_blocks=48812203_389093967_2_1_0__24000&from_sustainable_property_sr=1&from=searchresults
+  :price: 240.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 1.1
+  :review_score: 8.4
+  :review_count: 1
+  :unit_title: Quarto Duplo Standard com Cama de Casal
+- :name: Ideali Hotel
+  :href: https://www.booking.com/hotel/br/ideali.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=106222701_341618718_2_2_0&highlighted_blocks=106222701_341618718_2_2_0&matching_block_id=106222701_341618718_2_2_0&sr_pri_blocks=106222701_341618718_2_2_0__21200&from=searchresults
+  :price: 212.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.1
+  :review_score: 8.6
+  :review_count: 1
+  :unit_title: Quarto Duplo
+- :name: Monreale Express Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/monreale-ribeirapso-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=33939701_279215839_2_1_0&highlighted_blocks=33939701_279215839_2_1_0&matching_block_id=33939701_279215839_2_1_0&sr_pri_blocks=33939701_279215839_2_1_0__23750&from_sustainable_property_sr=1&from=searchresults
+  :price: 238.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.45
+  :review_score: 8.0
+  :review_count: 4
+  :unit_title: Quarto Duplo Standard com 1 Cama de Casal
+- :name: Hotel Flat Bassano Vaccarini
+  :href: https://www.booking.com/hotel/br/flat-bassano-vaccarini.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=34876305_359122735_2_1_0&highlighted_blocks=34876305_359122735_2_1_0&matching_block_id=34876305_359122735_2_1_0&sr_pri_blocks=34876305_359122735_2_1_0__25600&from_sustainable_property_sr=1&from=searchresults
+  :price: 256.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.35
+  :review_score: 8.6
+  :review_count: 878
+  :unit_title: Apartamento de 1 Quarto
+- :name: Hotel Mont Blanc Premium
+  :href: https://www.booking.com/hotel/br/mont-blanc-premium.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=17&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=104129308_249179440_2_1_0&highlighted_blocks=104129308_249179440_2_1_0&matching_block_id=104129308_249179440_2_1_0&sr_pri_blocks=104129308_249179440_2_1_0__43605&from_sustainable_property_sr=1&from=searchresults
+  :price: 436.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 3.4
+  :review_score: 8.8
+  :review_count: 2
+  :unit_title: Quarto Triplo Standard
+- :name: Studio Aconchegante e Completo
+  :href: https://www.booking.com/hotel/br/studio-aconchegante-e-completo.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=18&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1088731801_391339096_2_0_0&highlighted_blocks=1088731801_391339096_2_0_0&matching_block_id=1088731801_391339096_2_0_0&sr_pri_blocks=1088731801_391339096_2_0_0__14850&from=searchresults
+  :price: 149.0
+  :tax: 60.0
+  :address: Ribeirão Preto
+  :distance: 1.0
+  :review_score: 9.7
+  :review_count: 32
+  :unit_title: Apartamento de 1 Quarto
+- :name: Matiz Vilaboim Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/transamerica-prime-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=224498401_378416677_2_1_0&highlighted_blocks=224498401_378416677_2_1_0&matching_block_id=224498401_378416677_2_1_0&sr_pri_blocks=224498401_378416677_2_1_0__38000&from_sustainable_property_sr=1&from=searchresults
+  :price: 380.0
+  :tax: 15.0
+  :address: Ribeirão Preto
+  :distance: 3.4
+  :review_score: 8.4
+  :review_count: 2
+  :unit_title: Quarto Duplo Executivo
+- :name: TRYP By Wyndham Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/tryp-by-wyndham-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=178560026_91115611_2_1_0&highlighted_blocks=178560026_91115611_2_1_0&matching_block_id=178560026_91115611_2_1_0&sr_pri_blocks=178560026_91115611_2_1_0__49499&from_sustainable_property_sr=1&from=searchresults
+  :price: 495.0
+  :tax: 20.0
+  :address: Ribeirão Preto
+  :distance: 4.5
+  :review_score: 9.0
+  :review_count: 2
+  :unit_title: Apartamento Superior
+- :name: ibis Styles Ribeirao Preto Maurilio Biagi
+  :href: https://www.booking.com/hotel/br/arco-premium.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=21&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=34554112_377053601_2_42_0&highlighted_blocks=34554112_377053601_2_42_0&matching_block_id=34554112_377053601_2_42_0&sr_pri_blocks=34554112_377053601_2_42_0__40000&from_sustainable_property_sr=1&from=searchresults
+  :price: 400.0
+  :tax: 16.0
+  :address: Ribeirão Preto
+  :distance: 4.5
+  :review_score: 8.2
+  :review_count: 2
+  :unit_title: Apartamento Família com 1 Cama de Casal e 2 de Solteiro
+- :name: Hotel Indi
+  :href: https://www.booking.com/hotel/br/indi.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=22&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1198201201_392111303_2_1_0&highlighted_blocks=1198201201_392111303_2_1_0&matching_block_id=1198201201_392111303_2_1_0&sr_pri_blocks=1198201201_392111303_2_1_0__16200&from=searchresults
+  :price: 162.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.4
+  :review_score: 8.0
+  :review_count: 3
+  :unit_title: Quarto Duplo com Banheiro Compartilhado
+- :name: Plaza Flat
+  :href: https://www.booking.com/hotel/br/plaza-flat.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=23&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1197607801_392055701_2_2_0&highlighted_blocks=1197607801_392055701_2_2_0&matching_block_id=1197607801_392055701_2_2_0&sr_pri_blocks=1197607801_392055701_2_2_0__19000&from=searchresults
+  :price: 190.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.8
+  :review_score: 9.5
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: Exótico Prime Motel
+  :href: https://www.booking.com/hotel/br/motel-up-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=24&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=846304601_386852963_2_1_0&highlighted_blocks=846304601_386852963_2_1_0&matching_block_id=846304601_386852963_2_1_0&sr_pri_blocks=846304601_386852963_2_1_0__15900&from_sustainable_property_sr=1&from=searchresults
+  :price: 159.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 6.3
+  :review_score: 8.3
+  :review_count: 171
+  :unit_title: Suíte Executiva
+- :name: Kitnet na melhor localização JD Paulistano
+  :href: https://www.booking.com/hotel/br/kitnet-na-melhor-localizacao-jd-paulistano.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1179347101_390409905_2_0_0&highlighted_blocks=1179347101_390409905_2_0_0&matching_block_id=1179347101_390409905_2_0_0&sr_pri_blocks=1179347101_390409905_2_0_0__11000&from=searchresults
+  :price: 110.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.5
+  :review_score: 9.1
+  :review_count: 14
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apartamento completo e encantador
+  :href: https://www.booking.com/hotel/br/apartamento-completo-e-encantador-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=26&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=818226201_344402401_2_0_0&highlighted_blocks=818226201_344402401_2_0_0&matching_block_id=818226201_344402401_2_0_0&sr_pri_blocks=818226201_344402401_2_0_0__15000&from_sustainable_property_sr=1&from=searchresults
+  :price: 150.0
+  :tax: 65.0
+  :address: Ribeirão Preto
+  :distance: 3.6
+  :review_score: 9.4
+  :review_count: 75
+  :unit_title: Apartamento
+- :name: Loft encantador e refinado
+  :href: https://www.booking.com/hotel/br/loft-encantador-e-refinado.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=27&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=756219401_336465013_2_0_0&highlighted_blocks=756219401_336465013_2_0_0&matching_block_id=756219401_336465013_2_0_0&sr_pri_blocks=756219401_336465013_2_0_0__15000&from_sustainable_property_sr=1&from=searchresults
+  :price: 150.0
+  :tax: 55.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.3
+  :review_count: 87
+  :unit_title: Loft
+- :name: Apartamento Wi-fi, Split, Estacionamento e Piscina
+  :href: https://www.booking.com/hotel/br/apogeo-ap-zona-sul-pres-vargas.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=28&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=906868503_372767563_2_0_0&highlighted_blocks=906868503_372767563_2_0_0&matching_block_id=906868503_372767563_2_0_0&sr_pri_blocks=906868503_372767563_2_0_0__24500&from_sustainable_property_sr=1&from=searchresults
+  :price: 245.0
+  :tax: 180.0
+  :address: Ribeirão Preto
+  :distance: 2.1
+  :review_score: 9.3
+  :review_count: 15
+  :unit_title: Apartamento
+- :name: Flat com Wifi, Pisicina e Estacionamento
+  :href: https://www.booking.com/hotel/br/318-flat-com-wifi-netflix-e-amazon-tv.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=29&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=810370710_372767552_2_0_0&highlighted_blocks=810370710_372767552_2_0_0&matching_block_id=810370710_372767552_2_0_0&sr_pri_blocks=810370710_372767552_2_0_0__20500&from_sustainable_property_sr=1&from=searchresults
+  :price: 205.0
+  :tax: 120.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 8.5
+  :review_count: 37
+  :unit_title: Quarto Triplo Básico
+- :name: Ecotel
+  :href: https://www.booking.com/hotel/br/ecotel-ribeirao-preto1234567891011121314151617181920.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=30&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=291977505_109218443_0_1_0&highlighted_blocks=291977505_109218443_0_1_0&matching_block_id=291977505_109218443_0_1_0&sr_pri_blocks=291977505_109218443_0_1_0__24300&from_sustainable_property_sr=1&from=searchresults
+  :price: 243.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 7.5
+  :review_score: 8.4
+  :review_count: 1
+  :unit_title: Quarto Duplo Standard
+- :name: Studio completo e aconchegante
+  :href: https://www.booking.com/hotel/br/studio-completo-e-aconchegante.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=31&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=756196701_332469991_2_0_0&highlighted_blocks=756196701_332469991_2_0_0&matching_block_id=756196701_332469991_2_0_0&sr_pri_blocks=756196701_332469991_2_0_0__11790&from=searchresults
+  :price: 118.0
+  :tax: 60.0
+  :address: Ribeirão Preto
+  :distance: 3.6
+  :review_score: 9.3
+  :review_count: 139
+  :unit_title: Apartamento
+- :name: Loft completo e refinado
+  :href: https://www.booking.com/hotel/br/loft-completo-e-refinado.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=32&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=793207002_339165331_2_0_0&highlighted_blocks=793207002_339165331_2_0_0&matching_block_id=793207002_339165331_2_0_0&sr_pri_blocks=793207002_339165331_2_0_0__15000&from_sustainable_property_sr=1&from=searchresults
+  :price: 150.0
+  :tax: 55.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.2
+  :review_count: 70
+  :unit_title: Apartamento
+- :name: Studio 303 - Nova Aliança
+  :href: https://www.booking.com/hotel/br/studio-303-5-km-agrishow.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=33&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1196972201_391994394_2_0_0&highlighted_blocks=1196972201_391994394_2_0_0&matching_block_id=1196972201_391994394_2_0_0&sr_pri_blocks=1196972201_391994394_2_0_0__18000&from=searchresults
+  :price: 180.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 4.9
+  :review_score: 9.8
+  :review_count: 5
+  :unit_title: Apartamento de 1 Quarto
+- :name: Kitnet melhor localização zona norte
+  :href: https://www.booking.com/hotel/br/kitnet-melhor-localizacao-zona-norte.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=34&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1188665901_391207691_2_0_0&highlighted_blocks=1188665901_391207691_2_0_0&matching_block_id=1188665901_391207691_2_0_0&sr_pri_blocks=1188665901_391207691_2_0_0__9900&from=searchresults
+  :price: 99.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 6.7
+  :review_score: 8.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: ARQ Inn Hotel
+  :href: https://www.booking.com/hotel/br/arq-inn.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=35&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=168412001_200568036_2_33_0&highlighted_blocks=168412001_200568036_2_33_0&matching_block_id=168412001_200568036_2_33_0&sr_pri_blocks=168412001_200568036_2_33_0__25110&from=searchresults
+  :price: 251.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.2
+  :review_score: 8.2
+  :review_count: 1
+  :unit_title: Quarto com Cama de Casal ou 2 de Solteiro
+- :name: Studio 606 - Expetacular
+  :href: https://www.booking.com/hotel/br/apto-monte-santo-5-km-agrishow.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=36&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1191768601_391476941_0_0_0&highlighted_blocks=1191768601_391476941_0_0_0&matching_block_id=1191768601_391476941_0_0_0&sr_pri_blocks=1191768601_391476941_0_0_0__16038&from=searchresults
+  :price: 160.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 4.9
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento Estúdio
+- :name: Apartamento próximo ao shopping Iguatemi e Ribeirão shopping - ótimo para
+    casais
+  :href: https://www.booking.com/hotel/br/novo-apartamento-proximo-ao-shopping-iguatemi.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=37&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1211911101_393350979_3_0_0&highlighted_blocks=1211911101_393350979_3_0_0&matching_block_id=1211911101_393350979_3_0_0&sr_pri_blocks=1211911101_393350979_3_0_0__15300&from=searchresults
+  :price: 153.0
+  :tax: 100.0
+  :address: Ribeirão Preto
+  :distance: 5.4
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Apartamento de 1 Quarto
+- :name: Pousada Shangrila
+  :href: https://www.booking.com/hotel/br/pousada-shangrila-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=38&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=106599506_195608894_2_1_0&highlighted_blocks=106599506_195608894_2_1_0&matching_block_id=106599506_195608894_2_1_0&sr_pri_blocks=106599506_195608894_2_1_0__40500&from=searchresults
+  :price: 405.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.8
+  :review_score: 8.7
+  :review_count: 1
+  :unit_title: Quarto Duplo Deluxe
+- :name: Apto Centro Moderno e Completo
+  :href: https://www.booking.com/hotel/br/apto-centro-moderno-e-completo.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=39&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1112932801_384236716_2_0_0&highlighted_blocks=1112932801_384236716_2_0_0&matching_block_id=1112932801_384236716_2_0_0&sr_pri_blocks=1112932801_384236716_2_0_0__19440&from=searchresults
+  :price: 194.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.7
+  :review_score: 9.7
+  :review_count: 19
+  :unit_title: Apartamento de 1 Quarto
+- :name: Plaza Flat C/ Serviço De Quarto
+  :href: https://www.booking.com/hotel/br/plaza-flat-c-servico-de-quarto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=40&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1142541401_387082174_0_2_0&highlighted_blocks=1142541401_387082174_0_2_0&matching_block_id=1142541401_387082174_0_2_0&sr_pri_blocks=1142541401_387082174_0_2_0__21780&from=searchresults
+  :price: 218.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.8
+  :review_score: 8.4
+  :review_count: 9
+  :unit_title: Apartamento de 1 Quarto
+- :name: Residencial Via do Café
+  :href: https://www.booking.com/hotel/br/residencial-via-do-cafe.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=41&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1186433402_392607933_0_0_0&highlighted_blocks=1186433402_392607933_0_0_0&matching_block_id=1186433402_392607933_0_0_0&sr_pri_blocks=1186433402_392607933_0_0_0__17600&from=searchresults
+  :price: 176.0
+  :tax: 60.0
+  :address: Ribeirão Preto
+  :distance: 2.8
+  :review_score: 8.5
+  :review_count: 2
+  :unit_title: Apartamento
+- :name: Studio 1131 - Água-Marinha
+  :href: https://www.booking.com/hotel/br/studio-1131-agua-marinha.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=42&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1196995801_394031403_2_0_0&highlighted_blocks=1196995801_394031403_2_0_0&matching_block_id=1196995801_394031403_2_0_0&sr_pri_blocks=1196995801_394031403_2_0_0__17640&from=searchresults
+  :price: 176.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: MOTEL COPACABANA
+  :href: https://www.booking.com/hotel/br/motel-copacabana.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=43&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=525718909_184784956_2_1_0&highlighted_blocks=525718909_184784956_2_1_0&matching_block_id=525718909_184784956_2_1_0&sr_pri_blocks=525718909_184784956_2_1_0__16590&from=searchresults
+  :price: 166.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.4
+  :review_score: 8.2
+  :review_count: 571
+  :unit_title: Suíte
+- :name: Studio 1221A - Cristal de Jade
+  :href: https://www.booking.com/hotel/br/studio-1221a-cristal-de-jade-agrishow.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=44&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1194427101_392035436_2_0_0&highlighted_blocks=1194427101_392035436_2_0_0&matching_block_id=1194427101_392035436_2_0_0&sr_pri_blocks=1194427101_392035436_2_0_0__18000&from=searchresults
+  :price: 180.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.5
+  :review_count: 2
+  :unit_title: Apartamento de 1 Quarto
+- :name: The Belluno apartamento completo e aconchegante
+  :href: https://www.booking.com/hotel/br/the-belluno-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=45&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=847253501_351825849_2_0_0&highlighted_blocks=847253501_351825849_2_0_0&matching_block_id=847253501_351825849_2_0_0&sr_pri_blocks=847253501_351825849_2_0_0__13770&from=searchresults
+  :price: 138.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.7
+  :review_score: 9.0
+  :review_count: 90
+  :unit_title: Apartamento com Varanda
+- :name: Infinite-WIFI-Garagem-Self check-in-Pet friendly
+  :href: https://www.booking.com/hotel/br/infinite-wifi-garagem-self-check-in-pet-friendly.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=46&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=896370802_388651414_0_0_0&highlighted_blocks=896370802_388651414_0_0_0&matching_block_id=896370802_388651414_0_0_0&sr_pri_blocks=896370802_388651414_0_0_0__23240&from=searchresults
+  :price: 232.0
+  :tax: 140.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.6
+  :review_count: 15
+  :unit_title: Estúdio Duplo Deluxe
+- :name: Itaygua Hotel
+  :href: https://www.booking.com/hotel/br/itaygua.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=47&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=724135803_353180578_2_0_0&highlighted_blocks=724135803_353180578_2_0_0&matching_block_id=724135803_353180578_2_0_0&sr_pri_blocks=724135803_353180578_2_0_0__30900&from=searchresults
+  :price: 309.0
+  :tax: 29.0
+  :address: Ribeirão Preto
+  :distance: 8.2
+  :review_score: 8.1
+  :review_count: 247
+  :unit_title: Quarto Triplo Básico
+- :name: Pousada Indi
+  :href: https://www.booking.com/hotel/br/pousada-indi.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=48&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1174351801_390009999_2_2_0&highlighted_blocks=1174351801_390009999_2_2_0&matching_block_id=1174351801_390009999_2_2_0&sr_pri_blocks=1174351801_390009999_2_2_0__12150&from=searchresults
+  :price: 121.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.4
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Quarto Duplo
+- :name: Edifício Belluno
+  :href: https://www.booking.com/hotel/br/edificio-belluno.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=49&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1135121108_386338617_2_0_0&highlighted_blocks=1135121108_386338617_2_0_0&matching_block_id=1135121108_386338617_2_0_0&sr_pri_blocks=1135121108_386338617_2_0_0__17600&from=searchresults
+  :price: 176.0
+  :tax: 70.0
+  :address: Ribeirão Preto
+  :distance: 3.7
+  :review_score: 8.4
+  :review_count: 8
+  :unit_title: Apartamento com Terraço
+- :name: Studio 219B - Turmalina Rosa
+  :href: https://www.booking.com/hotel/br/studio-219b-turmalina-rosa.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=50&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901287&all_sr_blocks=1196489303_393885306_0_0_0&highlighted_blocks=1196489303_393885306_0_0_0&matching_block_id=1196489303_393885306_0_0_0&sr_pri_blocks=1196489303_393885306_0_0_0__18000&from=searchresults
+  :price: 180.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: Royal Tulip JP Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/jp.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=51&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=34402021_278119743_2_17_0&highlighted_blocks=34402021_278119743_2_17_0&matching_block_id=34402021_278119743_2_17_0&sr_pri_blocks=34402021_278119743_2_17_0__94200&from_sustainable_property_sr=1&from=searchresults
+  :price: 942.0
+  :tax: 94.0
+  :address: Ribeirão Preto
+  :distance: 6.3
+  :review_score: 8.9
+  :review_count: 675
+  :unit_title: Quarto Standard com Cama Queen-size
+- :name: Studio 219A - Black Diamond
+  :href: https://www.booking.com/hotel/br/studio-219a-black-diamond.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=52&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1197020401_392020390_2_0_0&highlighted_blocks=1197020401_392020390_2_0_0&matching_block_id=1197020401_392020390_2_0_0&sr_pri_blocks=1197020401_392020390_2_0_0__17460&from=searchresults
+  :price: 175.0
+  :tax: 90.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apartamento 615A Quartzo Rosa
+  :href: https://www.booking.com/hotel/br/agrishow-apartamento-615a-quartzo-rosa.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=53&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1195513201_391831873_2_0_0&highlighted_blocks=1195513201_391831873_2_0_0&matching_block_id=1195513201_391831873_2_0_0&sr_pri_blocks=1195513201_391831873_2_0_0__13230&from=searchresults
+  :price: 132.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score:
+  :review_count:
+  :unit_title: Apartamento de 1 Quarto
+- :name: Pousada Acolhedora
+  :href: https://www.booking.com/hotel/br/pousada-acolhedora-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=54&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=317967201_373998037_2_0_0&highlighted_blocks=317967201_373998037_2_0_0&matching_block_id=317967201_373998037_2_0_0&sr_pri_blocks=317967201_373998037_2_0_0__16000&from_sustainable_property_sr=1&from=searchresults
+  :price: 160.0
+  :tax: 26.0
+  :address: Ribeirão Preto
+  :distance: 3.1
+  :review_score: 8.6
+  :review_count: 124
+  :unit_title: Quarto Duplo Standard
+- :name: Apartamento 519B Safira
+  :href: https://www.booking.com/hotel/br/agrishow-apartamento-519b-safira.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=55&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1195664901_393643824_2_0_0&highlighted_blocks=1195664901_393643824_2_0_0&matching_block_id=1195664901_393643824_2_0_0&sr_pri_blocks=1195664901_393643824_2_0_0__19800&from=searchresults
+  :price: 198.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apto na av. mais privilegiada
+  :href: https://www.booking.com/hotel/br/apto-na-av-mais-privilegiada.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=56&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1149597105_387781391_2_0_0&highlighted_blocks=1149597105_387781391_2_0_0&matching_block_id=1149597105_387781391_2_0_0&sr_pri_blocks=1149597105_387781391_2_0_0__25415&from=searchresults
+  :price: 254.0
+  :tax: 180.0
+  :address: Ribeirão Preto
+  :distance: 2.9
+  :review_score: 9.5
+  :review_count: 2
+  :unit_title: Quarto Triplo
+- :name: Edifício Infinite
+  :href: https://www.booking.com/hotel/br/edificio-infinite.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=57&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1135127502_386338808_4_0_0&highlighted_blocks=1135127502_386338808_4_0_0&matching_block_id=1135127502_386338808_4_0_0&sr_pri_blocks=1135127502_386338808_4_0_0__39000&from=searchresults
+  :price: 390.0
+  :tax: 70.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 4
+  :unit_title: Apartamento
+- :name: Edíficio Sienna
+  :href: https://www.booking.com/hotel/br/edificio-sienna.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=58&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1135128102_386338812_6_0_0&highlighted_blocks=1135128102_386338812_6_0_0&matching_block_id=1135128102_386338812_6_0_0&sr_pri_blocks=1135128102_386338812_6_0_0__39000&from=searchresults
+  :price: 390.0
+  :tax: 70.0
+  :address: Ribeirão Preto
+  :distance: 3.1
+  :review_score: 8.8
+  :review_count: 10
+  :unit_title: Apartamento com Vista do Jardim
+- :name: Loft de Alto Padrão
+  :href: https://www.booking.com/hotel/br/loft-de-alto-padrao.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=59&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1204896901_392711450_4_0_0&highlighted_blocks=1204896901_392711450_4_0_0&matching_block_id=1204896901_392711450_4_0_0&sr_pri_blocks=1204896901_392711450_4_0_0__37050&from=searchresults
+  :price: 371.0
+  :tax: 150.0
+  :address: Ribeirão Preto
+  :distance: 2.1
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 2 Quartos
+- :name: Apartamento 1445 Encantador
+  :href: https://www.booking.com/hotel/br/apartamento-1445-encantador.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=60&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1109650001_383713340_2_0_0&highlighted_blocks=1109650001_383713340_2_0_0&matching_block_id=1109650001_383713340_2_0_0&sr_pri_blocks=1109650001_383713340_2_0_0__21780&from_sustainable_property_sr=1&from=searchresults
+  :price: 218.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: Casa em Ribeirão Preto
+  :href: https://www.booking.com/hotel/br/casa-em-ribeirao-preto-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=61&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1137140001_386856245_0_0_0&highlighted_blocks=1137140001_386856245_0_0_0&matching_block_id=1137140001_386856245_0_0_0&sr_pri_blocks=1137140001_386856245_0_0_0__132000&from=searchresults
+  :price: 1320.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 3.7
+  :review_score:
+  :review_count:
+  :unit_title: Casa de 6 Quartos
+- :name: Chácara espetacular
+  :href: https://www.booking.com/hotel/br/chacara-espetacular.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=62&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1211033101_393271569_14_0_0&highlighted_blocks=1211033101_393271569_14_0_0&matching_block_id=1211033101_393271569_14_0_0&sr_pri_blocks=1211033101_393271569_14_0_0__180000&from=searchresults
+  :price: 1800.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.7
+  :review_score:
+  :review_count:
+  :unit_title: Casa de 4 Quartos
+- :name: Apartamento 421B Incrível!
+  :href: https://www.booking.com/hotel/br/apartamento-421b-incrivel.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=63&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1087599601_381675819_2_0_0&highlighted_blocks=1087599601_381675819_2_0_0&matching_block_id=1087599601_381675819_2_0_0&sr_pri_blocks=1087599601_381675819_2_0_0__20900&from_sustainable_property_sr=1&from=searchresults
+  :price: 209.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: Quarto disponível para temporada da Agrishow
+  :href: https://www.booking.com/hotel/br/quarto-disponivel-para-temporada-da-agrishow.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=64&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1194459301_391738491_2_0_0&highlighted_blocks=1194459301_391738491_2_0_0&matching_block_id=1194459301_391738491_2_0_0&sr_pri_blocks=1194459301_391738491_2_0_0__27000&from=searchresults
+  :price: 270.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.8
+  :review_score: 9.0
+  :review_count: 1
+  :unit_title: Quarto Família
+- :name: Apartamento 133 Magnífico!
+  :href: https://www.booking.com/hotel/br/apartamento-133-magnifico.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=65&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1094237001_382336466_2_0_0&highlighted_blocks=1094237001_382336466_2_0_0&matching_block_id=1094237001_382336466_2_0_0&sr_pri_blocks=1094237001_382336466_2_0_0__21780&from_sustainable_property_sr=1&from=searchresults
+  :price: 218.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.8
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: APTO 1225B Fantástico
+  :href: https://www.booking.com/hotel/br/apto-1225-b-fantastico.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=66&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1093835001_382304723_2_0_0&highlighted_blocks=1093835001_382304723_2_0_0&matching_block_id=1093835001_382304723_2_0_0&sr_pri_blocks=1093835001_382304723_2_0_0__19800&from_sustainable_property_sr=1&from=searchresults
+  :price: 198.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.0
+  :review_count: 4
+  :unit_title: Apartamento de 1 Quarto
+- :name: APTO 313B Divino
+  :href: https://www.booking.com/hotel/br/apto-313-divino.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=67&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1092673101_382130362_2_0_0&highlighted_blocks=1092673101_382130362_2_0_0&matching_block_id=1092673101_382130362_2_0_0&sr_pri_blocks=1092673101_382130362_2_0_0__20900&from=searchresults
+  :price: 209.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: APTO 1225A Fabuloso
+  :href: https://www.booking.com/hotel/br/1225-a-fabuloso.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=68&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1093710601_382293539_2_0_0&highlighted_blocks=1093710601_382293539_2_0_0&matching_block_id=1093710601_382293539_2_0_0&sr_pri_blocks=1093710601_382293539_2_0_0__20900&from_sustainable_property_sr=1&from=searchresults
+  :price: 209.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score: 9.0
+  :review_count: 2
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apto do Mirante
+  :href: https://www.booking.com/hotel/br/apto-do-mirante.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=69&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1097508001_382634447_2_0_0&highlighted_blocks=1097508001_382634447_2_0_0&matching_block_id=1097508001_382634447_2_0_0&sr_pri_blocks=1097508001_382634447_2_0_0__22500&from=searchresults
+  :price: 225.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.9
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apartamento 411B Extraordinário!
+  :href: https://www.booking.com/hotel/br/apartamento-411b-extraordinario.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=70&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1138548301_386570503_2_0_0&highlighted_blocks=1138548301_386570503_2_0_0&matching_block_id=1138548301_386570503_2_0_0&sr_pri_blocks=1138548301_386570503_2_0_0__20900&from_sustainable_property_sr=1&from=searchresults
+  :price: 209.0
+  :tax: 80.0
+  :address: Ribeirão Preto
+  :distance: 3.5
+  :review_score:
+  :review_count:
+  :unit_title: Apartamento de 1 Quarto
+- :name: Apart. centro Ribeirão Hospital São Lucas
+  :href: https://www.booking.com/hotel/br/apart-centro-ribeirao-hospital-sao-lucas.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=71&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1009679101_375909401_2_0_0&highlighted_blocks=1009679101_375909401_2_0_0&matching_block_id=1009679101_375909401_2_0_0&sr_pri_blocks=1009679101_375909401_2_0_0__51939&from_sustainable_property_sr=1&from=searchresults
+  :price: 519.0
+  :tax: 150.0
+  :address: Ribeirão Preto
+  :distance: 1.0
+  :review_score: 9.6
+  :review_count: 26
+  :unit_title: Apartamento
+- :name: Alto Padrão Conforto e Beleza
+  :href: https://www.booking.com/hotel/br/alto-padrao-conforto-e-beleza.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=72&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1090775901_381964530_2_0_0&highlighted_blocks=1090775901_381964530_2_0_0&matching_block_id=1090775901_381964530_2_0_0&sr_pri_blocks=1090775901_381964530_2_0_0__36450&from_sustainable_property_sr=1&from=searchresults
+  :price: 365.0
+  :tax: 120.0
+  :address: Ribeirão Preto
+  :distance: 5.7
+  :review_score: 8.0
+  :review_count: 4
+  :unit_title: Apartamento de 2 Quartos
+- :name: Casa com piscina aconchegante
+  :href: https://www.booking.com/hotel/br/casa-com-piscina-aconchegante-ribeirao-preto1.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=73&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1175798401_390117608_5_0_0&highlighted_blocks=1175798401_390117608_5_0_0&matching_block_id=1175798401_390117608_5_0_0&sr_pri_blocks=1175798401_390117608_5_0_0__31500&from=searchresults
+  :price: 315.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 8.1
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Casa de 2 Quartos
+- :name: Casa para Agrishow 5min
+  :href: https://www.booking.com/hotel/br/casa-para-agrishow-5min.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=74&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1196712201_391971750_5_0_0&highlighted_blocks=1196712201_391971750_5_0_0&matching_block_id=1196712201_391971750_5_0_0&sr_pri_blocks=1196712201_391971750_5_0_0__76500&from=searchresults
+  :price: 765.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.1
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Casa de 2 Quartos
+- :name: Apartamento Completo Conforto e Charme
+  :href: https://www.booking.com/hotel/br/apartamento-completo-conforto-e-charme.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=75&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901296&all_sr_blocks=1089716201_381877126_2_0_0&highlighted_blocks=1089716201_381877126_2_0_0&matching_block_id=1089716201_381877126_2_0_0&sr_pri_blocks=1089716201_381877126_2_0_0__40500&from_sustainable_property_sr=1&from=searchresults
+  :price: 405.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.6
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 2 Quartos
+- :name: Apartamento Aconchegante
+  :href: https://www.booking.com/hotel/br/apartamento-aconchegante-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=76&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1196976601_391994362_2_0_0&highlighted_blocks=1196976601_391994362_2_0_0&matching_block_id=1196976601_391994362_2_0_0&sr_pri_blocks=1196976601_391994362_2_0_0__85050&from=searchresults
+  :price: 851.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.2
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 1 Quarto
+- :name: Casa Sobrado Alto Padrão Charme e Conforto
+  :href: https://www.booking.com/hotel/br/casa-sobrado-alto-padrao-charme-e-conforto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=77&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1093191901_382176685_3_2_0&highlighted_blocks=1093191901_382176685_3_2_0&matching_block_id=1093191901_382176685_3_2_0&sr_pri_blocks=1093191901_382176685_3_2_0__81000&from=searchresults
+  :price: 810.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 4.0
+  :review_score: 9.0
+  :review_count: 2
+  :unit_title: Casa de 4 Quartos
+- :name: Charme e Conforto Ambiente Caseiro e Familiar exclusivo
+  :href: https://www.booking.com/hotel/br/charme-e-conforto-ambiente-caseiro-e-familiar-exclusivo.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=78&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1092193501_382798895_2_2_0&highlighted_blocks=1092193501_382798895_2_2_0&matching_block_id=1092193501_382798895_2_2_0&sr_pri_blocks=1092193501_382798895_2_2_0__56000&from_sustainable_property_sr=1&from=searchresults
+  :price: 560.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.8
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Casa de 3 Quartos
+- :name: Charmosa Casa no Lago
+  :href: https://www.booking.com/hotel/br/casa-do-lago-com-lago-privativo.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=79&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1088084101_382798898_2_0_0&highlighted_blocks=1088084101_382798898_2_0_0&matching_block_id=1088084101_382798898_2_0_0&sr_pri_blocks=1088084101_382798898_2_0_0__198900&from_sustainable_property_sr=1&from=searchresults
+  :price: 1989.0
+  :tax: 300.0
+  :address: Ribeirão Preto
+  :distance: 6.7
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Villa Deluxe
+- :name: Apto ao lado da Usp e 7 minutos da Agrishow
+  :href: https://www.booking.com/hotel/br/apto-ao-lado-da-usp-e-7-minutos-da-agrishow.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=80&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1188209401_391160636_3_0_0&highlighted_blocks=1188209401_391160636_3_0_0&matching_block_id=1188209401_391160636_3_0_0&sr_pri_blocks=1188209401_391160636_3_0_0__90000&from=searchresults
+  :price: 900.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 5.7
+  :review_score: 9.0
+  :review_count: 3
+  :unit_title: Apartamento de 1 Quarto
+- :name: 2 quartos Reserva das Tulipas
+  :href: https://www.booking.com/hotel/br/2-quartos-reserva-das-tulipas.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=81&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1196960801_391993516_2_0_0&highlighted_blocks=1196960801_391993516_2_0_0&matching_block_id=1196960801_391993516_2_0_0&sr_pri_blocks=1196960801_391993516_2_0_0__91188&from=searchresults
+  :price: 912.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 7.6
+  :review_score: 10.0
+  :review_count: 1
+  :unit_title: Apartamento de 2 Quartos
+- :name: Casa charmosa e confortável
+  :href: https://www.booking.com/hotel/br/casa-charmosa-e-confortavel.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=82&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1089690701_382798541_2_2_0&highlighted_blocks=1089690701_382798541_2_2_0&matching_block_id=1089690701_382798541_2_2_0&sr_pri_blocks=1089690701_382798541_2_2_0__65000&from_sustainable_property_sr=1&from=searchresults
+  :price: 650.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.4
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Casa de 4 Quartos
+- :name: Agrishow - Zona Sul - lindíssimo
+  :href: https://www.booking.com/hotel/br/agrishow-zona-sul-lindissimo.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=83&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1181235501_390561537_2_0_0&highlighted_blocks=1181235501_390561537_2_0_0&matching_block_id=1181235501_390561537_2_0_0&sr_pri_blocks=1181235501_390561537_2_0_0__98730&from=searchresults
+  :price: 987.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 6.4
+  :review_score:
+  :review_count:
+  :unit_title: Apartamento de 1 Quarto
+- :name: Ravena 016
+  :href: https://www.booking.com/hotel/br/california-016-ribeirao-preto.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=84&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1035593501_376122118_2_0_0&highlighted_blocks=1035593501_376122118_2_0_0&matching_block_id=1035593501_376122118_2_0_0&sr_pri_blocks=1035593501_376122118_2_0_0__200000&from_sustainable_property_sr=1&from=searchresults
+  :price: 2000.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 0.7
+  :review_score: 9.5
+  :review_count: 17
+  :unit_title: Apartamento com Varanda
+- :name: Apartamento de alto Padrão Presidente Vargas
+  :href: https://www.booking.com/hotel/br/apartamento-de-alto-padrao-presidente-vargas.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=85&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1177381801_390253805_2_0_0&highlighted_blocks=1177381801_390253805_2_0_0&matching_block_id=1177381801_390253805_2_0_0&sr_pri_blocks=1177381801_390253805_2_0_0__288000&from=searchresults
+  :price: 2880.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 2.1
+  :review_score:
+  :review_count:
+  :unit_title: Apartamento de 1 Quarto
+- :name: Mansão - Ribeirão Shopping
+  :href: https://www.booking.com/hotel/br/mansao-ribeirao-shopping.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=86&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1177874401_390296758_22_0_0&highlighted_blocks=1177874401_390296758_22_0_0&matching_block_id=1177874401_390296758_22_0_0&sr_pri_blocks=1177874401_390296758_22_0_0__346500&from=searchresults
+  :price: 3465.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 3.8
+  :review_score:
+  :review_count:
+  :unit_title: Villa
+- :name: Casa para Temporada Agrishow 2024
+  :href: https://www.booking.com/hotel/br/casa-para-temporada-agrishow-2024.pt-br.html?label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARnIAQ_YAQHoAQH4AQuIAgGoAgO4Aq7N_rIGwAIB0gIkN2NiZWI4NjktMzAxYS00OTNiLWE5MjktMjIxMzJmYTE4OGY22AIG4AIB&sid=cb6dd5c394c3c627549e14d2603d5828&aid=304142&ucfs=1&arphpl=1&checkin=2024-06-28&checkout=2024-06-29&dest_id=-666453&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=87&sr_order=popularity&nflt=hotelfacility%3D2%3Btdb%3D3%3Breview_score%3D80&srpvid=e9bd13ad697c0162&srepoch=1717901298&all_sr_blocks=1185445301_390911444_5_0_0&highlighted_blocks=1185445301_390911444_5_0_0&matching_block_id=1185445301_390911444_5_0_0&sr_pri_blocks=1185445301_390911444_5_0_0__612000&from=searchresults
+  :price: 6120.0
+  :tax:
+  :address: Ribeirão Preto
+  :distance: 3.1
+  :review_score: 9.0
+  :review_count: 1
+  :unit_title: Casa de 2 Quartos
+:declared_count: 87
