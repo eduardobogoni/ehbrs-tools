@@ -12,6 +12,15 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
+  remote: sub/aranha-selenium
+  specs:
+    aranha-selenium (0.10.1)
+      eac_fs (~> 0.17)
+      eac_ruby_utils (~> 0.121)
+      eac_templates (~> 0.5, >= 0.5.1)
+      selenium-webdriver (~> 3.142, >= 3.142.7)
+
+PATH
   remote: sub/eac_cli
   specs:
     eac_cli (0.41.0)
@@ -60,11 +69,6 @@ GEM
       eac_ruby_utils (~> 0.119, >= 0.119.2)
       nokogiri (~> 1.15, >= 1.15.4)
       ofx-parser (~> 1.1)
-    aranha-selenium (0.10.1)
-      eac_fs (~> 0.17)
-      eac_ruby_utils (~> 0.121)
-      eac_templates (~> 0.5, >= 0.5.1)
-      selenium-webdriver (~> 3.142, >= 3.142.7)
     ast (2.4.2)
     avm (0.92.0)
       eac_cli (~> 0.41)
@@ -180,7 +184,7 @@ GEM
     ofx-parser (1.1.0)
       hpricot (>= 0.6)
     os (1.1.4)
-    parallel (1.24.0)
+    parallel (1.25.1)
     parser (3.3.2.0)
       ast (~> 2.4.1)
       racc
@@ -220,9 +224,9 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.31.3)
       parser (>= 3.3.1.0)
-    rubocop-capybara (2.20.0)
+    rubocop-capybara (2.21.0)
       rubocop (~> 1.41)
-    rubocop-factory_bot (2.25.1)
+    rubocop-factory_bot (2.26.0)
       rubocop (~> 1.41)
     rubocop-rails (2.25.0)
       activesupport (>= 4.2.0)
@@ -234,7 +238,7 @@ GEM
       rubocop-capybara (~> 2.17)
       rubocop-factory_bot (~> 2.22)
       rubocop-rspec_rails (~> 2.28)
-    rubocop-rspec_rails (2.28.3)
+    rubocop-rspec_rails (2.29.0)
       rubocop (~> 1.40)
     ruby-filemagic (0.7.3)
     ruby-progressbar (1.13.0)
@@ -281,6 +285,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aranha-selenium!
   eac_cli!
   eac_ruby_gem_support (~> 0.9)
   ehbrs-tools!
