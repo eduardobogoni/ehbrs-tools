@@ -47,7 +47,7 @@ module EhbrsRubyUtils
         end
 
         def scroll_down
-          session.execute_script('window.scrollBy(0, 90)')
+          session.scroll_down_by(90)
         end
       end
     end
