@@ -16,7 +16,7 @@ PATH
   specs:
     aranha-selenium (0.10.1)
       eac_fs (~> 0.17)
-      eac_ruby_utils (~> 0.121)
+      eac_ruby_utils (~> 0.122)
       eac_templates (~> 0.5, >= 0.5.1)
       selenium-webdriver (~> 3.142, >= 3.142.7)
 
