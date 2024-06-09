@@ -14,7 +14,7 @@ PATH
 PATH
   remote: sub/aranha-selenium
   specs:
-    aranha-selenium (0.10.1)
+    aranha-selenium (0.11.0)
       eac_fs (~> 0.17)
       eac_ruby_utils (~> 0.122)
       eac_templates (~> 0.7)
