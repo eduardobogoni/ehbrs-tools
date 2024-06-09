@@ -41,7 +41,7 @@ PATH
       eac_fs (~> 0.17)
       eac_rest (~> 0.12)
       eac_ruby_utils (~> 0.122)
-      eac_templates (~> 0.5, >= 0.5.1)
+      eac_templates (~> 0.7)
       inifile (~> 3.0)
       srt (~> 0.1, >= 0.1.5)
       taglib-ruby (~> 1.1, >= 1.1.3)

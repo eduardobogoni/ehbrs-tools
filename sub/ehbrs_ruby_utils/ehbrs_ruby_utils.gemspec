@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_fs', '~> 0.17'
   s.add_dependency 'eac_rest', '~> 0.12'
   s.add_dependency 'eac_ruby_utils', '~> 0.122'
-  s.add_dependency 'eac_templates', '~> 0.5', '>= 0.5.1'
+  s.add_dependency 'eac_templates', '~> 0.7'
   s.add_dependency 'inifile', '~> 3.0'
   s.add_dependency 'srt', '~> 0.1', '>= 0.1.5'
   s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'
