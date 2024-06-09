@@ -15,7 +15,7 @@ module Ehbrs
       end
 
       def check(value, date = ::Time.required_zone.now)
-        save if super(value, date)
+        save if super
       end
 
       def load
