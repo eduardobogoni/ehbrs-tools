@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_cli', '~> 0.42'
   s.add_dependency 'eac_ruby_base0', '~> 0.19'
   s.add_dependency 'eac_ruby_utils', '~> 0.122'
-  s.add_dependency 'ehbrs_ruby_utils', '~> 0.43'
+  s.add_dependency 'ehbrs_ruby_utils', '~> 0.44'
   s.add_dependency 'filesize', '~> 0.2'
   s.add_dependency 'os', '~> 1.1', '>= 1.1.4'
   s.add_dependency 'telegram-bot-ruby', '~> 0.23'

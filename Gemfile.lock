@@ -6,7 +6,7 @@ PATH
       eac_cli (~> 0.42)
       eac_ruby_base0 (~> 0.19)
       eac_ruby_utils (~> 0.122)
-      ehbrs_ruby_utils (~> 0.43)
+      ehbrs_ruby_utils (~> 0.44)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
