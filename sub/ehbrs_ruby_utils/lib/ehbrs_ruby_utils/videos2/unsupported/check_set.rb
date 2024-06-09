@@ -25,7 +25,7 @@ module EhbrsRubyUtils
 
         class CheckWithProfiles < ::SimpleDelegator
           def initialize(check)
-            super(check)
+            super
             @profiles = []
           end
 

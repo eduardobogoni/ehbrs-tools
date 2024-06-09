@@ -16,7 +16,7 @@ module EhbrsRubyUtils
           end
 
           def show(level)
-            super(level)
+            super
             children.each do |child|
               child.show(level + 1)
             end
