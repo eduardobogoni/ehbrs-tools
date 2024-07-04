@@ -2,11 +2,11 @@
 
 require 'eac_rest/api'
 require 'eac_ruby_utils/core_ext'
-require 'avm/instances/base'
+require 'avm/eac_rails_base0/instances/base'
 
 module EhbrsRubyUtils
   module WebUtils
-    class Instance < ::Avm::Instances::Base
+    class Instance < ::Avm::EacRailsBase0::Instances::Base
       require_sub __FILE__, require_dependency: true
 
       # @return [EacRest::Api]
@@ -19,7 +19,7 @@ module EhbrsRubyUtils
       end
 
       def root_url
-        read_entry(::Avm::Instances::EntryKeys::WEB_URL)
+        web_url
       end
     end
   end

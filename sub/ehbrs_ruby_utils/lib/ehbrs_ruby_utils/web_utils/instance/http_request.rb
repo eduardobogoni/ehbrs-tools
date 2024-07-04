@@ -3,11 +3,11 @@
 require 'eac_rest/api'
 require 'eac_ruby_utils/core_ext'
 require 'ehbrs_ruby_utils/web_utils/request_error'
-require 'avm/instances/base'
+require 'avm/eac_rails_base0/instances/base'
 
 module EhbrsRubyUtils
   module WebUtils
-    class Instance < ::Avm::Instances::Base
+    class Instance < ::Avm::EacRailsBase0::Instances::Base
       class HttpRequest
         enable_method_class
         enable_simple_cache
