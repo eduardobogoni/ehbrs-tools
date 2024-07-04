@@ -7,6 +7,7 @@ RSpec.describe EacFs::FileInfo do
 
   {
     charset: 'us-ascii',
+    description: 'Ruby script, ASCII text',
     mime_type: 'text/x-ruby',
     subtype: 'x-ruby',
     type: 'text',

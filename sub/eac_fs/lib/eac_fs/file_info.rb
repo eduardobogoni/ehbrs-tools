@@ -23,6 +23,11 @@ module EacFs
 
     delegate :charset, :mime_type, :subtype, :type, to: :content_type
 
+    # @return [String]
+    def description
+      magic
+    end
+
     # @return [Boolean]
     def open?
       ::EacFs::Executables.lsof.command(path).execute.fetch(:exit_code).zero?
