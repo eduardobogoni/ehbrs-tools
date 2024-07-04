@@ -16,7 +16,8 @@ module Ehbrs
         private
 
         {
-          '--version' => %w[flips]
+          '--version' => %w[flips],
+          '-V' => %w[xdelta3]
         }.each do |validate_arg, commands|
           commands.each do |command|
             define_method("#{command}_uncached") do
