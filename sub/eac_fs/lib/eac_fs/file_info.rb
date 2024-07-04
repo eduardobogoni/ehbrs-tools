@@ -28,6 +28,11 @@ module EacFs
       ::EacFs::Executables.lsof.command(path).execute.fetch(:exit_code).zero?
     end
 
+    # @return [String]
+    def magic(*flags)
+      ::FileMagic.new(*flags).file(path.to_path)
+    end
+
     private
 
     def content_type_uncached
@@ -38,7 +43,7 @@ module EacFs
 
     # @return [String]
     def mime_string_uncached
-      ::FileMagic.new(FileMagic::MAGIC_MIME).file(path.to_path)
+      magic(::FileMagic::MAGIC_MIME)
     end
   end
 end
