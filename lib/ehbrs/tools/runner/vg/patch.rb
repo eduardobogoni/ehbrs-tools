@@ -2,7 +2,7 @@
 
 require 'eac_cli/core_ext'
 require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/tools/vg/patches/ips_applier'
+require 'ehbrs/tools/vg/patches/applier_factory'
 require 'ehbrs/tools/vg/patches/temp_files'
 
 module Ehbrs
@@ -36,7 +36,8 @@ module Ehbrs
           end
 
           def run_patch(source_path, ips_path, output_path)
-            ::Ehbrs::Tools::Vg::Patches::IpsApplier.new(ips_path).apply(source_path, output_path)
+            ::Ehbrs::Tools::Vg::Patches::ApplierFactory.new(ips_path)
+              .apply(source_path, output_path)
           end
 
           def run_patches
