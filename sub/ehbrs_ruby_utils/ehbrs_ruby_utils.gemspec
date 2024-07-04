@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'aranha-parsers', '~> 0.22'
   s.add_dependency 'aranha-selenium', '~> 0.11', '>= 0.11.1'
   s.add_dependency 'avm', '~> 0.92'
+  s.add_dependency 'avm-eac_rails_base0', '~> 0.11', '>= 0.11.1'
   s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.2'
   s.add_dependency 'eac_fs', '~> 0.18'
   s.add_dependency 'eac_rest', '~> 0.12'
