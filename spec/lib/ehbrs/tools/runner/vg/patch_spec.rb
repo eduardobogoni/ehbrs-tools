@@ -2,9 +2,9 @@
 
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/runner'
-require 'ehbrs/tools/runner/vg/ips'
+require 'ehbrs/tools/runner/vg/patch'
 
-RSpec.describe Ehbrs::Tools::Runner::Vg::Ips do
+RSpec.describe Ehbrs::Tools::Runner::Vg::Patch do
   include_context 'spec_paths', __FILE__
 
   describe '#run' do
@@ -13,11 +13,10 @@ RSpec.describe Ehbrs::Tools::Runner::Vg::Ips do
         let(:source_dir) { fixtures_directory.expand_path __dir__ }
         let(:source_file) { source_dir / 'source.rom' }
         let(:patches) { 2.times.map { |i| source_dir / "patch_#{i}.#{patch_extname}" } }
-
         let(:output_file) { EacRubyUtils::Fs::Temp.file }
         let(:expected_file) { source_dir / 'expected.rom' }
         let(:run_argv) do
-          ['vg', 'ips', '--output-file', output_file.to_path, source_file.to_path] +
+          ['vg', 'patch', '--output-file', output_file.to_path, source_file.to_path] +
             patches.map(&:to_path)
         end
 

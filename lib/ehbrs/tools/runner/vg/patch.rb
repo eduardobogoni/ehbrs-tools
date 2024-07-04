@@ -8,7 +8,7 @@ module Ehbrs
   module Tools
     class Runner
       class Vg
-        class Ips
+        class Patch
           runner_with :help do
             desc 'Aplica patches IPS em roms.'
             arg_opt '-o', '--output-file', ' Saída no arquivo <output-file>.'
