@@ -31,13 +31,13 @@ module EacFs
     private
 
     def content_type_uncached
-      ::ContentType.parse(magic_string)
+      ::ContentType.parse(mime_string)
     rescue ::Parslet::ParseFailed
       UNKNOWN_CONTENT_TYPE
     end
 
     # @return [String]
-    def magic_string_uncached
+    def mime_string_uncached
       ::FileMagic.new(FileMagic::MAGIC_MIME).file(path.to_path)
     end
   end
