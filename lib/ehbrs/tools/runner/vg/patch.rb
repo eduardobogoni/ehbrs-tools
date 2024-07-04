@@ -2,7 +2,7 @@
 
 require 'eac_cli/core_ext'
 require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/tools/executables'
+require 'ehbrs/tools/vg/patches/ips_applier'
 require 'ehbrs/tools/vg/patches/temp_files'
 
 module Ehbrs
@@ -36,15 +36,7 @@ module Ehbrs
           end
 
           def run_patch(source_path, ips_path, output_path)
-            command = ::Ehbrs::Tools::Executables.flips.command
-                        .append(['--apply', ips_path, source_path, output_path])
-
-            command.system!
-
-            return if output_path.exist?
-
-            fatal_error("\"#{command}\" exited without error, but output file \"#{output_path}\"" \
-                        'does not exist')
+            ::Ehbrs::Tools::Vg::Patches::IpsApplier.new(ips_path).apply(source_path, output_path)
           end
 
           def run_patches
