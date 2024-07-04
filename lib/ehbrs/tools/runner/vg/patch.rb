@@ -3,6 +3,7 @@
 require 'eac_cli/core_ext'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/executables'
+require 'ehbrs/tools/vg/patches/temp_files'
 
 module Ehbrs
   module Tools
@@ -29,7 +30,7 @@ module Ehbrs
           def on_temp_files
             ::EacRubyUtils::Fs::Temp.on_file do |input|
               ::EacRubyUtils::Fs::Temp.on_file do |output|
-                yield TempFiles.new(source_file, input, output)
+                yield ::Ehbrs::Tools::Vg::Patches::TempFiles.new(source_file, input, output)
               end
             end
           end
@@ -104,35 +105,6 @@ module Ehbrs
             return if parsed.overwrite?
 
             fatal_error("Arquivo de saída \"#{output_file}\" já existe")
-          end
-
-          class TempFiles
-            common_constructor :initial, :temp0, :temp1
-
-            def input
-              swaped? ? temp0 : initial
-            end
-
-            def move_result_to(dest)
-              return unless swaped?
-
-              ::FileUtils.mv(temp0.to_path, dest.to_path)
-            end
-
-            def output
-              temp1
-            end
-
-            def swap
-              temp0_current = temp0
-              self.temp0 = temp1
-              self.temp1 = temp0_current
-              @swaped = true
-            end
-
-            def swaped?
-              @swaped ? true : false
-            end
           end
         end
       end
