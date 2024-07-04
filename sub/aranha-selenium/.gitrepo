@@ -1,7 +1,0 @@
-[subrepo]
-  cmdver = 0.4.1
-  commit = 34a5d9582533adcbdeca08b04b8c4324c6c90f20
-  method = merge
-  parent = a7224b258a29db888b8c634518876b87f31b5490
-  branch = master
-  remote = https://github.com/esquilo-azul/aranha-selenium.git
