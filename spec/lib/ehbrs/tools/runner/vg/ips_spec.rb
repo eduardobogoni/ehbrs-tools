@@ -5,7 +5,8 @@ require 'ehbrs/tools/runner'
 require 'ehbrs/tools/runner/vg/ips'
 
 RSpec.describe Ehbrs::Tools::Runner::Vg::Ips do
-  let(:source_dir) { Pathname.new('ips_spec_files').expand_path __dir__ }
+  include_context 'spec_paths', __FILE__
+  let(:source_dir) { fixtures_directory.expand_path __dir__ }
   let(:source_file) { source_dir / 'source.rom' }
   let(:patches) { 2.times.map { |i| source_dir / "patch_#{i}.ips" } }
 
