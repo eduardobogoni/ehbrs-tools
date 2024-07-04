@@ -28,7 +28,7 @@ PATH
       aranha-selenium (~> 0.11, >= 0.11.1)
       avm (~> 0.92)
       dentaku (~> 3.5, >= 3.5.2)
-      eac_fs (~> 0.17)
+      eac_fs (~> 0.18)
       eac_rest (~> 0.12)
       eac_ruby_utils (~> 0.122)
       eac_templates (~> 0.7)
