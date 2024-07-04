@@ -16,7 +16,7 @@ PATH
   specs:
     eac_fs (0.17.0)
       content-type (~> 0.0, >= 0.0.2)
-      eac_ruby_utils (~> 0.120)
+      eac_ruby_utils (~> 0.122)
       ruby-filemagic (~> 0.7, >= 0.7.3)
 
 PATH
