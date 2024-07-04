@@ -1,7 +1,7 @@
 [subrepo]
   cmdver = 0.4.1
-  commit = 2177e6744c2d55858f47fe757eea1de68d5e3147
+  commit = 23087d8b911362716910d302543ac6873ea3e266
   method = merge
-  parent = 204c15f661b788dd4078eb8e79d76ba3b17eb76b
+  parent = b1a635074c1f3aca6897c525ecdea8f0cb4b6267
   branch = master
   remote = https://github.com/esquilo-azul/eac_cli.git
