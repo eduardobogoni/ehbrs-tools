@@ -307,7 +307,7 @@ PLATFORMS
 
 DEPENDENCIES
   eac_fs!
-  eac_ruby_gem_support (~> 0.9)
+  eac_ruby_gem_support (~> 0.10)
   ehbrs-tools!
   ehbrs_ruby_utils!
 
