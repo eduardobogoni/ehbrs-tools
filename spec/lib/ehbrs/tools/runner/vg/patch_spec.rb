@@ -8,7 +8,7 @@ RSpec.describe Ehbrs::Tools::Runner::Vg::Patch do
   include_context 'spec_paths', __FILE__
 
   describe '#run' do
-    %w[ips].each do |patch_extname|
+    %w[ips vcdiff].each do |patch_extname|
       context "when the patches have extname \"#{patch_extname}\"" do
         let(:source_dir) { fixtures_directory.expand_path __dir__ }
         let(:source_file) { source_dir / 'source.rom' }

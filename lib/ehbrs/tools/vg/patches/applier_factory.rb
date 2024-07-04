@@ -2,6 +2,7 @@
 
 require 'eac_fs/core_ext'
 require 'ehbrs/tools/vg/patches/ips_applier'
+require 'ehbrs/tools/vg/patches/vcdiff_applier'
 
 module Ehbrs
   module Tools
@@ -9,7 +10,8 @@ module Ehbrs
       module Patches
         class ApplierFactory
           APPLIERS_BY_TYPE = {
-            'IPS patch file' => ::Ehbrs::Tools::Vg::Patches::IpsApplier
+            'IPS patch file' => ::Ehbrs::Tools::Vg::Patches::IpsApplier,
+            'VCDIFF binary diff' => ::Ehbrs::Tools::Vg::Patches::VcdiffApplier
           }.freeze
 
           enable_simple_cache
