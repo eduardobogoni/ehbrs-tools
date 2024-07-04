@@ -12,6 +12,14 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
+  remote: sub/eac_fs
+  specs:
+    eac_fs (0.17.0)
+      content-type (~> 0.0, >= 0.0.2)
+      eac_ruby_utils (~> 0.120)
+      ruby-filemagic (~> 0.7, >= 0.7.3)
+
+PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.44.0)
@@ -117,10 +125,6 @@ GEM
       faraday-gzip (~> 0.1)
       faraday-multipart (~> 1.0, >= 1.0.4)
       faraday-retry (~> 2.2)
-    eac_fs (0.17.0)
-      content-type (~> 0.0, >= 0.0.2)
-      eac_ruby_utils (~> 0.120)
-      ruby-filemagic (~> 0.7, >= 0.7.3)
     eac_rest (0.12.0)
       eac_envs-http (~> 0.5)
       eac_fs (~> 0.16)
@@ -277,6 +281,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  eac_fs!
   eac_ruby_gem_support (~> 0.9)
   ehbrs-tools!
   ehbrs_ruby_utils!
