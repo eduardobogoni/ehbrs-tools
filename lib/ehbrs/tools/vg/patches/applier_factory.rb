@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'eac_fs/core_ext'
+require 'ehbrs/tools/vg/patches/bps_applier'
 require 'ehbrs/tools/vg/patches/ips_applier'
 require 'ehbrs/tools/vg/patches/vcdiff_applier'
 
@@ -10,6 +11,7 @@ module Ehbrs
       module Patches
         class ApplierFactory
           APPLIERS_BY_TYPE = {
+            'BPS patch file' => ::Ehbrs::Tools::Vg::Patches::BpsApplier,
             'IPS patch file' => ::Ehbrs::Tools::Vg::Patches::IpsApplier,
             'VCDIFF binary diff' => ::Ehbrs::Tools::Vg::Patches::VcdiffApplier
           }.freeze
