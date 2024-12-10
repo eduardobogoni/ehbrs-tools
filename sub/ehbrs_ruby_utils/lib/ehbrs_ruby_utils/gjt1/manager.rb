@@ -10,7 +10,7 @@ module EhbrsRubyUtils
   module Gjt1
     class Manager
       include ::Singleton
-      acts_as_abstract :bga_usernam, :bga_password, :whatsapp_recipient
+      acts_as_abstract :bga_username, :bga_password, :whatsapp_recipient
 
       %w[beginning ending].each do |type|
         # @param table [EhbrsRubyUtils::Bga::Table]
@@ -55,10 +55,6 @@ module EhbrsRubyUtils
       end
 
       private
-
-      def mudslide_run(*args)
-        ::EhbrsRubyUtils::Executables.mudslide.command(*args).system!
-      end
 
       # @return [void]
       def whatsapp_formatter_send(formatter_class, formatter_owner)
