@@ -22,7 +22,8 @@ module EhbrsRubyUtils
         field :address, :string, testid_xpath('address', 'text()')
         field :distance, :distance, testid_xpath('distance', 'text()')
         field :review_score, :float_optional, testid_xpath('review-score', 'div[1]/text()')
-        field :review_count, :integer, testid_xpath('review-score', 'div[2]/div[2]/text()')
+        field :review_count, :integer_comma_optional,
+              testid_xpath('review-score', 'div[2]/div[2]/text()')
         field :unit_title, :string_recursive, testid_xpath('recommended-units',
                                                            '/*[@role="link"]')
 
