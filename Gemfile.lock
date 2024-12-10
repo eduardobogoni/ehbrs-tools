@@ -14,14 +14,6 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
-  remote: sub/eac_fs
-  specs:
-    eac_fs (0.18.0)
-      content-type (~> 0.0, >= 0.0.2)
-      eac_ruby_utils (~> 0.122)
-      ruby-filemagic (~> 0.7, >= 0.7.3)
-
-PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.44.1)
@@ -55,12 +47,11 @@ GEM
       aranha-parsers (~> 0.18)
       aranha-selenium (~> 0.5)
       eac_ruby_utils (~> 0.116)
-    aranha-parsers (0.23.0)
+    aranha-parsers (0.24.0)
       activesupport (>= 4.0.0)
       addressable (~> 2.8, >= 2.8.7)
-      eac_envs-http (~> 0.5, >= 0.5.1)
-      eac_ruby_gem_support (~> 0.10)
-      eac_ruby_utils (~> 0.122)
+      eac_envs-http (~> 0.6, >= 0.6.1)
+      eac_ruby_utils (~> 0.123)
       nokogiri (~> 1.15, >= 1.15.6)
       ofx-parser (~> 1.1)
     aranha-selenium (0.11.1)
@@ -69,18 +60,18 @@ GEM
       eac_templates (~> 0.7)
       selenium-webdriver (~> 3.142, >= 3.142.7)
     ast (2.4.2)
-    avm (0.94.0)
+    avm (0.94.1)
       eac_cli (~> 0.42)
-      eac_config (~> 0.14, >= 0.14.2)
+      eac_config (~> 0.14, >= 0.14.3)
       eac_docker (~> 0.7)
-      eac_fs (~> 0.18)
-      eac_ruby_utils (~> 0.122)
+      eac_fs (~> 0.18, >= 0.18.1)
+      eac_ruby_utils (~> 0.124)
       eac_templates (~> 0.7, >= 0.7.1)
-      minitar (~> 0.9)
+      minitar (~> 0.12, >= 0.12.1)
       ruby-progressbar (~> 1.13)
-    avm-eac_generic_base0 (0.13.0)
-      avm (~> 0.90)
-      eac_ruby_utils (~> 0.121)
+    avm-eac_generic_base0 (0.14.0)
+      avm (~> 0.94, >= 0.94.1)
+      eac_ruby_utils (~> 0.124)
     avm-eac_postgresql_base0 (0.5.3)
       avm (~> 0.85)
       eac_ruby_utils (~> 0.121)
@@ -151,14 +142,19 @@ GEM
     eac_docker (0.7.0)
       eac_ruby_utils (~> 0.112)
       eac_templates (~> 0.3, >= 0.3.2)
-    eac_envs-http (0.5.1)
-      eac_fs (~> 0.17)
-      eac_ruby_utils (~> 0.120)
-      faraday (~> 2.7, >= 2.7.12)
+    eac_envs-http (0.6.1)
+      eac_fs (~> 0.18, >= 0.18.1)
+      eac_ruby_utils (~> 0.123)
+      faraday (~> 2.8, >= 2.8.1)
       faraday-follow_redirects (~> 0.3)
       faraday-gzip (~> 0.1)
       faraday-multipart (~> 1.0, >= 1.0.4)
-      faraday-retry (~> 2.2)
+      faraday-retry (~> 2.2, >= 2.2.1)
+      random-port (~> 0.7, >= 0.7.1)
+    eac_fs (0.18.1)
+      content-type (~> 0.0, >= 0.0.2)
+      eac_ruby_utils (~> 0.123)
+      ruby-filemagic (~> 0.7, >= 0.7.3)
     eac_rest (0.12.0)
       eac_envs-http (~> 0.5)
       eac_fs (~> 0.16)
@@ -226,6 +222,7 @@ GEM
     racc (1.8.1)
     rack (3.1.8)
     rainbow (3.1.1)
+    random-port (0.7.1)
     regexp_parser (2.9.3)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -312,7 +309,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  eac_fs!
   eac_ruby_gem_support (~> 0.10)
   ehbrs-tools!
   ehbrs_ruby_utils!
