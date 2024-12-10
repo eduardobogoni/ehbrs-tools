@@ -1,0 +1,10 @@
+---
+ssl: false
+method: GET
+uri: "/"
+body:
+headers:
+  user-agent: Aranha::Parsers::SourceAddress::HttpGet
+  accept-encoding: gzip,deflate
+  accept: "*/*"
+  host: localhost:8080
