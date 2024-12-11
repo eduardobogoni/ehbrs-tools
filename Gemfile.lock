@@ -16,7 +16,7 @@ PATH
 PATH
   remote: sub/aranha-parsers
   specs:
-    aranha-parsers (0.24.0)
+    aranha-parsers (0.25.0)
       activesupport (>= 4.0.0)
       addressable (~> 2.8, >= 2.8.7)
       eac_envs-http (~> 0.6, >= 0.6.1)
