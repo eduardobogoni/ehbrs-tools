@@ -20,7 +20,7 @@ PATH
       activesupport (>= 4.0.0)
       addressable (~> 2.8, >= 2.8.7)
       eac_envs-http (~> 0.6, >= 0.6.1)
-      eac_ruby_utils (~> 0.123)
+      eac_ruby_utils (~> 0.124)
       nokogiri (~> 1.15, >= 1.15.6)
       ofx-parser (~> 1.1)
 
