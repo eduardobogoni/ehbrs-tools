@@ -7,7 +7,7 @@ PATH
       eac_cli (~> 0.42)
       eac_fs (~> 0.18, >= 0.18.1)
       eac_ruby_base0 (~> 0.19)
-      eac_ruby_utils (~> 0.122)
+      eac_ruby_utils (~> 0.124)
       ehbrs_ruby_utils (~> 0.44)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)

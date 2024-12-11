@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_cli', '~> 0.42'
   s.add_dependency 'eac_fs', '~> 0.18', '>= 0.18.1'
   s.add_dependency 'eac_ruby_base0', '~> 0.19'
-  s.add_dependency 'eac_ruby_utils', '~> 0.122'
+  s.add_dependency 'eac_ruby_utils', '~> 0.124'
   s.add_dependency 'ehbrs_ruby_utils', '~> 0.44'
   s.add_dependency 'filesize', '~> 0.2'
   s.add_dependency 'os', '~> 1.1', '>= 1.1.4'
