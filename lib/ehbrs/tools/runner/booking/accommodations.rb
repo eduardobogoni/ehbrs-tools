@@ -36,6 +36,8 @@ module Ehbrs
           def counts_result
             if list_rows.count == processor.declared_count
               [:success, 'Ok!']
+            elsif list_rows.count > processor.declared_count
+              [:warn, 'Actual count is greater than declared']
             else
               [:fatal_error, 'Actual and declared counts are different']
             end
