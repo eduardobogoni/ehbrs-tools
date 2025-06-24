@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/bga/table/whatsapp_formatters/base/format_player'
-
 module EhbrsRubyUtils
   module Bga
     class Table

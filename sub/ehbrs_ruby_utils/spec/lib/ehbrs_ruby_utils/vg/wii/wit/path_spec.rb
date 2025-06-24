@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/vg/wii/wit/path'
-
 RSpec.describe EhbrsRubyUtils::Vg::Wii::Wit::Path do
   describe '#parse' do
     context 'when type is present' do

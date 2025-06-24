@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'avm/eac_rails_base0/instances/base'
-require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module WebUtils

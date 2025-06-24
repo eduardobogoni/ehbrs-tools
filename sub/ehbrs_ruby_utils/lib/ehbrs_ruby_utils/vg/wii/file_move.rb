@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/executables'
-require 'ehbrs_ruby_utils/vg/wii/wit/image_format'
-require 'ehbrs_ruby_utils/vg/wii/wit/path'
 require 'fileutils'
 
 module EhbrsRubyUtils

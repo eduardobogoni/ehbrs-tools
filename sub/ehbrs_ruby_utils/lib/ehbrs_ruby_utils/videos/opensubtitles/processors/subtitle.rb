@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require 'aranha/default_processor'
 require 'eac_fs/cached_download'
-require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module Videos

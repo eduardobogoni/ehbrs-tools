@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/fs/extname'
-require 'ehbrs_ruby_utils/videos/series/rename/line_result'
 require 'ostruct'
 
 module EhbrsRubyUtils

@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_fs/traversable'
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/videos2/unsupported/file'
 
 module EhbrsRubyUtils
   module Videos2

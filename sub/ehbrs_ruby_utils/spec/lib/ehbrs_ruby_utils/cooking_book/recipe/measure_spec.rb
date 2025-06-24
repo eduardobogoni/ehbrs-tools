@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/cooking_book/recipe/measure'
-
 RSpec.describe EhbrsRubyUtils::CookingBook::Recipe::Measure do
   describe '#build'
   {

@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/executables'
-require 'ehbrs_ruby_utils/videos/stream'
 require 'json'
 require 'taglib'
 require 'ultimate_lyrics/provider_search'

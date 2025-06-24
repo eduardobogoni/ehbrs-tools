@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/vg/wii/game_file'
-
 RSpec.describe EhbrsRubyUtils::Vg::Wii::GameFile do
   [['game.iso', 1, 'game'], ['disc1.iso', 1, 'game'], ['disc2.iso', 2, 'disc2'],
    ['Resident Evil - Code - Veronica X (USA) (Disc 1)', 1, 'game'],

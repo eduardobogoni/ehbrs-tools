@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/default_processor'
-require 'ehbrs_ruby_utils/videos/opensubtitles/parsers/episode'
-require 'ehbrs_ruby_utils/videos/opensubtitles/processors/subtitle'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Videos
     module Opensubtitles

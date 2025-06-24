@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos2/profiles/same_quality'
-require 'ehbrs_ruby_utils/videos2/unsupported/fixes/supported_container'
-
 module EhbrsRubyUtils
   module Videos2
     module Unsupported

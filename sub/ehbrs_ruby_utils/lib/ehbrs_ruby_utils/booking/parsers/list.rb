@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/parsers/html/item_list'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Booking
     module Parsers

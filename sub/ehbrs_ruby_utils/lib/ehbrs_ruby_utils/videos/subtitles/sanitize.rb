@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'avm/file_formats/utf8_assert'
-require 'ehbrs_ruby_utils/fs/to_file_format'
-require 'ehbrs_ruby_utils/fs/to_windows_pt_br'
 
 module EhbrsRubyUtils
   module Videos

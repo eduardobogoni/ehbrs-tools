@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/selenium/session'
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/bga/urls'
-
 module EhbrsRubyUtils
   module Bga
     class Session < ::SimpleDelegator

@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/custom_format'
-require 'ehbrs_ruby_utils/executables'
-require 'ehbrs_ruby_utils/vg/wii/wit/parsers/dump'
-require 'ehbrs_ruby_utils/vg/wii/wit/path'
 require 'pathname'
 
 module EhbrsRubyUtils

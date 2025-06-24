@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_docker/images/templatized'
-require 'ehbrs_ruby_utils/patches/object/template'
 
 module EhbrsRubyUtils
   module Finances

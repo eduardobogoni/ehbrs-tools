@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/fs/compressed_package'
-require 'ehbrs_ruby_utils/videos2/extract/package_file'
-
 module EhbrsRubyUtils
   module Videos2
     module Extract

@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/bga/game'
-require 'ehbrs_ruby_utils/bga/parsers/table'
-require 'ehbrs_ruby_utils/bga/parsers/table/options'
-require 'ehbrs_ruby_utils/bga/urls'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Bga
     class Table

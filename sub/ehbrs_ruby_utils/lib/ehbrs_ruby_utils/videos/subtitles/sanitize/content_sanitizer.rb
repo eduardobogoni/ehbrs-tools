@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/fs/to_file_format'
-require 'ehbrs_ruby_utils/videos/subtitles/sanitize/with_pattern_matcher'
-require 'ehbrs_ruby_utils/videos/subtitles/sanitize/with_term_matcher'
 require 'srt'
 
 module EhbrsRubyUtils

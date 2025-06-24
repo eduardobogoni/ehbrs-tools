@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/selenium/session'
-require 'ehbrs_ruby_utils/booking/parsers/list'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Booking
     module Processors

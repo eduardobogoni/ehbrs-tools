@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/parsers/html/item'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Bga
     module Parsers

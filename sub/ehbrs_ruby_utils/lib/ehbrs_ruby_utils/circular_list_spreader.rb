@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   class CircularListSpreader
     require_sub __FILE__

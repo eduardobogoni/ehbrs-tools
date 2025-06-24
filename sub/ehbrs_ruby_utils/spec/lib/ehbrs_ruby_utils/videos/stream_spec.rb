@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/stream'
-
 RSpec.describe EhbrsRubyUtils::Videos::Stream do
   include_examples 'source_target_fixtures', __FILE__
 

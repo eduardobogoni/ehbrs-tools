@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/fs/to_file_format'
-
 module EhbrsRubyUtils
   module Fs
     class ToUtf8Unix < ::EhbrsRubyUtils::Fs::ToFileFormat

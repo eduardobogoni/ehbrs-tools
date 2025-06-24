@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/bga/parsers/game_in_progress'
-require 'ehbrs_ruby_utils/bga/urls'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Bga
     class Session < ::SimpleDelegator

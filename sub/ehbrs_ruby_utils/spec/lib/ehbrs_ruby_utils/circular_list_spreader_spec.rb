@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/circular_list_spreader'
-
 RSpec.describe EhbrsRubyUtils::CircularListSpreader do
   let(:node_class) do
     Class.new do

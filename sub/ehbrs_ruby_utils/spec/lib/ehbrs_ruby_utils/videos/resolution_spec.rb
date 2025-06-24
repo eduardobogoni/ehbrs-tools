@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/resolution'
-
 RSpec.describe EhbrsRubyUtils::Videos::Resolution do
   describe '#quality' do
     { [500, 720] => 480, [1080, 720] => 720, [1, 1] => 240, [9999, 9999] => 2160,

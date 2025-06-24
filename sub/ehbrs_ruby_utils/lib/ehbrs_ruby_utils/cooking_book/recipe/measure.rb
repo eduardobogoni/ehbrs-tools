@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/yaml'
-require 'ehbrs_ruby_utils/cooking_book/recipe/ingredient'
-
 module EhbrsRubyUtils
   module CookingBook
     class Recipe

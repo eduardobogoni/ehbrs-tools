@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/selenium/session'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Bga
     module Urls

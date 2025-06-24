@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/series/rename/line_result'
-
 module EhbrsRubyUtils
   module Videos
     module Series

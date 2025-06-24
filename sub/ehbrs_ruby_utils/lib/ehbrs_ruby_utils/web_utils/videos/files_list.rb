@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'active_support/json'
-require 'eac_ruby_utils/fs/temp'
-require 'ehbrs_ruby_utils/executables'
 
 module EhbrsRubyUtils
   module WebUtils

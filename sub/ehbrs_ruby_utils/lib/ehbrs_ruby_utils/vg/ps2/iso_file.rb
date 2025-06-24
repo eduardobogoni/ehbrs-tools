@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/fs/iso_9660_file'
-
 module EhbrsRubyUtils
   module Vg
     module Ps2

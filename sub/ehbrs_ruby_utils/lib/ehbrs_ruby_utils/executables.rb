@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/envs'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Executables
     class << self

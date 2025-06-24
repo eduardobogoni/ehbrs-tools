@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/bga/session'
-require 'ehbrs_ruby_utils/bga/game_statistics/whatsapp_formatter'
-require 'ehbrs_ruby_utils/executables'
-require 'ehbrs_ruby_utils/mudslide/message'
-require 'eac_ruby_utils/core_ext'
-
 module EhbrsRubyUtils
   module Gjt1
     class Manager

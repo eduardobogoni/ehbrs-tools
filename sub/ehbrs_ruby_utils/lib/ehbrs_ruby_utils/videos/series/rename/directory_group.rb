@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/series/rename/line_result_group'
-require 'ehbrs_ruby_utils/videos/series/rename/season_group'
-
 module EhbrsRubyUtils
   module Videos
     module Series

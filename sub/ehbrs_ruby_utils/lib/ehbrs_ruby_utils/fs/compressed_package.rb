@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 require 'eac_fs/file_info'
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/executables'
 
 module EhbrsRubyUtils
   module Fs

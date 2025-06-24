@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/videos/file'
-require 'ehbrs_ruby_utils/videos2/convert_job'
-require 'ehbrs_ruby_utils/videos2/unsupported/fix_profile'
-
 module EhbrsRubyUtils
   module Videos2
     module Unsupported

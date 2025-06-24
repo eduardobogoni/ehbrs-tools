@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
-require 'aranha/parsers/html/item'
-require 'aranha/parsers/html/item_list'
 require 'dentaku'
-require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module Bga

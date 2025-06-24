@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'ostruct'
-require 'eac_ruby_utils/core_ext'
 
 module EhbrsRubyUtils
   module WebUtils

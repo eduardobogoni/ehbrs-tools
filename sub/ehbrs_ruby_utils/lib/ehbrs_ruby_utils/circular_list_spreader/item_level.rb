@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/circular_list_spreader/base_level'
-
 module EhbrsRubyUtils
   class CircularListSpreader
     class ItemLevel

@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/fs/to_file_format'
-
 module EhbrsRubyUtils
   module Fs
     class ToWindowsPtBr < ::EhbrsRubyUtils::Fs::ToFileFormat

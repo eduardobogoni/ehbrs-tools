@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/core_ext'
-require 'ehbrs_ruby_utils/music/lyrics_book/resource'
-
 module EhbrsRubyUtils
   module Music
     class LyricsBook
