@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_fs/contexts'
-require 'eac_fs/storage_tree'
-require 'eac_ruby_utils/fs/temp'
-
 module EacFs
   module Rspec
     module Setup

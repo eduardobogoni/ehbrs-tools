@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/contexts'
-
 class Module
   ::EacFs::Contexts::TYPES.each do |type|
     method_name = "fs_#{type}"

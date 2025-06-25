@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/file_info'
-
 RSpec.describe EacFs::FileInfo do
   let(:instance) { described_class.new(__FILE__) }
 

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/traverser'
-
 module EacFs
   module Traversable
     PROP_METHOD_PREFIX = 'traverser_'

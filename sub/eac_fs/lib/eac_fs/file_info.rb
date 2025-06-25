@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/executables'
-require 'eac_ruby_utils/core_ext'
 require 'content-type'
 require 'filemagic'
 

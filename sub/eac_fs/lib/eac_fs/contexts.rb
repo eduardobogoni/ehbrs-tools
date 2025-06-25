@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/context'
-
 module EacFs
   class Contexts
     TYPES = %i[cache config data].freeze

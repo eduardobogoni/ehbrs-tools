@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/object/blank'
-require 'eac_fs/storage_tree'
-
 RSpec.describe EacFs::StorageTree do
   let(:tmpdir) { Dir.mktmpdir }
   let(:instance) { described_class.new(tmpdir, 'instance') }

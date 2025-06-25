@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/contexts'
-require 'eac_fs/patches/module/fs_cache'
-
 class Object
   ::EacFs::Contexts::TYPES.each do |type|
     define_method "fs_#{type}" do
