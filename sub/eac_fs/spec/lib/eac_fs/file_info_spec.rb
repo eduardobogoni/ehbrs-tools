@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe EacFs::FileInfo do
-  let(:instance) { described_class.new(__FILE__) }
+  let(:instance) { described_class.new("#{__dir__}/../../spec_helper.rb") }
 
   {
     charset: 'us-ascii',
