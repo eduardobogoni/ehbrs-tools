@@ -83,7 +83,7 @@ module Ehbrs
               %w[-map 0] + tracks.flat_map(&:delete_ffmpeg_args) + %w[-c copy]
             end
 
-            def extract_check
+            def extract_check # rubocop:disable Naming/PredicateMethod
               return false unless runner.extract?
 
               unless included_tracks.any?

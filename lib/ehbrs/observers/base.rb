@@ -41,14 +41,14 @@ module Ehbrs
 
       private
 
-      def check_with_blank_value_add(value, time)
+      def check_with_blank_value_add(value, time) # rubocop:disable Naming/PredicateMethod
         return false unless changing_value?(value)
 
         records << { value: value, time: time }.to_struct
         true
       end
 
-      def check_with_blank_value_ignore(value, date)
+      def check_with_blank_value_ignore(value, date) # rubocop:disable Naming/PredicateMethod
         false if value.blank? ? false : check_with_blank_value_add(value, date)
       end
 
