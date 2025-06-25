@@ -9,7 +9,7 @@ module EhbrsRubyUtils
       enable_simple_cache
       abstract_methods :convert, :convert?, :target_encoding
 
-      TEXT_MIME_TYPES = [%r{\Atext/\S+}].freeze
+      TEXT_MIME_TYPES = [%r{\Atext/\S+}, 'application/x-subrip'].freeze
 
       common_constructor(:file) do
         self.file = file.to_pathname
