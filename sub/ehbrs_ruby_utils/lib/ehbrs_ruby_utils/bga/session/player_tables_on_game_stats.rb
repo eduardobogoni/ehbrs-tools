@@ -65,7 +65,7 @@ module EhbrsRubyUtils
 
         # @param previous_count [Integer]
         # @return [Boolean, nil]
-        def list_end_reached_non_waiting(previous_count)
+        def list_end_reached_non_waiting(previous_count) # rubocop:disable Naming/PredicateMethod
           if session.message_info.present?
             true
           elsif new_current_data.count != previous_count

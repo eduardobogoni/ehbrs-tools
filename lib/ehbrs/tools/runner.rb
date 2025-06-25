@@ -14,9 +14,7 @@ module Ehbrs
         desc 'Tools for EHB/RS.'
       end
 
-      def application
-        ::Ehbrs::Tools.application
-      end
+      delegate :application, to: :'::Ehbrs::Tools'
 
       def extra_available_subcommands
         {

@@ -23,11 +23,11 @@ module EhbrsRubyUtils
           run
         end
 
-        def traverser_recursive
+        def traverser_recursive # rubocop:disable Naming/PredicateMethod
           true
         end
 
-        def traverser_sort
+        def traverser_sort # rubocop:disable Naming/PredicateMethod
           true
         end
 

@@ -52,7 +52,7 @@ module EhbrsRubyUtils
 
         # @param node [Nokogiri::XML::Element]
         # @return [Boolean]
-        def process_game_conceded(node)
+        def process_game_conceded(node) # rubocop:disable Naming/PredicateMethod
           node.present?
         end
 

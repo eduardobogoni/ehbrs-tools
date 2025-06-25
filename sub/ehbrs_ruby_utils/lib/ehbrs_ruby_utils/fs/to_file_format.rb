@@ -32,7 +32,7 @@ module EhbrsRubyUtils
         end
       end
 
-      def run
+      def run # rubocop:disable Naming/PredicateMethod
         return false unless convert?
 
         convert

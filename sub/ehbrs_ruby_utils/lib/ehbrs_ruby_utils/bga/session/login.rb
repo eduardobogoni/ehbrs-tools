@@ -12,7 +12,7 @@ module EhbrsRubyUtils
         SUBMIT_ID = 'login_button'
 
         # @return [Boolean]
-        def login
+        def login # rubocop:disable Naming/PredicateMethod
           navigate_to_login_page
           input_username
           input_password
