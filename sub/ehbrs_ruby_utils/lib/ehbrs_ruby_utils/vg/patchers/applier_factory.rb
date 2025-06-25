@@ -1,15 +1,11 @@
 # frozen_string_literal: true
 
-require 'eac_fs/core_ext'
-require 'ehbrs_ruby_utils/vg/patchers/bps_applier'
-require 'ehbrs_ruby_utils/vg/patchers/ips_applier'
-require 'ehbrs_ruby_utils/vg/patchers/vcdiff_applier'
-
 module EhbrsRubyUtils
   module Vg
     module Patchers
       class ApplierFactory
         APPLIERS_BY_TYPE = {
+          'BPS patch file' => ::EhbrsRubyUtils::Vg::Patchers::BpsApplier,
           'IPS patch file' => ::EhbrsRubyUtils::Vg::Patchers::IpsApplier,
           'VCDIFF binary diff' => ::EhbrsRubyUtils::Vg::Patchers::VcdiffApplier
         }.freeze
