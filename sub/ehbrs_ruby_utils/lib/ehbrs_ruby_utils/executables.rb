@@ -15,7 +15,8 @@ module EhbrsRubyUtils
         '-?' => %w[rar],
         '-h' => %w[unzip],
         '-version' => %w[ffmpeg ffprobe],
-        '--version' => %w[isoinfo tar wit]
+        '--version' => %w[flips isoinfo tar wit],
+        '-V' => %w[xdelta3]
       }.each do |validate_arg, commands|
         commands.each do |command|
           define_method("#{command}_uncached") do
