@@ -29,7 +29,7 @@ module EacFs
 
     private
 
-    def boolean_value(source_value)
+    def boolean_value(source_value) # rubocop:disable Naming/PredicateMethod
       source_value = source_value.call if source_value.respond_to?(:call)
       source_value ? true : false
     end
