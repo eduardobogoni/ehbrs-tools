@@ -25,13 +25,13 @@ module Ehbrs
           def on_temp_files
             ::EacRubyUtils::Fs::Temp.on_file do |input|
               ::EacRubyUtils::Fs::Temp.on_file do |output|
-                yield ::Ehbrs::Tools::Vg::Patches::TempFiles.new(source_file, input, output)
+                yield ::EhbrsRubyUtils::Vg::Patchers::TempFiles.new(source_file, input, output)
               end
             end
           end
 
           def run_patch(source_path, ips_path, output_path)
-            ::Ehbrs::Tools::Vg::Patches::ApplierFactory.new(ips_path)
+            ::EhbrsRubyUtils::Vg::Patchers::ApplierFactory.new(ips_path)
               .apply(source_path, output_path)
           end
 
