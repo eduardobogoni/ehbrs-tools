@@ -9,6 +9,8 @@ module EhbrsRubyUtils
       enable_simple_cache
       abstract_methods :convert, :convert?, :target_encoding
 
+      TEXT_MIME_TYPES = [%r{\Atext/\S+}].freeze
+
       common_constructor(:file) do
         self.file = file.to_pathname
       end
@@ -74,8 +76,9 @@ module EhbrsRubyUtils
         r
       end
 
+      # @return [Boolean]
       def text?
-        file.info.content_type.type == 'text'
+        TEXT_MIME_TYPES.any? { |e| e.match?(file.info.content_type.mime_type) }
       end
     end
   end
