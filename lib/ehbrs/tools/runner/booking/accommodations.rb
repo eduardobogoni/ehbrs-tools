@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_base0/core_ext'
-require 'ehbrs_ruby_utils/booking/processors/list'
-
 module Ehbrs
   module Tools
     class Runner

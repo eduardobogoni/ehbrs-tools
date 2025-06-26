@@ -2,5 +2,5 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.unshift("#{__dir__}/../lib")
-require 'ehbrs/tools/runner'
+require 'ehbrs/tools'
 Ehbrs::Tools::Runner.run

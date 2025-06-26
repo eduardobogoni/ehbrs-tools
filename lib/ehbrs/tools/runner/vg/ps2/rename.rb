@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/vg/ps2/iso_file'
-require 'eac_ruby_base0/core_ext'
-
 module Ehbrs
   module Tools
     class Runner

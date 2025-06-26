@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/core_ext'
-require 'ehbrs_ruby_utils/music/lyrics_book'
-require 'ehbrs_ruby_utils/videos/file'
-require 'ultimate_lyrics/provider'
-
 module Ehbrs
   module Tools
     class Runner

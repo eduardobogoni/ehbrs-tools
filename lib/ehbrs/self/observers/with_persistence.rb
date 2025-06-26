@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/observers/with_persistence'
-require 'ehbrs/user_dirs'
-
 module Ehbrs
   module Self
     module Observers

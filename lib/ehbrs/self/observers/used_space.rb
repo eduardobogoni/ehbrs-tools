@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/self/observers/with_persistence'
-
 module Ehbrs
   module Self
     module Observers

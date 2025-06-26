@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs_ruby_utils/videos/series/rename/file'
-require 'ehbrs_ruby_utils/videos/series/rename/file/options'
-require 'ehbrs_ruby_utils/videos/series/rename/results_builder'
-
 module Ehbrs
   module Tools
     class Runner

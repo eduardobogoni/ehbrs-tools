@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_base0/core_ext'
-require 'ehbrs_ruby_utils/music/sort/files/scanner'
-
 module Ehbrs
   module Tools
     class Runner

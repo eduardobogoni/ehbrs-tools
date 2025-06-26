@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs_ruby_utils/videos2/unsupported/check_set'
-require 'ehbrs_ruby_utils/videos2/unsupported/search'
-require 'ehbrs_ruby_utils/videos2/unsupported/profiles'
-
 module Ehbrs
   module Tools
     class Runner

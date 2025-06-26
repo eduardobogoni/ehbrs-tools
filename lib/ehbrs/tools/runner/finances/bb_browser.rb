@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/core_ext'
-require 'ehbrs_ruby_utils/finances/bb_browser/docker_image'
-
 module Ehbrs
   module Tools
     class Runner

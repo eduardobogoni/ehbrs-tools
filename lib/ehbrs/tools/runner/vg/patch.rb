@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/tools/vg/patches/applier_factory'
-require 'ehbrs/tools/vg/patches/temp_files'
-
 module Ehbrs
   module Tools
     class Runner

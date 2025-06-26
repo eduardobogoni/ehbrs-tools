@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_base0/core_ext'
-require 'ehbrs/tools/executables'
-require 'ehbrs_ruby_utils/videos/file'
-require 'ehbrs_ruby_utils/videos/convert_job'
-
 module Ehbrs
   module Tools
     class Runner

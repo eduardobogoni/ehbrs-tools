@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/fs/temp'
-require 'ehbrs_ruby_utils/executables'
-
 RSpec.configure do |config|
   config.before do
     videos_temp_dir

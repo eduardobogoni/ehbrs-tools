@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs_ruby_utils/music/ous/album'
-require 'ehbrs/tools/runner/fs/selected'
-
 module Ehbrs
   module Tools
     class Runner

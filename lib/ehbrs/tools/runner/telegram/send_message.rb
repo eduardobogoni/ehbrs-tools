@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs/telegram/message_sending'
-
 module Ehbrs
   module Tools
     class Runner

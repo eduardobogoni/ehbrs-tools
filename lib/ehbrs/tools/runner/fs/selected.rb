@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/envs'
-
-require 'ehbrs/tools/core_ext'
-require 'ehbrs_ruby_utils/fs/selected'
-
 module Ehbrs
   module Tools
     class Runner

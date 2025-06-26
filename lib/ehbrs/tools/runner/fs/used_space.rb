@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs/self/observers/used_space'
-require 'filesize'
-
 module Ehbrs
   module Tools
     class Runner

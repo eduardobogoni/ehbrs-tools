@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/storage_tree'
-require 'eac_ruby_utils/simple_cache'
-
 module Ehbrs
   module UserDirs
     class << self

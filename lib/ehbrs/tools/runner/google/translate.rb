@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/default_runner'
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs/google/translate/session'
-
 module Ehbrs
   module Tools
     class Runner

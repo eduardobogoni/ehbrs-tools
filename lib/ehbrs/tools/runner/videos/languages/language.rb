@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs/tools/runner/videos/languages/labelized'
-
 module Ehbrs
   module Tools
     class Runner

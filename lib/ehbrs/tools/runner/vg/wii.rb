@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'eac_fs/traversable'
-require 'ehbrs_ruby_utils/vg/wii/file_move'
-require 'ehbrs_ruby_utils/vg/wii/game_file'
-
 module Ehbrs
   module Tools
     class Runner

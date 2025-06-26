@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'aranha/selenium/session'
-
 module Ehbrs
   module Google
     module Translate

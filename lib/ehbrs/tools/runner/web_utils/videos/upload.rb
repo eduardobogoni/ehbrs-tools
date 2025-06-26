@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_cli/core_ext'
-require 'ehbrs_ruby_utils/web_utils/videos/files_list'
-require 'json'
-require 'yaml'
-
 module Ehbrs
   module Tools
     class Runner

@@ -1,9 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'eac_ruby_base0/core_ext'
-require 'ehbrs_ruby_utils/videos/opensubtitles/processors/subtitles_provider'
-
 module Ehbrs
   module Tools
     class Runner

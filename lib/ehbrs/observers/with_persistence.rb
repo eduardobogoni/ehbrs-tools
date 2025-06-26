@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'ehbrs/observers/base'
-
 module Ehbrs
   module Observers
     class WithPersistence < ::Ehbrs::Observers::Base
