@@ -1,14 +1,5 @@
 # frozen_string_literal: true
 
-require 'avm/eac_ruby_base1/sources/base'
-require 'eac_cli/config'
-require 'eac_config/envvars_node'
-require 'eac_config/yaml_file_node'
-require 'eac_fs/contexts'
-require 'eac_fs/storage_tree'
-require 'eac_ruby_base0/application_xdg'
-require 'eac_ruby_utils/core_ext'
-
 module EacRubyBase0
   class Application
     enable_simple_cache

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-
 module EacRubyBase0
   # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
   class ApplicationXdg

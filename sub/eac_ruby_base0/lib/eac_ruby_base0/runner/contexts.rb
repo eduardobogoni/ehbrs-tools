@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_config/node'
-require 'eac_fs/contexts'
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/speaker'
-
 module EacRubyBase0
   module Runner
     module Contexts
