@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.required_ruby_version = '>= 2.7.0'
 
-  s.add_dependency 'avm-files', '~> 0.8', '>= 0.8.1'
+  s.add_dependency 'avm-files', '~> 0.9'
   s.add_dependency 'avm-tools', '~> 0.162'
   s.add_dependency 'eac_cli', '~> 0.42'
   s.add_dependency 'eac_fs', '~> 0.18', '>= 0.18.1'
