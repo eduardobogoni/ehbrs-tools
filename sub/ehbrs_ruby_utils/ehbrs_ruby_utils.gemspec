@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.4'
   s.add_dependency 'eac_fs', '~> 0.19'
   s.add_dependency 'eac_rest', '~> 0.12'
-  s.add_dependency 'eac_ruby_utils', '~> 0.124'
+  s.add_dependency 'eac_ruby_utils', '~> 0.128', '>= 0.128.2'
   s.add_dependency 'eac_templates', '~> 0.7', '>= 0.7.1'
   s.add_dependency 'inifile', '~> 3.0'
   s.add_dependency 'srt', '~> 0.1', '>= 0.1.5'

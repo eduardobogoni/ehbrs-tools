@@ -53,7 +53,7 @@ PATH
       dentaku (~> 3.5, >= 3.5.4)
       eac_fs (~> 0.19)
       eac_rest (~> 0.12)
-      eac_ruby_utils (~> 0.124)
+      eac_ruby_utils (~> 0.128, >= 0.128.2)
       eac_templates (~> 0.7, >= 0.7.1)
       inifile (~> 3.0)
       srt (~> 0.1, >= 0.1.5)
