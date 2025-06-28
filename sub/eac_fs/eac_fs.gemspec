@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'eac_ruby_utils', '~> 0.123'
   s.add_dependency 'ruby-filemagic', '~> 0.7', '>= 0.7.3'
 
-  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.10'
+  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.12'
 end
