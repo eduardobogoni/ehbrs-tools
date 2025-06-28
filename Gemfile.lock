@@ -28,7 +28,7 @@ PATH
       avm-eac_ruby_base1 (~> 0.37)
       eac_cli (~> 0.43)
       eac_fs (~> 0.19)
-      eac_ruby_utils (~> 0.126)
+      eac_ruby_utils (~> 0.128, >= 0.128.2)
 
 PATH
   remote: sub/eac_ruby_utils
