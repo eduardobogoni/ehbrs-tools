@@ -12,6 +12,7 @@
   :coded_width: 352
   :coded_height: 288
   :closed_captions: 0
+  :film_grain: 0
   :has_b_frames: 0
   :sample_aspect_ratio: '1:1'
   :display_aspect_ratio: '11:9'
@@ -25,9 +26,10 @@
   :r_frame_rate: 25/1
   :avg_frame_rate: 25/1
   :time_base: 1/1000
-  :start_pts: 23
-  :start_time: '0.023000'
+  :start_pts: 0
+  :start_time: '0.000000'
   :bits_per_raw_sample: '8'
+  :extradata_size: 38
   :disposition:
     :default: 1
     :dub: 0
@@ -41,9 +43,15 @@
     :clean_effects: 0
     :attached_pic: 0
     :timed_thumbnails: 0
+    :non_diegetic: 0
+    :captions: 0
+    :descriptions: 0
+    :metadata: 0
+    :dependent: 0
+    :still_image: 0
   :tags:
     :VENDOR_ID: "[0][0][0][0]"
-    :DURATION: '00:00:06.743000000'
+    :DURATION: '00:00:06.720000000'
 - :index: 1
   :codec_name: aac
   :codec_long_name: AAC (Advanced Audio Coding)
@@ -56,11 +64,13 @@
   :channels: 2
   :channel_layout: stereo
   :bits_per_sample: 0
+  :initial_padding: 1024
   :r_frame_rate: 0/0
   :avg_frame_rate: 0/0
   :time_base: 1/1000
-  :start_pts: 0
-  :start_time: '0.000000'
+  :start_pts: -23
+  :start_time: "-0.023000"
+  :extradata_size: 5
   :disposition:
     :default: 1
     :dub: 0
@@ -74,6 +84,12 @@
     :clean_effects: 0
     :attached_pic: 0
     :timed_thumbnails: 0
+    :non_diegetic: 0
+    :captions: 0
+    :descriptions: 0
+    :metadata: 0
+    :dependent: 0
+    :still_image: 0
   :tags:
     :VENDOR_ID: "[0][0][0][0]"
     :DURATION: '00:00:06.803000000'
@@ -82,7 +98,7 @@
   :nb_programs: 0
   :format_name: matroska,webm
   :format_long_name: Matroska / WebM
-  :start_time: '0.000000'
+  :start_time: "-0.023000"
   :duration: '6.803000'
   :probe_score: 100
   :tags:
