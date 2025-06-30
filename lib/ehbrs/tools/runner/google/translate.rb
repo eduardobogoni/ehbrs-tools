@@ -46,7 +46,7 @@ module Ehbrs
           end
 
           def session_uncached
-            ::Ehbrs::Google::Translate::Session.new
+            ::Ehbrs::Tools::Google::Translate::Session.new
           end
 
           def validate
