@@ -50,7 +50,7 @@ module EacEnvs
       private
 
       def sanitized_body_data
-        body_fields.to_h || body_data
+        body_fields.to_h || body_data # rubocop:disable Lint/UselessOr
       end
 
       # @return [void]
