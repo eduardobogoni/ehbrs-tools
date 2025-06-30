@@ -75,7 +75,7 @@ module Ehbrs
             end
 
             def observer_uncached
-              ::Ehbrs::Self::Observers::UsedSpace.new(path)
+              ::Ehbrs::Tools::Self::Observers::UsedSpace.new(path)
             end
 
             def changing_label(bool)
