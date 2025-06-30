@@ -1,9 +1,0 @@
-<% if lyrics.found? %>
-  <p class="lyrics">
-    <% lyrics.text.each_line do |line| %>
-      <%= line.strip %><br/>
-    <% end %>
-  </p>
-<% else %>
-  <p><em>Letra indisponível.</em></p>
-<% end %>
