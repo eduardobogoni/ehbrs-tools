@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_envs/http/request/body_field_value'
-require 'eac_ruby_utils/core_ext'
-require 'faraday/multipart/file_part'
-
 module EacEnvs
   module Http
     class Request

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_envs/http/request/body_fields'
-
 RSpec.describe EacEnvs::Http::Request::BodyFields do
   describe '#to_h' do
     [

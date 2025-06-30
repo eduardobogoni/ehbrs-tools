@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_envs/http/response'
-require 'eac_ruby_utils/core_ext'
-
 module EacEnvs
   module Http
     class Request

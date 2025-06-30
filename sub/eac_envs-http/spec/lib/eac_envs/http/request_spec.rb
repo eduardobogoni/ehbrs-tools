@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_envs/http/error'
-require 'eac_envs/http/request'
-require 'eac_envs/http/rspec/echo_server'
-
 RSpec.describe EacEnvs::Http::Request do
   let(:http_server) { EacEnvs::Http::Rspec::EchoServer.http }
 

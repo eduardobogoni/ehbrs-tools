@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_envs/http/rspec/echo_server/webrick_servlet'
-require 'eac_ruby_utils/core_ext'
 require 'webrick'
 # require 'webrick/https'
 

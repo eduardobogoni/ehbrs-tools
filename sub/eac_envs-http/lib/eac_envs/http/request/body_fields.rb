@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_envs/http/request/body_field'
-
 module EacEnvs
   module Http
     class Request

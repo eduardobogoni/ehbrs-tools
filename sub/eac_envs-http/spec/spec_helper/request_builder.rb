@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'eac_ruby_utils/fs/temp'
-require 'eac_ruby_utils/yaml'
-
 class RequestBuilder
   class << self
     def from_file(root_url, path)

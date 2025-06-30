@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'addressable'
-require 'eac_ruby_utils/core_ext'
+
 require 'random-port'
 require 'webrick'
 require 'webrick/https'

@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require 'active_support/core_ext/hash/conversions'
-require 'eac_envs/http/error'
-require 'eac_ruby_utils/core_ext'
-require 'faraday'
-require 'json'
-
 module EacEnvs
   module Http
     class Response < ::StandardError

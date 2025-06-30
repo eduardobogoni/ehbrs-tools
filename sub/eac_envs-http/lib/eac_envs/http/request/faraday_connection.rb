@@ -1,12 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-require 'faraday'
-require 'faraday/follow_redirects'
-require 'faraday/gzip'
-require 'faraday/multipart'
-require 'faraday/retry'
-
 module EacEnvs
   module Http
     class Request
