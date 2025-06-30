@@ -27,7 +27,7 @@ module Ehbrs
           end
 
           def persistence_path_uncached
-            ::Ehbrs::UserDirs.data.child('observers', label.to_s.parameterize)
+            ::Ehbrs::Tools::UserDirs.data.child('observers', label.to_s.parameterize)
               .content_path.to_pathname
           end
         end

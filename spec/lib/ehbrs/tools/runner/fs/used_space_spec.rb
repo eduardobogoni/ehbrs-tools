@@ -16,7 +16,7 @@ RSpec.describe Ehbrs::Tools::Runner::Fs::UsedSpace do
   end
 
   before do
-    allow(Ehbrs::UserDirs).to receive(:data).and_return(cached_user_dir)
+    allow(Ehbrs::Tools::UserDirs).to receive(:data).and_return(cached_user_dir)
   end
 
   after { [target, user_dir].each(&:remove!) }
