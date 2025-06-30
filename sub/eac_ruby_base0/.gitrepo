@@ -1,7 +1,0 @@
-[subrepo]
-  cmdver = 0.4.1
-  commit = f27f2c9d76c6a94644ed358e0de796d6e1074319
-  method = merge
-  parent = 27162e09a186dba1fdde8dad1b9023ce7ce8ac2d
-  branch = master
-  remote = https://github.com/esquilo-azul/eac_ruby_base0.git
