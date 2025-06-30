@@ -17,7 +17,7 @@ module Ehbrs
 
           def message_sending_uncached
             parsed.recipients_ids
-              .inject(::Ehbrs::Telegram::MessageSending.new) { |a, e| a.recipient_id(e) }
+              .inject(::Ehbrs::Tools::Telegram::MessageSending.new) { |a, e| a.recipient_id(e) }
               .bot_token(runner_context.call(:bot_token))
               .message(parsed.message)
           end
