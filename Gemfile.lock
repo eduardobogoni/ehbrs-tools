@@ -25,7 +25,7 @@ PATH
 PATH
   remote: sub/eac_cli
   specs:
-    eac_cli (0.43.0)
+    eac_cli (0.43.1)
       colorize (~> 0.8, >= 0.8.1)
       eac_config (~> 0.15)
       eac_ruby_utils (~> 0.128, >= 0.128.3)
