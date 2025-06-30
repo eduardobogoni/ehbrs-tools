@@ -23,6 +23,15 @@ PATH
       eac_ruby_utils (~> 0.128, >= 0.128.1)
 
 PATH
+  remote: sub/eac_cli
+  specs:
+    eac_cli (0.43.0)
+      colorize (~> 0.8, >= 0.8.1)
+      eac_config (~> 0.14, >= 0.14.3)
+      eac_ruby_utils (~> 0.127)
+      tty-table (~> 0.12)
+
+PATH
   remote: sub/eac_ruby_utils
   specs:
     eac_ruby_utils (0.128.2)
@@ -125,11 +134,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.6.2)
     dry-inflector (1.1.0)
-    eac_cli (0.43.0)
-      colorize (~> 0.8, >= 0.8.1)
-      eac_config (~> 0.14, >= 0.14.3)
-      eac_ruby_utils (~> 0.127)
-      tty-table (~> 0.12)
     eac_config (0.15.0)
       addressable (~> 2.8, >= 2.8.7)
       eac_ruby_utils (~> 0.127)
@@ -318,6 +322,7 @@ PLATFORMS
 
 DEPENDENCIES
   avm-eac_ruby_base1!
+  eac_cli!
   eac_ruby_gem_support (~> 0.12)
   eac_ruby_utils!
   ehbrs-tools!
