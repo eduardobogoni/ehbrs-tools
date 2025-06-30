@@ -59,7 +59,7 @@ module EacEnvs
         end
       end
 
-      require_sub __FILE__, require_dependency: true
+      require_sub __FILE__, require_mode: :kernel
     end
   end
 end
