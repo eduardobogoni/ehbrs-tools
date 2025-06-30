@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'ehbrs/observers/base'
+require 'ehbrs/tools/observers/base'
 
-RSpec.describe Ehbrs::Observers::Base do
+RSpec.describe Ehbrs::Tools::Observers::Base do
   let(:instance) { described_class.new }
   let(:first_value) { 'a value' }
   let(:same_value) { first_value.dup }

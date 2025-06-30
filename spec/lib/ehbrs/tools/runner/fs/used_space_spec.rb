@@ -4,7 +4,7 @@ require 'eac_fs/storage_tree'
 require 'eac_ruby_utils/fs/temp'
 require 'ehbrs/tools/runner'
 require 'ehbrs/tools/runner/fs/used_space'
-require 'ehbrs/observers/with_persistence'
+require 'ehbrs/tools/observers/with_persistence'
 
 RSpec.describe Ehbrs::Tools::Runner::Fs::UsedSpace do
   let(:target) { EacRubyUtils::Fs::Temp.directory }
@@ -53,7 +53,7 @@ RSpec.describe Ehbrs::Tools::Runner::Fs::UsedSpace do
   end
 
   def observer
-    Ehbrs::Observers::WithPersistence.new(observer_path)
+    Ehbrs::Tools::Observers::WithPersistence.new(observer_path)
   end
 
   def runner_run(*args)

@@ -22,7 +22,7 @@ module Ehbrs
         end
 
         def observer_uncached
-          ::Ehbrs::Observers::WithPersistence.new(persistence_path, blank_value: :raise)
+          ::Ehbrs::Tools::Observers::WithPersistence.new(persistence_path, blank_value: :raise)
         end
 
         def persistence_path_uncached
