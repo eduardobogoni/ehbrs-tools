@@ -27,7 +27,7 @@ PATH
   specs:
     eac_cli (0.43.0)
       colorize (~> 0.8, >= 0.8.1)
-      eac_config (~> 0.14, >= 0.14.3)
+      eac_config (~> 0.15)
       eac_ruby_utils (~> 0.127)
       tty-table (~> 0.12)
 
