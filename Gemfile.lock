@@ -34,7 +34,7 @@ PATH
 PATH
   remote: sub/eac_envs-http
   specs:
-    eac_envs-http (0.6.1)
+    eac_envs-http (0.7.0)
       eac_fs (~> 0.19)
       eac_ruby_utils (~> 0.128, >= 0.128.3)
       faraday (~> 2.8, >= 2.8.1)
