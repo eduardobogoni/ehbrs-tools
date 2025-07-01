@@ -2,7 +2,7 @@
 
 module EacFs
   class Comparator
-    require_sub __FILE__, require_dependency: true
+    require_sub __FILE__, require_mode: :kernel
 
     enable_immutable
     immutable_accessor :rename_file, :truncate_file, type: :array
