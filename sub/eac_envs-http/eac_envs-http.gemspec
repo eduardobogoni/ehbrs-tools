@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.7'
 
   s.add_dependency 'eac_fs', '~> 0.19'
-  s.add_dependency 'eac_ruby_utils', '~> 0.123'
+  s.add_dependency 'eac_ruby_utils', '~> 0.128', '>= 0.128.3'
   s.add_dependency 'faraday', '~> 2.8', '>= 2.8.1'
   s.add_dependency 'faraday-follow_redirects', '~> 0.3'
   s.add_dependency 'faraday-gzip', '~> 0.1'
