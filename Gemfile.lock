@@ -20,7 +20,7 @@ PATH
       avm (~> 0.96, >= 0.96.1)
       avm-eac_generic_base0 (~> 0.15, >= 0.15.1)
       eac_envs-http (~> 0.7)
-      eac_ruby_utils (~> 0.128, >= 0.128.1)
+      eac_ruby_utils (~> 0.128, >= 0.128.3)
 
 PATH
   remote: sub/eac_cli
