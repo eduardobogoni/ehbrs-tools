@@ -47,7 +47,7 @@ PATH
 PATH
   remote: sub/eac_fs
   specs:
-    eac_fs (0.19.0)
+    eac_fs (0.19.1)
       content-type (~> 0.0, >= 0.0.2)
       eac_ruby_utils (~> 0.128, >= 0.128.3)
       ruby-filemagic (~> 0.7, >= 0.7.3)
