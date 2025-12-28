@@ -13,19 +13,6 @@ PATH
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
 
-PATH
-  remote: sub/eac_envs-http
-  specs:
-    eac_envs-http (0.7.0)
-      eac_fs (~> 0.19)
-      eac_ruby_utils (~> 0.128, >= 0.128.3)
-      faraday (~> 2.8, >= 2.8.1)
-      faraday-follow_redirects (~> 0.3)
-      faraday-gzip (~> 0.1)
-      faraday-multipart (~> 1.1, >= 1.1.1)
-      faraday-retry (~> 2.3, >= 2.3.2)
-      random-port (~> 0.7, >= 0.7.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -133,6 +120,15 @@ GEM
     eac_docker (0.8.0)
       eac_ruby_utils (~> 0.128, >= 0.128.2)
       eac_templates (~> 0.8, >= 0.8.1)
+    eac_envs-http (0.7.0)
+      eac_fs (~> 0.19)
+      eac_ruby_utils (~> 0.128, >= 0.128.3)
+      faraday (~> 2.8, >= 2.8.1)
+      faraday-follow_redirects (~> 0.3)
+      faraday-gzip (~> 0.1)
+      faraday-multipart (~> 1.1, >= 1.1.1)
+      faraday-retry (~> 2.3, >= 2.3.2)
+      random-port (~> 0.7, >= 0.7.1)
     eac_fs (0.19.1)
       content-type (~> 0.0, >= 0.0.2)
       eac_ruby_utils (~> 0.128, >= 0.128.3)
@@ -312,7 +308,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  eac_envs-http!
   eac_ruby_gem_support (~> 0.12)
   ehbrs-tools!
 
