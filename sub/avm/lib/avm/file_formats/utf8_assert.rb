@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'tempfile'
+
 module Avm
   module FileFormats
     class Utf8Assert
