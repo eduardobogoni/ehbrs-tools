@@ -47,7 +47,7 @@ module Ehbrs
           true
         end
 
-        def check_with_blank_value_ignore(value, date) # rubocop:disable Naming/PredicateMethod
+        def check_with_blank_value_ignore(value, date)
           false if value.blank? ? false : check_with_blank_value_add(value, date)
         end
 
