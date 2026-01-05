@@ -10,10 +10,10 @@ module Avm
               .default
               .read_entry_optional(::Avm::Self::Instance::EntryKeys::DATA_DEFAULT_PATH)
               .if_present do |v|
-              ::File.join(
-                v,
-                "#{id}#{data_package.data_file_extension}"
-              )
+                ::File.join(
+                  v,
+                  "#{id}#{data_package.data_file_extension}"
+                )
             end
           end
 

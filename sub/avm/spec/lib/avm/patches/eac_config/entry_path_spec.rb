@@ -14,7 +14,7 @@ RSpec.describe EacConfig::EntryPath do
       let(:instance) { described_class.assert(instance_path) }
 
       test_data.each do |method_prefix, expected_value|
-        method_name = "#{method_prefix}_method_name"
+        method_name = "#{method_prefix}_method_name" # rubocop:disable RSpec/LeakyLocalVariable
         context "when method name is \"#{method_name}\"" do
           it do
             expect(instance.send(method_name)).to eq(expected_value.to_sym)
