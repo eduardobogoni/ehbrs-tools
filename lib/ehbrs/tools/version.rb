@@ -2,6 +2,6 @@
 
 module Ehbrs
   module Tools
-    VERSION = '0.44.1'
+    VERSION = '0.44.2'
   end
 end
