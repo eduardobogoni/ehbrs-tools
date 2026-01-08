@@ -8,46 +8,49 @@ module EhbrsRubyUtils
           enable_simple_cache
           common_constructor :runner
 
-          ROM_EXTNAMES = ['.nds'].freeze
-          SAVE_EXTNAMES = ['.sav'].freeze
+          EXTNAMES = {
+            '.nds' => ::EhbrsRubyUtils::Vg::Nds::Organizer::RomFile,
+            '.sav' => ::EhbrsRubyUtils::Vg::Nds::Organizer::SaveFile
+          }.freeze
 
           def add_file(path)
-            if ROM_EXTNAMES.include?(path.extname)
-              add_to_set(:rom, path)
-            elsif SAVE_EXTNAMES.include?(path.extname)
-              add_to_set(:save, path)
+            if EXTNAMES.key?(path.extname)
+              add_to_set(EXTNAMES.fetch(path.extname), path)
             else
               ::EhbrsRubyUtils::Vg::Nds::Organizer::BaseFile::ADD_ERROR_UNRECOGNIZED
             end
           end
 
           def find_rom(id)
-            roms.find { |s| s.id == id }
+            file_set(::EhbrsRubyUtils::Vg::Nds::Organizer::RomFile).find { |s| s.id == id }
           end
 
           protected
 
           def add_to_set(type, path)
-            set = send(type.to_s.pluralize)
-            file = ::EhbrsRubyUtils::Vg::Nds::Organizer.const_get("#{type}_file".camelize)
-                     .new(self, path)
-            return ::EhbrsRubyUtils::Vg::Nds::Organizer::BaseFile::ADD_ERROR_DUPLICATED if
-            set.include?(file)
+            set = file_set(type)
+            file = type.new(self, path)
+            if set.include?(file)
+              return ::EhbrsRubyUtils::Vg::Nds::Organizer::BaseFile::ADD_ERROR_DUPLICATED
+            end
 
             set.add(file)
             nil
           end
 
-          def roms
-            @roms ||= ::Set.new
+          def file_set(type)
+            file_sets[type] ||= ::Set.new
+            file_sets.fetch(type)
           end
 
-          def saves
-            @saves ||= ::Set.new
+          def file_sets
+            @sets ||= {}
+            @sets
           end
 
           def to_change_files_uncached
-            (roms.to_a + saves.to_a).select(&:change?).sort_by { |f| [f.id, f.target_path] }
+            file_sets.values.flat_map(&:to_a).flat_map.select(&:change?)
+              .sort_by { |f| [f.id, f.target_path] }
           end
         end
       end
