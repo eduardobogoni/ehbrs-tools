@@ -1,0 +1,16 @@
+---
+:codec_long_name: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+:codec_name: h264
+:codec_tag: 0
+:codec_tag_string: "[0][0][0][0]"
+:codec_type: :video
+:duration: !ruby/object:ActiveSupport::Duration
+  value: 4266.218
+  parts:
+    :hours: 1
+    :minutes: 11
+    :seconds: 6.217999999999847
+:index: 17
+:language: eng
+:language_with_title: eng_animerg_tenshi_no_tamago_1080p_scavvykid
+:title: "[AnimeRG] Tenshi No Tamago [1080p] [ScavvyKiD]"

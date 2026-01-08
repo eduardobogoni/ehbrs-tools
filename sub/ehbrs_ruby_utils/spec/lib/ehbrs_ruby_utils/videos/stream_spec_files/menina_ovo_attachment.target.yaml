@@ -1,0 +1,16 @@
+---
+:codec_long_name:
+:codec_name:
+:codec_tag: 0
+:codec_tag_string: "[0][0][0][0]"
+:codec_type: :attachment
+:duration: !ruby/object:ActiveSupport::Duration
+  value: 4266.368
+  parts:
+    :hours: 1
+    :minutes: 11
+    :seconds: 6.368000000000393
+:index: 19
+:language:
+:language_with_title:
+:title:

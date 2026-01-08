@@ -1,0 +1,21 @@
+---
+Real path: "/mnt/storage/eduardo/roms/wii/games_untested/pikmin2_pal.iso"
+ISO file size: 118240000/hex = 4699979776 = 4482 MiB
+Scrubbed size: 85790000/hex = 2239299584 = 2136 MiB, 47.6%, 68338*32K
+File & disc type/type: ISO
+File & disc type/platform_acronym: WII
+File & disc type/type_extra:
+File & disc type/platform_name: Wii
+Disc & part IDs/disc: R92P01
+Disc & part IDs/ticket: R92P
+Disc & part IDs/tmd: R92P
+Disc & part IDs/boot: R92P01
+Disc name: PIKMIN2 for Wii
+DB title: Pikmin 2
+ID Region: PAL [PAL ]
+Region setting: 2 [Europe] / Jap=128 USA=128 ?=128 Eur=0,3,3,4,3,7 Kor=128
+System menu: v386 = 3.4E
+System version: 00000001-00000021 = IOS 0x21 = IOS 33
+Partitions: 2  [encrypted, well signed]
+Directories: '598'
+Files: '2421'

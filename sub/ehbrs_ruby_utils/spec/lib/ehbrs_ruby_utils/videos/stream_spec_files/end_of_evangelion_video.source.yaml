@@ -1,0 +1,42 @@
+---
+:index: 0
+:codec_name: mpeg4
+:codec_long_name: MPEG-4 part 2
+:profile: Simple Profile
+:codec_type: video
+:codec_tag_string: DX50
+:codec_tag: '0x30355844'
+:width: 640
+:height: 352
+:coded_width: 640
+:coded_height: 352
+:closed_captions: 0
+:has_b_frames: 1
+:sample_aspect_ratio: '1:1'
+:display_aspect_ratio: '20:11'
+:pix_fmt: yuv420p
+:level: 3
+:chroma_location: left
+:refs: 1
+:r_frame_rate: 10000000/417083
+:avg_frame_rate: 10000000/417083
+:time_base: 417083/10000000
+:start_pts: 0
+:start_time: '0.000000'
+:duration_ts: 123235
+:duration: '5139.922350'
+:bit_rate: '760336'
+:nb_frames: '123235'
+:disposition:
+  :default: 0
+  :dub: 0
+  :original: 0
+  :comment: 0
+  :lyrics: 0
+  :karaoke: 0
+  :forced: 0
+  :hearing_impaired: 0
+  :visual_impaired: 0
+  :clean_effects: 0
+  :attached_pic: 0
+  :timed_thumbnails: 0

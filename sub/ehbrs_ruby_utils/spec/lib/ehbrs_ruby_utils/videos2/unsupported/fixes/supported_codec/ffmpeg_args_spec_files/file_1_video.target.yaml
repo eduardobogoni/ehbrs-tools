@@ -1,0 +1,7 @@
+---
+- "-vcodec:0"
+- libx264
+- "-crf"
+- '17'
+- "-filter:v"
+- format=yuv420p
