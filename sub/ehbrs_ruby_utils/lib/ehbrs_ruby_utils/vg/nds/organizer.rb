@@ -8,6 +8,8 @@ module EhbrsRubyUtils
       class Organizer
         enable_simple_cache
         common_constructor :runner
+        attr_reader :errors
+
         delegate :confirm?, :roms_root, :show?, to: :runner
 
         def add_files
