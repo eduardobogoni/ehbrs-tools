@@ -13,19 +13,6 @@ PATH
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
 
-PATH
-  remote: sub/avm
-  specs:
-    avm (0.98.2)
-      clipboard (~> 1.4, >= 1.4.1)
-      eac_cli (~> 0.44, >= 0.44.3)
-      eac_config (~> 0.15)
-      eac_docker (~> 0.8)
-      eac_fs (~> 0.19, >= 0.19.1)
-      eac_ruby_utils (~> 0.128, >= 0.128.5)
-      eac_templates (~> 0.8, >= 0.8.3)
-      minitar (~> 0.12, >= 0.12.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,6 +42,15 @@ GEM
       selenium-webdriver (~> 3.142, >= 3.142.7)
     ast (2.4.3)
     attr_extras (7.1.0)
+    avm (0.98.2)
+      clipboard (~> 1.4, >= 1.4.1)
+      eac_cli (~> 0.44, >= 0.44.3)
+      eac_config (~> 0.15)
+      eac_docker (~> 0.8)
+      eac_fs (~> 0.19, >= 0.19.1)
+      eac_ruby_utils (~> 0.128, >= 0.128.5)
+      eac_templates (~> 0.8, >= 0.8.3)
+      minitar (~> 0.12, >= 0.12.1)
     avm-eac_generic_base0 (0.15.1)
       avm (~> 0.96, >= 0.96.1)
       eac_ruby_utils (~> 0.128)
@@ -312,7 +308,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  avm!
   eac_ruby_gem_support (~> 0.12)
   ehbrs-tools!
 
