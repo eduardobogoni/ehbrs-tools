@@ -10,6 +10,7 @@ module EhbrsRubyUtils
 
           EXTNAMES = {
             '.nds' => ::EhbrsRubyUtils::Vg::Nds::Organizer::RomFile,
+            '.pub' => ::EhbrsRubyUtils::Vg::Nds::Organizer::PubFile,
             '.sav' => ::EhbrsRubyUtils::Vg::Nds::Organizer::SaveFile
           }.freeze
 
