@@ -31,7 +31,8 @@ module EhbrsRubyUtils
             set = send(type.to_s.pluralize)
             file = ::EhbrsRubyUtils::Vg::Nds::Organizer.const_get("#{type}_file".camelize)
                      .new(self, path)
-            return ::BaseFile::ADD_ERROR_DUPLICATED if set.include?(file)
+            return ::EhbrsRubyUtils::Vg::Nds::Organizer::BaseFile::ADD_ERROR_DUPLICATED if
+            set.include?(file)
 
             set.add(file)
             nil
