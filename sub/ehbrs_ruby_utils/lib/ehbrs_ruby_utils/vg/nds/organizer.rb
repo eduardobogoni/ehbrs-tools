@@ -27,7 +27,7 @@ module EhbrsRubyUtils
           runner.infom 'Cleaning empty directories?'
           return unless confirm?
 
-          roms_root.children.each do |child|
+          roms_root.to_pathname.children.each do |child|
             ::EacFs::Utils.remove_empty_directories(child)
           end
         end
