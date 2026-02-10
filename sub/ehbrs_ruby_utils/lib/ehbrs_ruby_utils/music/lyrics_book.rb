@@ -3,8 +3,6 @@
 module EhbrsRubyUtils
   module Music
     class LyricsBook
-      require_sub __FILE__
-
       DEFAULT_PROVIDER_NAME = 'lyrics.com'
       DEFAULT_TITLE = 'Letras de músicas'
 

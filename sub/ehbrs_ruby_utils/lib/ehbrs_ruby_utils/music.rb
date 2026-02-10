@@ -2,6 +2,5 @@
 
 module EhbrsRubyUtils
   module Music
-    require_sub __FILE__
   end
 end

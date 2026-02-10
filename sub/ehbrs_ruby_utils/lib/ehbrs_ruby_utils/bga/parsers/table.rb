@@ -4,8 +4,6 @@ module EhbrsRubyUtils
   module Bga
     module Parsers
       class Table < ::Aranha::Parsers::Html::Item
-        require_sub __FILE__
-
         GAME_IMAGE_URL_PARSER = %r{/gamemedia/([^/]+)/box/}.to_parser { |m| m[1] }
         ITEM_XPATH = '/'
         PLAYERS_IDS = {

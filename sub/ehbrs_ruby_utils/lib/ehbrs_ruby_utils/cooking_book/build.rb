@@ -3,7 +3,6 @@
 module EhbrsRubyUtils
   module CookingBook
     class Build
-      require_sub __FILE__
       enable_simple_cache
       enable_listable
       lists.add_symbol :option, :target_dir

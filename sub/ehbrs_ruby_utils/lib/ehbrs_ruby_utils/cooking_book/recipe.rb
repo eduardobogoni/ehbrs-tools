@@ -4,7 +4,6 @@ module EhbrsRubyUtils
   module CookingBook
     class Recipe
       enable_simple_cache
-      require_sub __FILE__
 
       class << self
         def from_file(path)

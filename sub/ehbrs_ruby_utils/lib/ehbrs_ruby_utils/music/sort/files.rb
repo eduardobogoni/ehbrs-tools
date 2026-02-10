@@ -4,7 +4,6 @@ module EhbrsRubyUtils
   module Music
     module Sort
       module Files
-        require_sub __FILE__
       end
     end
   end

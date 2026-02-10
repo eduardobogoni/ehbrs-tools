@@ -3,7 +3,6 @@
 module EhbrsRubyUtils
   module Fs
     class Selected
-      require_sub __FILE__
       DEFAULT_FILENAME = '.selected'
 
       enable_listable

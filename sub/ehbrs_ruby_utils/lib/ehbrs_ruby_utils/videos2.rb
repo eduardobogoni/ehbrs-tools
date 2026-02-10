@@ -2,6 +2,5 @@
 
 module EhbrsRubyUtils
   module Videos2
-    require_sub __FILE__
   end
 end

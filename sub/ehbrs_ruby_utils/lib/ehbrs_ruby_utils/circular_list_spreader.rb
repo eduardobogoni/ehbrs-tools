@@ -2,7 +2,6 @@
 
 module EhbrsRubyUtils
   class CircularListSpreader
-    require_sub __FILE__
     common_constructor :items
 
     # @return [EhbrsRubyUtils::SpreaderT1::GroupLevel]

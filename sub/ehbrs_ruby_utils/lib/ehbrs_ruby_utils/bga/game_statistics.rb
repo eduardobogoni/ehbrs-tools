@@ -29,8 +29,6 @@ module EhbrsRubyUtils
       def with_players_tables_uncached
         game_tables.select { |table| with_players_table?(table) }
       end
-
-      require_sub __FILE__
     end
   end
 end

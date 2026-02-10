@@ -38,8 +38,6 @@ module EhbrsRubyUtils
         def table_name_to_id(name)
           name.gsub(/\A\#/, '').to_i
         end
-
-        require_sub __FILE__
       end
     end
   end

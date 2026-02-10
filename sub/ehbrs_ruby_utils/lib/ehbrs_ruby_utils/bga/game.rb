@@ -31,8 +31,6 @@ module EhbrsRubyUtils
       def display_image(nth)
         image("/display/#{nth}.jpg")
       end
-
-      require_sub __FILE__
     end
   end
 end

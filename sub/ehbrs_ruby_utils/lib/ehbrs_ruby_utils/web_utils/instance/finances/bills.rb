@@ -5,7 +5,6 @@ module EhbrsRubyUtils
     class Instance < ::Avm::EacRailsBase0::Instances::Base
       class Finances
         class Bills
-          require_sub __FILE__
           common_constructor :finances
           delegate :instance, to: :finances
 

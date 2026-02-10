@@ -3,6 +3,5 @@
 module EhbrsRubyUtils
   # Filesystem utilities.
   module Fs
-    require_sub __FILE__
   end
 end

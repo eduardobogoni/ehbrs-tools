@@ -4,7 +4,6 @@ module EhbrsRubyUtils
   module WebUtils
     class Instance < ::Avm::EacRailsBase0::Instances::Base
       class Finances
-        require_sub __FILE__
         enable_simple_cache
         common_constructor :instance
 

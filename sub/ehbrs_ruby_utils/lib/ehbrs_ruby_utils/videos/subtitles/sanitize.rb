@@ -4,8 +4,6 @@ module EhbrsRubyUtils
   module Videos
     module Subtitles
       class Sanitize < ::EhbrsRubyUtils::Fs::ToFileFormat
-        require_sub __FILE__
-
         def run
           sanitize_content
           convert_to_windows_ptbr

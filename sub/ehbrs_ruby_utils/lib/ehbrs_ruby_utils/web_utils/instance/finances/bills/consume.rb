@@ -6,7 +6,6 @@ module EhbrsRubyUtils
       class Finances
         class Bills
           class Consume
-            require_sub __FILE__
             common_constructor(:bills)
             delegate :instance, :pending_directory, :registered_directory, to: :bills
 

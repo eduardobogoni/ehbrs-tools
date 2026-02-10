@@ -6,8 +6,6 @@ module EhbrsRubyUtils
   module WebUtils
     module Videos
       class File < ::SimpleDelegator
-        require_sub __FILE__
-
         def initialize(data)
           super(data.to_struct)
         end
