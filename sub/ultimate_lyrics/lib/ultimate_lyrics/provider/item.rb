@@ -37,7 +37,7 @@ module UltimateLyrics
       end
 
       def to_s
-        self.class.name.demodulize + '[' + METHODS_ATTRIBUTES
+        self.class.name.demodulize + '[' + METHODS_ATTRIBUTES # rubocop:disable Style/StringConcatenation
                                            .select { |m, _a| send(m).present? }
                                            .map { |m, a| "#{a}: #{send(m)}" }
                                            .join(', ') +

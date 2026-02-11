@@ -29,7 +29,7 @@ module UltimateLyrics
       # @return [UltimateLyrics::Provider]
       def by_attribute(attribute, value)
         all.find { |provider| provider.send(attribute) == value } ||
-          raise("No provider with name \"#{value}\" (Available: " +
+          raise("No provider with name \"#{value}\" (Available: " + # rubocop:disable Style/StringConcatenation
             all.map { |p| p.send(attrbute) }.join(', ') + ')')
       end
     end

@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.metadata    = { 'source_code_uri' => 'https://github.com/esquilo-azul/ultimate_lyrics' }
 
   s.files = Dir['{lib}/**/*']
+  s.required_ruby_version = '>= 2.7'
 
   s.add_dependency 'aranha-parsers', '~> 0.26', '>= 0.26.2'
   s.add_dependency 'eac_ruby_utils', '~> 0.129'

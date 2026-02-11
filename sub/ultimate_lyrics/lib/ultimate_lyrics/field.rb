@@ -43,7 +43,7 @@ module UltimateLyrics
 
       # @return [Array<String>]
       def names_from_string(string)
-        string.scan(/#{::Regexp.quote(BEGIN_DELIMITER)}[^\}]+#{::Regexp.quote(END_DELIMITER)}/)
+        string.scan(/#{::Regexp.quote(BEGIN_DELIMITER)}[^}]+#{::Regexp.quote(END_DELIMITER)}/)
               .map { |s| s.delimited_inner(BEGIN_DELIMITER, END_DELIMITER) }
       end
     end

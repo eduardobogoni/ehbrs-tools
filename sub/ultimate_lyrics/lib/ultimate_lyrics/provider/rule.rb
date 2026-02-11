@@ -10,7 +10,7 @@ module UltimateLyrics
       end
 
       def item_class
-        ::UltimateLyrics::Provider.const_get(type.camelize + 'Item')
+        ::UltimateLyrics::Provider.const_get("#{type.camelize}Item")
       end
 
       def apply(string)
