@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-ENV['BUNDLE_GEMFILE'] = ::File.expand_path('../Gemfile', __dir__)
+ENV['BUNDLE_GEMFILE'] = File.expand_path('../Gemfile', __dir__)
 require 'rubygems'
 require 'bundler/setup'
 $LOAD_PATH.unshift("#{__dir__}/../lib")
@@ -21,14 +21,14 @@ class OriginalContentDownload
     puts "Fetch content for #{provider_search}..."
     source_content.if_present do |v|
       source_file.write(v)
-      url_file.write(provider_search.url.strip + "\n")
+      url_file.write("#{provider_search.url.strip}\n")
     end
   end
 
   private
 
   def basename_file_uncached
-    provider.name.variableize + '__' + "#{song_metadata.artist}_#{song_metadata.title}".variableize
+    "#{provider.name.variableize}__#{"#{song_metadata.artist}_#{song_metadata.title}".variableize}"
   end
 
   def fixtures_dir_uncached
@@ -91,4 +91,4 @@ class OriginalContentDownloads
   end
 end
 
-::OriginalContentDownloads.new.run
+OriginalContentDownloads.new.run

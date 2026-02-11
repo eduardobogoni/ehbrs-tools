@@ -33,7 +33,7 @@ module UltimateLyrics
     # @return [UltimateLyrics::Parser]
     def lyrics_original_text
       ::Aranha::Parsers::SourceAddress.detect_sub(escaped_url).content
-                                      .force_encoding(provider.encoding)
+        .force_encoding(provider.encoding)
     rescue ::Aranha::Parsers::SourceAddress::FetchContentError
       nil
     end
