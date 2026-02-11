@@ -20,7 +20,6 @@ PATH
       activesupport (>= 4, < 7)
       addressable (~> 2.8, >= 2.8.8)
       bundler
-      filesize (~> 0.2)
       net-ssh (~> 4.2)
       zeitwerk (~> 2.7, >= 2.7.4)
 
