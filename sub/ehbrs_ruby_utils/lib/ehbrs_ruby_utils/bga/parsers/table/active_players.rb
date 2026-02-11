@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'dentaku'
-
 module EhbrsRubyUtils
   module Bga
     module Parsers

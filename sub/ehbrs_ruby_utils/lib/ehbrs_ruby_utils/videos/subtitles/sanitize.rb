@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'avm/file_formats/utf8_assert'
-
 module EhbrsRubyUtils
   module Videos
     module Subtitles

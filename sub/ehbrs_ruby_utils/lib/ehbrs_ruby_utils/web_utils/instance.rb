@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_rest/api'
-
-require 'avm/eac_rails_base0/instances/base'
-
 module EhbrsRubyUtils
   module WebUtils
     class Instance < ::Avm::EacRailsBase0::Instances::Base

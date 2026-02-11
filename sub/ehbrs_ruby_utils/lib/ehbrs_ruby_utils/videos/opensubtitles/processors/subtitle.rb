@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/cached_download'
-
 module EhbrsRubyUtils
   module Videos
     module Opensubtitles

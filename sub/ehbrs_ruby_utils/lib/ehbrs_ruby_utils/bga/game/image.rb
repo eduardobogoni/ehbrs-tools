@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/core_ext'
-
 module EhbrsRubyUtils
   module Bga
     class Game

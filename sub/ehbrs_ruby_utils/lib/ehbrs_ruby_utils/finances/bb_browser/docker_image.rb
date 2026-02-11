@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_docker/images/templatized'
-
 module EhbrsRubyUtils
   module Finances
     module BbBrowser

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_fs/traverser'
-
 module EhbrsRubyUtils
   module Fs
     class Selected
