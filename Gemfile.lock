@@ -47,7 +47,7 @@ PATH
   specs:
     ultimate_lyrics (0.1.3)
       aranha-parsers (~> 0.26, >= 0.26.2)
-      eac_ruby_utils (~> 0.102, >= 0.102.1)
+      eac_ruby_utils (~> 0.129)
 
 GEM
   remote: https://rubygems.org/
