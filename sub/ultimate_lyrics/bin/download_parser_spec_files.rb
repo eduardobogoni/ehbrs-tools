@@ -6,12 +6,7 @@ require 'rubygems'
 require 'bundler/setup'
 $LOAD_PATH.unshift("#{__dir__}/../lib")
 
-require 'ultimate_lyrics/song_metadata'
-require 'ultimate_lyrics/provider'
-require 'ultimate_lyrics/provider_search'
-require 'aranha/parsers/source_address'
-require 'aranha/parsers/source_address/fetch_content_error'
-require 'eac_ruby_utils/core_ext'
+require 'ultimate_lyrics'
 
 class OriginalContentDownload
   enable_simple_cache

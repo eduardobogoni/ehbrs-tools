@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'ultimate_lyrics/parser'
-require 'ultimate_lyrics/provider'
-
 RSpec.describe UltimateLyrics::Parser do
   include_examples 'source_target_fixtures', __FILE__
 

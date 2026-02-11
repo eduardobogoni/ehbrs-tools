@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ultimate_lyrics/provider/item'
-
 module UltimateLyrics
   class Provider
     class ExtractItem < ::UltimateLyrics::Provider::Item

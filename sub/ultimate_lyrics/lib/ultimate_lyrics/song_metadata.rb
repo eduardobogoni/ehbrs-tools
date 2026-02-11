@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
-
 module UltimateLyrics
   class SongMetadata
-    require_sub __FILE__
     common_constructor :data do
       self.data = ::UltimateLyrics::SongMetadata::Field.lists.sources.hash_keys_validate!(data)
     end

@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'ultimate_lyrics/song_metadata'
-require 'ultimate_lyrics/provider'
-require 'ultimate_lyrics/provider_search'
-
 RSpec.describe UltimateLyrics::ProviderSearch do
   let(:song_metadata) do
     UltimateLyrics::SongMetadata.new(

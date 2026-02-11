@@ -1,13 +1,9 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/core_ext'
 require 'nokogiri'
-require 'ultimate_lyrics/field'
 
 module UltimateLyrics
   class Provider
-    require_sub __FILE__
-
     class << self
       # @return [Array<UltimateLyrics::Provider>]
       def all

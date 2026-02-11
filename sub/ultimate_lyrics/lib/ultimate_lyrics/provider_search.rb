@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
 require 'addressable/uri'
-require 'aranha/parsers/source_address'
-require 'eac_ruby_utils/core_ext'
-require 'ultimate_lyrics/lyrics'
-require 'ultimate_lyrics/parser'
 
 module UltimateLyrics
   class ProviderSearch
