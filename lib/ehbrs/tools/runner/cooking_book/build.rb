@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'os'
+
 module Ehbrs
   module Tools
     class Runner

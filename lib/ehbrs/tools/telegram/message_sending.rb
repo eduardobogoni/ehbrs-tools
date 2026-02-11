@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'telegram-bot-ruby'
+
 module Ehbrs
   module Tools
     module Telegram

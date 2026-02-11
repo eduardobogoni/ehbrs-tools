@@ -9,6 +9,8 @@ module Ehbrs
   end
 end
 
+require 'avm/tools'
+require 'eac_cli'
+require 'eac_fs'
 require 'eac_ruby_base0'
 require 'ehbrs_ruby_utils'
-require 'filesize'
