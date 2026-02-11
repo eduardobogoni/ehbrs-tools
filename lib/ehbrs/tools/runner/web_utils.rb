@@ -4,8 +4,6 @@ module Ehbrs
   module Tools
     class Runner
       class WebUtils
-        require_sub __FILE__
-
         runner_with :help, :subcommands do
           desc 'Ferramentas para EHB/RS Utils.'
           pos_arg :instance_id

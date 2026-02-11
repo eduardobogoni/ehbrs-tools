@@ -4,8 +4,6 @@ module Ehbrs
   module Tools
     class Runner
       class Google
-        require_sub __FILE__
-
         runner_with :help, :subcommands do
           desc 'Utilidades Google.'
           subcommands

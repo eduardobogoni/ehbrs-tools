@@ -3,7 +3,6 @@
 module Ehbrs
   module Tools
     class Runner
-      require_sub __FILE__
       include ::EacRubyBase0::Runner
 
       runner_definition do

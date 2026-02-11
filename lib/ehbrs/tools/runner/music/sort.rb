@@ -28,8 +28,6 @@ module Ehbrs
           def scanner_uncached
             ::EhbrsRubyUtils::Music::Sort::Files::Scanner.new(path)
           end
-
-          require_sub __FILE__
         end
       end
     end

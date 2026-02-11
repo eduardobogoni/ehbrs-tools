@@ -1,10 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/runner'
-require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/tools/runner/videos/unsupported'
-require 'ehbrs_ruby_utils/videos/file'
-
 RSpec.describe Ehbrs::Tools::Runner::Videos::Unsupported do
   let(:source_dir) { Pathname.new(__dir__).expand_path / 'unsupported_spec_files' }
   let(:temp_dir) { EacRubyUtils::Fs::Temp.directory }

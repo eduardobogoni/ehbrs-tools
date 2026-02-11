@@ -4,8 +4,6 @@ module Ehbrs
   module Tools
     class Runner
       class Telegram
-        require_sub __FILE__
-
         runner_with :help, :subcommands do
           desc 'Operações com Telegram.'
           arg_opt '-b', '--bot-token', 'Token do bot Telegram.'

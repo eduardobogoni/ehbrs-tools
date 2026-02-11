@@ -1,9 +1,5 @@
 # frozen_string_literal: true
 
-require 'eac_ruby_utils/fs/temp'
-require 'ehbrs/tools/runner'
-require 'ehbrs/tools/runner/vg/patch'
-
 RSpec.describe Ehbrs::Tools::Runner::Vg::Patch do
   include_context 'spec_paths', __FILE__
 

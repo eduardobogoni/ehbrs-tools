@@ -5,8 +5,6 @@ module Ehbrs
     class Runner
       class Videos
         class Series
-          require_sub __FILE__
-
           runner_with :help, :subcommands do
             desc 'Ferramentas para seriados.'
             subcommands

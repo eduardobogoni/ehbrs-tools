@@ -4,8 +4,6 @@ module Ehbrs
   module Tools
     class Runner
       class Music
-        require_sub __FILE__
-
         runner_with :help, :subcommands do
           desc 'Ferramentas para músicas.'
           subcommands

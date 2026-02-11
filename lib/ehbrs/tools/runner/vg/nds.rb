@@ -8,8 +8,6 @@ module Ehbrs
           runner_with :help, :subcommands do
             subcommands
           end
-
-          require_sub __FILE__
         end
       end
     end

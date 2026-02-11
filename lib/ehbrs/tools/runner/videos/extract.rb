@@ -5,8 +5,6 @@ module Ehbrs
     class Runner
       class Videos
         class Extract
-          require_sub __FILE__
-
           DEFAULT_QUALITIES = %w[1080 720 web webrip hdtv].freeze
 
           runner_with :help do

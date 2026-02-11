@@ -5,8 +5,6 @@ module Ehbrs
     class Runner
       class WebUtils
         class Finances
-          require_sub __FILE__
-
           runner_with :help, :subcommands do
             desc 'Finanças.'
             subcommands

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/observers/base'
-
 RSpec.describe Ehbrs::Tools::Observers::Base do
   let(:instance) { described_class.new }
   let(:first_value) { 'a value' }

@@ -4,8 +4,6 @@ module Ehbrs
   module Tools
     class Runner
       class CookingBook
-        require_sub __FILE__
-
         DEFAULT_SOURCE_DIR = '.'
 
         runner_with :help, :subcommands do

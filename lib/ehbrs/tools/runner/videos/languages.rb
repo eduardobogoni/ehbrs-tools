@@ -59,8 +59,6 @@ module Ehbrs
             run_filesystem_traverser
             @files
           end
-
-          require_sub __FILE__
         end
       end
     end

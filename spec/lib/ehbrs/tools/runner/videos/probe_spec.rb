@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'ehbrs/tools/runner'
-
 RSpec.describe Ehbrs::Tools::Runner::Videos::Probe do
   let(:source_file) { stub_video_source_file }
   let(:target_dir) { Pathname.new(__dir__).expand_path / 'probe_spec_files' }

@@ -9,8 +9,6 @@ module Ehbrs
             desc 'Ferramentas para seriados.'
             subcommands
           end
-
-          require_sub __FILE__
         end
       end
     end
