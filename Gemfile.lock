@@ -28,7 +28,7 @@ PATH
     ehbrs_ruby_utils (0.48.0)
       aranha (~> 0.20)
       aranha-parsers (~> 0.26, >= 0.26.2)
-      aranha-selenium (~> 0.12)
+      aranha-selenium (~> 0.13)
       avm (~> 0.98, >= 0.98.2)
       avm-eac_rails_base0 (~> 0.11, >= 0.11.1)
       dentaku (~> 3.5, >= 3.5.7)
