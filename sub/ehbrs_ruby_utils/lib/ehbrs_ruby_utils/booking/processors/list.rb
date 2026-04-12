@@ -64,7 +64,7 @@ module EhbrsRubyUtils
 
         # @return [Aranha::Selenium::Session]
         def session_uncached
-          ::Aranha::Selenium::Session.new
+          ::Aranha::Selenium::Session.new(driver: :chrome)
         end
 
         def scroll_down
