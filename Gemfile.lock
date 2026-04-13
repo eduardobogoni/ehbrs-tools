@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ehbrs-tools (0.44.3)
+    ehbrs-tools (0.44.4)
       avm-tools (~> 0.164)
       eac_cli (~> 0.45)
       eac_fs (~> 0.20, >= 0.20.1)
