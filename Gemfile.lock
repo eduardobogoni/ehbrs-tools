@@ -17,11 +17,11 @@ PATH
   specs:
     aranha-selenium (0.13.1)
       aranha (~> 0.20)
-      eac_fs (~> 0.20)
-      eac_ruby_utils (~> 0.129, >= 0.129.1)
+      eac_fs (~> 0.20, >= 0.20.1)
+      eac_ruby_utils (~> 0.130)
       eac_templates (~> 0.8, >= 0.8.3)
       rexml (~> 3.4, >= 3.4.4)
-      selenium-webdriver (~> 4.40)
+      selenium-webdriver (~> 4.43)
 
 PATH
   remote: sub/ehbrs_ruby_utils
