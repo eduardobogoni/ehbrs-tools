@@ -21,10 +21,10 @@ module EhbrsRubyUtils
             def all_uncached
               ::EhbrsRubyUtils::Vg::Wii::Wit::Parsers::Info.new(info_output).images
                 .map do |_label, data|
-                  new(
-                    *%w[name info option].map { |k| data.fetch(k) },
-                    *%w[extensions attributes].map { |k| data.fetch(k).to_s.split(/\s+/) }
-                  )
+                new(
+                  *%w[name info option].map { |k| data.fetch(k) },
+                  *%w[extensions attributes].map { |k| data.fetch(k).to_s.split(/\s+/) }
+                )
               end
             end
 
