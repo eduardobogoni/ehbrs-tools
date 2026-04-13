@@ -16,7 +16,7 @@ module EhbrsRubyUtils
         field :href, :string, testid_xpath('title-link', '@href')
         field :price, :float, testid_xpath('price-and-discounted-price', '/text()')
         field :tax, :float_optional, testid_xpath('taxes-and-charges', 'text()')
-        field :address, :string, testid_xpath('address', 'text()')
+        field :address, :string, testid_xpath('address-link', 'text()')
         field :distance, :distance, testid_xpath('distance', 'text()')
         field :review_score, :float_optional, testid_xpath('review-score', 'div[1]/text()')
         field :review_count, :integer_comma_optional,
