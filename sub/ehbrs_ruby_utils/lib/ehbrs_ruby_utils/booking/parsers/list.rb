@@ -30,7 +30,7 @@ module EhbrsRubyUtils
 
         # @return [Integer]
         def declared_count
-          node_parser.integer_value(nokogiri, '//h1/text()')
+          node_parser.integer_optional_value(nokogiri, '//h1/text()')
         end
 
         def items_xpath

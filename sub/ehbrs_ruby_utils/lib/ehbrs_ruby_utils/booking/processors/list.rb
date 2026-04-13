@@ -26,7 +26,9 @@ module EhbrsRubyUtils
         # @return [Boolean]
         def all_accommodations_reached?
           p = parser
-          p.data.fetch(:accommodations).count >= p.data.fetch(:declared_count)
+          p.data.fetch(:declared_count).if_present(false) do |v|
+            p.data.fetch(:accommodations).count >= v
+          end
         end
 
         def click_more_results
