@@ -2,12 +2,12 @@ PATH
   remote: .
   specs:
     ehbrs-tools (0.44.3)
-      avm-tools (~> 0.163, >= 0.163.6)
+      avm-tools (~> 0.164)
       eac_cli (~> 0.45)
-      eac_fs (~> 0.20)
+      eac_fs (~> 0.20, >= 0.20.1)
       eac_ruby_base0 (~> 0.19, >= 0.19.3)
-      eac_ruby_utils (~> 0.129)
-      ehbrs_ruby_utils (~> 0.48, >= 0.48.1)
+      eac_ruby_utils (~> 0.130)
+      ehbrs_ruby_utils (~> 0.48, >= 0.48.2)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
@@ -329,7 +329,7 @@ PLATFORMS
 
 DEPENDENCIES
   aranha-selenium!
-  eac_ruby_gem_support (~> 0.12, >= 0.12.1)
+  eac_ruby_gem_support (~> 0.12, >= 0.12.2)
   ehbrs-tools!
   ehbrs_ruby_utils!
 
