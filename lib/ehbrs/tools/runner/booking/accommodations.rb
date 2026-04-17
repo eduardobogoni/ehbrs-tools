@@ -26,14 +26,20 @@ module Ehbrs
             run_output
             infov 'Actual count found', list_rows.count
             infov 'Declared count', processor.declared_count
-            if list_rows.count == processor.declared_count
-              success 'Ok!'
-            else
-              fatal_error 'Actual and declared counts are different'
-            end
+            result, message = counts_result
+            send(result, message)
           end
 
           protected
+
+          # @return [Array]
+          def counts_result
+            if list_rows.count == processor.declared_count
+              [:success, 'Ok!']
+            else
+              [:fatal_error, 'Actual and declared counts are different']
+            end
+          end
 
           # @return [EhbrsRubyUtils::Booking::Processors::List]
           def processor_uncached
