@@ -10,7 +10,9 @@ Gem::Specification.new do |s|
   s.authors     = ['Esquilo Azul Company']
   s.summary     = 'Tools for EHB/RS.'
 
-  s.files = Dir['{exe,lib,template,vendor}/**/*', 'Gemfile', 'Gemfile.lock', '.avm.yml']
+  s.files = Dir.glob('{exe,lib,template}/**/*', File::FNM_DOTMATCH)
+              .reject { |f| ['.', '..'].include?(File.basename(f)) } +
+            ['Gemfile', 'Gemfile.lock', '.avm.yml']
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.required_ruby_version = '>= 3.2'
