@@ -12,7 +12,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Eduardo H. Bogoni']
   s.summary     = 'Utilities for EHB/RS\'s Ruby projects.'
 
-  s.files = Dir['{lib,template}/**/*']
+  s.files = Dir.glob('{lib,template}/**/*', File::FNM_DOTMATCH)
+              .reject { |f| ['.', '..'].include?(File.basename(f)) }
   s.required_ruby_version = '>= 3.2'
 
   s.add_dependency 'aranha', '~> 0.20'
