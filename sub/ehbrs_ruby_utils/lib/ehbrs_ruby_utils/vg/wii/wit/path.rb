@@ -5,7 +5,7 @@ module EhbrsRubyUtils
     module Wii
       module Wit
         class Path
-          WIT_PATH_PATTERN = /\A(?:([a-z0-9]+):)?(.+)\z/i.freeze
+          WIT_PATH_PATTERN = /\A(?:([a-z0-9]+):)?(.+)\z/i
 
           class << self
             def assert(source)

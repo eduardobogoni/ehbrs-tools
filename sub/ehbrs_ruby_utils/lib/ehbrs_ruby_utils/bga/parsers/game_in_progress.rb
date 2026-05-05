@@ -7,7 +7,7 @@ module EhbrsRubyUtils
         DEFAULT_STATUS = 'asyncplay'
         ID_PARSER = /table=(\d+)/.to_parser { |m| m[1].to_i }
         ITEMS_XPATH = '//*[@id = "section-play"]//a[contains(@href, "table=")]'
-        STATUS_CLASS_PATTERN = /\Agametable_status_(.+)\z/.freeze
+        STATUS_CLASS_PATTERN = /\Agametable_status_(.+)\z/
         STATUS_CLASS_PARSER = STATUS_CLASS_PATTERN.to_parser { |m| m[1] }
         TABLE_COUNT_XPATH =
           '//*[@id = "section-play"]/h1/span[contains(@class, "font-normal")]/span/text()'

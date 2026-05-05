@@ -33,8 +33,8 @@ module EhbrsRubyUtils
       end
 
       # @return [void]
-      def mudslide_run(*args)
-        r = ::EhbrsRubyUtils::Executables.mudslide.command(*args).execute
+      def mudslide_run(*)
+        r = ::EhbrsRubyUtils::Executables.mudslide.command(*).execute
         raise_mudslide_run_error r, 'exit code not zero ' unless r.fetch(:exit_code).zero?
         raise_mudslide_run_error r, 'blank stdout' if r.fetch(:stdout).blank?
         raise_mudslide_run_error r, 'qrcode shown' if r.fetch(:stdout).include?('▄▄▄▄▄▄▄▄▄')

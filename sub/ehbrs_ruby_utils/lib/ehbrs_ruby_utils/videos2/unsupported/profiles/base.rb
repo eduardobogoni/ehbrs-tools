@@ -14,9 +14,9 @@ module EhbrsRubyUtils
             @added_checks ||= []
           end
 
-          def add_check(name, *args)
+          def add_check(name, *)
             check_path = "ehbrs_ruby_utils/videos2/unsupported/checks/#{name}"
-            added_checks << check_path.camelize.constantize.new(*args)
+            added_checks << check_path.camelize.constantize.new(*)
           end
 
           def base_checks

@@ -4,7 +4,7 @@ module EhbrsRubyUtils
   module Vg
     module Ps2
       class IsoFile < ::EhbrsRubyUtils::Fs::Iso9660File
-        CODE_PATTERN = /[a-zA-Z]{4}_[0-9]{3}\.[0-9]{2}/.freeze
+        CODE_PATTERN = /[a-zA-Z]{4}_[0-9]{3}\.[0-9]{2}/
         CODE_PARSER = CODE_PATTERN.to_parser(&:to_s)
 
         # @return [String]

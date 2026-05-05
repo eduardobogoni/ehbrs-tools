@@ -9,7 +9,7 @@ module EhbrsRubyUtils
 
       LINE_SEPARATOR = "\n"
       OPTION_SEPARATOR = LINE_SEPARATOR
-      SECTION_SEPARATOR = "#{LINE_SEPARATOR}#{LINE_SEPARATOR}"
+      SECTION_SEPARATOR = "#{LINE_SEPARATOR}#{LINE_SEPARATOR}".freeze
 
       # @param content [String, Enumerable]
       # @return [String]

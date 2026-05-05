@@ -11,7 +11,7 @@ module EhbrsRubyUtils
           'players_at_table' => ::EhbrsRubyUtils::Bga::Parsers::Table::ActivePlayers
         }.freeze
         PLAYERS_IDS_XPATH = PLAYERS_IDS.keys.map { |id| "@id = \"#{id}\"" }.join(' or ')
-        PLAYERS_XPATH = ".//*[(#{PLAYERS_IDS_XPATH}) and count(./*) > 0]"
+        PLAYERS_XPATH = ".//*[(#{PLAYERS_IDS_XPATH}) and count(./*) > 0]".freeze
 
         field :game_code, :string, '//meta[@property="og:image"]/@content'
         field :game_name, :string, './/*[@id = "table_name"]/text()'

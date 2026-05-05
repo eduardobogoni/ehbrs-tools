@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Utilities for EHB/RS\'s Ruby projects.'
 
   s.files = Dir['{lib,template}/**/*']
-  s.required_ruby_version = '>= 2.7.0'
+  s.required_ruby_version = '>= 3.2'
 
   s.add_dependency 'aranha', '~> 0.20'
   s.add_dependency 'aranha-parsers', '~> 0.26', '>= 0.26.3'

@@ -8,7 +8,7 @@ module EhbrsRubyUtils
       module Wit
         module Parsers
           class Info
-            SECTION_NAME_PATTERN = /\A#{::Regexp.quote('IMAGE-FORMAT:')}(.+)\z/.freeze
+            SECTION_NAME_PATTERN = /\A#{::Regexp.quote('IMAGE-FORMAT:')}(.+)\z/
 
             enable_simple_cache
             common_constructor :output

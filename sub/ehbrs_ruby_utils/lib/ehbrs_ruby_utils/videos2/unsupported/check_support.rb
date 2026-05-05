@@ -52,8 +52,8 @@ module EhbrsRubyUtils
           checks.reject(&:passed?).map { |c| c.check.fix }.compact_blank
         end
 
-        def pad_speaker(&block)
-          ::EacRubyUtils::Speaker.context.on(::EacCli::Speaker.new(err_line_prefix: '  '), &block)
+        def pad_speaker(&)
+          ::EacRubyUtils::Speaker.context.on(::EacCli::Speaker.new(err_line_prefix: '  '), &)
         end
 
         def new_padded_cli_speaker

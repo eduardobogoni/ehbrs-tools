@@ -8,7 +8,7 @@ module EhbrsRubyUtils
       class GameFile < ::Pathname
         enable_simple_cache
 
-        DISC_NUMBER_PATTERN = /disc.?(\d)/i.freeze
+        DISC_NUMBER_PATTERN = /disc.?(\d)/i
 
         FORMAT = ::EacRubyUtils::CustomFormat.new(
           b: :basename,

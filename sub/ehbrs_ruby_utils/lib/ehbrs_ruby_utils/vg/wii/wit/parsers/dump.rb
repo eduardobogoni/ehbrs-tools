@@ -13,7 +13,7 @@ module EhbrsRubyUtils
             # ISO/WII  &  Wii
             # WBFS/WII  &  Wii
             # ISO/GC  &  GameCube
-            FILE_DISC_TYPE_PATTERN = %r{\A(\S+)/(\S+)\s+(?:\(([^)]+)\)\s+)?&\s+(\S+)\z}.freeze
+            FILE_DISC_TYPE_PATTERN = %r{\A(\S+)/(\S+)\s+(?:\(([^)]+)\)\s+)?&\s+(\S+)\z}
 
             private
 

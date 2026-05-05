@@ -6,7 +6,7 @@ module EhbrsRubyUtils
       module Wit
         class ImageFormat
           class << self
-            SECTION_NAME_PATTERN = /\A#{::Regexp.quote('IMAGE-FORMAT:')}(.+)\z/.freeze
+            SECTION_NAME_PATTERN = /\A#{::Regexp.quote('IMAGE-FORMAT:')}(.+)\z/
 
             enable_simple_cache
 

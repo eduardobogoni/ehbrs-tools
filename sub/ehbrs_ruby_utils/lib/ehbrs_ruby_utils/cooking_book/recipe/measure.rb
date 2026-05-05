@@ -4,10 +4,10 @@ module EhbrsRubyUtils
   module CookingBook
     class Recipe
       class Measure
-        FLOAT_PATTERN = /\d+(?:\.\d+)?/.freeze
-        FRACTION_PATTERN = %r{(#{FLOAT_PATTERN})(?:\s*/\s*(#{FLOAT_PATTERN}))?}.freeze
-        QUANTITY_UNIT_PATTERN = /\A#{FRACTION_PATTERN}(?:\s*(\S+))?\z/.freeze
-        VARIABLE_PATTERN = /\A~\z/.freeze
+        FLOAT_PATTERN = /\d+(?:\.\d+)?/
+        FRACTION_PATTERN = %r{(#{FLOAT_PATTERN})(?:\s*/\s*(#{FLOAT_PATTERN}))?}
+        QUANTITY_UNIT_PATTERN = /\A#{FRACTION_PATTERN}(?:\s*(\S+))?\z/
+        VARIABLE_PATTERN = /\A~\z/
         VARIABLE_TEXT = 'a gosto'
 
         class << self
