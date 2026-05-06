@@ -3,28 +3,14 @@
 module EhbrsRubyUtils
   module Booking
     module Processors
-      class List
-        enable_simple_cache
-        common_constructor :url
-
+      class List < ::EhbrsRubyUtils::Aranha::AccommodationsProcessor
         CLOSE_BANNER_XPATH = '//button[@aria-label = "Ignorar informações de login."]'
         MORE_RESULTS_XPATH = '//*[text() = "Ver mais resultados"]'
-        SCROLL_DOWN_STEP = 500
-
-        # @return [Array]
-        def accommodations
-          data.fetch(:accommodations).map { |a| build_accommodation(a) }
-        end
-
-        # @return [Integer]
-        def declared_count
-          data.fetch(:declared_count)
-        end
 
         protected
 
         # @return [Boolean]
-        def all_accommodations_reached?
+        def all_data_loaded?
           p = parser
           p.data.fetch(:declared_count).if_present(false) do |v|
             p.data.fetch(:accommodations).count >= v
@@ -44,33 +30,21 @@ module EhbrsRubyUtils
           session.element(xpath: CLOSE_BANNER_XPATH)
         end
 
-        def data_uncached
-          session.navigate.to url
-          session.wait(5.minutes).until do
-            close_banner
-            click_more_results
-            scroll_down
-            all_accommodations_reached?
-          end
-          parser.data
-        end
-
         # @return [Aranha::Selenium::Session::Element]
         def more_results_button
           session.element(xpath: MORE_RESULTS_XPATH)
         end
 
-        def parser
-          ::EhbrsRubyUtils::Booking::Parsers::List.from_string(session.current_source)
+        # @return [void]
+        def scroll_down
+          close_banner
+          click_more_results
+          super
         end
 
         # @return [Aranha::Selenium::Session]
-        def session_uncached
+        memoize def session
           ::Aranha::Selenium::Session.new(driver: :chrome)
-        end
-
-        def scroll_down
-          session.scroll_down_by(SCROLL_DOWN_STEP)
         end
 
         require_sub __FILE__, require_mode: :kernel
