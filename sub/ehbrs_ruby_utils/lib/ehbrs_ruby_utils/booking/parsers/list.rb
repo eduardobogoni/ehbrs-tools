@@ -50,9 +50,11 @@ module EhbrsRubyUtils
             r
           end
 
+          # @param node [Nokogiri::XML::Node]
+          # @param xpath [String]
+          # @return [Float]
           def distance_value(node, xpath)
-            s = string_value(node, xpath)
-            DISTANCE_PARSER.parse!(s)
+            string_value(node, xpath).if_present(nil) { |e| DISTANCE_PARSER.parse!(e) }
           end
         end
       end

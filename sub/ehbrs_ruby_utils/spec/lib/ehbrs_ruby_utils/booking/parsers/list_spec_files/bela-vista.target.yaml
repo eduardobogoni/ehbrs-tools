@@ -1,0 +1,230 @@
+---
+:accommodations:
+- :name: Hotel jardim paulista
+  :href: https://www.booking.com/hotel/br/flor-do-gomide.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=173740210_335383635_2_0_0&highlighted_blocks=173740210_335383635_2_0_0&matching_block_id=173740210_335383635_2_0_0&sr_pri_blocks=173740210_335383635_2_0_0__338000&from=searchresults
+  :price: 3380.0
+  :tax:
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 6.8
+  :review_count: 76
+  :unit_title: Quarto Duplo
+- :name: Hotel - Motel Story
+  :href: https://www.booking.com/hotel/br/story.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=2&hapos=2&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=315256506_200746409_2_0_0&highlighted_blocks=315256506_200746409_2_0_0&matching_block_id=315256506_200746409_2_0_0&sr_pri_blocks=315256506_200746409_2_0_0__352000&from=searchresults
+  :price: 3520.0
+  :tax:
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 4.8
+  :review_count: 277
+  :unit_title: Quarto Duplo
+- :name: Aquarela - Excelente Localização | Bela Vista & Paulista
+  :href: https://www.booking.com/hotel/br/aquarela-bela-vista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=3&hapos=3&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1342481003_407415017_0_0_0&highlighted_blocks=1342481003_407415017_0_0_0&matching_block_id=1342481003_407415017_0_0_0&sr_pri_blocks=1342481003_407415017_0_0_0__422400&from=searchresults
+  :price: 4224.0
+  :tax: 149.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 8.4
+  :review_count: 9
+  :unit_title: Apartamento Estúdio
+- :name: MI508 Studio Aconchegante | Rua Frei Caneca SP
+  :href: https://www.booking.com/hotel/br/mi508-studio-moderno-de-alto-na-rua-frei-caneca-4-pessoas.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=4&hapos=4&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=941779402_366581336_2_0_0&highlighted_blocks=941779402_366581336_2_0_0&matching_block_id=941779402_366581336_2_0_0&sr_pri_blocks=941779402_366581336_2_0_0__438400&from=searchresults
+  :price: 4384.0
+  :tax: 169.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 7.0
+  :review_count: 10
+  :unit_title: Estúdio Duplo Deluxe
+- :name: Vem & Fica Bela Vista
+  :href: https://www.booking.com/hotel/br/vem-fica-bela-vista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=5&hapos=5&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1245705602_399639832_2_0_0&highlighted_blocks=1245705602_399639832_2_0_0&matching_block_id=1245705602_399639832_2_0_0&sr_pri_blocks=1245705602_399639832_2_0_0__464704&from=searchresults
+  :price: 4647.0
+  :tax: 210.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 8.0
+  :review_count: 4
+  :unit_title: Apartamento com Terraço
+- :name: Hotel concorde
+  :href: https://www.booking.com/hotel/br/concorde-sao-paulo.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=6&hapos=6&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=146714001_335487918_2_0_0&highlighted_blocks=146714001_335487918_2_0_0&matching_block_id=146714001_335487918_2_0_0&sr_pri_blocks=146714001_335487918_2_0_0__480000&from=searchresults
+  :price: 4800.0
+  :tax:
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 6.9
+  :review_count: 454
+  :unit_title: Quarto Duplo
+- :name: Seu Refúgio Moderno ao Lado da Paulista
+  :href: https://www.booking.com/hotel/br/seu-refugio-moderno-ao-lado-da-paulista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=7&hapos=7&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1410574902_412812108_2_0_0&highlighted_blocks=1410574902_412812108_2_0_0&matching_block_id=1410574902_412812108_2_0_0&sr_pri_blocks=1410574902_412812108_2_0_0__480237&from=searchresults
+  :price: 4802.0
+  :tax: 180.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 8.5
+  :review_count: 4
+  :unit_title: Apartamento 1
+- :name: Estúdio Completo na Frei Caneca, coração de SP
+  :href: https://www.booking.com/hotel/br/estudio-completo-na-frei-caneca-coracao-de-sp.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=8&hapos=8&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1206545101_392862466_2_0_0&highlighted_blocks=1206545101_392862466_2_0_0&matching_block_id=1206545101_392862466_2_0_0&sr_pri_blocks=1206545101_392862466_2_0_0__496000&from=searchresults
+  :price: 4960.0
+  :tax: 120.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 10.0
+  :review_count: 2
+  :unit_title: Estúdio
+- :name: Alf Home by Masp EX
+  :href: https://www.booking.com/hotel/br/alf-home-by-masp-ex.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=9&hapos=9&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1559490604_429149226_0_0_0&highlighted_blocks=1559490604_429149226_0_0_0&matching_block_id=1559490604_429149226_0_0_0&sr_pri_blocks=1559490604_429149226_0_0_0__496256&from=searchresults
+  :price: 4963.0
+  :tax: 220.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 9.4
+  :review_count: 5
+  :unit_title: Estúdio com Cama Queen-size
+- :name: F1512 | Luxo Frei Caneca | Av. paulista | Augusta
+  :href: https://www.booking.com/hotel/br/f1512-luxo-frei-caneca-av-paulista-augusta.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=10&hapos=10&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1313831802_427602593_2_0_0&highlighted_blocks=1313831802_427602593_2_0_0&matching_block_id=1313831802_427602593_2_0_0&sr_pri_blocks=1313831802_427602593_2_0_0__496541&from=searchresults
+  :price: 4965.0
+  :tax: 150.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 5.0
+  :review_count: 3
+  :unit_title: Apartamento 2
+- :name: Studio super completo e funcional, próximo a Hospitais e Av Paulista
+  :href: https://www.booking.com/hotel/br/studio-super-completo-e-funcional-proximo-a-hospitais-e-av-paulista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=11&hapos=11&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1502338501_421923828_0_0_0&highlighted_blocks=1502338501_421923828_0_0_0&matching_block_id=1502338501_421923828_0_0_0&sr_pri_blocks=1502338501_421923828_0_0_0__511600&from=searchresults
+  :price: 5116.0
+  :tax: 140.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 9.6
+  :review_count: 5
+  :unit_title: Apartamento de 1 Quarto
+- :name: SP Stays UENO Paulista Sírio Libanês
+  :href: https://www.booking.com/hotel/br/sp-stays-ueno-paulista-sirio-libanes.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=12&hapos=12&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1245317103_399523017_0_0_0&highlighted_blocks=1245317103_399523017_0_0_0&matching_block_id=1245317103_399523017_0_0_0&sr_pri_blocks=1245317103_399523017_0_0_0__515100&from=searchresults
+  :price: 5151.0
+  :tax: 690.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 6.2
+  :review_count: 5
+  :unit_title: Apartamento
+- :name: Zyz Bela Vista
+  :href: https://www.booking.com/hotel/br/zyz-bela-vista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=13&hapos=13&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1139904902_387205603_2_0_0&highlighted_blocks=1139904902_387205603_2_0_0&matching_block_id=1139904902_387205603_2_0_0&sr_pri_blocks=1139904902_387205603_2_0_0__518400&from=searchresults
+  :price: 5184.0
+  :tax: 159.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 8.7
+  :review_count: 3
+  :unit_title: Apartamento
+- :name: Easy Star - VN Ueno - Condomínio na Bela Vista, próximo ao shopping Frei
+    Caneca
+  :href: https://www.booking.com/hotel/br/aconchegante-apto-proximo-ao-shopping-frei-caneca.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=14&hapos=14&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1501982902_430188173_0_0_0&highlighted_blocks=1501982902_430188173_0_0_0&matching_block_id=1501982902_430188173_0_0_0&sr_pri_blocks=1501982902_430188173_0_0_0__520505&from=searchresults
+  :price: 5205.0
+  :tax: 190.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Estúdio Standard
+- :name: Studio próximo a Sirio Libanes e Frei Caneca
+  :href: https://www.booking.com/hotel/br/studio-proximo-a-sirio-libanes-e-frei-caneca.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=15&hapos=15&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1420017401_423427859_2_0_0&highlighted_blocks=1420017401_423427859_2_0_0&matching_block_id=1420017401_423427859_2_0_0&sr_pri_blocks=1420017401_423427859_2_0_0__524960&from=searchresults
+  :price: 5250.0
+  :tax: 150.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 9.0
+  :review_count: 3
+  :unit_title: Apartamento Deluxe de 1 Quarto com Vista da Cidade
+- :name: AQ2 Studio charmoso para 2 | Bela Vista
+  :href: https://www.booking.com/hotel/br/aq2-studio-aconchegante-na-bela-vista.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=16&hapos=16&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1309749202_403803292_2_0_0&highlighted_blocks=1309749202_403803292_2_0_0&matching_block_id=1309749202_403803292_2_0_0&sr_pri_blocks=1309749202_403803292_2_0_0__529200&from=searchresults
+  :price: 5292.0
+  :tax: 159.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 4.9
+  :review_count: 7
+  :unit_title: Apartamento
+- :name: VN Ueno cd 812 pra Hosp Sírio L
+  :href: https://www.booking.com/hotel/br/vn-ueno-cd-812-pra-hosp-sirio-l.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=17&hapos=17&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1153822402_388171402_2_0_0&highlighted_blocks=1153822402_388171402_2_0_0&matching_block_id=1153822402_388171402_2_0_0&sr_pri_blocks=1153822402_388171402_2_0_0__529740&from=searchresults
+  :price: 5297.0
+  :tax: 185.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Apartamento
+- :name: Apartamento perto da Paulista 1309
+  :href: https://www.booking.com/hotel/br/apartamento-perto-da-paulista-1309.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=18&hapos=18&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1648041201_436921201_2_0_0&highlighted_blocks=1648041201_436921201_2_0_0&matching_block_id=1648041201_436921201_2_0_0&sr_pri_blocks=1648041201_436921201_2_0_0__529920&from=searchresults
+  :price: 5299.0
+  :tax: 180.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Apartamento de 1 Quarto
+- :name: AAQ309 Aconchego e Praticidade na Bela Vista
+  :href: https://www.booking.com/hotel/br/aa309-studio-charmoso-no-coracao-do-bixiga-sp.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=19&hapos=19&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=933195002_365809346_0_0_0&highlighted_blocks=933195002_365809346_0_0_0&matching_block_id=933195002_365809346_0_0_0&sr_pri_blocks=933195002_365809346_0_0_0__530300&from=searchresults
+  :price: 5303.0
+  :tax: 159.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 7.8
+  :review_count: 11
+  :unit_title: Apartamento
+- :name: Studio Moderno com Academia e Vista - VN1407
+  :href: https://www.booking.com/hotel/br/studio-moderno-com-academia-e-vista-vn1407.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=20&hapos=20&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1576192601_431802739_0_0_0&highlighted_blocks=1576192601_431802739_0_0_0&matching_block_id=1576192601_431802739_0_0_0&sr_pri_blocks=1576192601_431802739_0_0_0__531760&from=searchresults
+  :price: 5318.0
+  :tax: 180.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Apartamento
+- :name: Estúdio próximo ao Shopping Frei Caneca e Av Paulista Com Garagem by Vertical
+    House
+  :href: https://www.booking.com/hotel/br/estudio-proximo-ao-shopping-frei-caneca-e-av-paulista-com-garagem-by-vertical-ho.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=21&hapos=21&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1643184701_434488269_2_0_0&highlighted_blocks=1643184701_434488269_2_0_0&matching_block_id=1643184701_434488269_2_0_0&sr_pri_blocks=1643184701_434488269_2_0_0__533088&from=searchresults
+  :price: 5331.0
+  :tax: 170.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Estúdio com Sofá-Cama
+- :name: Studio Vn Ueno Bela Vista NR
+  :href: https://www.booking.com/hotel/br/vn-ueno-bela-vista-nr.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=22&hapos=22&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1429227802_432590416_2_0_0&highlighted_blocks=1429227802_432590416_2_0_0&matching_block_id=1429227802_432590416_2_0_0&sr_pri_blocks=1429227802_432590416_2_0_0__537750&from=searchresults
+  :price: 5378.0
+  :tax: 180.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 7.0
+  :review_count: 2
+  :unit_title: Apartamento Estúdio com Varanda
+- :name: 360 VN Ueno by Housi
+  :href: https://www.booking.com/hotel/br/360-vn-ueno-apartamentos-mobiliados.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=23&hapos=23&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1037296320_376254994_2_0_0&highlighted_blocks=1037296320_376254994_2_0_0&matching_block_id=1037296320_376254994_2_0_0&sr_pri_blocks=1037296320_376254994_2_0_0__538204&from=searchresults
+  :price: 5382.0
+  :tax: 185.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score: 7.1
+  :review_count: 560
+  :unit_title: Estúdio Standard
+- :name: Appartement studio
+  :href: https://www.booking.com/hotel/br/appartement-studio.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=24&hapos=24&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1417071901_413379750_0_0_0&highlighted_blocks=1417071901_413379750_0_0_0&matching_block_id=1417071901_413379750_0_0_0&sr_pri_blocks=1417071901_413379750_0_0_0__542080&from=searchresults
+  :price: 5421.0
+  :tax: 120.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Apartamento de 1 Quarto
+- :name: Estúdios em prédio c/ Piscina na Bela Vista SP - SNCs
+  :href: https://www.booking.com/hotel/br/estudios-em-predio-c-piscina-na-bela-vista-sp-sncs.pt-br.html?label=gog235jc-10CAEoggI46AdIM1gDaCCIAQGYATO4ARnIAQ_YAQPoAQH4AQGIAgGoAgG4Arusx9AGwAIB0gIkNmE1ZmVjMjYtMjIwMS00OTMxLTk0YjktNDNhOGE5NjQzMDlm2AIB4AIB&aid=397594&ucfs=1&arphpl=1&checkin=2026-06-30&checkout=2026-08-01&dest_id=1851&dest_type=district&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=25&hapos=25&sr_order=price&srpvid=0acd674b87e90098&srepoch=1779633692&all_sr_blocks=1588391601_431817968_0_0_0&highlighted_blocks=1588391601_431817968_0_0_0&matching_block_id=1588391601_431817968_0_0_0&sr_pri_blocks=1588391601_431817968_0_0_0__549753&from=searchresults
+  :price: 5498.0
+  :tax: 185.0
+  :address: Bela Vista, São Paulo
+  :distance:
+  :review_score:
+  :review_count: 0
+  :unit_title: Estúdio Standard
+:declared_count:
