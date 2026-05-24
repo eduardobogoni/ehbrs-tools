@@ -28,9 +28,11 @@ module EhbrsRubyUtils
           { accommodations: items_data, declared_count: declared_count }
         end
 
-        # @return [Integer]
+        # @return [Integer, nil]
         def declared_count
-          node_parser.integer_optional_value(nokogiri, '//h1/text()')
+          ['', '/span'].lazy
+            .map { |e| node_parser.integer_optional_value(nokogiri, "//h1#{e}/text()") }
+            .find(&:present?)
         end
 
         def items_xpath
