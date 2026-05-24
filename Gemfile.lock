@@ -3,11 +3,11 @@ PATH
   specs:
     ehbrs-tools (0.45.0)
       avm-tools (~> 0.164)
-      eac_cli (~> 0.46)
+      eac_cli (~> 0.47)
       eac_fs (~> 0.20, >= 0.20.2)
       eac_ruby_base0 (~> 0.19, >= 0.19.3)
       eac_ruby_utils (~> 0.131)
-      ehbrs_ruby_utils (~> 0.49)
+      ehbrs_ruby_utils (~> 0.49, >= 0.49.1)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
