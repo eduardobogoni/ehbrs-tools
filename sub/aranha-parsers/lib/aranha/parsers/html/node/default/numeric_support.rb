@@ -64,7 +64,7 @@ module Aranha
 
             def integer_value(node, xpath)
               r = string_value(node, xpath)
-              return nil if r.blank?
+              raise "String value is blank (\"#{r}\")" if r.blank?
 
               m = /\d+/.match(r)
               raise "Integer not found in \"#{r}\"" unless m
