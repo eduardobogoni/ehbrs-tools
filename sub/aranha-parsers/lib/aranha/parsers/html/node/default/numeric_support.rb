@@ -66,6 +66,9 @@ module Aranha
               decimal_dot_optional_value(node, xpath).to_i
             end
 
+            # @param node [Nokogiri::XML::Node]
+            # @param xpath [String]
+            # @return [Integer]
             def integer_value(node, xpath)
               r = string_value(node, xpath)
               raise "String value is blank (\"#{r}\")" if r.blank?
@@ -73,14 +76,23 @@ module Aranha
               INTEGER_PARSER.parse!(r)
             end
 
+            # @param node [Nokogiri::XML::Node]
+            # @param xpath [String]
+            # @return [Integer, nil]
             def integer_optional_value(node, xpath)
               INTEGER_PARSER.parse(string_value(node, xpath))
             end
 
+            # @param node [Nokogiri::XML::Node]
+            # @param xpath [String]
+            # @return [Float]
             def float_value(node, xpath)
               parse_float(node, xpath, true)
             end
 
+            # @param node [Nokogiri::XML::Node]
+            # @param xpath [String]
+            # @return [Float, nil]
             def float_optional_value(node, xpath)
               parse_float(node, xpath, false)
             end
@@ -103,6 +115,10 @@ module Aranha
 
             private
 
+            # @param node [Nokogiri::XML::Node]
+            # @param xpath [String]
+            # @param required [Boolean]
+            # @return [Float, nil]
             def parse_float(node, xpath, required)
               s = string_value(node, xpath)
               m = /\d+(?:[.,](\d+))?/.match(s)
