@@ -6,6 +6,10 @@ module Aranha
       module Node
         class Default < ::Aranha::Parsers::Html::Node::Base
           module NumericSupport
+            INTEGER_PARSER = /\d+/.to_parser do |m|
+              m[0].to_i
+            end
+
             # @param node [Nokogiri::XML::Element]
             # @param xpath [String]
             # @return [Float]
@@ -66,16 +70,11 @@ module Aranha
               r = string_value(node, xpath)
               raise "String value is blank (\"#{r}\")" if r.blank?
 
-              m = /\d+/.match(r)
-              raise "Integer not found in \"#{r}\"" unless m
-
-              m[0].to_i
+              INTEGER_PARSER.parse!(r)
             end
 
             def integer_optional_value(node, xpath)
-              r = string_value(node, xpath)
-              m = /\d+/.match(r)
-              m ? m[0].to_i : nil
+              INTEGER_PARSER.parse(string_value(node, xpath))
             end
 
             def float_value(node, xpath)
