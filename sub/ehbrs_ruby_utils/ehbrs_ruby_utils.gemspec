@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 3.2'
 
   s.add_dependency 'aranha', '~> 0.20'
-  s.add_dependency 'aranha-parsers', '~> 0.28'
+  s.add_dependency 'aranha-parsers', '~> 0.29'
   s.add_dependency 'aranha-selenium', '~> 0.14'
   s.add_dependency 'avm', '~> 0.100'
   s.add_dependency 'avm-eac_rails_base0', '~> 0.11', '>= 0.11.2'

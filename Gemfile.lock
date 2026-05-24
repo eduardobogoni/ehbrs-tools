@@ -28,7 +28,7 @@ PATH
   specs:
     ehbrs_ruby_utils (0.49.0)
       aranha (~> 0.20)
-      aranha-parsers (~> 0.28)
+      aranha-parsers (~> 0.29)
       aranha-selenium (~> 0.14)
       avm (~> 0.100)
       avm-eac_rails_base0 (~> 0.11, >= 0.11.2)
