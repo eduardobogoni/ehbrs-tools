@@ -9,9 +9,9 @@ module EhbrsRubyUtils
         field :game_name, :string, './td[1]/a[1]/text()'
         field :table_name, :string, './td[1]/a[2]/text()'
         field :time_string, :string, './td[2]/div[1]/text()'
-        field :leave_penalty, :integer, './td[4]/span[1]/text()'
-        field :rank_increment, :integer, './td[4]/span[2]/text()'
-        field :rank_after, :integer, './td[4]//*[@class = "gamerank_value"]/text()'
+        field :leave_penalty, :integer_optional, './td[4]/span[1]/text()'
+        field :rank_increment, :integer_optional, './td[4]/span[2]/text()'
+        field :rank_after, :integer_optional, './td[4]//*[@class = "gamerank_value"]/text()'
         field :players, :node, './td[3]'
 
         def items_xpath

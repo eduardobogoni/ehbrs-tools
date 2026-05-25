@@ -15,7 +15,7 @@ module EhbrsRubyUtils
           field :name, :string, './div[@class = "name"]/a/text()'
           field :score, :integer_optional, './div[@class = "score"]'
           field :elo_increment, :string, './/*[starts-with(@id, "winpoints_value_")]/text()'
-          field :elo_reached, :integer, './/*[@class = "gamerank_value"]/text()'
+          field :elo_reached, :integer_optional, './/*[@class = "gamerank_value"]/text()'
           field :penalty_clock, :boolean,
                 './/*[@class = "clockpenalty" and @style = "display: inline;"]'
           field :penalty_leave, :boolean,
