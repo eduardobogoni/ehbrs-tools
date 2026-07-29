@@ -13,17 +13,6 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
-  remote: sub/aranha-parsers
-  specs:
-    aranha-parsers (0.29.0)
-      activesupport (>= 4.0.0)
-      addressable (~> 2.9)
-      aranha (~> 0.20)
-      eac_envs-http (~> 0.7, >= 0.7.1)
-      eac_ruby_utils (~> 0.131)
-      nokogiri (~> 1.19, >= 1.19.3)
-
-PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.49.1)
@@ -62,6 +51,13 @@ GEM
       public_suffix (>= 2.0.2, < 8.0)
     aranha (0.20.1)
       eac_ruby_base1 (~> 0.1, >= 0.1.1)
+    aranha-parsers (0.29.0)
+      activesupport (>= 4.0.0)
+      addressable (~> 2.9)
+      aranha (~> 0.20)
+      eac_envs-http (~> 0.7, >= 0.7.1)
+      eac_ruby_utils (~> 0.131)
+      nokogiri (~> 1.19, >= 1.19.3)
     aranha-selenium (0.14.0)
       aranha (~> 0.20)
       eac_fs (~> 0.20, >= 0.20.1)
@@ -338,7 +334,6 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
-  aranha-parsers!
   eac_ruby_gem_support (~> 0.13)
   ehbrs-tools!
   ehbrs_ruby_utils!
