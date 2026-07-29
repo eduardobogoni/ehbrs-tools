@@ -1,0 +1,7 @@
+[subrepo]
+  cmdver = 0.4.9
+  commit = 73cfdc259ab85e851f5d486aa1be6ab4dd4d072d
+  method = merge
+  parent = 385024d9bcd34d4a20d6c2cab1963bc679580957
+  branch = master
+  remote = https://github.com/esquilo-azul/eac_envs-http.git

@@ -1,0 +1,9 @@
+---
+ssl: false
+method: GET
+uri: "/"
+body:
+headers:
+  user-agent: EacEnvs::Http
+  accept-encoding: gzip,deflate
+  accept: "*/*"
