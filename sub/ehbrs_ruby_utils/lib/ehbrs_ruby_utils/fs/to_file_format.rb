@@ -61,7 +61,7 @@ module EhbrsRubyUtils
       def file_type?(*include)
         return false unless ::File.file?(file)
 
-        include.any? { |i| file_type.include?(i) }
+        include.any? { |i| file_type.include?(i) } # rubocop:disable Style/ArrayIntersect
       end
 
       def file_type_uncached
