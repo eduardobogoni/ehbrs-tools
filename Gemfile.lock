@@ -17,7 +17,7 @@ PATH
   specs:
     eac_envs-http (0.7.1)
       eac_fs (~> 0.20, >= 0.20.2)
-      eac_ruby_utils (~> 0.131, >= 0.131.4)
+      eac_ruby_base1 (~> 0.1, >= 0.1.1)
       faraday (~> 2.14, >= 2.14.3)
       faraday-follow_redirects (~> 0.5)
       faraday-gzip (~> 0.1)
