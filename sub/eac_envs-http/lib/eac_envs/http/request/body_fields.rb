@@ -9,7 +9,7 @@ module EacEnvs
         # @return [Hash, nil]
         def to_h
           fields.if_present do |v|
-            v.each_with_object({}) { |e, a| a[e.hash_key] = e.hash_value }
+            v.to_h { |e| [e.hash_key, e.hash_value] }
           end
         end
 
