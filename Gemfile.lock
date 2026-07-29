@@ -2,12 +2,12 @@ PATH
   remote: .
   specs:
     ehbrs-tools (0.45.1)
-      avm-tools (~> 0.164)
-      eac_cli (~> 0.47)
+      avm-tools (~> 0.164, >= 0.164.1)
+      eac_cli (~> 0.47, >= 0.47.1)
       eac_fs (~> 0.20, >= 0.20.2)
       eac_ruby_base0 (~> 0.19, >= 0.19.3)
-      eac_ruby_utils (~> 0.131)
-      ehbrs_ruby_utils (~> 0.49, >= 0.49.1)
+      eac_ruby_utils (~> 0.131, >= 0.131.4)
+      ehbrs_ruby_utils (~> 0.49, >= 0.49.2)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
@@ -339,7 +339,7 @@ PLATFORMS
 
 DEPENDENCIES
   eac_envs-http!
-  eac_ruby_gem_support (~> 0.13)
+  eac_ruby_gem_support (~> 0.14)
   ehbrs-tools!
   ehbrs_ruby_utils!
 
