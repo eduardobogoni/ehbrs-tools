@@ -20,7 +20,7 @@ PATH
       eac_ruby_base1 (~> 0.1, >= 0.1.1)
       faraday (~> 2.14, >= 2.14.3)
       faraday-follow_redirects (~> 0.5)
-      faraday-gzip (~> 0.1)
+      faraday-gzip (~> 3.1)
       faraday-multipart (~> 1.2)
       faraday-retry (~> 2.4)
       random-port (~> 0.8)
@@ -196,9 +196,9 @@ GEM
       logger
     faraday-follow_redirects (0.5.0)
       faraday (>= 1, < 3)
-    faraday-gzip (0.1.0)
-      faraday (>= 1.0)
-      zlib (~> 2.1)
+    faraday-gzip (3.1.0)
+      faraday (>= 2.0, < 3)
+      zlib (~> 3.0)
     faraday-multipart (1.2.0)
       multipart-post (~> 2.0)
     faraday-net_http (3.4.4)
@@ -332,7 +332,7 @@ GEM
     webrick (1.9.2)
     websocket (1.2.11)
     zeitwerk (2.8.2)
-    zlib (2.1.1)
+    zlib (3.2.3)
 
 PLATFORMS
   x86_64-linux-gnu
