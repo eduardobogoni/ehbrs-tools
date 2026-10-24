@@ -18,13 +18,13 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 3.2' # rubocop:disable Gemspec/RequiredRubyVersion
 
   s.add_dependency 'avm-tools', '~> 0.164', '>= 0.164.1'
-  s.add_dependency 'eac_cli', '~> 0.47', '>= 0.47.1'
-  s.add_dependency 'eac_fs', '~> 0.20', '>= 0.20.2'
-  s.add_dependency 'eac_ruby_base0', '~> 0.19', '>= 0.19.3'
-  s.add_dependency 'eac_ruby_base1', '~> 0.1', '~> 0.1.1'
-  s.add_dependency 'ehbrs_ruby_utils', '~> 0.49', '>= 0.49.2'
+  s.add_dependency 'eac_cli', '~> 0.47', '>= 0.47.2'
+  s.add_dependency 'eac_fs', '~> 0.20', '>= 0.20.3'
+  s.add_dependency 'eac_ruby_base0', '~> 0.22'
+  s.add_dependency 'eac_ruby_base1', '~> 0.1', '>= 0.1.2'
+  s.add_dependency 'ehbrs_ruby_utils', '~> 0.51'
   s.add_dependency 'filesize', '~> 0.2'
   s.add_dependency 'os', '~> 1.1', '>= 1.1.4'
   s.add_dependency 'telegram-bot-ruby', '~> 0.23'
-  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.14'
+  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.15'
 end
