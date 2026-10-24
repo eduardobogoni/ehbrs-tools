@@ -5,6 +5,7 @@ module Ehbrs
     class Runner
       class Finances
         class BbBrowser
+          DEFAULT_DOCKER_COMMAND = 'podman'
           DOWNLOADS_CONTAINER_PATH = '/downloads'
           NOVNC_ADDRESS = '127.0.0.1'
           NOVNC_CONTAINER_PORT = 6080
@@ -18,6 +19,7 @@ module Ehbrs
           end
 
           def run
+            setup_docker_command
             infov 'Browser URL', browser_url
             open_browser_when_ready
             infov 'System result', docker_container.run_command(docker_run_extra_args).system
@@ -95,6 +97,11 @@ module Ehbrs
           # @return [Boolean]
           memoize def podman?
             ::EacDocker::Executables.docker.command('--version').execute!.downcase.include?('podman')
+          end
+
+          # @return [void]
+          def setup_docker_command
+            ENV[::EacDocker::Executables.docker.executable_args_envvar] ||= DEFAULT_DOCKER_COMMAND
           end
 
           # @return [String]
