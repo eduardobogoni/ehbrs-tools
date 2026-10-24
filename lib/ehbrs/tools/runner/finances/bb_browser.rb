@@ -16,11 +16,11 @@ module Ehbrs
 
           private
 
-          def docker_image_uncached
+          memoize def docker_image
             ::EhbrsRubyUtils::Finances::BbBrowser::DockerImage.create
           end
 
-          def docker_container_uncached
+          memoize def docker_container
             r = docker_image.container
                   .temporary(true).interactive(true).tty(true)
                   .command_arg('seg.bb.com.br')
