@@ -5,6 +5,7 @@ module Ehbrs
     class Runner
       class Finances
         class BbBrowser
+          CONTAINER_ENV_FORMAT = '{{range .Config.Env}}{{println .}}{{end}}'
           DEFAULT_CONTAINER_NAME = 'ehbrs-tools-bb-browser'
           DEFAULT_DOCKER_COMMAND = 'podman'
           DOWNLOADS_CONTAINER_PATH = '/downloads'
@@ -26,7 +27,7 @@ module Ehbrs
             infov 'Container name', parsed.container_name
             infov 'Browser URL', browser_url
             open_browser_when_ready
-            infov 'System result', docker_container.run_command(docker_run_extra_args).system
+            infov 'System result', container_command.system
           end
 
           private
@@ -37,10 +38,32 @@ module Ehbrs
               "&password=#{vnc_password}"
           end
 
+          # @return [EacRubyUtils::Envs::Command]
+          def container_command
+            if container_exist?
+              docker_container.start_command
+            else
+              docker_container.env('VNC_PASSWORD', vnc_password)
+                .run_command(docker_run_extra_args)
+            end
+          end
+
+          # @return [Hash<String, String>]
+          def container_env
+            ::EacDocker::Executables.docker
+              .command('container', 'inspect', '--format', CONTAINER_ENV_FORMAT,
+                       parsed.container_name)
+              .execute!.lines.filter_map { |line| line.chomp.split('=', 2).presence }.to_h
+          end
+
+          # @return [Boolean]
+          memoize def container_exist?
+            docker_container.exist?
+          end
+
           # @return [EacDocker::Container]
           memoize def docker_container
-            r = docker_image.container.name(parsed.container_name).temporary(true)
-                  .interactive(true).tty(true)
+            r = docker_image.container.name(parsed.container_name).interactive(true).tty(true)
             %w[environment_variables volumes].inject(r) do |a, e|
               send("docker_container_#{e}", a)
             end
@@ -51,8 +74,7 @@ module Ehbrs
           def docker_container_environment_variables(container)
             {
               'USER_GID' => group_id,
-              'USER_UID' => user_id,
-              'VNC_PASSWORD' => vnc_password
+              'USER_UID' => user_id
             }.inject(container) { |a, e| a.env(e[0], e[1]) }
           end
 
@@ -116,6 +138,8 @@ module Ehbrs
 
           # @return [String]
           memoize def vnc_password
+            return container_env.fetch('VNC_PASSWORD') if container_exist?
+
             ::SecureRandom.alphanumeric(VNC_PASSWORD_LENGTH)
           end
         end
