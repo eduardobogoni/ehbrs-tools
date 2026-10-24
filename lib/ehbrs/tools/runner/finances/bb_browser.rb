@@ -9,6 +9,7 @@ module Ehbrs
           NOVNC_ADDRESS = '127.0.0.1'
           NOVNC_CONTAINER_PORT = 6080
           NOVNC_HOST_PORT = 6080
+          PODMAN_RUN_EXTRA_ARGS = %w[--userns=keep-id --user 0].freeze
           SHM_SIZE = '2g'
           VNC_PASSWORD_LENGTH = 8
 
@@ -62,7 +63,8 @@ module Ehbrs
           # @return [Array<String>]
           def docker_run_extra_args
             ['--init', '--shm-size', SHM_SIZE, '--publish',
-             "#{NOVNC_ADDRESS}:#{NOVNC_HOST_PORT}:#{NOVNC_CONTAINER_PORT}"]
+             "#{NOVNC_ADDRESS}:#{NOVNC_HOST_PORT}:#{NOVNC_CONTAINER_PORT}"] +
+              (podman? ? PODMAN_RUN_EXTRA_ARGS : [])
           end
 
           # @return [String]
@@ -88,6 +90,11 @@ module Ehbrs
               sleep 1 until novnc_ready?
               open_browser
             end
+          end
+
+          # @return [Boolean]
+          memoize def podman?
+            ::EacDocker::Executables.docker.command('--version').execute!.downcase.include?('podman')
           end
 
           # @return [String]
