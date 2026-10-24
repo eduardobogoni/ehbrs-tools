@@ -14,22 +14,22 @@ Gem::Specification.new do |s|
 
   s.files = Dir.glob('{lib,template}/**/*', File::FNM_DOTMATCH)
               .reject { |f| ['.', '..'].include?(File.basename(f)) }
-  s.required_ruby_version = '>= 3.2'
+  s.required_ruby_version = '>= 3.2' # rubocop:disable Gemspec/RequiredRubyVersion
 
   s.add_dependency 'aranha', '~> 0.20', '>= 0.20.1'
   s.add_dependency 'aranha-parsers', '~> 0.29'
-  s.add_dependency 'aranha-selenium', '~> 0.14'
-  s.add_dependency 'avm', '~> 0.102', '>= 0.102.3'
+  s.add_dependency 'aranha-selenium', '~> 0.15'
+  s.add_dependency 'avm', '~> 0.103'
   s.add_dependency 'avm-eac_rails_base0', '~> 0.11', '>= 0.11.2'
-  s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.7'
-  s.add_dependency 'eac_fs', '~> 0.20', '>= 0.20.2'
+  s.add_dependency 'dentaku', '~> 3.5', '>= 3.5.8'
+  s.add_dependency 'eac_fs', '~> 0.20', '>= 0.20.3'
   s.add_dependency 'eac_rest', '~> 0.13'
-  s.add_dependency 'eac_ruby_base1', '~> 0.1', '~> 0.1.1'
+  s.add_dependency 'eac_ruby_base1', '~> 0.1', '>= 0.1.1'
   s.add_dependency 'eac_templates', '~> 0.9'
   s.add_dependency 'inifile', '~> 3.0'
   s.add_dependency 'srt', '~> 0.1', '>= 0.1.5'
   s.add_dependency 'taglib-ruby', '~> 1.1', '>= 1.1.3'
   s.add_dependency 'ultimate_lyrics', '~> 0.2'
 
-  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.14'
+  s.add_development_dependency 'eac_ruby_gem_support', '~> 0.15'
 end

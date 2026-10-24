@@ -8,7 +8,7 @@ module EhbrsRubyUtils
       enable_simple_cache
       common_constructor :data
 
-      GAME_MODE_KEY = 'Modo de Jogo'
+      GAME_MODE_KEYS = ['Modo do jogo', 'Modo de Jogo'].freeze
       GAME_MODE_FRIENDLY_VALUE = 'Modo Amigável'
       GAME_MODE_NORMAL_VALUE = 'Modo Normal'
       SET_ITEMS = %i[options players].freeze
@@ -22,16 +22,28 @@ module EhbrsRubyUtils
 
       # @return [Boolean]
       def friendly?
-        value = option_value(GAME_MODE_KEY)
+        value = game_mode_value
         return true if value == GAME_MODE_FRIENDLY_VALUE
         return false if value == GAME_MODE_NORMAL_VALUE
 
-        raise "Unknown \"#{GAME_MODE_KEY}\" value: \"#{value}\""
+        raise "Unknown value for game mode: \"#{value}\" (Options: #{options_to_s})"
       end
 
       # @return [Boolean]
       def game_conceded?
         game_conceded
+      end
+
+      # @return [String]
+      def game_mode_value
+        GAME_MODE_KEYS.lazy.map { |k| option_value(k) }.find(&:present?) ||
+          raise("No option found with one of the labels #{GAME_MODE_KEYS} " \
+                "(Options: #{options_to_s})")
+      end
+
+      # @return [String]
+      def options_to_s
+        options.map { |o| "#{o.label}=\"#{o.value}\"" }.join(', ')
       end
 
       # @param key [String]

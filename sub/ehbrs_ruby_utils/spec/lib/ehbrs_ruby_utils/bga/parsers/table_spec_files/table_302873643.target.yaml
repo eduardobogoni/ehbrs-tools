@@ -4,10 +4,10 @@
 :creation_time: 24/09/2022 às 22:41
 :estimated_duration: 2h31
 :options:
-- :label: Modo de Jogo
-  :value: Modo de treino
-  :description: 'Modo treino: sem rankings, sem limite de tempo por turno, sem penalidades.
-    Jogo em tempo real.'
+- :label: Modo do jogo
+  :value: Modo Amigável
+  :description: 'Modo Amigável: sem classificações, sem limite de tempo por turno,
+    sem penalidades. Jogo em tempo real.'
 - :label: Variante de equilíbrio
   :value: Jogo clássico
   :description: ''

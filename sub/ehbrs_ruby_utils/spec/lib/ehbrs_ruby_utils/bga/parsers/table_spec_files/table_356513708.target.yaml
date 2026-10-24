@@ -4,10 +4,10 @@
 :creation_time: 14/03/2023 às 08:36
 :estimated_duration: 35 dias
 :options:
-- :label: Modo de Jogo
-  :value: Modo de treino
-  :description: 'Modo treino: sem rankings, sem limite de tempo por turno, sem penalidades.
-    Jogo em tempo real.'
+- :label: Modo do jogo
+  :value: Modo Amigável
+  :description: 'Modo Amigável: sem classificações, sem limite de tempo por turno,
+    sem penalidades. Jogo em tempo real.'
 - :label: Variante de equilíbrio
   :value: Jogo clássico
   :description: ''

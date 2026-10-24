@@ -5,14 +5,21 @@ module EhbrsRubyUtils
     class Session < ::SimpleDelegator
       module Login
         LOGIN_PATH = 'account'
-        USERNAME_INPUT_ID = 'username_input'
-        PASSWORD_INPUT_ID = 'password_input'
-        SUBMIT_ID = 'login_button'
+        STEP1_SELECTOR = { css: '.bga-account-manager-form__step1' }.freeze
+        STEP2_SELECTOR = { css: '.bga-account-manager-form__step2' }.freeze
+        EMAIL_INPUT_SELECTOR = { css: "#{STEP1_SELECTOR[:css]} input[name=\"email\"]" }.freeze
+        NEXT_BUTTON_SELECTOR = { css: "#{STEP1_SELECTOR[:css]} a.bga-button--blue" }.freeze
+        PASSWORD_INPUT_SELECTOR = {
+          css: "#{STEP2_SELECTOR[:css]} input[type=\"password\"]"
+        }.freeze
+        LOGIN_BUTTON_SELECTOR = { css: "#{STEP2_SELECTOR[:css]} a.bga-button--blue" }.freeze
+        URL_LOGIN_PAGE_COMPONENT = 'page=login'
 
         # @return [Boolean]
         def login # rubocop:disable Naming/PredicateMethod
           navigate_to_login_page
           input_username
+          submit_username
           input_password
           submit_login
           logged?
@@ -26,18 +33,29 @@ module EhbrsRubyUtils
 
         def navigate_to_login_page
           navigate.to(login_url)
+          dismiss_cookies_banner
         end
 
         def input_username
-          wait_for_element(id: USERNAME_INPUT_ID).send_keys(username)
+          wait_for_element(EMAIL_INPUT_SELECTOR).send_keys(username)
+        end
+
+        def submit_username
+          wait_for_click(NEXT_BUTTON_SELECTOR)
         end
 
         def input_password
-          wait_for_element(id: PASSWORD_INPUT_ID).send_keys(password)
+          wait_for_element(PASSWORD_INPUT_SELECTOR).send_keys(password)
         end
 
+        # @return [void]
         def submit_login
-          wait_for_click(id: SUBMIT_ID)
+          wait_for_click(LOGIN_BUTTON_SELECTOR)
+          begin
+            wait.until { current_url.exclude?(URL_LOGIN_PAGE_COMPONENT) }
+          rescue ::Selenium::WebDriver::Error::TimeoutError
+            nil
+          end
         end
       end
     end

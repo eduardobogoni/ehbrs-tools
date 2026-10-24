@@ -4,11 +4,11 @@
 :creation_time: 04/05/2023 às 11:13
 :estimated_duration: 5 dias
 :options:
-- :label: Modo de Jogo
+- :label: Modo do jogo
   :value: Modo Normal
   :description: ''
 - :label: Velocidade do jogo
-  :value: Modo em turnos • 1 movimento por dia
+  :value: Em turnos • 1 movimento por dia
   :description: "+24h00 por turno (maximum 3 dias)"
 - :label: Duração do jogo
   :value: Meio ano (6 mãos)
@@ -44,7 +44,7 @@
   :id: 84559362
   :name: Lality
   :score: 52
-  :elo_increment: 10
+  :elo_increment: 11
   :elo_reached: 111
   :penalty_clock: false
   :penalty_leave: false

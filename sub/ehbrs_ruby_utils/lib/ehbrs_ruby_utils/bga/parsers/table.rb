@@ -4,7 +4,7 @@ module EhbrsRubyUtils
   module Bga
     module Parsers
       class Table < ::Aranha::Parsers::Html::Item
-        GAME_IMAGE_URL_PARSER = %r{/gamemedia/([^/]+)/box/}.to_parser { |m| m[1] }
+        GAME_IMAGE_URL_PARSER = %r{/gamemedia/([^/]+)/}.to_parser { |m| m[1] }
         ITEM_XPATH = '/'
         PLAYERS_IDS = {
           'game_result' => ::EhbrsRubyUtils::Bga::Parsers::Table::EndedPlayers,

@@ -28,6 +28,15 @@ module EhbrsRubyUtils
         end
       end
 
+      # @return [ActiveSupport::Duration, nil]
+      def duration
+        probe_data[:format].if_present do |x|
+          x[:duration].if_present do |v|
+            ::ActiveSupport::Duration.build(v.to_f)
+          end
+        end
+      end
+
       # @param provider [UltimateLyrics::Provider]
       # @return [UltimateLyrics::Lyrics]
       def lyrics_by_provider(provider)

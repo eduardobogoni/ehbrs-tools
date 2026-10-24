@@ -10,9 +10,9 @@ module EhbrsRubyUtils
           logged_username == username
         end
 
-        # @return [String]
+        # @return [String, nil]
         def logged_username
-          find_or_not_element(xpath: '//*[@id = "connected_username"]').attribute('innerHTML').strip
+          find_or_not_element(xpath: '//*[@id = "real_player_name"]')&.attribute('innerHTML')&.strip
         end
 
         def on_logged(&block)

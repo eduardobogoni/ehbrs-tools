@@ -4,11 +4,11 @@
 :creation_time: 16/03/2023 às 22:13
 :estimated_duration: 35 dias
 :options:
-- :label: Modo de Jogo
+- :label: Modo do jogo
   :value: Modo Normal
   :description: ''
 - :label: Velocidade do jogo
-  :value: Modo em turnos • 1 movimento por dia
+  :value: Em turnos • 1 movimento por dia
   :description: "+24h00 por turno (maximum 3 dias)"
 - :label: Variante de equilíbrio
   :value: Jogo clássico
@@ -36,7 +36,7 @@
   :name: generalcfmo
   :score: 1
   :elo_increment: 3
-  :elo_reached: 99
+  :elo_reached: 98
   :penalty_clock: false
   :penalty_leave: false
 - :rank: 1
@@ -51,8 +51,8 @@
   :id: 93223573
   :name: Duduzim
   :score: 1
-  :elo_increment: 16
-  :elo_reached: 33
+  :elo_increment: 15
+  :elo_reached: 32
   :penalty_clock: false
   :penalty_leave: false
 - :rank: 5
@@ -60,7 +60,7 @@
   :name: iuriadmvr1
   :score: 0
   :elo_increment: -35
-  :elo_reached: 159
+  :elo_reached: 158
   :penalty_clock: true
   :penalty_leave: true
 :game_conceded: false

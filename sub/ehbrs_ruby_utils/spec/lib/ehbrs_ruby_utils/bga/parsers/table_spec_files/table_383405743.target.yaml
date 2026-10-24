@@ -2,13 +2,13 @@
 :game_code: classicgo
 :game_name: Go
 :creation_time: 02/06/2023 às 22:14
-:estimated_duration: há 11 dias
+:estimated_duration: 35 dias
 :options:
-- :label: Modo de Jogo
+- :label: Modo do jogo
   :value: Modo Normal
   :description: ''
 - :label: Velocidade do jogo
-  :value: Modo em turnos • 1 movimento a cada 2 dias
+  :value: Em turnos • 1 movimento a cada 2 dias
   :description: "+2 dias por turno (maximum 6 dias)"
 - :label: Tamanho do tabuleiro
   :value: 13x13
@@ -25,8 +25,20 @@
   :value: Sim
   :description: ''
 :players:
-- :id: 84920871
-  :name: eduardobogoni
-- :id: 93212034
+- :rank: 1
+  :id: 93212034
   :name: danieltc
-:game_conceded: false
+  :score: 12
+  :elo_increment: 29
+  :elo_reached: 124
+  :penalty_clock: true
+  :penalty_leave: false
+- :rank: 2
+  :id: 84920871
+  :name: eduardobogoni
+  :score: 10
+  :elo_increment: 0
+  :elo_reached: 87
+  :penalty_clock: false
+  :penalty_leave: false
+:game_conceded: true

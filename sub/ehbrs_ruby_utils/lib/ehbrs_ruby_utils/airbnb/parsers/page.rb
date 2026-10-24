@@ -69,7 +69,7 @@ module EhbrsRubyUtils
         # @param prices [Enumerable<Float, nil>]
         # @return [Float]
         def build_price(*prices)
-          prices.reject(&:blank?).min
+          prices.reject(&:blank?).min # rubocop:disable Rails/CompactBlank
         end
 
         # @param text [String]
