@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
             ['Gemfile', 'Gemfile.lock', '.avm.yml']
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  s.required_ruby_version = '>= 3.2'
+  s.required_ruby_version = '>= 3.2' # rubocop:disable Gemspec/RequiredRubyVersion
 
   s.add_dependency 'avm-tools', '~> 0.164', '>= 0.164.1'
   s.add_dependency 'eac_cli', '~> 0.47', '>= 0.47.1'
