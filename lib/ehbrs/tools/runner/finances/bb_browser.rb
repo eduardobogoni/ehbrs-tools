@@ -5,6 +5,7 @@ module Ehbrs
     class Runner
       class Finances
         class BbBrowser
+          DEFAULT_CONTAINER_NAME = 'ehbrs-tools-bb-browser'
           DEFAULT_DOCKER_COMMAND = 'podman'
           DOWNLOADS_CONTAINER_PATH = '/downloads'
           NOVNC_ADDRESS = '127.0.0.1'
@@ -16,10 +17,13 @@ module Ehbrs
 
           runner_with :help do
             desc 'Bankline para Banco do Brasil com módulo de segurança.'
+            arg_opt '-n', '--container-name', 'Nome do contêiner.',
+                    default: DEFAULT_CONTAINER_NAME
           end
 
           def run
             setup_docker_command
+            infov 'Container name', parsed.container_name
             infov 'Browser URL', browser_url
             open_browser_when_ready
             infov 'System result', docker_container.run_command(docker_run_extra_args).system
@@ -35,7 +39,8 @@ module Ehbrs
 
           # @return [EacDocker::Container]
           memoize def docker_container
-            r = docker_image.container.temporary(true).interactive(true).tty(true)
+            r = docker_image.container.name(parsed.container_name).temporary(true)
+                  .interactive(true).tty(true)
             %w[environment_variables volumes].inject(r) do |a, e|
               send("docker_container_#{e}", a)
             end
