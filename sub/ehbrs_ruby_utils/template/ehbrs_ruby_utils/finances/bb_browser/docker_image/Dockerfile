@@ -1,44 +1,55 @@
-FROM ubuntu:18.04
+FROM debian:trixie-slim
 
-ENV DEBIAN_FRONTEND=noninteractive
-ENV USER_UID=1000
-ENV USER_GID=1000
-ENV USERNAME=user
+ARG DEBIAN_MIRROR=http://ftp.br.debian.org
+ARG WARSAW_URL=https://guardiao.itau.com.br/warsaw/warsaw_ubuntu.run
+ARG WARSAW_SHA256=7b7e27961ccfb5ed9fb9d5eef00a44db81a6a0e778f96886464ffcacc28b9144
 
-#    sudo gosu \
+ENV DEBIAN_FRONTEND=noninteractive \
+  LANG=C.UTF-8 \
+  RESOLUTION=1366x768 \
+  START_URL=https://www.bb.com.br \
+  USER_GID=1000 \
+  USER_UID=1000
 
-RUN ln -sf /bin/true /usr/bin/chfn && apt-get update && apt-get install -y \
-    libnss3-tools \
-    zenity \
-    libgtk2.0-0 \
+RUN sed -i "s#http://deb.debian.org#$DEBIAN_MIRROR#" /etc/apt/sources.list.d/debian.sources \
+  && apt-get update \
+  && apt-get install -y --no-install-recommends \
+    ca-certificates \
+    curl \
     dbus-x11 \
-    yad \
-    libcurl3 \
-    libdbus-1.3 \
-    libxss1 \
-    lsb-release \
-    net-tools \
-    openssl \
-    firefox \
-    systemd  \
-    systemd-sysv
+    firefox-esr \
+    firefox-esr-l10n-pt-br \
+    fonts-dejavu \
+    fonts-liberation \
+    libarchive-tools \
+    libdbus-1-3 \
+    novnc \
+    openbox \
+    procps \
+    python3 \
+    tigervnc-standalone-server \
+    tigervnc-tools \
+    websockify \
+    zenity \
+  && rm -rf /var/lib/apt/lists/*
 
+RUN curl -fsSLo /tmp/warsaw.run "$WARSAW_URL" \
+  && echo "$WARSAW_SHA256  /tmp/warsaw.run" | sha256sum -c - \
+  && bsdtar -xf /tmp/warsaw.run -C /tmp --strip-components 1 'warsaw_setup/warsaw_*_amd64.deb' \
+  && printf '#!/bin/sh\nexit 101\n' > /usr/sbin/policy-rc.d \
+  && chmod +x /usr/sbin/policy-rc.d \
+  && touch /tmp/EULA \
+  && apt-get update \
+  && apt-get install -y --no-install-recommends /tmp/warsaw_*_amd64.deb \
+  && { pkill -f -x /usr/local/bin/warsaw/core || :; } \
+  && rm -rf /tmp/warsaw* /usr/sbin/policy-rc.d /var/lib/apt/lists/*
 
-ADD https://cloud.gastecnologia.com.br/cef/warsaw/install/GBPCEFwr64.deb /src/warsaw.deb
-RUN groupadd -g ${USER_GID} user && useradd -u ${USER_UID} -g ${USER_GID} -ms /bin/bash user && chown -R user.user /home/user
+COPY policies.json /usr/lib/firefox-esr/distribution/policies.json
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
-#RUN dpkg -i /w.deb || exit 0
+RUN useradd --create-home --shell /bin/bash browser \
+  && install -d -m 1777 /tmp/.X11-unix
 
-COPY context/firefox.service /etc/systemd/system/
-COPY context/startbrowser.sh /usr/local/bin/
+EXPOSE 6080
 
-#	systemctl enable warsaw && \
-
-RUN mkdir -p /var/run/dbus && \ 
-	systemctl enable firefox && \
-	systemctl disable systemd-resolved && systemctl disable systemd-tmpfiles-setup.service
-
-STOPSIGNAL SIGRTMIN+3
-
-
-ENTRYPOINT [ "/sbin/init" ]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

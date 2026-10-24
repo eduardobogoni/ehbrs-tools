@@ -1,0 +1,18 @@
+{
+  "policies": {
+    "DisableAppUpdate": true,
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DontCheckDefaultBrowser": true,
+    "DownloadDirectory": "/downloads",
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+    "Preferences": {
+      "browser.translations.enable": {
+        "Value": false,
+        "Status": "locked"
+      }
+    },
+    "RequestedLocales": ["pt-BR"]
+  }
+}
