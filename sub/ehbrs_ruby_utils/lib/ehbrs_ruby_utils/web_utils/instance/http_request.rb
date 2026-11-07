@@ -29,8 +29,9 @@ module EhbrsRubyUtils
 
         # @return [EacRest::Request]
         def request
-          instance.api.request(resource_url_suffix).verb(options.verb).headers(options.headers)
-            .body_data(options.body_data)
+          %i[verb headers body_data].inject(instance.api.request(resource_url_suffix)) do |a, e|
+            a.send(e, options.send(e))
+          end
         end
       end
     end
