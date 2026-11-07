@@ -5,7 +5,7 @@ module EhbrsRubyUtils
     class Instance < ::Avm::EacRailsBase0::Instances::Base
       class HttpRequest
         enable_method_class
-        enable_simple_cache
+        enable_memoized
         common_constructor :instance, :resource_url_suffix, :source_options, default: [{}]
 
         # @return [EacRest::Response]
@@ -18,7 +18,7 @@ module EhbrsRubyUtils
         private
 
         # @return [::Struct.new(:verb, :body_data, :headers)]
-        def options_uncached
+        memoize def options
           options = source_options.to_options_consumer
           verb = options.consume(:method, :get).to_sym
           body_data = options.consume(:body)
