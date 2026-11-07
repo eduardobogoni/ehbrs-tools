@@ -6,13 +6,22 @@ module Ehbrs
       class WebUtils
         class Videos
           class Upload
+            DEFAULT_TIMEOUT = 5.minutes
+
             runner_with :help do
               desc 'Exporta informações de arquivos de vídeo para uma instância EHB/RS Utils.'
               bool_opt '-P', '--no-ffprobe', 'Não recupera dados com "ffprobe".'
+              arg_opt '-t', '--timeout', 'Tempo limite (em segundos) do envio.',
+                      default: DEFAULT_TIMEOUT.to_i
             end
 
             def run
               %w[movies series].each { |type| upload_files_list(type) }
+            end
+
+            # @return [Integer]
+            def timeout
+              parsed.timeout.to_i
             end
 
             def upload_files_list(type)
@@ -29,7 +38,8 @@ module Ehbrs
                 body: {
                   'videos_local_files_import_list[list_file]' => ::File.new(files_list_path)
                 },
-                header: { 'Accept' => 'application/json' }
+                header: { 'Accept' => 'application/json' },
+                timeout: timeout
               )
             end
 
