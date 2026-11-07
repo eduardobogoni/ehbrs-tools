@@ -13,6 +13,14 @@ PATH
       telegram-bot-ruby (~> 0.23)
 
 PATH
+  remote: sub/eac_rest
+  specs:
+    eac_rest (0.13.0)
+      eac_envs-http (~> 0.7, >= 0.7.1)
+      eac_fs (~> 0.20, >= 0.20.1)
+      eac_ruby_utils (~> 0.130)
+
+PATH
   remote: sub/ehbrs_ruby_utils
   specs:
     ehbrs_ruby_utils (0.51.0)
@@ -162,10 +170,6 @@ GEM
       eac_ruby_base1 (~> 0.1, >= 0.1.1)
       filesize (~> 0.2)
       ruby-filemagic (~> 0.7, >= 0.7.3)
-    eac_rest (0.13.0)
-      eac_envs-http (~> 0.7, >= 0.7.1)
-      eac_fs (~> 0.20, >= 0.20.1)
-      eac_ruby_utils (~> 0.130)
     eac_ruby_base0 (0.22.0)
       avm-eac_ruby_base1 (~> 0.45)
       eac_cli (~> 0.47, >= 0.47.1)
@@ -347,6 +351,7 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
+  eac_rest!
   eac_ruby_gem_support (~> 0.15)
   ehbrs-tools!
   ehbrs_ruby_utils!
