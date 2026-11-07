@@ -29,9 +29,7 @@ module Ehbrs
                 body: {
                   'videos_local_files_import_list[list_file]' => ::File.new(files_list_path)
                 },
-                header: {
-                  'Accept' => 'application/json'
-                }
+                header: { 'Accept' => 'application/json' }
               )
             end
 
