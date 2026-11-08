@@ -7,7 +7,7 @@ PATH
       eac_fs (~> 0.20, >= 0.20.3)
       eac_ruby_base0 (~> 0.22)
       eac_ruby_base1 (~> 0.1, >= 0.1.2)
-      ehbrs_ruby_utils (~> 0.51)
+      ehbrs_ruby_utils (~> 0.52)
       filesize (~> 0.2)
       os (~> 1.1, >= 1.1.4)
       telegram-bot-ruby (~> 0.23)
