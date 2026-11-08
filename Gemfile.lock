@@ -15,7 +15,7 @@ PATH
 PATH
   remote: sub/eac_rest
   specs:
-    eac_rest (0.13.0)
+    eac_rest (0.14.0)
       eac_envs-http (~> 0.7, >= 0.7.2)
       eac_fs (~> 0.20, >= 0.20.3)
       eac_ruby_utils (~> 0.136)
