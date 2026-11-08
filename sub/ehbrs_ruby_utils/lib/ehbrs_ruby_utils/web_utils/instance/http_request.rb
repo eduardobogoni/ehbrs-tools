@@ -17,21 +17,22 @@ module EhbrsRubyUtils
 
         private
 
-        # @return [::Struct.new(:verb, :body_data, :headers)]
+        # @return [::Struct.new(:verb, :body_data, :headers, :timeout)]
         memoize def options
           options = source_options.to_options_consumer
           verb = options.consume(:method, :get).to_sym
           body_data = options.consume(:body)
           headers = options.consume(:header)
+          timeout = options.consume(:timeout)
           options.validate
-          ::Struct.new(:verb, :body_data, :headers).new(verb, body_data, headers)
+          ::Struct.new(:verb, :body_data, :headers, :timeout)
+            .new(verb, body_data, headers, timeout)
         end
 
         # @return [EacRest::Request]
         def request
-          %i[verb headers body_data].inject(instance.api.request(resource_url_suffix)) do |a, e|
-            a.send(e, options.send(e))
-          end
+          %i[verb headers body_data timeout]
+            .inject(instance.api.request(resource_url_suffix)) { |a, e| a.send(e, options.send(e)) }
         end
       end
     end
