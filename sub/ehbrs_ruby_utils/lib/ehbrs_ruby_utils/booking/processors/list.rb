@@ -30,6 +30,11 @@ module EhbrsRubyUtils
           session.element(xpath: CLOSE_BANNER_XPATH)
         end
 
+        # @return [Hash]
+        def data
+          @data ||= session.quit_on_end { super }
+        end
+
         # @return [Aranha::Selenium::Session::Element]
         def more_results_button
           session.element(xpath: MORE_RESULTS_XPATH)

@@ -26,13 +26,12 @@ module EhbrsRubyUtils
         )
       end
 
+      # @yieldparam bga_session [EhbrsRubyUtils::Bga::Session]
+      # @return [Object]
+      # @raise [RuntimeError]
       def on_bga_logged_session(&block)
-        bga_session = new_bga_session
-        begin
+        new_bga_session.quit_on_end do |bga_session|
           bga_session.on_logged { block.call(bga_session) }
-        ensure
-          bga_session.close
-          bga_session = nil
         end
       end
 

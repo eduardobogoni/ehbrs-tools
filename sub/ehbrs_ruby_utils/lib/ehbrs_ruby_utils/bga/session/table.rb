@@ -2,7 +2,7 @@
 
 module EhbrsRubyUtils
   module Bga
-    class Session < ::SimpleDelegator
+    class Session < ::Aranha::Selenium::Session
       class Table
         include ::EhbrsRubyUtils::Bga::Urls
 

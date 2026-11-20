@@ -2,7 +2,7 @@
 
 module EhbrsRubyUtils
   module Bga
-    class Session < ::SimpleDelegator
+    class Session < ::Aranha::Selenium::Session
       module Login
         LOGIN_PATH = 'account'
         STEP1_SELECTOR = { css: '.bga-account-manager-form__step1' }.freeze

@@ -9,14 +9,16 @@ module EhbrsRubyUtils
 
         # @return [Enumerable<Hash>]
         def accommodations
-          current_url = url
-          index = 0
-          r = []
-          while current_url.present?
-            accommodations, current_url, index = page_accommodations(current_url, index)
-            r += accommodations
+          session.quit_on_end do
+            current_url = url
+            index = 0
+            r = []
+            while current_url.present?
+              accommodations, current_url, index = page_accommodations(current_url, index)
+              r += accommodations
+            end
+            r
           end
-          r
         end
 
         # @return [Integer]

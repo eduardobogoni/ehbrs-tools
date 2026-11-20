@@ -2,13 +2,15 @@
 
 module EhbrsRubyUtils
   module Bga
-    class Session < ::SimpleDelegator
+    class Session < ::Aranha::Selenium::Session
       include ::EhbrsRubyUtils::Bga::Urls
 
       MESSAGE_ID = 'head_infomsg_1'
 
-      common_constructor :username, :password,
-                         super_args: -> { [::Aranha::Selenium::Session.new(driver: :chrome)] }
+      # @!method initialize(username, password)
+      #   @param username [String]
+      #   @param password [String]
+      common_constructor :username, :password, super_args: -> { [{ driver: :chrome }] }
 
       # @return [EhbrsRubyUtils::Bga::Session::Player]
       def player(id)

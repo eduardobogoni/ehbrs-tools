@@ -2,7 +2,7 @@
 
 module EhbrsRubyUtils
   module Bga
-    class Session < ::SimpleDelegator
+    class Session < ::Aranha::Selenium::Session
       module CookiesConsent
         REJECT_ALL_BUTTON_SELECTOR = { id: 'didomi-notice-disagree-button' }.freeze
         REJECT_ALL_BUTTON_TIMEOUT = 5

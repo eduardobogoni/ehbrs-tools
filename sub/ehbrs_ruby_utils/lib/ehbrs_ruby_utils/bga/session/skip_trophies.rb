@@ -2,7 +2,7 @@
 
 module EhbrsRubyUtils
   module Bga
-    class Session < ::SimpleDelegator
+    class Session < ::Aranha::Selenium::Session
       module SkipTrophies
         TROPHY_SKIP_BUTTON_XPATH = '//*[@id = "splashedNotifications_overlay"]' \
                                    '//*[starts-with(@id, "continue_btn_")]'

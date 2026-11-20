@@ -23,12 +23,12 @@ PATH
 PATH
   remote: sub/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.51.0)
+    ehbrs_ruby_utils (0.51.1)
       aranha (~> 0.20, >= 0.20.1)
       aranha-parsers (~> 0.29)
-      aranha-selenium (~> 0.15)
+      aranha-selenium (~> 0.17)
       avm (~> 0.103)
-      avm-eac_rails_base0 (~> 0.11, >= 0.11.2)
+      avm-eac_rails_base0 (~> 0.11, >= 0.11.3)
       dentaku (~> 3.5, >= 3.5.8)
       eac_fs (~> 0.20, >= 0.20.3)
       eac_rest (~> 0.13)

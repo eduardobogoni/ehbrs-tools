@@ -1,7 +1,7 @@
 [subrepo]
   cmdver = 0.4.9
-  commit = 910faba5965e220063a6d6c43948d343970cb73c
+  commit = 1fa6c3fff8ecf6e3219ca2f9b22a95fc5c05a36b
   method = merge
-  parent = a1691102f63f7fc111ec547ef2ed24162ce56033
+  parent = 511731a80a22a0981f9d4d00c37e7f1c2695638c
   branch = master
   remote = https://github.com/eduardobogoni/ehbrs_ruby_utils.git
