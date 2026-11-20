@@ -35,11 +35,22 @@ module EacCli
         raise("Not module found with key \"#{key}\" (Namespaces: #{namespace_set})")
     end
 
+    # @param namespace [Module]
+    # @param key [Symbol, String]
+    # @return [Module, nil]
     def key_to_module_in_namespace(namespace, key)
-      leaf_name = key.to_s.camelize.to_sym
-      namespace.const_get(leaf_name)
+      key.to_s.camelize.split('::').inject(namespace) do |parent, leaf_name|
+        parent && leaf_to_module(parent, leaf_name)
+      end
+    end
+
+    # @param parent [Module]
+    # @param leaf_name [String]
+    # @return [Module, nil]
+    def leaf_to_module(parent, leaf_name)
+      parent.const_get(leaf_name)
     rescue ::NameError => e
-      e.receiver == namespace && e.name == leaf_name ? nil : raise(e)
+      e.receiver == parent && e.name.to_s == leaf_name ? nil : raise(e)
     end
 
     def sanitize_namespace(source)
