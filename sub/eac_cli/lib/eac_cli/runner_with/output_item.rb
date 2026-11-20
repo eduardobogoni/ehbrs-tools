@@ -31,7 +31,7 @@ module EacCli
 
       # @return [Hash<String, Class>]
       def formats
-        FORMATS.to_h do |e|
+        FORMATS.to_h do |e| # rubocop:disable Rails/IndexWith
           [e, ::EacCli::RunnerWith::OutputItem.const_get("#{e.camelize}Formatter")]
         end
       end
