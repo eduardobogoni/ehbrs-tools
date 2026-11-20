@@ -8,7 +8,7 @@ module Ehbrs
           class Upload
             DEFAULT_TIMEOUT = 5.minutes
 
-            runner_with :help do
+            runner_with :help, :'web_utils/videos/files_repositories_selector' do
               desc 'Exporta informações de arquivos de vídeo para uma instância EHB/RS Utils.'
               bool_opt '-P', '--no-ffprobe', 'Não recupera dados com "ffprobe".'
               arg_opt '-t', '--timeout', 'Tempo limite (em segundos) do envio.',
@@ -16,7 +16,7 @@ module Ehbrs
             end
 
             def run
-              %w[movies series].each { |type| upload_files_list(type) }
+              repositories.each { |repository| upload_repository(repository) }
             end
 
             # @return [Integer]
@@ -24,16 +24,21 @@ module Ehbrs
               parsed.timeout.to_i
             end
 
-            def upload_files_list(type)
-              infom "Uploading \"#{type}\" files list..."
-              files_list_path = send("#{type}_files_list")
+            # @param repository [Hash]
+            # @return [void]
+            def upload_repository(repository)
+              infom "Uploading files list of repository \"#{repository.fetch('id')} | " \
+                    "#{repository.fetch('name')}\"..."
+              files_list_path = write_files_list(repository)
               infov 'Path', files_list_path
-              process_response(files_list_path)
+              process_response(repository, files_list_path)
             end
 
-            def upload_request(files_list_path)
+            # @param repository [Hash]
+            # @param files_list_path [String]
+            def upload_request(repository, files_list_path)
               runner_context.call(:instance).http_request(
-                '/videos/files/import',
+                "/videos/files_repositories/#{repository.fetch('id')}/files_import",
                 method: :put,
                 body: {
                   'videos_local_files_import_list[list_file]' => ::File.new(files_list_path)
@@ -43,25 +48,20 @@ module Ehbrs
               )
             end
 
-            def process_response(files_list_path)
-              upload_request(files_list_path).body
+            # @param repository [Hash]
+            # @param files_list_path [String]
+            def process_response(repository, files_list_path)
+              upload_request(repository, files_list_path).body
             rescue ::EhbrsRubyUtils::WebUtils::RequestError => e
               system('firefox', e.body_file_path.to_path)
               fatal_error("Retornou com erro: #{e.message}")
             end
 
-            def series_files_list_uncached
-              write_files_list('Videos::SeriesDirectory', :series_directory)
-            end
-
-            def movies_files_list_uncached
-              write_files_list('Videos::MovieFile', :movies_directory)
-            end
-
-            def write_files_list(file_class, read_entry)
+            # @param repository [Hash]
+            # @return [String]
+            def write_files_list(repository)
               files_list = ::EhbrsRubyUtils::WebUtils::Videos::FilesList.new(
-                file_class,
-                runner_context.call(:instance).read_entry(read_entry),
+                repository.fetch('files_type'), repository.fetch('path'),
                 ffprobe: !parsed.no_ffprobe?
               )
               infov 'Files found', files_list.data.fetch(:files).count
