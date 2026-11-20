@@ -34,7 +34,7 @@ PATH
 PATH
   remote: sub/ehbrs_ruby_utils
   specs:
-    ehbrs_ruby_utils (0.52.0)
+    ehbrs_ruby_utils (0.53.0)
       aranha (~> 0.20, >= 0.20.1)
       aranha-parsers (~> 0.29)
       aranha-selenium (~> 0.17)
@@ -275,7 +275,7 @@ GEM
     prism (2.1.0-x86_64-linux-musl)
     public_suffix (7.0.5)
     racc (1.8.1)
-    rack (3.2.8)
+    rack (3.2.9)
     rainbow (3.1.1)
     random-port (0.8.2)
       tago (~> 0.0)
