@@ -6,16 +6,14 @@ module Ehbrs
       class WebUtils
         class Videos
           class Download
-            runner_with :confirmation, :help do
+            runner_with :confirmation, :help, :'web_utils/videos/files_repositories_selector' do
               desc 'Importa informações de arquivos de vídeo de uma instância EHB/RS Utils.'
               bool_opt '-d', '--delete', 'Remove vídeos indesejados.'
               arg_opt '-m', '--move', 'Move vídeos indesejados para o diretório indicado.'
             end
 
             def run
-              start_banner
-              to_rename.each { |file| process_rename_file(file) }
-              unwanted.each { |file| process_unwanted_file(file) }
+              repositories.each { |repository| process_repository(repository) }
             end
 
             private
@@ -28,10 +26,23 @@ module Ehbrs
               parsed.move.present?
             end
 
-            def start_banner
+            # @param repository [Hash]
+            # @return [void]
+            def process_repository(repository)
+              files = repository_files(repository)
+              start_banner(repository, files)
+              to_rename(files).each { |file| process_rename_file(file) }
+              unwanted(files).each { |file| process_unwanted_file(file) }
+            end
+
+            # @param repository [Hash]
+            # @param files [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            # @return [void]
+            def start_banner(repository, files)
+              infov 'Repository', "#{repository.fetch('id')} | #{repository.fetch('name')}"
               infov 'Files downloaded', files.count
-              infov 'To rename', to_rename.count
-              infov 'Unwanted', unwanted.count
+              infov 'To rename', to_rename(files).count
+              infov 'Unwanted', unwanted(files).count
             end
 
             def process_rename_file(file)
@@ -45,20 +56,29 @@ module Ehbrs
               file.move(parsed.move) if move? && confirm?
             end
 
-            def files_uncached
-              data.map { |file_data| ::EhbrsRubyUtils::WebUtils::Videos::File.new(file_data) }
+            # @param repository [Hash]
+            # @return [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            def repository_files(repository)
+              runner_context.call(:instance).http_request(repository_files_url_suffix(repository))
+                .body.map { |file_data| ::EhbrsRubyUtils::WebUtils::Videos::File.new(file_data) }
             end
 
-            def to_rename_uncached
+            # @param repository [Hash]
+            # @return [String]
+            def repository_files_url_suffix(repository)
+              "/videos/files_repositories/#{repository.fetch('id')}/files_export"
+            end
+
+            # @param files [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            # @return [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            def to_rename(files)
               files.select(&:path_changed?)
             end
 
-            def unwanted_uncached
+            # @param files [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            # @return [Array<EhbrsRubyUtils::WebUtils::Videos::File>]
+            def unwanted(files)
               files.reject { |f| f.type == 'Videos::SeriesDirectory' }.select(&:unwanted)
-            end
-
-            def data_uncached
-              runner_context.call(:instance).http_request('/videos/files/export').body
             end
           end
         end
