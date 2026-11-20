@@ -15,7 +15,7 @@ PATH
 PATH
   remote: sub/eac_cli
   specs:
-    eac_cli (0.47.2)
+    eac_cli (0.47.3)
       clipboard (~> 2.0)
       colorize (~> 0.8, >= 0.8.1)
       csv (~> 3.3, >= 3.3.7)
