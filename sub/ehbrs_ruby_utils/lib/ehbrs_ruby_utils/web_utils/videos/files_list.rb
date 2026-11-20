@@ -60,6 +60,8 @@ module EhbrsRubyUtils
           r
         end
 
+        # @param path [String]
+        # @return [Hash]
         def file_ffprobe_data(path)
           return {} unless options.fetch(:ffprobe)
 
@@ -67,6 +69,9 @@ module EhbrsRubyUtils
           ::JSON.parse(::EhbrsRubyUtils::Executables.ffprobe.command(
             '-hide_banner', '-print_format', 'json', '-show_format', '-show_streams', path
           ).execute!)
+        rescue ::EacRubyUtils::Envs::ExecutionError
+          warn "Probing \"#{path}\" failed"
+          {}
         end
       end
     end
