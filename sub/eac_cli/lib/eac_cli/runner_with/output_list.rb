@@ -32,6 +32,11 @@ module EacCli
       def formatter_class
         FORMATS.fetch(parsed.format)
       end
+
+      # @return [String]
+      def help_extra_text
+        help_list_section('Formats', FORMATS.keys.sort)
+      end
     end
   end
 end
