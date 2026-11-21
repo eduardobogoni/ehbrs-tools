@@ -3,6 +3,8 @@
 module EhbrsRubyUtils
   module WebUtils
     class Instance < ::Avm::EacRailsBase0::Instances::Base
+      VIDEOS_FILES_REPOSITORIES_URL_SUFFIX = '/videos/files_repositories/export'
+
       require_sub __FILE__, require_dependency: true
 
       # @return [EacRest::Api]
@@ -16,6 +18,11 @@ module EhbrsRubyUtils
 
       def root_url
         web_url
+      end
+
+      # @return [Array<Hash>]
+      def videos_files_repositories
+        http_request(VIDEOS_FILES_REPOSITORIES_URL_SUFFIX).body
       end
     end
   end
